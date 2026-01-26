@@ -1,0 +1,10 @@
+{
+  "title": "Understanding Dementia: A Comprehensive Guidebook for Patients, Caregivers, and Families",
+  "description": "A comprehensive 500-page guidebook providing evidence-based resource on dementia and cognitive decline, combining medical knowledge with practical caregiving strategies and real-world support.",
+  "creator": "Dementia Education Project",
+  "date": "2026-01-26",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}
