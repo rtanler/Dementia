@@ -17,10 +17,21 @@ nav:
 
   - Chapters:
     - Overview: chapters/index.md
-    # Add chapter entries here following this pattern:
-    # - Chapter 1 - Title:
-    #   - Content: chapters/01-chapter-name/index.md
-    #   - Quiz: chapters/01-chapter-name/quiz.md
+    - Chapter 1 - Introduction to Dementia and Cognitive Health: chapters/01-intro-to-dementia/index.md
+    - Chapter 2 - Brain Anatomy and Function: chapters/02-brain-anatomy-function/index.md
+    - Chapter 3 - Understanding Different Types of Dementia: chapters/03-types-of-dementia/index.md
+    - Chapter 4 - The Neuroscience of Neurodegeneration: chapters/04-neuroscience-neurodegeneration/index.md
+    - Chapter 5 - Signs, Symptoms, and Early Recognition: chapters/05-signs-symptoms-recognition/index.md
+    - Chapter 6 - Progression Through Dementia Stages: chapters/06-dementia-stages/index.md
+    - Chapter 7 - Managing Challenging Behaviors: chapters/07-managing-behaviors/index.md
+    - Chapter 8 - Diagnosis and Assessment: chapters/08-diagnosis-assessment/index.md
+    - Chapter 9 - Medical Treatments and Medications: chapters/09-medical-treatments/index.md
+    - Chapter 10 - Therapeutic Interventions: chapters/10-therapeutic-interventions/index.md
+    - Chapter 11 - Risk Factors and Prevention Strategies: chapters/11-risk-prevention/index.md
+    - Chapter 12 - Daily Living and Caregiving Skills: chapters/12-daily-living-caregiving/index.md
+    - Chapter 13 - Communication Techniques: chapters/13-communication-techniques/index.md
+    - Chapter 14 - Safety and Home Modifications: chapters/14-safety-home-modifications/index.md
+    - Chapter 15 - Legal, Financial, and Support Resources: chapters/15-legal-financial-support/index.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md
