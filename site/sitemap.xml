@@ -2,50 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://rtanler.github.io/Dementia/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/about/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/contact/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/course-description/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/faq/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/getting-started/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/glossary/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/license/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/references/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/chapters/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/learning-graph/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://rtanler.github.io/Dementia/learning-graph/concept-list/</loc>
+         <lastmod>2026-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://rtanler.github.io/Dementia/learning-graph/concept-taxonomy/</loc>
+         <lastmod>2026-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://rtanler.github.io/Dementia/learning-graph/course-description-assessment/</loc>
+         <lastmod>2026-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://rtanler.github.io/Dementia/learning-graph/index-template/</loc>
+         <lastmod>2026-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://rtanler.github.io/Dementia/learning-graph/quality-metrics/</loc>
+         <lastmod>2026-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://rtanler.github.io/Dementia/learning-graph/taxonomy-distribution/</loc>
+         <lastmod>2026-01-26</lastmod>
     </url>
     <url>
          <loc>https://rtanler.github.io/Dementia/sims/</loc>
-         <lastmod>2025-12-02</lastmod>
+         <lastmod>2026-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://rtanler.github.io/Dementia/sims/graph-viewer/</loc>
+         <lastmod>2026-01-26</lastmod>
     </url>
 </urlset>
