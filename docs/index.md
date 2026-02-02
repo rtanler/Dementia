@@ -1,5 +1,7 @@
 # Welcome to Understanding Dementia
 
+![](img/cover.png)
+
 A textbook about dementia and cognitive decline
 
 ## Getting Started
