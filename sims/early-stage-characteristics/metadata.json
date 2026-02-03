@@ -1,0 +1,35 @@
+{
+  "title": "Early-Stage Dementia Characteristics",
+  "description": "Interactive wheel diagram showing characteristics of early-stage dementia across five key domains (cognitive, functional, personality, behavioral, and mood), highlighting what is impaired versus what remains preserved to support person-centered care approaches.",
+  "creator": "Dementia Education Project",
+  "date": "2026-02-02",
+  "subject": [
+    "dementia",
+    "early-stage dementia",
+    "cognitive assessment",
+    "functional abilities",
+    "person-centered care",
+    "caregiving",
+    "dementia stages",
+    "neurodegeneration"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "early-stage-characteristics",
+  "library": "Vanilla JavaScript with SVG",
+  "bloomLevel": "Understand (L2)",
+  "concepts": [
+    "early-stage dementia characteristics",
+    "cognitive impairment",
+    "functional abilities",
+    "preserved vs impaired abilities",
+    "dementia progression",
+    "person-centered care"
+  ],
+  "prerequisites": [
+    "basic understanding of dementia",
+    "familiarity with activities of daily living (ADLs)"
+  ]
+}
