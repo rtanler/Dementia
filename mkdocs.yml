@@ -36,6 +36,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
+    - Early-Stage Dementia Characteristics: sims/early-stage-characteristics/index.md
     # Add MicroSim entries here:
     # - Sim Name: sims/sim-name/index.md
 
