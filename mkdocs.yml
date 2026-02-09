@@ -47,6 +47,7 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Quality Metrics: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Color Theme Guide: learning-graph/color-theme.md
 
   - Glossary: glossary.md
   - FAQ: faq.md
@@ -60,9 +61,9 @@ theme:
   logo: img/logo.png
   favicon: img/favicon.ico
   palette:
-    # Primary color overridden in css/extra.css with custom brand color
+    # Primary color overridden in css/extra.css with custom brand color (Royal Blue)
     primary: 'custom'
-    accent: 'orange'
+    accent: 'custom'  # Accent color customized in extra.css (Sunshine Yellow)
   include_sidebar: true
   features:
     # Code features
