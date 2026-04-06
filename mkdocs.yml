@@ -36,6 +36,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
+    - Early-Stage Dementia Characteristics: sims/early-stage-characteristics/index.md
     # Add MicroSim entries here:
     # - Sim Name: sims/sim-name/index.md
 
@@ -46,6 +47,7 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Quality Metrics: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Color Theme Guide: learning-graph/color-theme.md
 
   - Glossary: glossary.md
   - FAQ: faq.md
@@ -59,9 +61,9 @@ theme:
   logo: img/tokie.png
   favicon: img/favicon.ico
   palette:
-    # Primary color overridden in css/extra.css with custom brand color
+    # Primary color overridden in css/extra.css with custom brand color (Royal Blue)
     primary: 'custom'
-    accent: 'orange'
+    accent: 'custom'  # Accent color customized in extra.css (Sunshine Yellow)
   include_sidebar: true
   features:
     # Code features
