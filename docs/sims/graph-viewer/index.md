@@ -1,4 +1,14 @@
+---
+hide:
+   toc
+---
 # Learning Graph Viewer
+
+## Launch the Viewer
+
+[Open Learning Graph Viewer Fullscreen](./main.html){ .md-button .md-button--primary }
+
+<iframe src="./main.html" width="100%" height="700px"></iframe>
 
 This interactive viewer allows you to explore the learning graph for the Understanding Dementia guidebook.
 
@@ -31,8 +41,4 @@ This interactive viewer allows you to explore the learning graph for the Underst
 
 The graph uses a force-directed layout that positions related concepts near each other.
 
-## Launch the Viewer
 
-[Open Learning Graph Viewer](./main.html){ .md-button .md-button--primary }
-
-<iframe src="./main.html" width="100%" height="600px" frameborder="0"></iframe>
