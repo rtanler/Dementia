@@ -80,7 +80,7 @@ These percentages overlap because many people have mixed dementia—two or more 
 
 #### Diagram: Dementia Types Prevalence Chart
 
-<iframe src="../../sims/dementia-prevalence-chart/index.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/dementia-types-prevalence-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Dementia Types Prevalence Interactive Chart</summary>
@@ -414,7 +414,7 @@ Doctors typically diagnose and treat the most prominent dementia type while rema
 
 #### Diagram: Dementia Types Comparison Matrix
 
-<iframe src="../../sims/dementia-comparison-matrix/index.html" width="100%" height="650px" scrolling="no"></iframe>
+<iframe src="../../sims/dementia-types-comparison-matrix/main.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Dementia Types Comparison Tool</summary>
