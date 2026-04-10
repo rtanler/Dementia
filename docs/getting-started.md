@@ -9,7 +9,7 @@ Use the left sidebar to navigate between different sections of the textbook:
 - **[Chapters](./chapters/index.md)**: Main content organized by topic
 - **[MicroSims](./sims/index.md)**: Interactive simulations and visualizations
 - **[Learning Graph](./learning-graph/index.md)**: Visual representation of concept dependencies
-- **[Glossary](./glossary.md**): Definitions of key terms
+- **[Glossary](./glossary.md)**: Definitions of key terms
 - **[FAQ](./faq.md)**: Frequently asked questions
 
 ### Features

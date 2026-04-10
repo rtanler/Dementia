@@ -113,6 +113,7 @@ nav:
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Color Theme Guide: learning-graph/color-theme.md
     - Mascot Test: learning-graph/mascot-test.md
+    - Update Letter to Rick (April 10, 2026): learning-graph/rick-update-2026-04-10-v2.md
 
   - Glossary: glossary.md
   - FAQ: faq.md
@@ -120,6 +121,24 @@ nav:
   - Feature Checklist: feature-checklist.md
   - License: license.md
   - Contact: contact.md
+
+# Files in the docs/ tree that should NOT be built into the site.
+# Patterns use gitignore-style syntax. Files matched here are
+# completely excluded from the build (no HTML page generated, not
+# copied to site/, and no "not in nav" warning).
+exclude_docs: |
+  # Image generation prompts that live next to MicroSim data files
+  sims/*/image-prompt.md
+  # Scratch and template files for the learning graph
+  learning-graph/index-template.md
+  learning-graph/rick-update-2026-04-10.md
+  # Mascot generation prompts
+  img/mascot/mascot-prompts.md
+  # Project-level prompt scratch files
+  prompts/
+  # Sim TODO and shared-libs README
+  sims/TODO.md
+  sims/shared-libs/README.md
 
 # Theme Configuration
 theme:
