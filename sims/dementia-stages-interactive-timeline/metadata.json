@@ -1,0 +1,24 @@
+{
+  "title": "Dementia Stages Interactive Timeline",
+  "description": "Analyze how dementia progresses through stages over time and how different domains decline at different rates (Bloom Level 4 - Analyze)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia",
+    "disease progression",
+    "stages",
+    "cognitive decline"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "dementia-stages-interactive-timeline",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Analyze, examine, compare, differentiate",
+  "completion_status": "implemented",
+  "chapter_number": 6,
+  "chapter_title": "Progression Through Dementia Stages",
+  "chapter_dir": "06-dementia-stages"
+}

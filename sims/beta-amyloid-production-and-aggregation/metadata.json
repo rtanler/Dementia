@@ -1,0 +1,26 @@
+{
+  "title": "Beta-Amyloid Production and Aggregation",
+  "description": "Interactive diagram tracing the seven stages of beta-amyloid production, from APP protein cleavage to mature amyloid plaques, with explanations of how each stage relates to Alzheimer's disease.",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia",
+    "alzheimer's disease",
+    "beta-amyloid",
+    "neuroscience",
+    "neurodegeneration"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "beta-amyloid-production-and-aggregation",
+  "library": "Interactive Infographic Overlay (diagram.js)",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Explain, describe",
+  "learning_objective": "Understand how beta-amyloid is produced from APP and how it aggregates into toxic forms (Bloom Level 2 - Understand)",
+  "completion_status": "implemented",
+  "chapter_number": 4,
+  "chapter_title": "The Neuroscience of Neurodegeneration",
+  "chapter_dir": "04-neuroscience-neurodegeneration"
+}

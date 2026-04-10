@@ -1,0 +1,24 @@
+{
+  "title": "The Four Lobes of the Brain",
+  "description": "Interactive diagram to identify the four lobes of the cerebral cortex and their primary functions, with dementia impact notes for each lobe.",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia",
+    "brain anatomy",
+    "cerebral cortex"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "the-four-lobes-of-the-brain",
+  "library": "Interactive Infographic Overlay (diagram.js)",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "Identify, locate, recognize",
+  "learning_objective": "Remember and identify the four lobes of the cerebral cortex and their primary functions (Bloom Level 1 - Remember)",
+  "completion_status": "implemented",
+  "chapter_number": 2,
+  "chapter_title": "Brain Anatomy and Function",
+  "chapter_dir": "02-brain-anatomy-function"
+}

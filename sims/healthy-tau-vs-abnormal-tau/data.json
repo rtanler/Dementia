@@ -1,0 +1,104 @@
+{
+  "title": "Healthy Tau vs. Abnormal Tau",
+  "orientation": "landscape",
+  "image": "tau-comparison.png",
+  "layout": "dual-panel",
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Microtubules",
+      "x": 25,
+      "y": 30,
+      "radius": 4,
+      "color": "#2E74B5",
+      "panel": "left",
+      "hint": "The parallel blue rails running the length of the healthy axon.",
+      "description": "Microtubules are hollow protein tubes that form the internal skeleton of the axon. They act like railroad tracks that carry nutrients, signaling molecules, and organelles between the cell body and the synapse. In a healthy neuron they are long, stable, and arranged in parallel bundles.",
+      "ap_tip": "Stable microtubules allow bidirectional transport of organelles and proteins along the axon."
+    },
+    {
+      "id": 2,
+      "label": "Normal Tau",
+      "x": 25,
+      "y": 50,
+      "radius": 4,
+      "color": "#6FBF73",
+      "panel": "left",
+      "hint": "The small green cross-ties bound to the blue microtubule rails at regular intervals.",
+      "description": "Normal tau proteins bind to tubulin and act like cross-ties that hold the parallel microtubule rails in place. By stabilizing microtubules, tau keeps the axon's transport system running smoothly so the neuron can deliver essential cargo to its synapses.",
+      "ap_tip": "Tau binds to tubulin, stabilizing microtubule structure and enabling axonal transport."
+    },
+    {
+      "id": 3,
+      "label": "Transport Vesicles",
+      "x": 25,
+      "y": 70,
+      "radius": 4,
+      "color": "#E8B923",
+      "panel": "left",
+      "hint": "The small yellow circles moving along the top of the blue microtubule rails.",
+      "description": "Transport vesicles are tiny membrane-wrapped packages that carry neurotransmitters, proteins, and other supplies along the microtubule rails. Motor proteins pull these vesicles smoothly from the cell body out to the synapse, keeping the neuron well-fed and responsive.",
+      "ap_tip": "Smooth vesicle transport is essential for delivering neurotransmitters and nutrients to the synapse."
+    },
+    {
+      "id": 4,
+      "label": "Healthy Axon",
+      "x": 25,
+      "y": 88,
+      "radius": 4,
+      "color": "#4A9D5C",
+      "panel": "left",
+      "hint": "The smooth, continuous outline enclosing the healthy neuron's internal structures.",
+      "description": "A healthy axon is full, continuous, and structurally intact. With stable microtubules and normal tau, the axon reliably carries signals and cargo between the cell body and the synapse, supporting normal thinking, memory, and behavior.",
+      "ap_tip": "Healthy neurons maintain strong connections and efficient communication throughout the brain."
+    },
+    {
+      "id": 5,
+      "label": "Broken Microtubules",
+      "x": 75,
+      "y": 30,
+      "radius": 4,
+      "color": "#9BB5C9",
+      "panel": "right",
+      "hint": "The faded, fragmented blue segments where the rails have broken apart.",
+      "description": "Without stable tau holding them together, microtubules disintegrate into short disconnected fragments. The axon's internal rail system falls apart, and cargo can no longer be delivered efficiently between the cell body and the synapse.",
+      "ap_tip": "Microtubule disintegration disrupts axonal transport, starving synapses of essential materials."
+    },
+    {
+      "id": 6,
+      "label": "Hyperphosphorylated Tau",
+      "x": 75,
+      "y": 50,
+      "radius": 4,
+      "color": "#E67E22",
+      "panel": "right",
+      "hint": "The orange clumps floating loose between the broken blue rail fragments.",
+      "description": "In Alzheimer's disease, tau becomes coated with extra phosphate groups (hyperphosphorylation). Misshapen tau lets go of the microtubules and clumps together in the cytoplasm, so it can no longer stabilize the axon's internal skeleton.",
+      "ap_tip": "Hyperphosphorylated tau detaches from microtubules and aggregates into paired helical filaments."
+    },
+    {
+      "id": 7,
+      "label": "Neurofibrillary Tangles",
+      "x": 75,
+      "y": 70,
+      "radius": 4,
+      "color": "#8B2C3D",
+      "panel": "right",
+      "hint": "The dark red tangled knots inside the diseased neuron's cell body.",
+      "description": "Neurofibrillary tangles are dense knots of twisted tau filaments that build up inside the cell body of a diseased neuron. They disrupt normal cell function and are one of the two defining microscopic features of Alzheimer's disease, along with amyloid plaques.",
+      "ap_tip": "Neurofibrillary tangles are composed of paired helical filaments of hyperphosphorylated tau."
+    },
+    {
+      "id": 8,
+      "label": "Disrupted Transport",
+      "x": 75,
+      "y": 88,
+      "radius": 4,
+      "color": "#B87333",
+      "panel": "right",
+      "hint": "The stranded yellow vesicles stuck against broken rails and orange tau clumps.",
+      "description": "When microtubules break and tau clumps up, transport vesicles get stuck along the axon instead of reaching the synapse. Starved of neurotransmitters and nutrients, the synapses weaken, the neuron dysfunctions, and it eventually dies — a pattern seen across many regions in Alzheimer's disease.",
+      "ap_tip": "Loss of axonal transport leads to synapse failure, neuron death, and the progressive memory loss of dementia."
+    }
+  ]
+}

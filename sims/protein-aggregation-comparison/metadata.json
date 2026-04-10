@@ -1,0 +1,21 @@
+{
+  "title": "Protein Aggregation Comparison",
+  "description": "Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "protein-aggregation-comparison",
+  "library": "Custom HTML/CSS/JavaScript with SVG",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Compare, contrast, distinguish, differentiate",
+  "completion_status": "implemented",
+  "chapter_number": 4,
+  "chapter_title": "The Neuroscience of Neurodegeneration",
+  "chapter_dir": "04-neuroscience-neurodegeneration"
+}

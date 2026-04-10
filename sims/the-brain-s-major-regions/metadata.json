@@ -1,0 +1,26 @@
+{
+  "title": "The Brain's Major Regions",
+  "description": "Interactive diagram to identify the major regions of the brain and their basic functions, including the cerebral cortex, four lobes, hippocampus, and cerebellum.",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia",
+    "brain anatomy",
+    "cerebral cortex",
+    "hippocampus",
+    "cerebellum"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "the-brain-s-major-regions",
+  "library": "Interactive Infographic Overlay (diagram.js)",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "Identify, locate, recognize",
+  "learning_objective": "Remember and identify the major regions of the brain and their basic functions (Bloom Level 1 - Remember)",
+  "completion_status": "implemented",
+  "chapter_number": 1,
+  "chapter_title": "Introduction to Dementia and Cognitive Health",
+  "chapter_dir": "01-intro-to-dementia"
+}

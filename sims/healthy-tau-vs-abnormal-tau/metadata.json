@@ -1,0 +1,26 @@
+{
+  "title": "Healthy Tau vs. Abnormal Tau",
+  "description": "Interactive side-by-side comparison of normal tau protein stabilizing microtubules in a healthy neuron versus hyperphosphorylated tau forming neurofibrillary tangles in Alzheimer's disease.",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia",
+    "tau protein",
+    "microtubules",
+    "neurofibrillary tangles",
+    "Alzheimer's disease"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "healthy-tau-vs-abnormal-tau",
+  "library": "Interactive Infographic Overlay (diagram.js)",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Compare, contrast, differentiate",
+  "learning_objective": "Compare the structure and function of normal tau protein versus hyperphosphorylated tau in Alzheimer's disease (Bloom Level 2 - Understand)",
+  "completion_status": "implemented",
+  "chapter_number": 4,
+  "chapter_title": "The Neuroscience of Neurodegeneration",
+  "chapter_dir": "04-neuroscience-neurodegeneration"
+}

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Building Cognitive Reserve Over a Lifetime</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="../shared-libs/celebration.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+            line-height: 1.5;
+        }
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 16px;
+            background: #ffffff;
+        }
+        .title-bar {
+            border-bottom: 3px solid #1e3a8a;
+            padding-bottom: 10px;
+            margin-bottom: 16px;
+        }
+        .title-bar h1 {
+            font-size: 22px;
+            color: #1e3a8a;
+            margin: 0;
+        }
+        .title-bar p {
+            font-size: 14px;
+            color: #5b6b84;
+            margin-top: 4px;
+        }
+
+        /* Life stage strip */
+        .stage-strip {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+        .stage-card {
+            background: #eef3fb;
+            border: 2px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 10px 6px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .stage-card:hover {
+            background: #dbeafe;
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+        .stage-card.active {
+            background: #d1fae5;
+            border-color: #16a34a;
+            box-shadow: 0 2px 8px rgba(22, 163, 74, 0.25);
+        }
+        .stage-card .icon {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .stage-card .label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #1e3a8a;
+            display: block;
+        }
+        .stage-card .ages {
+            font-size: 11px;
+            color: #64748b;
+            display: block;
+        }
+
+        /* Chart area */
+        .chart-wrap {
+            position: relative;
+            height: 400px;
+            margin-bottom: 12px;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
+            justify-content: center;
+        }
+        .controls button {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .controls button:hover { background: #2952b3; }
+        .controls button.secondary {
+            background: #e2e8f0;
+            color: #1e3a8a;
+        }
+        .controls button.secondary:hover { background: #cbd5e1; }
+
+        /* Info panel */
+        .info-panel {
+            background: #f1f5f9;
+            border-left: 4px solid #1e3a8a;
+            border-radius: 6px;
+            padding: 12px 14px;
+            margin-bottom: 18px;
+            min-height: 110px;
+        }
+        .info-panel h3 {
+            font-size: 15px;
+            color: #1e3a8a;
+            margin-bottom: 6px;
+        }
+        .info-panel .contrib {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .info-panel ul {
+            margin-left: 18px;
+            font-size: 13px;
+            color: #334155;
+        }
+        .info-panel ul li { margin-bottom: 2px; }
+        .info-panel .hint { color: #64748b; font-style: italic; font-size: 13px; }
+
+        /* Quiz */
+        .quiz {
+            background: #fefce8;
+            border: 1px solid #fde68a;
+            border-radius: 8px;
+            padding: 14px;
+            margin-top: 10px;
+        }
+        .quiz h2 {
+            font-size: 17px;
+            color: #854d0e;
+            margin-bottom: 10px;
+        }
+        .quiz .question {
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #fde68a;
+        }
+        .quiz .question:last-child { border-bottom: none; }
+        .quiz .q-text {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #422006;
+        }
+        .quiz .options { display: grid; gap: 6px; }
+        .quiz .option {
+            background: white;
+            border: 1.5px solid #fde68a;
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.15s;
+            text-align: left;
+            font-family: inherit;
+        }
+        .quiz .option:hover:not(:disabled) {
+            background: #fef3c7;
+            border-color: #facc15;
+        }
+        .quiz .option.correct {
+            background: #dcfce7;
+            border-color: #16a34a;
+            color: #14532d;
+            font-weight: 600;
+        }
+        .quiz .option.incorrect {
+            background: #fee2e2;
+            border-color: #dc2626;
+            color: #7f1d1d;
+        }
+        .quiz .option:disabled { cursor: default; }
+        .quiz .feedback {
+            margin-top: 6px;
+            font-size: 12px;
+            font-style: italic;
+            color: #475569;
+        }
+        .quiz-complete {
+            display: none;
+            background: #dcfce7;
+            border: 2px solid #16a34a;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 10px;
+            text-align: center;
+            color: #14532d;
+            font-weight: 600;
+        }
+
+        /* Footer note */
+        .footnote {
+            font-size: 11px;
+            color: #94a3b8;
+            text-align: center;
+            margin-top: 14px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .stage-strip { grid-template-columns: repeat(2, 1fr); }
+            .chart-wrap { height: 320px; }
+            .title-bar h1 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="title-bar">
+        <h1>Building Cognitive Reserve Over a Lifetime</h1>
+        <p>See how mentally enriching activities across life shape the brain's buffer against dementia symptoms.</p>
+    </div>
+
+    <!-- Life stage strip -->
+    <div class="stage-strip" id="stageStrip"></div>
+
+    <!-- Info panel -->
+    <div class="info-panel" id="infoPanel">
+        <p class="hint">Click a life stage above to see activities that build cognitive reserve during that period.</p>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button id="toggleBtn">Show High Reserve Only</button>
+        <button id="resetBtn" class="secondary">Reset View</button>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-wrap">
+        <canvas id="reserveChart"></canvas>
+    </div>
+
+    <!-- Quiz -->
+    <div class="quiz">
+        <h2>Check Your Understanding</h2>
+        <div id="quizContainer"></div>
+        <div id="quizComplete" class="quiz-complete">
+            All questions correct! You understand how cognitive reserve protects the brain across a lifetime.
+        </div>
+    </div>
+
+    <p class="footnote">Illustrative values for educational purposes. Individual outcomes vary.</p>
+</main>
+
+<script>
+// ============================================================
+// Life stages data
+// ============================================================
+const LIFE_STAGES = [
+    {
+        id: 'childhood',
+        icon: '\u{1F476}',
+        label: 'Early Childhood',
+        ages: '0-5 yrs',
+        contribution: 'Foundation building',
+        activities: [
+            'Rich language environment (talking, reading)',
+            'Play and exploration',
+            'Early learning experiences',
+            'Secure attachment and nurturing'
+        ]
+    },
+    {
+        id: 'school',
+        icon: '\u{1F4DA}',
+        label: 'School Age',
+        ages: '6-18 yrs',
+        contribution: 'Major growth period',
+        activities: [
+            'Formal education and literacy',
+            'Learning a musical instrument',
+            'Playing sports and team games',
+            'Social interactions with peers',
+            'Problem-solving and creativity'
+        ]
+    },
+    {
+        id: 'young',
+        icon: '\u{1F393}',
+        label: 'Young Adult',
+        ages: '19-30 yrs',
+        contribution: 'Continued building',
+        activities: [
+            'Higher education or trade training',
+            'Learning new professional skills',
+            'Building wide social networks',
+            'Travel and new cultural experiences',
+            'Mastering new technologies'
+        ]
+    },
+    {
+        id: 'middle',
+        icon: '\u{1F4BC}',
+        label: 'Middle Age',
+        ages: '31-65 yrs',
+        contribution: 'Peak reserve and maintenance',
+        activities: [
+            'Mentally demanding work',
+            'Continuing education',
+            'Hobbies: reading, puzzles, crafts',
+            'Regular physical exercise',
+            'Maintaining strong social ties',
+            'Learning new technologies'
+        ]
+    },
+    {
+        id: 'older',
+        icon: '\u{1F9D3}',
+        label: 'Older Adult',
+        ages: '65-90+ yrs',
+        contribution: 'Maintenance and engagement',
+        activities: [
+            'Volunteering in the community',
+            'Lifelong learning classes',
+            'Staying socially engaged',
+            'Daily physical activity',
+            'Mentally stimulating hobbies',
+            'Managing health conditions'
+        ]
+    }
+];
+
+// ============================================================
+// Chart data
+// ============================================================
+const AGES = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90];
+const HIGH_RESERVE = [30, 45, 60, 75, 88, 95, 100, 100, 99, 98, 97, 96, 95, 92, 87, 81, 75, 70, 65];
+const LOW_RESERVE  = [30, 40, 48, 54, 58, 60, 60, 59, 58, 57, 56, 55, 52, 46, 40, 30, 25, 22, 20];
+const THRESHOLD = 40;
+const THRESHOLD_LINE = AGES.map(() => THRESHOLD);
+
+// ============================================================
+// Build stage strip
+// ============================================================
+const stageStrip = document.getElementById('stageStrip');
+LIFE_STAGES.forEach(stage => {
+    const card = document.createElement('div');
+    card.className = 'stage-card';
+    card.dataset.id = stage.id;
+    card.innerHTML =
+        '<span class="icon">' + stage.icon + '</span>' +
+        '<span class="label">' + stage.label + '</span>' +
+        '<span class="ages">' + stage.ages + '</span>';
+    card.addEventListener('click', function () { selectStage(stage.id); });
+    stageStrip.appendChild(card);
+});
+
+function selectStage(stageId) {
+    document.querySelectorAll('.stage-card').forEach(function (c) {
+        c.classList.toggle('active', c.dataset.id === stageId);
+    });
+    const stage = LIFE_STAGES.find(function (s) { return s.id === stageId; });
+    if (!stage) return;
+    const panel = document.getElementById('infoPanel');
+    const items = stage.activities.map(function (a) { return '<li>' + a + '</li>'; }).join('');
+    panel.innerHTML =
+        '<h3>' + stage.label + ' (' + stage.ages + ')</h3>' +
+        '<span class="contrib">' + stage.contribution + '</span>' +
+        '<ul>' + items + '</ul>';
+}
+
+// ============================================================
+// Chart.js setup
+// ============================================================
+const ctx = document.getElementById('reserveChart').getContext('2d');
+
+const highDataset = {
+    label: 'High Cognitive Reserve',
+    data: HIGH_RESERVE,
+    borderColor: '#16a34a',
+    backgroundColor: 'rgba(22, 163, 74, 0.15)',
+    borderWidth: 3,
+    tension: 0.35,
+    fill: false,
+    pointRadius: 3,
+    pointHoverRadius: 6
+};
+
+const lowDataset = {
+    label: 'Low Cognitive Reserve',
+    data: LOW_RESERVE,
+    borderColor: '#f97316',
+    backgroundColor: 'rgba(249, 115, 22, 0.15)',
+    borderWidth: 3,
+    tension: 0.35,
+    fill: false,
+    pointRadius: 3,
+    pointHoverRadius: 6
+};
+
+const thresholdDataset = {
+    label: 'Dementia Symptom Threshold',
+    data: THRESHOLD_LINE,
+    borderColor: '#dc2626',
+    backgroundColor: 'rgba(220, 38, 38, 0.1)',
+    borderWidth: 2,
+    borderDash: [8, 6],
+    tension: 0,
+    fill: false,
+    pointRadius: 0,
+    pointHoverRadius: 0
+};
+
+const chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: AGES,
+        datasets: [highDataset, lowDataset, thresholdDataset]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+            title: {
+                display: true,
+                text: 'Cognitive Reserve Across the Lifespan',
+                color: '#1e3a8a',
+                font: { size: 15, weight: 'bold' }
+            },
+            legend: {
+                position: 'bottom',
+                labels: { font: { size: 12 }, boxWidth: 18 }
+            },
+            tooltip: {
+                callbacks: {
+                    title: function (items) { return 'Age ' + items[0].label; },
+                    label: function (item) {
+                        if (item.dataset.label.indexOf('Threshold') !== -1) {
+                            return 'Threshold: ' + item.parsed.y + '%';
+                        }
+                        return item.dataset.label + ': ' + item.parsed.y + '%';
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Age (years)', font: { size: 13, weight: 'bold' } },
+                grid: { color: 'rgba(148, 163, 184, 0.2)' }
+            },
+            y: {
+                title: { display: true, text: 'Cognitive Reserve Level (%)', font: { size: 13, weight: 'bold' } },
+                min: 0,
+                max: 110,
+                grid: { color: 'rgba(148, 163, 184, 0.2)' }
+            }
+        }
+    }
+});
+
+// ============================================================
+// Toggle button state machine
+// ============================================================
+const toggleStates = [
+    { label: 'Show High Reserve Only', high: true,  low: true  },
+    { label: 'Show Low Reserve Only',  high: true,  low: false },
+    { label: 'Show Both Scenarios',    high: false, low: true  }
+];
+let toggleIdx = 0;
+
+const toggleBtn = document.getElementById('toggleBtn');
+toggleBtn.addEventListener('click', function () {
+    toggleIdx = (toggleIdx + 1) % toggleStates.length;
+    const state = toggleStates[toggleIdx];
+    chart.setDatasetVisibility(0, state.high);
+    chart.setDatasetVisibility(1, state.low);
+    chart.update();
+    toggleBtn.textContent = state.label;
+});
+
+document.getElementById('resetBtn').addEventListener('click', function () {
+    toggleIdx = 0;
+    chart.setDatasetVisibility(0, true);
+    chart.setDatasetVisibility(1, true);
+    chart.update();
+    toggleBtn.textContent = toggleStates[0].label;
+    document.querySelectorAll('.stage-card').forEach(function (c) { c.classList.remove('active'); });
+    document.getElementById('infoPanel').innerHTML =
+        '<p class="hint">Click a life stage above to see activities that build cognitive reserve during that period.</p>';
+});
+
+// ============================================================
+// Quiz
+// ============================================================
+const QUIZ_QUESTIONS = [
+    {
+        q: 'Cognitive reserve is built MOST effectively by...',
+        options: [
+            'Practicing a single hobby for many years',
+            'Doing multiple varied mentally challenging activities',
+            'Working at one routine job',
+            'Watching educational television'
+        ],
+        correct: 1,
+        explain: 'A variety of mentally challenging activities builds stronger neural networks than repeating a single activity.'
+    },
+    {
+        q: 'A person with HIGH cognitive reserve will likely...',
+        options: [
+            'Never develop dementia',
+            'Show dementia symptoms later for the same amount of brain pathology',
+            'Have less brain pathology than others',
+            'Automatically live longer than average'
+        ],
+        correct: 1,
+        explain: 'High reserve provides a buffer: the same brain changes cause symptoms later because the brain has more backup pathways.'
+    },
+    {
+        q: 'Which life period is the BIGGEST builder of cognitive reserve?',
+        options: [
+            'Retirement years',
+            'Middle age only',
+            'Education years (school and higher education)',
+            'Infancy alone'
+        ],
+        correct: 2,
+        explain: 'Years of formal education are the single strongest predictor of cognitive reserve later in life.'
+    },
+    {
+        q: 'Why does the LOW reserve line cross the dementia threshold earlier?',
+        options: [
+            'Because that person has more brain damage',
+            'Because fewer reserve-building activities mean less buffer against age and pathology',
+            'Because the threshold moves down with age',
+            'Because of random genetic luck alone'
+        ],
+        correct: 1,
+        explain: 'Fewer enriching activities leave less cognitive buffer, so symptoms appear sooner for similar underlying brain changes.'
+    }
+];
+
+const quizContainer = document.getElementById('quizContainer');
+let quizCorrect = 0;
+const answered = new Array(QUIZ_QUESTIONS.length).fill(false);
+
+QUIZ_QUESTIONS.forEach(function (question, qIdx) {
+    const qDiv = document.createElement('div');
+    qDiv.className = 'question';
+    qDiv.innerHTML = '<div class="q-text">' + (qIdx + 1) + '. ' + question.q + '</div>';
+
+    const optsDiv = document.createElement('div');
+    optsDiv.className = 'options';
+
+    question.options.forEach(function (opt, oIdx) {
+        const btn = document.createElement('button');
+        btn.className = 'option';
+        btn.textContent = opt;
+        btn.addEventListener('click', function () { handleAnswer(qIdx, oIdx, btn, optsDiv, qDiv); });
+        optsDiv.appendChild(btn);
+    });
+
+    qDiv.appendChild(optsDiv);
+    quizContainer.appendChild(qDiv);
+});
+
+function handleAnswer(qIdx, oIdx, btn, optsDiv, qDiv) {
+    if (answered[qIdx]) return;
+    answered[qIdx] = true;
+
+    const question = QUIZ_QUESTIONS[qIdx];
+    const buttons = optsDiv.querySelectorAll('.option');
+    buttons.forEach(function (b, i) {
+        b.disabled = true;
+        if (i === question.correct) b.classList.add('correct');
+        else if (i === oIdx) b.classList.add('incorrect');
+    });
+
+    if (oIdx === question.correct) quizCorrect++;
+
+    const fb = document.createElement('div');
+    fb.className = 'feedback';
+    fb.textContent = (oIdx === question.correct ? 'Correct. ' : 'Not quite. ') + question.explain;
+    qDiv.appendChild(fb);
+
+    checkQuizComplete();
+}
+
+function checkQuizComplete() {
+    const allAnswered = answered.every(function (a) { return a; });
+    if (allAnswered && quizCorrect === QUIZ_QUESTIONS.length) {
+        document.getElementById('quizComplete').style.display = 'block';
+        if (window.Celebration && typeof window.Celebration.celebrate === 'function') {
+            window.Celebration.celebrate({ duration: 4000 });
+        }
+    } else if (allAnswered) {
+        const box = document.getElementById('quizComplete');
+        box.style.display = 'block';
+        box.style.background = '#fef3c7';
+        box.style.borderColor = '#f59e0b';
+        box.style.color = '#78350f';
+        box.textContent = 'You got ' + quizCorrect + ' of ' + QUIZ_QUESTIONS.length + ' correct. Review the chart and try again.';
+    }
+}
+</script>
+</body>
+</html>

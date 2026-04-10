@@ -1,0 +1,26 @@
+{
+  "title": "How Memory Formation Works",
+  "description": "Interactive step-through MicroSim showing the four stages of memory formation (encoding, storage, long-term storage, retrieval) using the example of meeting Sarah at a party.",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia",
+    "memory",
+    "hippocampus",
+    "cerebral cortex",
+    "encoding",
+    "retrieval"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "how-memory-formation-works",
+  "library": "Custom HTML/CSS/JavaScript with SVG",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Explain, describe",
+  "completion_status": "implemented",
+  "chapter_number": 1,
+  "chapter_title": "Introduction to Dementia and Cognitive Health",
+  "chapter_dir": "01-intro-to-dementia"
+}

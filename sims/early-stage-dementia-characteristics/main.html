@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Early-Stage Dementia Characteristics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px;
+            background: white;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: #1a3a6c;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        #mode-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-bottom: 12px;
+        }
+
+        #mode-toggle button {
+            padding: 8px 18px;
+            background: #e9ecef;
+            color: #495057;
+            border: 2px solid #dee2e6;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        #mode-toggle button:first-child {
+            border-radius: 6px 0 0 6px;
+        }
+
+        #mode-toggle button:last-child {
+            border-radius: 0 6px 6px 0;
+            border-left: none;
+        }
+
+        #mode-toggle button.active {
+            background: #1a3a6c;
+            color: white;
+            border-color: #1a3a6c;
+        }
+
+        #svg-container {
+            width: 100%;
+            height: 360px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .section-path {
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .section-path:hover {
+            opacity: 0.88;
+            filter: brightness(1.08);
+        }
+
+        .section-path.active {
+            stroke: #222;
+            stroke-width: 3;
+        }
+
+        .section-label {
+            font-size: 13px;
+            font-weight: 600;
+            fill: #222;
+            pointer-events: none;
+            text-anchor: middle;
+        }
+
+        .center-circle {
+            fill: #ffffff;
+            stroke: #666;
+            stroke-width: 2;
+        }
+
+        .center-text {
+            font-size: 15px;
+            font-weight: 700;
+            fill: #1a3a6c;
+            text-anchor: middle;
+            pointer-events: none;
+        }
+
+        .center-subtext {
+            font-size: 11px;
+            fill: #555;
+            text-anchor: middle;
+            pointer-events: none;
+        }
+
+        #controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button.action-btn {
+            padding: 8px 16px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: background 0.2s;
+        }
+
+        button.action-btn:hover {
+            background: #2d6bb8;
+        }
+
+        button.action-btn:active {
+            transform: scale(0.98);
+        }
+
+        #detail-panel {
+            display: none;
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        #detail-panel.show {
+            display: block;
+        }
+
+        .detail-header {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .color-indicator {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+        }
+
+        .detail-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .detail-cols {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .detail-section h3 {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #495057;
+        }
+
+        .detail-section ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 13px;
+        }
+
+        .detail-section li {
+            padding: 3px 0 3px 18px;
+            position: relative;
+        }
+
+        .detail-section li:before {
+            content: "\2022";
+            position: absolute;
+            left: 4px;
+            font-weight: 700;
+        }
+
+        .impaired-list li:before {
+            color: #dc3545;
+        }
+
+        .preserved-list li:before {
+            color: #28a745;
+        }
+
+        .example-box {
+            background: white;
+            border-left: 4px solid #4a90e2;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        .meter-container {
+            margin: 10px 0;
+        }
+
+        .meter-label {
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: #495057;
+        }
+
+        .meter-bar {
+            width: 100%;
+            height: 14px;
+            background: #e9ecef;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+
+        .meter-fill {
+            height: 100%;
+            background: linear-gradient(to right, #28a745, #ffc107, #dc3545);
+            border-radius: 7px;
+            transition: width 0.5s;
+        }
+
+        #bottom-message {
+            background: #d1ecf1;
+            border: 2px solid #bee5eb;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        #bottom-message h3 {
+            font-size: 14px;
+            color: #0c5460;
+            margin-bottom: 4px;
+        }
+
+        #bottom-message p {
+            font-size: 13px;
+            color: #0c5460;
+        }
+
+        /* Quiz Mode */
+        #quiz-panel {
+            display: none;
+            background: #fff;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 12px;
+        }
+
+        #quiz-panel.show {
+            display: block;
+        }
+
+        .quiz-progress {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .quiz-question {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 14px;
+            line-height: 1.4;
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .quiz-option {
+            padding: 12px;
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: left;
+            transition: all 0.15s;
+        }
+
+        .quiz-option:hover:not(:disabled) {
+            border-color: #4a90e2;
+            background: #eef5fc;
+        }
+
+        .quiz-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .quiz-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+
+        .quiz-option:disabled {
+            cursor: default;
+        }
+
+        .quiz-feedback {
+            margin-top: 12px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .quiz-feedback.show {
+            display: block;
+        }
+
+        .quiz-feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #28a745;
+        }
+
+        .quiz-feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #dc3545;
+        }
+
+        .quiz-next-btn {
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .quiz-next-btn.show {
+            display: inline-block;
+        }
+
+        .quiz-next-btn:hover {
+            background: #1e7e34;
+        }
+
+        .quiz-results {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .quiz-results h2 {
+            color: #1a3a6c;
+            margin-bottom: 12px;
+        }
+
+        .quiz-results .score {
+            font-size: 42px;
+            font-weight: 700;
+            color: #28a745;
+            margin: 10px 0;
+        }
+
+        .quiz-results button {
+            margin-top: 14px;
+            padding: 10px 22px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <h1>Early-Stage Dementia Characteristics</h1>
+
+            <div id="mode-toggle">
+                <button id="mode-explore" class="active">Explore</button>
+                <button id="mode-quiz">Quiz</button>
+            </div>
+
+            <!-- Explore mode view -->
+            <div id="explore-view">
+                <div id="controls">
+                    <button class="action-btn" id="toggle-examples-btn">Show Examples</button>
+                    <button class="action-btn" id="reset-btn">Reset</button>
+                </div>
+
+                <div id="svg-container">
+                    <svg id="wheel-svg" viewBox="0 0 800 360" preserveAspectRatio="xMidYMid meet">
+                    </svg>
+                </div>
+
+                <div id="detail-panel"></div>
+
+                <div id="bottom-message">
+                    <h3>Key Message</h3>
+                    <p>In early-stage dementia, much remains intact. Focus on what the person CAN do, not just what they can't.</p>
+                </div>
+            </div>
+
+            <!-- Quiz mode view -->
+            <div id="quiz-view" style="display:none;">
+                <div id="quiz-panel" class="show"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../shared-libs/celebration.js"></script>
+    <script>
+        // ---------- Domain data ----------
+        const domains = [
+            {
+                id: 'cognitive',
+                name: 'Cognitive Abilities',
+                color: '#ff8c42',
+                colorLight: '#ffb380',
+                impaired: ['Recent memory', 'Learning new information', 'Complex planning'],
+                preserved: ['Remote memory', 'Basic reasoning', 'Familiar knowledge'],
+                example: 'Can remember childhood home address but forgets a conversation from this morning.',
+                impairmentDegree: 35
+            },
+            {
+                id: 'function',
+                name: 'Daily Function',
+                color: '#4a90e2',
+                colorLight: '#7fb3f0',
+                impaired: ['Managing finances', 'Complex cooking', 'Medication management without reminders'],
+                preserved: ['Self-care (bathing, dressing)', 'Eating', 'Basic household tasks'],
+                example: 'Can shower independently but needs help balancing the checkbook.',
+                impairmentDegree: 30
+            },
+            {
+                id: 'personality',
+                name: 'Personality',
+                color: '#9b59b6',
+                colorLight: '#bb8fcc',
+                impaired: ['May be more anxious', 'Less spontaneous', 'More rigid about routines'],
+                preserved: ['Core personality recognizable', 'Values generally intact'],
+                example: 'Still friendly but less interested in trying new restaurants.',
+                impairmentDegree: 25
+            },
+            {
+                id: 'behavior',
+                name: 'Behavior',
+                color: '#50c878',
+                colorLight: '#88daa0',
+                impaired: ['More repetition', 'Some social withdrawal', 'Difficulty with new situations'],
+                preserved: ['Generally cooperative', 'Able to engage socially', 'Follows most social norms'],
+                example: 'Asks "What time is dinner?" multiple times but follows through appropriately.',
+                impairmentDegree: 28
+            },
+            {
+                id: 'mood',
+                name: 'Mood',
+                color: '#f4d03f',
+                colorLight: '#f9e17f',
+                impaired: ['May have depression', 'Anxiety about decline', 'Frustration'],
+                preserved: ['Can experience full range of emotions', 'Joy in positive experiences'],
+                example: 'Aware of memory problems and feels sad about losing abilities.',
+                impairmentDegree: 32
+            }
+        ];
+
+        // ---------- Quiz data ----------
+        const quizQuestions = [
+            {
+                scenario: 'A person with early-stage dementia "asks what time dinner is multiple times but eats appropriately". Which domain does this best illustrate?',
+                answerId: 'behavior',
+                explanation: 'Repetitive questioning while still following through appropriately is characteristic of Behavior changes in early-stage dementia.'
+            },
+            {
+                scenario: '"Can shower independently but needs help balancing the checkbook." Which domain is impaired here?',
+                answerId: 'function',
+                explanation: 'Difficulty with complex tasks like finances, while preserving self-care, falls under the Daily Function domain.'
+            },
+            {
+                scenario: '"Aware of their memory problems and feels sad about losing abilities." Which domain does this describe?',
+                answerId: 'mood',
+                explanation: 'Sadness and emotional reactions to awareness of decline are part of the Mood domain.'
+            },
+            {
+                scenario: '"Can remember the childhood home address but forgets this morning\'s conversation." Which domain is this?',
+                answerId: 'cognitive',
+                explanation: 'Intact remote memory with impaired recent memory is a hallmark of the Cognitive Abilities domain in early-stage dementia.'
+            }
+        ];
+
+        // ---------- State ----------
+        let selectedDomain = null;
+        let showExamples = false;
+        let mode = 'explore';
+
+        let quizIndex = 0;
+        let quizScore = 0;
+        let quizAnswered = false;
+
+        // ---------- Elements ----------
+        const svg = document.getElementById('wheel-svg');
+        const detailPanel = document.getElementById('detail-panel');
+        const toggleExamplesBtn = document.getElementById('toggle-examples-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const modeExploreBtn = document.getElementById('mode-explore');
+        const modeQuizBtn = document.getElementById('mode-quiz');
+        const exploreView = document.getElementById('explore-view');
+        const quizView = document.getElementById('quiz-view');
+        const quizPanel = document.getElementById('quiz-panel');
+
+        // ---------- Wheel drawing ----------
+        function drawWheel() {
+            const centerX = 400;
+            const centerY = 180;
+            const innerRadius = 55;
+            const outerRadius = 160;
+            const angleStep = (2 * Math.PI) / domains.length;
+            const startAngle = -Math.PI / 2;
+
+            const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+            svg.appendChild(defs);
+
+            domains.forEach((domain) => {
+                const gradient = document.createElementNS('http://www.w3.org/2000/svg', 'radialGradient');
+                gradient.setAttribute('id', `gradient-${domain.id}`);
+
+                const stop1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+                stop1.setAttribute('offset', '0%');
+                stop1.setAttribute('stop-color', domain.colorLight);
+
+                const stop2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+                stop2.setAttribute('offset', '100%');
+                stop2.setAttribute('stop-color', domain.color);
+
+                gradient.appendChild(stop1);
+                gradient.appendChild(stop2);
+                defs.appendChild(gradient);
+            });
+
+            domains.forEach((domain, index) => {
+                const angle1 = startAngle + index * angleStep;
+                const angle2 = startAngle + (index + 1) * angleStep;
+
+                const x1Inner = centerX + innerRadius * Math.cos(angle1);
+                const y1Inner = centerY + innerRadius * Math.sin(angle1);
+                const x1Outer = centerX + outerRadius * Math.cos(angle1);
+                const y1Outer = centerY + outerRadius * Math.sin(angle1);
+
+                const x2Inner = centerX + innerRadius * Math.cos(angle2);
+                const y2Inner = centerY + innerRadius * Math.sin(angle2);
+                const x2Outer = centerX + outerRadius * Math.cos(angle2);
+                const y2Outer = centerY + outerRadius * Math.sin(angle2);
+
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                const pathData = `
+                    M ${x1Inner} ${y1Inner}
+                    L ${x1Outer} ${y1Outer}
+                    A ${outerRadius} ${outerRadius} 0 0 1 ${x2Outer} ${y2Outer}
+                    L ${x2Inner} ${y2Inner}
+                    A ${innerRadius} ${innerRadius} 0 0 0 ${x1Inner} ${y1Inner}
+                    Z
+                `;
+
+                path.setAttribute('d', pathData);
+                path.setAttribute('fill', `url(#gradient-${domain.id})`);
+                path.setAttribute('class', 'section-path');
+                path.setAttribute('data-domain', domain.id);
+                path.addEventListener('click', () => selectDomain(domain.id));
+                svg.appendChild(path);
+
+                const labelAngle = startAngle + (index + 0.5) * angleStep;
+                const labelRadius = (innerRadius + outerRadius) / 2;
+                const labelX = centerX + labelRadius * Math.cos(labelAngle);
+                const labelY = centerY + labelRadius * Math.sin(labelAngle);
+
+                const name = domain.name;
+                const parts = name.split(' ');
+                if (parts.length > 1 && name.length > 10) {
+                    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    t.setAttribute('x', labelX);
+                    t.setAttribute('y', labelY - 6);
+                    t.setAttribute('class', 'section-label');
+                    t.textContent = parts[0];
+                    svg.appendChild(t);
+                    const t2 = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    t2.setAttribute('x', labelX);
+                    t2.setAttribute('y', labelY + 10);
+                    t2.setAttribute('class', 'section-label');
+                    t2.textContent = parts.slice(1).join(' ');
+                    svg.appendChild(t2);
+                } else {
+                    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    text.setAttribute('x', labelX);
+                    text.setAttribute('y', labelY + 4);
+                    text.setAttribute('class', 'section-label');
+                    text.textContent = name;
+                    svg.appendChild(text);
+                }
+            });
+
+            const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            centerCircle.setAttribute('cx', centerX);
+            centerCircle.setAttribute('cy', centerY);
+            centerCircle.setAttribute('r', innerRadius);
+            centerCircle.setAttribute('class', 'center-circle');
+            svg.appendChild(centerCircle);
+
+            const lines = [
+                { y: -18, cls: 'center-text', txt: 'Early-Stage' },
+                { y: -2,  cls: 'center-text', txt: 'Dementia' },
+                { y: 16,  cls: 'center-subtext', txt: 'Independence' },
+                { y: 30,  cls: 'center-subtext', txt: 'with Support' }
+            ];
+            lines.forEach(l => {
+                const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                t.setAttribute('x', centerX);
+                t.setAttribute('y', centerY + l.y);
+                t.setAttribute('class', l.cls);
+                t.textContent = l.txt;
+                svg.appendChild(t);
+            });
+        }
+
+        function selectDomain(domainId) {
+            selectedDomain = domains.find(d => d.id === domainId);
+
+            document.querySelectorAll('.section-path').forEach(path => {
+                path.classList.remove('active');
+                if (path.getAttribute('data-domain') === domainId) {
+                    path.classList.add('active');
+                }
+            });
+
+            displayDetails();
+        }
+
+        function displayDetails() {
+            if (!selectedDomain) {
+                detailPanel.classList.remove('show');
+                return;
+            }
+
+            let html = `
+                <div class="detail-header">
+                    <span class="color-indicator" style="background: ${selectedDomain.color}"></span>
+                    ${selectedDomain.name}
+                </div>
+
+                <div class="meter-container">
+                    <div class="meter-label">Degree of Impairment: ${selectedDomain.impairmentDegree}% (Mild)</div>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: ${selectedDomain.impairmentDegree}%"></div>
+                    </div>
+                </div>
+
+                <div class="detail-cols">
+                    <div class="detail-section">
+                        <h3>Impaired</h3>
+                        <ul class="impaired-list">
+                            ${selectedDomain.impaired.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h3>Preserved</h3>
+                        <ul class="preserved-list">
+                            ${selectedDomain.preserved.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+
+            if (showExamples) {
+                html += `
+                    <div class="example-box">
+                        <strong>Example:</strong> ${selectedDomain.example}
+                    </div>
+                `;
+            }
+
+            detailPanel.innerHTML = html;
+            detailPanel.classList.add('show');
+        }
+
+        function toggleExamples() {
+            showExamples = !showExamples;
+            toggleExamplesBtn.textContent = showExamples ? 'Hide Examples' : 'Show Examples';
+            if (selectedDomain) {
+                displayDetails();
+            }
+        }
+
+        function resetView() {
+            selectedDomain = null;
+            document.querySelectorAll('.section-path').forEach(path => {
+                path.classList.remove('active');
+            });
+            detailPanel.classList.remove('show');
+        }
+
+        // ---------- Quiz ----------
+        function setMode(newMode) {
+            mode = newMode;
+            if (mode === 'explore') {
+                modeExploreBtn.classList.add('active');
+                modeQuizBtn.classList.remove('active');
+                exploreView.style.display = '';
+                quizView.style.display = 'none';
+            } else {
+                modeQuizBtn.classList.add('active');
+                modeExploreBtn.classList.remove('active');
+                exploreView.style.display = 'none';
+                quizView.style.display = '';
+                startQuiz();
+            }
+        }
+
+        function startQuiz() {
+            quizIndex = 0;
+            quizScore = 0;
+            quizAnswered = false;
+            renderQuiz();
+        }
+
+        function renderQuiz() {
+            if (quizIndex >= quizQuestions.length) {
+                renderQuizResults();
+                return;
+            }
+
+            const q = quizQuestions[quizIndex];
+            quizAnswered = false;
+
+            const optionsHTML = domains.map(d => `
+                <button class="quiz-option" data-id="${d.id}">${d.name}</button>
+            `).join('');
+
+            quizPanel.innerHTML = `
+                <div class="quiz-progress">Question ${quizIndex + 1} of ${quizQuestions.length} &middot; Score: ${quizScore}</div>
+                <div class="quiz-question">${q.scenario}</div>
+                <div class="quiz-options">${optionsHTML}</div>
+                <div class="quiz-feedback" id="quiz-feedback"></div>
+                <button class="quiz-next-btn" id="quiz-next-btn">Next Question</button>
+            `;
+
+            quizPanel.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.addEventListener('click', () => handleQuizAnswer(btn));
+            });
+
+            document.getElementById('quiz-next-btn').addEventListener('click', () => {
+                quizIndex++;
+                renderQuiz();
+            });
+        }
+
+        function handleQuizAnswer(btn) {
+            if (quizAnswered) return;
+            quizAnswered = true;
+
+            const chosen = btn.getAttribute('data-id');
+            const q = quizQuestions[quizIndex];
+            const correct = chosen === q.answerId;
+
+            quizPanel.querySelectorAll('.quiz-option').forEach(b => {
+                b.disabled = true;
+                const id = b.getAttribute('data-id');
+                if (id === q.answerId) {
+                    b.classList.add('correct');
+                } else if (id === chosen && !correct) {
+                    b.classList.add('incorrect');
+                }
+            });
+
+            const feedback = document.getElementById('quiz-feedback');
+            if (correct) {
+                quizScore++;
+                feedback.className = 'quiz-feedback show correct';
+                feedback.innerHTML = `<strong>Correct.</strong> ${q.explanation}`;
+            } else {
+                const correctDomain = domains.find(d => d.id === q.answerId);
+                feedback.className = 'quiz-feedback show incorrect';
+                feedback.innerHTML = `<strong>Not quite.</strong> The answer is <em>${correctDomain.name}</em>. ${q.explanation}`;
+            }
+
+            const progress = quizPanel.querySelector('.quiz-progress');
+            if (progress) {
+                progress.textContent = `Question ${quizIndex + 1} of ${quizQuestions.length} \u00B7 Score: ${quizScore}`;
+            }
+
+            const nextBtn = document.getElementById('quiz-next-btn');
+            nextBtn.classList.add('show');
+            if (quizIndex === quizQuestions.length - 1) {
+                nextBtn.textContent = 'See Results';
+            }
+        }
+
+        function renderQuizResults() {
+            const total = quizQuestions.length;
+            const perfect = quizScore === total;
+
+            quizPanel.innerHTML = `
+                <div class="quiz-results">
+                    <h2>Quiz Complete</h2>
+                    <div class="score">${quizScore} / ${total}</div>
+                    <p>${perfect
+                        ? 'Perfect. You correctly identified every domain.'
+                        : 'Good work. Review the wheel in Explore mode to reinforce the domains and try again.'}</p>
+                    <button id="quiz-restart-btn">Try Again</button>
+                </div>
+            `;
+
+            document.getElementById('quiz-restart-btn').addEventListener('click', startQuiz);
+
+            if (perfect && window.Celebration && typeof window.Celebration.celebrate === 'function') {
+                window.Celebration.celebrate({ duration: 4000 });
+            }
+        }
+
+        // ---------- Event wiring ----------
+        toggleExamplesBtn.addEventListener('click', toggleExamples);
+        resetBtn.addEventListener('click', resetView);
+        modeExploreBtn.addEventListener('click', () => setMode('explore'));
+        modeQuizBtn.addEventListener('click', () => setMode('quiz'));
+
+        // Initialize
+        drawWheel();
+    </script>
+</body>
+</html>

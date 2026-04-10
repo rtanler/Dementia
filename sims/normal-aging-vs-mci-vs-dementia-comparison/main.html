@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Normal Aging vs. MCI vs. Dementia Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+            padding: 16px;
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        h1 {
+            font-size: 22px;
+            color: #1a3a6c;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #6c757d;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+        .mode-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-bottom: 18px;
+        }
+        .mode-toggle button {
+            background: #e9ecef;
+            border: 1px solid #adb5bd;
+            padding: 8px 22px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #495057;
+            transition: all 0.2s;
+        }
+        .mode-toggle button:first-child {
+            border-radius: 6px 0 0 6px;
+        }
+        .mode-toggle button:last-child {
+            border-radius: 0 6px 6px 0;
+            border-left: none;
+        }
+        .mode-toggle button.active {
+            background: #1a3a6c;
+            color: white;
+            border-color: #1a3a6c;
+        }
+
+        /* Table */
+        .compare-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 4px;
+            table-layout: fixed;
+        }
+        .compare-table th {
+            padding: 10px 8px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 6px;
+            color: #212529;
+        }
+        .compare-table th.col-normal { background: #2e7d32; color: white; }
+        .compare-table th.col-mci { background: #f9a825; color: #212529; }
+        .compare-table th.col-dementia { background: #e65100; color: white; }
+        .compare-table th.dim-head {
+            background: #1a3a6c;
+            color: white;
+            width: 22%;
+        }
+        .compare-table td {
+            padding: 9px 10px;
+            font-size: 12.5px;
+            line-height: 1.35;
+            vertical-align: top;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s, outline 0.15s;
+        }
+        .compare-table td.dim-label {
+            background: #e3ecf7;
+            color: #1a3a6c;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+        }
+        .compare-table td.dim-label:hover {
+            background: #c9dcf0;
+        }
+        .cell-normal { background: #d4edda; color: #1b4d22; }
+        .cell-mci { background: #fff3cd; color: #5a4a00; }
+        .cell-dementia { background: #ffe0cc; color: #5a2800; }
+
+        .compare-table td:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+        }
+        .compare-table tr.row-highlight td {
+            outline: 2px solid #1a3a6c;
+            outline-offset: -2px;
+        }
+        .compare-table td.cell-selected {
+            outline: 3px solid #1a3a6c;
+            outline-offset: -3px;
+        }
+
+        /* Detail panel */
+        #detail-panel {
+            margin-top: 14px;
+            padding: 14px 16px;
+            border-radius: 6px;
+            background: #f1f5fb;
+            border-left: 4px solid #1a3a6c;
+            min-height: 60px;
+            font-size: 13.5px;
+            color: #333;
+        }
+        #detail-panel h3 {
+            font-size: 14px;
+            color: #1a3a6c;
+            margin-bottom: 6px;
+        }
+        #detail-panel .placeholder-text {
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        /* Bottom key message */
+        .key-message {
+            margin-top: 16px;
+            padding: 12px 16px;
+            background: linear-gradient(90deg, #d4edda 0%, #fff3cd 50%, #ffe0cc 100%);
+            border-radius: 6px;
+            font-size: 13px;
+            text-align: center;
+            color: #333;
+            border: 1px solid #dee2e6;
+        }
+        .key-message strong { color: #1a3a6c; }
+
+        /* Quiz mode */
+        #quiz-panel { display: none; }
+        #quiz-panel.active { display: block; }
+        #table-view.hidden { display: none; }
+
+        .quiz-progress {
+            text-align: center;
+            font-size: 13px;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        .quiz-question {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-bottom: 14px;
+        }
+        .quiz-question h3 {
+            font-size: 15px;
+            color: #1a3a6c;
+            margin-bottom: 8px;
+        }
+        .quiz-scenario {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+        .quiz-choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .quiz-choice {
+            padding: 12px 10px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .quiz-choice.normal { background: #d4edda; color: #1b4d22; }
+        .quiz-choice.mci { background: #fff3cd; color: #5a4a00; }
+        .quiz-choice.dementia { background: #ffe0cc; color: #5a2800; }
+        .quiz-choice:hover { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,0.12); }
+        .quiz-choice.correct { border-color: #2e7d32; box-shadow: 0 0 0 3px rgba(46,125,50,0.25); }
+        .quiz-choice.incorrect { border-color: #c62828; box-shadow: 0 0 0 3px rgba(198,40,40,0.25); }
+        .quiz-choice.disabled { pointer-events: none; opacity: 0.85; }
+
+        .quiz-feedback {
+            margin-top: 12px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            display: none;
+        }
+        .quiz-feedback.show { display: block; }
+        .quiz-feedback.correct { background: #d4edda; color: #1b4d22; border-left: 4px solid #2e7d32; }
+        .quiz-feedback.incorrect { background: #f8d7da; color: #721c24; border-left: 4px solid #c62828; }
+
+        .quiz-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+        }
+        .quiz-controls button {
+            background: #1a3a6c;
+            color: white;
+            border: none;
+            padding: 9px 20px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .quiz-controls button:disabled {
+            background: #adb5bd;
+            cursor: not-allowed;
+        }
+        .quiz-controls button:hover:not(:disabled) {
+            background: #14305a;
+        }
+        .quiz-final {
+            text-align: center;
+            padding: 24px;
+            background: #f1f5fb;
+            border-radius: 8px;
+        }
+        .quiz-final h3 {
+            font-size: 20px;
+            color: #1a3a6c;
+            margin-bottom: 10px;
+        }
+        .quiz-final p {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .quiz-final button {
+            background: #1a3a6c;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        @media (max-width: 700px) {
+            .compare-table { font-size: 11px; }
+            .compare-table td, .compare-table th { padding: 6px 5px; font-size: 11px; }
+            .quiz-choices { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Normal Aging vs. MCI vs. Dementia</h1>
+        <p class="subtitle">Compare how these three conditions differ across 10 important dimensions</p>
+
+        <div class="mode-toggle" role="tablist">
+            <button id="btn-explore" class="active" type="button">Explore</button>
+            <button id="btn-quiz" type="button">Quiz</button>
+        </div>
+
+        <!-- Table view -->
+        <div id="table-view">
+            <table class="compare-table" id="compare-table">
+                <thead>
+                    <tr>
+                        <th class="dim-head">Dimension</th>
+                        <th class="col-normal">Normal Aging</th>
+                        <th class="col-mci">Mild Cognitive Impairment (MCI)</th>
+                        <th class="col-dementia">Dementia</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+
+            <div id="detail-panel">
+                <h3 id="detail-title">Click any cell for details</h3>
+                <p class="placeholder-text" id="detail-body">
+                    Select a cell from the table above to see expanded information.
+                    Click a dimension label to highlight an entire row.
+                </p>
+            </div>
+
+            <div class="key-message">
+                <strong>Key Message:</strong> MCI represents a middle ground&mdash;more than normal aging but not yet dementia.
+                Early recognition enables monitoring and intervention.
+            </div>
+        </div>
+
+        <!-- Quiz view -->
+        <div id="quiz-panel">
+            <div id="quiz-content"></div>
+        </div>
+    </main>
+
+    <script src="../shared-libs/celebration.js"></script>
+    <script>
+        // =====================================================
+        // DATA
+        // =====================================================
+        const DIMENSIONS = [
+            {
+                id: 'memory',
+                label: 'Memory Changes',
+                normal: {
+                    short: 'Occasional forgetfulness, remembers later',
+                    detail: 'People with normal aging may forget a name or where they put their keys, but they usually remember later that day. These lapses do not interfere with daily life. Example: forgetting a word during conversation but recalling it a few minutes later.'
+                },
+                mci: {
+                    short: 'Frequent forgetfulness, may not remember later, but compensates',
+                    detail: 'In MCI, memory problems are noticeable to the person and their family. They may forget recent conversations or repeat questions. However, they still manage daily tasks using strategies like notebooks and reminders.'
+                },
+                dementia: {
+                    short: 'Severe memory problems, cannot compensate, affects daily life',
+                    detail: 'Memory loss in dementia is severe and persistent. People forget important events, recent conversations entirely, and may not recognize family members as the condition progresses. Memory aids no longer help.'
+                }
+            },
+            {
+                id: 'independence',
+                label: 'Independence',
+                normal: {
+                    short: 'Fully independent in all activities',
+                    detail: 'Normal aging does not limit independence. People continue to handle finances, drive, cook, and manage medications on their own without assistance.'
+                },
+                mci: {
+                    short: 'Independent, may take longer or use strategies',
+                    detail: 'People with MCI are still independent but may take more time to complete complex tasks. They often rely on lists, reminders, and alarms to stay on track. Driving is typically still safe.'
+                },
+                dementia: {
+                    short: 'Requires assistance with complex or routine tasks',
+                    detail: 'Dementia affects the ability to manage finances, medications, cooking, and eventually basic self-care like bathing and dressing. Affected activities include: managing money, driving, shopping, housekeeping, and personal hygiene.'
+                }
+            },
+            {
+                id: 'awareness',
+                label: 'Awareness of Problems',
+                normal: {
+                    short: 'Usually aware, may joke about "senior moments"',
+                    detail: 'People with normal age-related changes are typically self-aware and may laugh about minor lapses. They do not feel alarmed or distressed by occasional forgetfulness.'
+                },
+                mci: {
+                    short: 'Aware and often concerned',
+                    detail: 'MCI is often noticed by the person themselves, who may feel worried. This awareness frequently prompts them to seek medical evaluation, which is important for early diagnosis.'
+                },
+                dementia: {
+                    short: 'Often unaware or minimizes problems',
+                    detail: 'As dementia progresses, many people lose insight into their own deficits&mdash;a condition called anosognosia. They may insist nothing is wrong even when family members see clear problems.'
+                }
+            },
+            {
+                id: 'testing',
+                label: 'Testing Performance',
+                normal: {
+                    short: 'Scores within expected range for age/education',
+                    detail: 'On cognitive tests (like the MMSE or MoCA), scores fall within the normal range adjusted for age and education. MMSE: typically 27 to 30 out of 30. MoCA: 26 or higher.'
+                },
+                mci: {
+                    short: 'Scores below expected but not in dementia range',
+                    detail: 'Testing reveals objective deficits&mdash;usually 1 to 1.5 standard deviations below average. MMSE: 24 to 27. MoCA: 18 to 25. Function in daily life is preserved.'
+                },
+                dementia: {
+                    short: 'Scores in impaired range',
+                    detail: 'Cognitive testing shows significant impairment across multiple domains. MMSE: below 24. MoCA: below 18. Scores worsen over time as the disease progresses.'
+                }
+            },
+            {
+                id: 'progression',
+                label: 'Rate of Progression',
+                normal: {
+                    short: 'Stable or very gradually changing over many years',
+                    detail: 'Cognition remains stable or changes very slowly across decades. Small changes in processing speed may occur but do not affect function.'
+                },
+                mci: {
+                    short: 'Noticeable change over 1-2 years',
+                    detail: 'Changes in MCI are typically noticeable over 1 to 2 years. Some people remain stable, some improve, and others progress to dementia over time.'
+                },
+                dementia: {
+                    short: 'Progressive worsening over months to years',
+                    detail: 'Dementia is progressive by nature, with worsening symptoms over months to years. The pace varies by type&mdash;Alzheimer\'s typically progresses over 8 to 10 years.'
+                }
+            },
+            {
+                id: 'compensate',
+                label: 'Ability to Compensate',
+                normal: {
+                    short: 'Compensatory strategies work well (lists, calendars)',
+                    detail: 'Simple strategies like to-do lists, calendars, and phone reminders are effective at managing normal age-related forgetfulness. These tools support, rather than replace, memory.'
+                },
+                mci: {
+                    short: 'Compensation required more often but still effective',
+                    detail: 'People with MCI rely heavily on strategies: written notes, smartphone alarms, medication organizers, and routines. These tools still allow them to function well day-to-day.'
+                },
+                dementia: {
+                    short: 'Compensation insufficient for functioning',
+                    detail: 'In dementia, compensation strategies eventually stop working because the person forgets to use them or cannot understand how. External support from caregivers becomes necessary.'
+                }
+            },
+            {
+                id: 'work',
+                label: 'Impact on Work/Hobbies',
+                normal: {
+                    short: 'Can perform complex work, pursue hobbies',
+                    detail: 'Normal aging does not prevent complex work or enjoyable hobbies. People continue careers, learn new skills, and pursue interests without difficulty.'
+                },
+                mci: {
+                    short: 'May need extra effort but can continue',
+                    detail: 'People with MCI may find work tasks take more effort or time, but they can still perform their jobs and enjoy hobbies&mdash;perhaps with minor accommodations.'
+                },
+                dementia: {
+                    short: 'Cannot perform complex work, may abandon hobbies',
+                    detail: 'Complex work becomes impossible, and beloved hobbies are often abandoned because they become too confusing or frustrating. Retirement is usually necessary.'
+                }
+            },
+            {
+                id: 'social',
+                label: 'Social Functioning',
+                normal: {
+                    short: 'Normal social interactions',
+                    detail: 'Social functioning is fully preserved. Conversations flow naturally, friendships are maintained, and new relationships can be formed.'
+                },
+                mci: {
+                    short: 'Normal social functioning',
+                    detail: 'Social functioning is generally preserved in MCI. Some people may feel self-conscious about word-finding difficulties but still participate fully in social life.'
+                },
+                dementia: {
+                    short: 'Difficulty with complex social situations, may withdraw',
+                    detail: 'Dementia makes complex social situations overwhelming. Affected situations include: group conversations, noisy restaurants, meeting new people, and family gatherings. Withdrawal is common.'
+                }
+            },
+            {
+                id: 'risk',
+                label: 'Risk of Progression',
+                normal: {
+                    short: '1-2% per year develop dementia',
+                    detail: 'About 1 to 2 percent of older adults with normal cognition develop dementia each year. Over 5 years, this is roughly 5 to 10 percent of the group.'
+                },
+                mci: {
+                    short: '10-15% per year develop dementia',
+                    detail: 'About 10 to 15 percent of people with MCI progress to dementia each year. Over 5 years, roughly 50 percent will have developed dementia, though some stabilize or even improve.'
+                },
+                dementia: {
+                    short: 'Progressive by definition',
+                    detail: 'Dementia is progressive by definition. The question is not whether it will worsen, but how quickly. Different types have different rates of progression.'
+                }
+            },
+            {
+                id: 'treatment',
+                label: 'Medical Intervention',
+                normal: {
+                    short: 'No specific treatment needed',
+                    detail: 'Normal aging requires no specific treatment. Healthy habits&mdash;exercise, sleep, diet, social engagement&mdash;support lifelong brain health.'
+                },
+                mci: {
+                    short: 'Monitoring, lifestyle interventions, treat underlying conditions',
+                    detail: 'MCI management includes regular monitoring, treating conditions like sleep apnea or depression, and encouraging exercise, diet, and cognitive engagement. Some medications are being studied.'
+                },
+                dementia: {
+                    short: 'Medications, comprehensive care planning',
+                    detail: 'Dementia care involves medications (cholinesterase inhibitors, memantine, and newer anti-amyloid drugs), caregiver support, safety planning, legal and financial planning, and eventually long-term care.'
+                }
+            }
+        ];
+
+        const QUIZ_SCENARIOS = [
+            {
+                scenario: '70-year-old occasionally forgets a name but remembers it later that day. Independent in all activities.',
+                answer: 'normal',
+                explanation: 'This is normal aging. Occasional name-forgetting with full independence is a typical age-related change.'
+            },
+            {
+                scenario: '73-year-old needs to use a notebook to track appointments now, scores below average on memory tests but still works part-time and lives alone.',
+                answer: 'mci',
+                explanation: 'This describes MCI. The person has objective memory decline on testing but still functions independently using compensation strategies.'
+            },
+            {
+                scenario: '80-year-old gets lost in own neighborhood, can\'t manage finances, and family must help with medication.',
+                answer: 'dementia',
+                explanation: 'This is dementia. Getting lost in familiar places and losing the ability to manage finances and medications indicates significant impairment of daily function.'
+            },
+            {
+                scenario: '68-year-old is aware she\'s slower than before but compensates with lists and reminders, still pursuing hobbies.',
+                answer: 'normal',
+                explanation: 'This is normal aging. She is fully aware, her compensation strategies work completely, and her hobbies are unaffected.'
+            },
+            {
+                scenario: '75-year-old often unaware of memory problems, requires help with bathing and dressing.',
+                answer: 'dementia',
+                explanation: 'This is dementia. Loss of insight (anosognosia) combined with needing help for basic self-care tasks are classic signs.'
+            }
+        ];
+
+        // =====================================================
+        // BUILD TABLE
+        // =====================================================
+        const tableBody = document.getElementById('table-body');
+        DIMENSIONS.forEach((dim, idx) => {
+            const tr = document.createElement('tr');
+            tr.dataset.dim = dim.id;
+
+            const tdLabel = document.createElement('td');
+            tdLabel.className = 'dim-label';
+            tdLabel.textContent = (idx + 1) + '. ' + dim.label;
+            tdLabel.addEventListener('click', () => toggleRowHighlight(tr, dim));
+            tr.appendChild(tdLabel);
+
+            ['normal', 'mci', 'dementia'].forEach(col => {
+                const td = document.createElement('td');
+                td.className = 'cell-' + col;
+                td.textContent = dim[col].short;
+                td.addEventListener('click', () => selectCell(td, dim, col));
+                tr.appendChild(td);
+            });
+
+            tableBody.appendChild(tr);
+        });
+
+        function clearSelection() {
+            document.querySelectorAll('.compare-table tr').forEach(r => r.classList.remove('row-highlight'));
+            document.querySelectorAll('.compare-table td').forEach(c => c.classList.remove('cell-selected'));
+        }
+
+        function selectCell(td, dim, col) {
+            clearSelection();
+            td.classList.add('cell-selected');
+            const colName = col === 'normal' ? 'Normal Aging' : col === 'mci' ? 'Mild Cognitive Impairment' : 'Dementia';
+            document.getElementById('detail-title').innerHTML = dim.label + ' &mdash; ' + colName;
+            document.getElementById('detail-body').innerHTML = dim[col].detail;
+            document.getElementById('detail-body').classList.remove('placeholder-text');
+        }
+
+        function toggleRowHighlight(tr, dim) {
+            const wasHighlighted = tr.classList.contains('row-highlight');
+            clearSelection();
+            if (!wasHighlighted) {
+                tr.classList.add('row-highlight');
+                document.getElementById('detail-title').textContent = dim.label + ' - Comparison';
+                document.getElementById('detail-body').innerHTML =
+                    '<strong style="color:#1b4d22">Normal:</strong> ' + dim.normal.short + '<br>' +
+                    '<strong style="color:#5a4a00">MCI:</strong> ' + dim.mci.short + '<br>' +
+                    '<strong style="color:#5a2800">Dementia:</strong> ' + dim.dementia.short;
+                document.getElementById('detail-body').classList.remove('placeholder-text');
+            }
+        }
+
+        // =====================================================
+        // MODE TOGGLE
+        // =====================================================
+        const btnExplore = document.getElementById('btn-explore');
+        const btnQuiz = document.getElementById('btn-quiz');
+        const tableView = document.getElementById('table-view');
+        const quizPanel = document.getElementById('quiz-panel');
+
+        btnExplore.addEventListener('click', () => {
+            btnExplore.classList.add('active');
+            btnQuiz.classList.remove('active');
+            tableView.classList.remove('hidden');
+            quizPanel.classList.remove('active');
+        });
+
+        btnQuiz.addEventListener('click', () => {
+            btnQuiz.classList.add('active');
+            btnExplore.classList.remove('active');
+            tableView.classList.add('hidden');
+            quizPanel.classList.add('active');
+            startQuiz();
+        });
+
+        // =====================================================
+        // QUIZ LOGIC
+        // =====================================================
+        let quizIndex = 0;
+        let quizScore = 0;
+        let quizAnswered = false;
+
+        function startQuiz() {
+            quizIndex = 0;
+            quizScore = 0;
+            renderQuizQuestion();
+        }
+
+        function renderQuizQuestion() {
+            const content = document.getElementById('quiz-content');
+            if (quizIndex >= QUIZ_SCENARIOS.length) {
+                renderQuizFinal();
+                return;
+            }
+            quizAnswered = false;
+            const q = QUIZ_SCENARIOS[quizIndex];
+            content.innerHTML = `
+                <div class="quiz-progress">Question ${quizIndex + 1} of ${QUIZ_SCENARIOS.length} &middot; Score: ${quizScore}</div>
+                <div class="quiz-question">
+                    <h3>Which condition best fits this person?</h3>
+                    <p class="quiz-scenario">${q.scenario}</p>
+                    <div class="quiz-choices">
+                        <div class="quiz-choice normal" data-answer="normal">Normal Aging</div>
+                        <div class="quiz-choice mci" data-answer="mci">MCI</div>
+                        <div class="quiz-choice dementia" data-answer="dementia">Dementia</div>
+                    </div>
+                    <div class="quiz-feedback" id="quiz-feedback"></div>
+                </div>
+                <div class="quiz-controls">
+                    <div></div>
+                    <button id="quiz-next" disabled>Next</button>
+                </div>
+            `;
+            content.querySelectorAll('.quiz-choice').forEach(choice => {
+                choice.addEventListener('click', () => handleQuizAnswer(choice, q));
+            });
+            document.getElementById('quiz-next').addEventListener('click', () => {
+                quizIndex++;
+                renderQuizQuestion();
+            });
+        }
+
+        function handleQuizAnswer(choiceEl, q) {
+            if (quizAnswered) return;
+            quizAnswered = true;
+            const chosen = choiceEl.dataset.answer;
+            const feedback = document.getElementById('quiz-feedback');
+            document.querySelectorAll('.quiz-choice').forEach(c => c.classList.add('disabled'));
+
+            if (chosen === q.answer) {
+                quizScore++;
+                choiceEl.classList.add('correct');
+                feedback.className = 'quiz-feedback show correct';
+                feedback.innerHTML = '<strong>Correct!</strong> ' + q.explanation;
+            } else {
+                choiceEl.classList.add('incorrect');
+                const correctEl = document.querySelector('.quiz-choice[data-answer="' + q.answer + '"]');
+                if (correctEl) correctEl.classList.add('correct');
+                feedback.className = 'quiz-feedback show incorrect';
+                feedback.innerHTML = '<strong>Not quite.</strong> ' + q.explanation;
+            }
+            document.getElementById('quiz-next').disabled = false;
+            if (quizIndex === QUIZ_SCENARIOS.length - 1) {
+                document.getElementById('quiz-next').textContent = 'See Results';
+            }
+        }
+
+        function renderQuizFinal() {
+            const content = document.getElementById('quiz-content');
+            const perfect = quizScore === QUIZ_SCENARIOS.length;
+            content.innerHTML = `
+                <div class="quiz-final">
+                    <h3>${perfect ? 'Perfect Score!' : 'Quiz Complete'}</h3>
+                    <p>You scored <strong>${quizScore} out of ${QUIZ_SCENARIOS.length}</strong>.</p>
+                    <p>${perfect
+                        ? 'Excellent work! You can reliably distinguish normal aging, MCI, and dementia.'
+                        : 'Review the comparison table and try again to master these distinctions.'}</p>
+                    <button id="quiz-restart">Try Again</button>
+                </div>
+            `;
+            document.getElementById('quiz-restart').addEventListener('click', startQuiz);
+            if (perfect && window.Celebration && typeof window.Celebration.celebrate === 'function') {
+                window.Celebration.celebrate({ duration: 4000 });
+            }
+        }
+    </script>
+</body>
+</html>

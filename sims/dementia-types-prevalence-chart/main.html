@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Dementia Types Prevalence Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="../shared-libs/celebration.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+            line-height: 1.5;
+        }
+        main {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 16px;
+            background: #ffffff;
+        }
+        .title-bar {
+            border-bottom: 3px solid #1e3a8a;
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+        }
+        .title-bar h1 {
+            font-size: 22px;
+            color: #1e3a8a;
+            margin: 0;
+        }
+        .title-bar p {
+            font-size: 14px;
+            color: #5b6b84;
+            margin-top: 4px;
+        }
+
+        /* Controls */
+        .control-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            background: #f1f5f9;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin-bottom: 12px;
+        }
+        .toggle-group {
+            display: inline-flex;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .toggle-btn {
+            background: #ffffff;
+            border: none;
+            padding: 8px 18px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .toggle-btn:not(:last-child) {
+            border-right: 1px solid #cbd5e1;
+        }
+        .toggle-btn.active {
+            background: #1e3a8a;
+            color: #ffffff;
+        }
+        .toggle-btn:hover:not(.active) {
+            background: #e2e8f0;
+        }
+        .total-label {
+            font-size: 13px;
+            color: #475569;
+            font-weight: 600;
+        }
+        .total-label strong { color: #1e3a8a; font-size: 15px; }
+
+        /* Chart */
+        .chart-wrap {
+            position: relative;
+            height: 450px;
+            width: 100%;
+            margin-bottom: 14px;
+        }
+
+        /* Info panel */
+        .info-panel {
+            background: #eef2ff;
+            border-left: 5px solid #1e3a8a;
+            border-radius: 6px;
+            padding: 14px 16px;
+            margin-bottom: 14px;
+            min-height: 120px;
+        }
+        .info-panel h3 {
+            margin: 0 0 6px 0;
+            font-size: 16px;
+            color: #1e3a8a;
+        }
+        .info-panel .info-pct {
+            display: inline-block;
+            background: #1e3a8a;
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .info-panel p {
+            font-size: 13.5px;
+            color: #334155;
+            margin: 4px 0;
+        }
+        .info-panel .label {
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+        .info-placeholder {
+            color: #64748b;
+            font-style: italic;
+            font-size: 13.5px;
+        }
+
+        /* About panel */
+        .about-panel {
+            background: #fffbeb;
+            border: 1px solid #fbbf24;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin-bottom: 14px;
+        }
+        .about-panel h3 {
+            font-size: 15px;
+            color: #92400e;
+            margin-bottom: 6px;
+        }
+        .about-panel ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .about-panel li {
+            font-size: 13.5px;
+            color: #78350f;
+            margin: 3px 0;
+        }
+
+        /* Quiz */
+        .quiz-section {
+            background: #f0fdf4;
+            border: 2px solid #22c55e;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+        .quiz-section h2 {
+            font-size: 18px;
+            color: #166534;
+            margin-bottom: 10px;
+        }
+        .quiz-q {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 12px 14px;
+            margin-bottom: 10px;
+            border: 1px solid #bbf7d0;
+        }
+        .quiz-q p.question {
+            font-weight: 600;
+            color: #14532d;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .quiz-option {
+            display: block;
+            padding: 8px 12px;
+            margin: 5px 0;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13.5px;
+            transition: all 0.15s;
+        }
+        .quiz-option:hover {
+            background: #e2e8f0;
+        }
+        .quiz-option.correct {
+            background: #bbf7d0;
+            border-color: #22c55e;
+            color: #14532d;
+            font-weight: 600;
+        }
+        .quiz-option.incorrect {
+            background: #fecaca;
+            border-color: #ef4444;
+            color: #7f1d1d;
+        }
+        .quiz-option.disabled {
+            cursor: default;
+            pointer-events: none;
+        }
+        .quiz-feedback {
+            margin-top: 6px;
+            font-size: 13px;
+            font-style: italic;
+            color: #475569;
+            min-height: 18px;
+        }
+        .quiz-summary {
+            margin-top: 10px;
+            padding: 10px 12px;
+            background: #dcfce7;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            color: #14532d;
+            font-size: 14px;
+            display: none;
+        }
+        .quiz-summary.show { display: block; }
+
+        @media (max-width: 600px) {
+            .chart-wrap { height: 360px; }
+            .title-bar h1 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="title-bar">
+        <h1>Dementia Types: Relative Prevalence</h1>
+        <p>Explore how common each type of dementia is among the approximately 55 million people living with dementia worldwide.</p>
+    </div>
+
+    <div class="control-row">
+        <div class="toggle-group" role="tablist" aria-label="Chart type">
+            <button class="toggle-btn active" id="btn-pie" type="button">Pie Chart</button>
+            <button class="toggle-btn" id="btn-bar" type="button">Bar Chart</button>
+        </div>
+        <div class="total-label">Total cases worldwide: <strong>~55 million</strong></div>
+    </div>
+
+    <div class="chart-wrap">
+        <canvas id="prevalence-chart"></canvas>
+    </div>
+
+    <div class="info-panel" id="info-panel">
+        <span class="info-placeholder">Click a slice or bar above to see details about that type of dementia.</span>
+    </div>
+
+    <div class="about-panel">
+        <h3>Did You Know?</h3>
+        <ul>
+            <li><strong>60-70%:</strong> Alzheimer's disease is by far the most common type of dementia.</li>
+            <li><strong>Mixed dementia</strong> often goes undiagnosed until autopsy, when multiple brain changes are discovered.</li>
+            <li><strong>Frontotemporal dementia (FTD)</strong> is the most common form of dementia in people under 60.</li>
+        </ul>
+    </div>
+
+    <div class="quiz-section">
+        <h2>Check Your Understanding</h2>
+        <div id="quiz-container"></div>
+        <div class="quiz-summary" id="quiz-summary"></div>
+    </div>
+</main>
+
+<script>
+// ------- Data -------
+const TOTAL_CASES = 55_000_000;
+
+const dementiaTypes = [
+    {
+        label: "Alzheimer's disease",
+        pct: 65,
+        pctRange: "60-70%",
+        color: "#4D96FF",
+        age: "Typically 65+; most common after age 75",
+        characteristics: "Gradual memory loss, difficulty with familiar tasks, confusion, changes in mood. Caused by amyloid plaques and tau tangles in the brain."
+    },
+    {
+        label: "Vascular dementia",
+        pct: 17,
+        pctRange: "15-20%",
+        color: "#FF8E53",
+        age: "Typically 65+; often follows a stroke",
+        characteristics: "Step-wise decline in thinking skills after strokes or reduced blood flow to the brain. Judgment and planning are often affected early."
+    },
+    {
+        label: "Mixed dementia",
+        pct: 12,
+        pctRange: "10-15%",
+        color: "#9B59B6",
+        age: "Typically 75+; more common with advanced age",
+        characteristics: "Two or more types present at the same time, most often Alzheimer's plus vascular changes. Often undiagnosed until autopsy."
+    },
+    {
+        label: "Lewy body dementia",
+        pct: 7,
+        pctRange: "5-10%",
+        color: "#6BCB77",
+        age: "Typically 50-85",
+        characteristics: "Visual hallucinations, sleep problems, movement symptoms similar to Parkinson's, and fluctuating alertness."
+    },
+    {
+        label: "Frontotemporal dementia",
+        pct: 6,
+        pctRange: "5-10%",
+        color: "#FFD93D",
+        age: "Often 45-65; most common dementia under 60",
+        characteristics: "Changes in personality, behavior, and language skills. Memory may be preserved early on, which can delay diagnosis."
+    },
+    {
+        label: "Other rare types",
+        pct: 3,
+        pctRange: "1-5%",
+        color: "#95A5A6",
+        age: "Varies widely by condition",
+        characteristics: "Includes Huntington's disease, Creutzfeldt-Jakob disease, normal pressure hydrocephalus, and other uncommon forms of dementia."
+    }
+];
+
+function formatCases(pct) {
+    const n = Math.round(TOTAL_CASES * pct / 100);
+    return (n / 1_000_000).toFixed(1) + " million";
+}
+
+// ------- Chart setup -------
+const ctx = document.getElementById('prevalence-chart').getContext('2d');
+let currentType = 'pie';
+let chart;
+
+function buildChart(type) {
+    if (chart) chart.destroy();
+    const labels = dementiaTypes.map(d => d.label);
+    const data = dementiaTypes.map(d => d.pct);
+    const colors = dementiaTypes.map(d => d.color);
+
+    const common = {
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Percentage of dementia cases',
+                data: data,
+                backgroundColor: colors,
+                borderColor: '#ffffff',
+                borderWidth: 2,
+                hoverOffset: 10
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            onClick: (evt, elements) => {
+                if (elements.length > 0) {
+                    const idx = elements[0].index;
+                    showInfo(idx);
+                }
+            },
+            plugins: {
+                legend: {
+                    position: type === 'pie' ? 'right' : 'top',
+                    labels: { font: { size: 12 }, boxWidth: 14 }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) {
+                            const d = dementiaTypes[ctx.dataIndex];
+                            return [
+                                `${d.label}: ${d.pctRange}`,
+                                `~${formatCases(d.pct)} people worldwide`
+                            ];
+                        },
+                        afterLabel: function(ctx) {
+                            return 'Click for details';
+                        }
+                    }
+                }
+            }
+        }
+    };
+
+    if (type === 'pie') {
+        chart = new Chart(ctx, { type: 'pie', ...common });
+    } else {
+        common.options.scales = {
+            y: {
+                beginAtZero: true,
+                max: 75,
+                title: { display: true, text: 'Percentage of cases (%)' },
+                ticks: { callback: v => v + '%' }
+            },
+            x: { ticks: { font: { size: 11 } } }
+        };
+        common.options.plugins.legend.display = false;
+        chart = new Chart(ctx, { type: 'bar', ...common });
+    }
+}
+
+function showInfo(idx) {
+    const d = dementiaTypes[idx];
+    const panel = document.getElementById('info-panel');
+    panel.innerHTML = `
+        <h3>${d.label}<span class="info-pct">${d.pctRange}</span></h3>
+        <p><span class="label">Estimated cases worldwide:</span> ~${formatCases(d.pct)}</p>
+        <p><span class="label">Typical age of onset:</span> ${d.age}</p>
+        <p><span class="label">Key characteristics:</span> ${d.characteristics}</p>
+    `;
+}
+
+// Toggle buttons
+document.getElementById('btn-pie').addEventListener('click', () => {
+    currentType = 'pie';
+    document.getElementById('btn-pie').classList.add('active');
+    document.getElementById('btn-bar').classList.remove('active');
+    buildChart('pie');
+});
+document.getElementById('btn-bar').addEventListener('click', () => {
+    currentType = 'bar';
+    document.getElementById('btn-bar').classList.add('active');
+    document.getElementById('btn-pie').classList.remove('active');
+    buildChart('bar');
+});
+
+buildChart('pie');
+
+// ------- Quiz -------
+const quizQuestions = [
+    {
+        q: "Which is the MOST common type of dementia?",
+        options: ["Vascular dementia", "Alzheimer's disease", "Lewy body dementia", "Frontotemporal dementia"],
+        answer: 1,
+        explain: "Alzheimer's disease accounts for roughly 60-70% of all dementia cases, making it by far the most common type."
+    },
+    {
+        q: "Which dementia is most common in people UNDER 60?",
+        options: ["Alzheimer's disease", "Vascular dementia", "Frontotemporal dementia (FTD)", "Mixed dementia"],
+        answer: 2,
+        explain: "FTD often begins between ages 45 and 65, making it the most common form of dementia in people under 60."
+    },
+    {
+        q: "Mixed dementia often goes undiagnosed until...",
+        options: ["Early screening", "A blood test", "Autopsy", "Age 70"],
+        answer: 2,
+        explain: "Because mixed dementia involves overlapping brain changes, it is frequently only confirmed at autopsy."
+    },
+    {
+        q: "Vascular dementia accounts for approximately what percent of cases?",
+        options: ["1-5%", "5-10%", "15-20%", "30-40%"],
+        answer: 2,
+        explain: "Vascular dementia makes up about 15-20% of dementia cases, making it the second most common type."
+    }
+];
+
+const quizState = {
+    answered: new Array(quizQuestions.length).fill(false),
+    correct: 0
+};
+
+function buildQuiz() {
+    const container = document.getElementById('quiz-container');
+    quizQuestions.forEach((q, qi) => {
+        const qDiv = document.createElement('div');
+        qDiv.className = 'quiz-q';
+        const qText = document.createElement('p');
+        qText.className = 'question';
+        qText.textContent = `${qi + 1}. ${q.q}`;
+        qDiv.appendChild(qText);
+        q.options.forEach((opt, oi) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'quiz-option';
+            btn.textContent = opt;
+            btn.addEventListener('click', () => handleAnswer(qi, oi, qDiv));
+            qDiv.appendChild(btn);
+        });
+        const fb = document.createElement('div');
+        fb.className = 'quiz-feedback';
+        qDiv.appendChild(fb);
+        container.appendChild(qDiv);
+    });
+}
+
+function handleAnswer(qi, oi, qDiv) {
+    if (quizState.answered[qi]) return;
+    quizState.answered[qi] = true;
+    const q = quizQuestions[qi];
+    const buttons = qDiv.querySelectorAll('.quiz-option');
+    buttons.forEach((b, i) => {
+        b.classList.add('disabled');
+        if (i === q.answer) b.classList.add('correct');
+        else if (i === oi) b.classList.add('incorrect');
+    });
+    const fb = qDiv.querySelector('.quiz-feedback');
+    if (oi === q.answer) {
+        quizState.correct++;
+        fb.textContent = 'Correct! ' + q.explain;
+        fb.style.color = '#166534';
+    } else {
+        fb.textContent = q.explain;
+        fb.style.color = '#7f1d1d';
+    }
+    checkQuizComplete();
+}
+
+function checkQuizComplete() {
+    if (quizState.answered.every(a => a)) {
+        const summary = document.getElementById('quiz-summary');
+        summary.classList.add('show');
+        summary.textContent = `You scored ${quizState.correct} out of ${quizQuestions.length}.`;
+        if (quizState.correct === quizQuestions.length) {
+            summary.textContent += ' Excellent work!';
+            if (window.Celebration && typeof window.Celebration.celebrate === 'function') {
+                window.Celebration.celebrate({ duration: 4000 });
+            }
+        } else {
+            summary.textContent += ' Review the chart above and try the questions again next time.';
+        }
+    }
+}
+
+buildQuiz();
+</script>
+</body>
+</html>

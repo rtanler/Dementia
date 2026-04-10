@@ -1,0 +1,21 @@
+{
+  "title": "Behavior Management Decision Tree",
+  "description": "Apply systematic problem-solving to challenging behaviors in moderate-stage dementia (Bloom Level 3 - Apply)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "behavior-management-decision-tree",
+  "library": "Custom HTML/CSS/JavaScript",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "Apply, use, implement, solve",
+  "completion_status": "implemented",
+  "chapter_number": 6,
+  "chapter_title": "Progression Through Dementia Stages",
+  "chapter_dir": "06-dementia-stages"
+}
