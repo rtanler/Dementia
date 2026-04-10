@@ -78,7 +78,7 @@ This process happens incredibly fast—in just milliseconds—allowing you to pe
 
 #### Diagram: Synaptic Communication
 
-<iframe src="../../sims/synaptic-communication/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/synaptic-communication/index.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Synaptic Communication Step-Through MicroSim</summary>
@@ -228,7 +228,7 @@ The cerebral cortex has two hemispheres (left and right) connected by a thick bu
 
 #### Diagram: The Four Lobes of the Brain
 
-<iframe src="../../sims/brain-lobes-interactive/index.html" width="100%" height="550px"></iframe>
+<iframe src="../../sims/brain-lobes-interactive/index.html" width="100%" height="550px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Brain Lobes Explorer</summary>
@@ -438,7 +438,7 @@ This is excellent news for brain health. Engaging in activities that promote neu
 
 #### Diagram: Neuroplasticity in Action
 
-<iframe src="../../sims/neuroplasticity-demo/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/neuroplasticity-demo/index.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Neuroplasticity Learning MicroSim</summary>
@@ -631,13 +631,14 @@ Let's review the essential concepts from this chapter:
 
 In Chapter 3, we'll build on this anatomical foundation to explore the different types of dementia and understand how each type affects specific brain regions and neural systems in characteristic ways.
 
-???+ question "Test Your Understanding - Click to expand"
-    Before moving to the next chapter, reflect on these questions:
+## Test Your Understanding
 
-    1. How do neurons communicate across synapses? Can you describe each step?
-    2. What are the main functions of each of the four lobes of the cerebral cortex?
-    3. Why is the hippocampus so important for memory, and why is its damage particularly devastating in Alzheimer's disease?
-    4. What is neuroplasticity, and how does it relate to cognitive reserve?
-    5. How does understanding normal brain structure help you understand what goes wrong in dementia?
+Before moving to the next chapter, reflect on these questions:
 
-    If you can answer these questions, you've mastered the essential neuroanatomy and are ready to learn about different types of dementia in Chapter 3.
+1. How do neurons communicate across synapses? Can you describe each step?
+2. What are the main functions of each of the four lobes of the cerebral cortex?
+3. Why is the hippocampus so important for memory, and why is its damage particularly devastating in Alzheimer's disease?
+4. What is neuroplasticity, and how does it relate to cognitive reserve?
+5. How does understanding normal brain structure help you understand what goes wrong in dementia?
+
+If you can answer these questions, you've mastered the essential neuroanatomy and are ready to learn about different types of dementia in Chapter 3.

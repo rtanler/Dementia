@@ -72,7 +72,7 @@ The brain serves as your body's command center, controlling everything from your
 
 #### Diagram: The Brain's Major Regions
 
-<iframe src="../../sims/brain-regions-overview/index.html" width="100%" height="550px"></iframe>
+<iframe src="../../sims/the-brain-s-major-regions/main.html" width="100%" height="700px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Brain Regions Overview Interactive Diagram</summary>
@@ -208,7 +208,7 @@ In dementia, different types of memory are affected at different stages. Early-s
 
 #### Diagram: How Memory Formation Works
 
-<iframe src="../../sims/memory-formation-process/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/how-memory-formation-works/main.html" width="100%" height="700px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Memory Formation Process MicroSim</summary>
@@ -290,6 +290,72 @@ Default state: Stage 1 visible, others hidden
 Animation: Smooth transitions between stages (300ms)
 </details>
 
+#### Check Your Understanding: Memory Formation
+
+#### 1. The memory stage that "gathers information from the senses" is called what?
+
+<div class="upper-alpha" markdown>
+1. Retrieval
+2. Encoding
+3. Consolidation
+4. Forgetting
+</div>
+
+??? question "Show Answer"
+    The correct answer is **B**. Encoding is the first stage of memory formation, where your senses capture input — for example, Sarah's face, her voice saying "Hi, I'm Sarah," and the party setting around you. Without encoding, no memory can form. Retrieval (A) happens later when you recognize Sarah again. Consolidation (C) is part of storage, not the initial sensory capture. Forgetting (D) is the loss of memory, not its formation.
+
+    **Concept Tested:** Memory Formation — Encoding
+
+---
+
+#### 2. Which brain region consolidates new memories before they move to long-term storage?
+
+<div class="upper-alpha" markdown>
+1. Cerebellum
+2. Amygdala
+3. Hippocampus
+4. Brain stem
+</div>
+
+??? question "Show Answer"
+    The correct answer is **C**. The hippocampus links face to name, tags context (party, Friday, happy), and consolidates the temporary memory before it moves to long-term storage in the cortex. The cerebellum (A) coordinates movement and balance. The amygdala (B) processes emotion. The brain stem (D) handles automatic functions like breathing. Damage to the hippocampus is one reason early-stage dementia disrupts new memory formation while leaving older memories intact.
+
+    **Concept Tested:** Memory Formation — Hippocampus
+
+---
+
+#### 3. Memories become permanent when they are stored in which brain structure?
+
+<div class="upper-alpha" markdown>
+1. Hippocampus
+2. Cerebral cortex
+3. Spinal cord
+4. Optic nerve
+</div>
+
+??? question "Show Answer"
+    The correct answer is **B**. With repetition and sleep, memories move from the hippocampus to the cerebral cortex for permanent storage. The hippocampus (A) holds memories temporarily but does not store them permanently. The spinal cord (C) carries signals between the brain and the body and is not involved in memory storage. The optic nerve (D) carries visual information from the eye to the brain and has no memory-storage role.
+
+    **Concept Tested:** Memory Formation — Long-term Storage
+
+---
+
+#### 4. In dementia, why are old memories (such as childhood experiences) often retained better than recent memories?
+
+<div class="upper-alpha" markdown>
+1. Old memories live in the damaged hippocampus and are protected
+2. Old memories live in the cortex and no longer depend on the damaged hippocampus
+3. Old memories are kept in a short-term memory buffer
+4. Old memories live only in the sensory cortex
+</div>
+
+??? question "Show Answer"
+    The correct answer is **B**. Old memories already live in the cortex, where they no longer depend on the damaged hippocampus, so they survive much longer than newly formed memories. This is why a person with dementia may not remember what they ate for breakfast but can still recall details of their wedding day. Option A is the opposite of the truth — the hippocampus is damaged, not protected. Option C confuses long-term memory with the brief short-term buffer. Option D narrows storage to a single sensory area, which is not how memory works.
+
+    **Concept Tested:** Memory in Dementia
+
+---
+
 ## Attention: The Gateway to Learning
 
 Before you can remember something, you first need to pay **attention** to it. Attention is the cognitive process of selectively concentrating on certain information while ignoring other information. It's like a spotlight that illuminates what's important while keeping everything else in the shadows.
@@ -349,7 +415,7 @@ Executive function problems are common in dementia and can be particularly chall
 
 #### Diagram: Executive Function in Daily Life
 
-<iframe src="../../sims/executive-function-tasks/index.html" width="100%" height="500px"></iframe>
+<iframe src="../../sims/executive-function-in-daily-life/main.html" width="100%" height="2820px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Executive Function Task Breakdown Interactive</summary>
@@ -518,7 +584,7 @@ People with higher cognitive reserve may be able to compensate for brain damage 
 
 #### Diagram: Building Cognitive Reserve Over a Lifetime
 
-<iframe src="../../sims/cognitive-reserve-timeline/index.html" width="100%" height="550px"></iframe>
+<iframe src="../../sims/building-cognitive-reserve-over-a-lifetime/main.html" width="100%" height="1770px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Cognitive Reserve Life Timeline</summary>
@@ -659,17 +725,6 @@ Let's review the essential concepts from this chapter:
 - **Brain health** includes physical, cognitive, and emotional well-being of the brain
 
 In the next chapter, we'll dive deeper into brain anatomy and function, exploring the specific brain structures and neural processes that underlie these cognitive abilities. Understanding the brain's architecture will help you grasp how different types of dementia affect different brain regions and cause specific patterns of symptoms.
-
-???+ question "Test Your Understanding - Click to expand"
-    Before moving to the next chapter, reflect on these questions:
-
-    1. What is the key difference between normal aging and dementia?
-    2. Can you name at least five different cognitive abilities?
-    3. Why might two people with similar brain changes show different levels of cognitive symptoms?
-    4. How does attention relate to memory formation?
-    5. What activities in your own life might be building cognitive reserve?
-
-    If you can answer these questions, you've grasped the foundational concepts and are ready to learn about brain anatomy in Chapter 2.
 
 !!! mascot-celebration "Excellent Work!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">

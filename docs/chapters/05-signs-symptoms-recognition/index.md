@@ -112,7 +112,7 @@ The frequency, severity, and impact of these memory problems help distinguish no
 
 #### Diagram: Memory Loss Recognition Tool
 
-<iframe src="../../sims/memory-loss-assessment/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/memory-loss-assessment/index.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Memory Loss Assessment Tool</summary>
@@ -523,7 +523,7 @@ Visual-spatial problems are particularly dangerous because they often occur with
 
 #### Diagram: Visual-Spatial Challenges Interactive Demonstration
 
-<iframe src="../../sims/visual-spatial-challenges/index.html" width="100%" height="650px"></iframe>
+<iframe src="../../sims/visual-spatial-challenges/index.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Visual-Spatial Impairment Demonstration</summary>
@@ -749,7 +749,7 @@ At the same time, MCI should not be dismissed as "just aging." It represents rea
 
 #### Diagram: Normal Aging vs. MCI vs. Dementia Comparison
 
-<iframe src="../../sims/cognitive-decline-spectrum/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/cognitive-decline-spectrum/index.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Cognitive Decline Spectrum Interactive Comparison</summary>

@@ -69,7 +69,7 @@ These percentages overlap because many people have mixed dementia—two or more 
 
 #### Diagram: Dementia Types Prevalence Chart
 
-<iframe src="../../sims/dementia-prevalence-chart/index.html" width="100%" height="500px"></iframe>
+<iframe src="../../sims/dementia-prevalence-chart/index.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Dementia Types Prevalence Interactive Chart</summary>
@@ -383,7 +383,7 @@ Doctors typically diagnose and treat the most prominent dementia type while rema
 
 #### Diagram: Dementia Types Comparison Matrix
 
-<iframe src="../../sims/dementia-comparison-matrix/index.html" width="100%" height="650px"></iframe>
+<iframe src="../../sims/dementia-comparison-matrix/index.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Dementia Types Comparison Tool</summary>
@@ -651,14 +651,15 @@ Let's review the essential concepts about different types of dementia:
 
 In Chapter 4, we'll explore the neuroscience behind neurodegeneration, examining in detail the molecular mechanisms—like amyloid plaques, neurofibrillary tangles, and abnormal proteins—that cause different types of dementia.
 
-???+ question "Test Your Understanding - Click to expand"
-    Before moving to the next chapter, reflect on these questions:
+## Test Your Understanding
 
-    1. What are the three hallmark features of Lewy body dementia that distinguish it from Alzheimer's?
-    2. How does the progression pattern of vascular dementia typically differ from Alzheimer's disease?
-    3. Why is frontotemporal dementia often diagnosed in younger people compared to Alzheimer's?
-    4. What makes mixed dementia challenging to diagnose?
-    5. Which type of dementia is potentially reversible if caught early, and why?
-    6. What is the key difference between Lewy body dementia and Parkinson's disease dementia?
+Before moving to the next chapter, reflect on these questions:
 
-    If you can answer these questions, you understand the major differences between dementia types and are ready to learn about the molecular mechanisms underlying neurodegeneration in Chapter 4.
+1. What are the three hallmark features of Lewy body dementia that distinguish it from Alzheimer's?
+2. How does the progression pattern of vascular dementia typically differ from Alzheimer's disease?
+3. Why is frontotemporal dementia often diagnosed in younger people compared to Alzheimer's?
+4. What makes mixed dementia challenging to diagnose?
+5. Which type of dementia is potentially reversible if caught early, and why?
+6. What is the key difference between Lewy body dementia and Parkinson's disease dementia?
+
+If you can answer these questions, you understand the major differences between dementia types and are ready to learn about the molecular mechanisms underlying neurodegeneration in Chapter 4.

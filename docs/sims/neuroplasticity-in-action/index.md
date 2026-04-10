@@ -23,7 +23,7 @@ Understand how neural connections strengthen through repeated use and learning
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="700" style="border:1px solid #e2e8f0;border-radius:6px;"></iframe>
+<iframe src="main.html" width="100%" height="700" style="border:1px solid #e2e8f0;border-radius:6px;" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

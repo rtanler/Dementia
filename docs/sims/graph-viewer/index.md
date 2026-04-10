@@ -13,7 +13,7 @@ hide:
 
 [Open Learning Graph Viewer Fullscreen](./main.html){ .md-button .md-button--primary }
 
-<iframe src="./main.html" width="100%" height="700px"></iframe>
+<iframe src="./main.html" width="100%" height="700px" scrolling="no"></iframe>
 
 This interactive viewer allows you to explore the learning graph for the Understanding Dementia guidebook.
 

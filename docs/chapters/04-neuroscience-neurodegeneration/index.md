@@ -74,7 +74,7 @@ The Aβ42 form is particularly problematic because those two extra amino acids m
 
 #### Diagram: Beta-Amyloid Production and Aggregation
 
-<iframe src="../../sims/beta-amyloid-processing/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/beta-amyloid-processing/index.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Beta-Amyloid Production and Aggregation Process</summary>
@@ -173,7 +173,7 @@ When tau becomes hyperphosphorylated and detaches from microtubules, two problem
 
 #### Diagram: Healthy Tau vs. Abnormal Tau
 
-<iframe src="../../sims/tau-protein-comparison/index.html" width="100%" height="550px"></iframe>
+<iframe src="../../sims/tau-protein-comparison/index.html" width="100%" height="550px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Healthy Tau Protein vs. Hyperphosphorylated Tau Interactive Comparison</summary>
@@ -275,7 +275,7 @@ Recent research suggests that alpha-synuclein, like tau, may spread from neuron 
 
 #### Diagram: Protein Aggregation Comparison
 
-<iframe src="../../sims/protein-aggregation-comparison/index.html" width="100%" height="650px"></iframe>
+<iframe src="../../sims/protein-aggregation-comparison/index.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Comparing Protein Aggregation Across Dementia Types</summary>
@@ -415,7 +415,7 @@ PSP progresses more rapidly than Parkinson's disease, with average survival of 5
 
 #### Diagram: Brain Regions Affected in Rare Tauopathies
 
-<iframe src="../../sims/rare-tauopathies-regions/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/rare-tauopathies-regions/index.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Brain Regions Affected in Pick's Disease, CBD, and PSP</summary>

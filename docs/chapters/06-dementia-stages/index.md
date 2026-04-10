@@ -160,7 +160,7 @@ Many people in early-stage dementia continue working, driving, managing their ho
 
 #### Diagram: Early-Stage Dementia Characteristics
 
-<iframe src="../../sims/early-stage-characteristics/index.html" width="100%" height="550px"></iframe>
+<iframe src="../../sims/early-stage-characteristics/index.html" width="100%" height="550px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Early-Stage Dementia Interactive Overview</summary>
@@ -330,7 +330,7 @@ This is the stage when families often need to increase support significantly—h
 
 #### Diagram: Behavior Management Decision Tree
 
-<iframe src="../../sims/behavior-management-decision-tree/index.html" width="100%" height="650px"></iframe>
+<iframe src="../../sims/behavior-management-decision-tree/index.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Behavior Management Decision Tree</summary>
@@ -548,7 +548,7 @@ This table provides a snapshot, but remember that progression through stages is 
 
 #### Diagram: Dementia Stages Interactive Timeline
 
-<iframe src="../../sims/dementia-stages-timeline/index.html" width="100%" height="600px"></iframe>
+<iframe src="../../sims/dementia-stages-timeline/index.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Dementia Stages Progression Timeline</summary>

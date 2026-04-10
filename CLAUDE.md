@@ -125,6 +125,105 @@ Interactive educational visualizations using:
 - **Standard structure:** Each MicroSim has main.html, index.md, and optional CSS/JS
 - **Integration:** Embedded in markdown via iframe or standalone HTML
 
+#### MicroSim quizzes (FIXED)
+
+**Do NOT embed quiz logic inside a MicroSim's `main.html`** with one specific
+exception. Quizzes belong in markdown — the standard place is the sim's own
+`index.md` (or the chapter `quiz.md`), authored using the
+`/quiz-generator` skill template (see below). This keeps MicroSims focused on
+visualization, keeps quiz content searchable and editable as plain markdown,
+keeps iframe heights small, and avoids duplicating the
+`mkdocs-material` question-admonition styling work that the chapter quizzes
+already do well.
+
+**The one exception: interactive infographic overlays** built on
+`docs/sims/shared-libs/diagram.js`. Their quiz mode reuses the same labeled
+image (e.g., "click the marker that matches this hint") — the quiz is
+*literally the visualization*, so it cannot be moved out without losing the
+educational value. Sims using `diagram.js` may keep their built-in
+Explore/Quiz toggle.
+
+**Standard quiz format** (matches the `quiz-generator` skill template — uses
+the mkdocs-material question admonition with upper-alpha answer choices):
+
+```markdown
+## Check Your Understanding
+
+#### 1. [Question text ending with ?]
+
+<div class="upper-alpha" markdown>
+1. [Option A text]
+2. [Option B text]
+3. [Option C text]
+4. [Option D text]
+</div>
+
+??? question "Show Answer"
+    The correct answer is **[LETTER]**. [Explanation, 50-100 words]
+
+    **Concept Tested:** [Concept Name]
+
+---
+
+#### 2. [Next question…]
+```
+
+**Question visibility rule (FIXED):** The question stem and answer choices
+must always be **fully visible as plain markdown** — never wrapped in a
+collapsible admonition. Only the *answer/explanation* may be hidden in a
+collapsed `??? question "Show Answer"` block. Specifically:
+
+- ✅ **Correct:** `#### 1. Question text?` followed by an `<div>` of options
+  followed by `??? question "Show Answer"` (collapsed by default)
+- ❌ **Wrong:** `???+ question "Test Your Understanding"` wrapping the
+  questions themselves. The `???+` syntax means "expanded by default," but
+  it still puts the questions inside an admonition — and there is no reason
+  to hide a question. Hiding questions makes them harder to scan, harder to
+  copy, and pointless because the reader has to click to see what to think
+  about.
+- ❌ **Wrong:** Any use of `???` or `???+` around the question stem.
+- ❌ **Wrong:** Putting reflection questions, comprehension prompts, or
+  "test your understanding" sections inside a collapsible admonition. Use
+  a plain `## Heading` and a numbered list instead.
+
+Aim for 3-5 questions per MicroSim `index.md` (fewer than a chapter quiz),
+distributed across Bloom's levels appropriate to the sim's learning
+objective. Place the quiz section near the bottom of the sim's `index.md`,
+after the "How to Use" / "Overview" sections.
+
+#### MicroSim iframe rules (FIXED)
+
+These rules apply to **every** `<iframe>` that embeds a MicroSim, in both
+chapter `index.md` files and the sim's own `index.md`:
+
+1. **Always include `scrolling="no"`.** MicroSims are designed to render at a
+   fixed height with no internal scrollbars. Without `scrolling="no"`, browsers
+   show clipped content with an inner scrollbar instead of forcing the iframe
+   height to grow. Every iframe must have this attribute, no exceptions.
+
+2. **Iframe height must accommodate ALL the content of the MicroSim**, including
+   any quiz, controls, or expanded panels at the bottom — not just the
+   visualization area. Use the `microsim-iframe-tester` skill to measure the
+   actual content height with Playwright before setting an iframe height. The
+   suggested height it returns already includes a small safety margin.
+
+3. **When the MicroSim is updated** in a way that adds or removes content
+   (e.g., adding a quiz, expanding controls), re-run the iframe tester and
+   update **both** the sim's own `index.md` **and** every chapter `index.md`
+   that embeds the same sim. The chapter and sim heights must stay in sync.
+
+4. **Standard iframe template** for embedding a MicroSim in a chapter:
+
+   ```html
+   <iframe src="../../sims/{sim-folder-name}/main.html"
+           width="100%"
+           height="{measured-height}px"
+           scrolling="no"></iframe>
+   ```
+
+   Always link to `main.html` (the runnable sim), never `index.html` (which
+   is the markdown wrapper and would 404 inside an iframe).
+
 ## Key Files and Their Roles
 
 ### Configuration

@@ -163,3 +163,17 @@ Test your understanding of dementia basics, cognitive functions, and brain healt
     **Concept Tested:** Memory
 
 ---
+
+## Reflection Questions
+
+These open-ended questions are for personal reflection and discussion — there
+are no single correct answers. Use them to check your overall grasp of the
+chapter before moving on to Chapter 2.
+
+1. What is the key difference between normal aging and dementia?
+2. Can you name at least five different cognitive abilities?
+3. Why might two people with similar brain changes show different levels of cognitive symptoms?
+4. How does attention relate to memory formation?
+5. What activities in your own life might be building cognitive reserve?
+
+If you can answer these questions, you've grasped the foundational concepts and are ready to learn about brain anatomy in Chapter 2.

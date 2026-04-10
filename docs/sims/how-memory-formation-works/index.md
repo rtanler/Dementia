@@ -24,7 +24,7 @@ Understand).
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="750" frameborder="0"></iframe>
+<iframe src="main.html" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

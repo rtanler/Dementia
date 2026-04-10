@@ -25,7 +25,7 @@ Apply knowledge to distinguish normal age-related memory changes from concerning
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="700" style="border:1px solid #dbe4f0; border-radius: 8px;"></iframe>
+<iframe src="main.html" width="100%" height="700" style="border:1px solid #dbe4f0; border-radius: 8px;" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

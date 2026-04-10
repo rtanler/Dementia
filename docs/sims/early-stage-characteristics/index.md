@@ -69,14 +69,14 @@ This perspective helps:
 - Support remaining abilities rather than highlighting losses
 - Guide appropriate levels of assistance and support
 
-<iframe src="main.html" width="100%" height="750"></iframe>
+<iframe src="main.html" width="100%" height="750" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
 Copy this iframe to embed in your own website:
 
 ```html
-<iframe src="https://dmccreary.github.io/dementia/sims/early-stage-characteristics/main.html" width="100%" height="750"></iframe>
+<iframe src="https://dmccreary.github.io/dementia/sims/early-stage-characteristics/main.html" width="100%" height="750" scrolling="no"></iframe>
 ```
 
 ## Interactive Features

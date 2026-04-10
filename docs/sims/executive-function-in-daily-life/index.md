@@ -28,7 +28,7 @@ working memory, flexible thinking, and self-monitoring.
 
 ## Interactive MicroSim
 
-<iframe src="main.html" width="100%" height="700" style="border:1px solid #ddd; border-radius:8px;"></iframe>
+<iframe src="main.html" width="100%" height="700" style="border:1px solid #ddd; border-radius:8px;" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 

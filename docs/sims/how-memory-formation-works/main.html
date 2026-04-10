@@ -282,79 +282,6 @@
         .show-all-grid .flow-diagram { margin: 6px 0; }
         .show-all-grid .flow-box { min-width: 80px; padding: 6px 8px; }
         .show-all-grid .stage-title { font-size: 14px; }
-        .quiz-section {
-            padding: 20px;
-            background: #f8fafc;
-            border-top: 3px solid #3b82f6;
-        }
-        .quiz-section h2 {
-            color: #1e3a8a;
-            margin-bottom: 14px;
-            font-size: 20px;
-        }
-        .quiz-question {
-            background: white;
-            border-radius: 8px;
-            padding: 14px;
-            margin-bottom: 12px;
-            border: 1px solid #e2e8f0;
-        }
-        .quiz-question .q-text {
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 10px;
-        }
-        .quiz-option {
-            display: block;
-            padding: 8px 12px;
-            margin: 6px 0;
-            border: 2px solid #e2e8f0;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.2s;
-            background: white;
-        }
-        .quiz-option:hover { border-color: #3b82f6; }
-        .quiz-option.selected { border-color: #3b82f6; background: #eff6ff; }
-        .quiz-option.correct {
-            border-color: #10b981;
-            background: #d1fae5;
-            color: #065f46;
-        }
-        .quiz-option.incorrect {
-            border-color: #ef4444;
-            background: #fee2e2;
-            color: #991b1b;
-        }
-        .quiz-feedback {
-            margin-top: 8px;
-            padding: 8px;
-            border-radius: 4px;
-            font-size: 13px;
-            display: none;
-        }
-        .quiz-feedback.show { display: block; }
-        .quiz-feedback.correct { background: #d1fae5; color: #065f46; }
-        .quiz-feedback.incorrect { background: #fee2e2; color: #991b1b; }
-        .quiz-submit {
-            margin-top: 10px;
-            background: #10b981;
-        }
-        .quiz-submit:hover { background: #059669; }
-        .quiz-score {
-            margin-top: 14px;
-            padding: 14px;
-            background: white;
-            border-radius: 8px;
-            border: 2px solid #3b82f6;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 600;
-            color: #1e3a8a;
-            display: none;
-        }
-        .quiz-score.show { display: block; }
     </style>
 </head>
 <body>
@@ -537,15 +464,8 @@
         <p><strong>Old memories remain longer:</strong> Memories already in the cortex (childhood, wedding day, longtime friends) are preserved because they no longer depend on the damaged hippocampus.</p>
     </div>
 
-    <div class="quiz-section">
-        <h2>Check Your Understanding</h2>
-        <div id="quizContainer"></div>
-        <button id="submitQuiz" class="quiz-submit">Submit Answers</button>
-        <div class="quiz-score" id="quizScore"></div>
-    </div>
 </main>
 
-<script src="../shared-libs/celebration.js"></script>
 <script>
     // Stage data
     const captions = {
@@ -619,100 +539,6 @@
     nextBtn.addEventListener('click', () => { if (currentStep < 4) showStep(currentStep + 1); });
     resetBtn.addEventListener('click', reset);
     showAllBtn.addEventListener('click', showAll);
-
-    // ============ QUIZ ============
-    const quizQuestions = [
-        {
-            q: "The memory stage that 'gathers information from the senses' is called...",
-            options: ["Retrieval", "Encoding", "Consolidation", "Forgetting"],
-            correct: 1,
-            explain: "Encoding is the first stage, where your senses capture input like Sarah's face, voice, and the party setting."
-        },
-        {
-            q: "Which brain region consolidates new memories before they move to long-term storage?",
-            options: ["Cerebellum", "Amygdala", "Hippocampus", "Brain stem"],
-            correct: 2,
-            explain: "The hippocampus links face to name, tags context, and consolidates the temporary memory."
-        },
-        {
-            q: "Memories become PERMANENT when they are stored in the...",
-            options: ["Hippocampus", "Cerebral cortex", "Spinal cord", "Optic nerve"],
-            correct: 1,
-            explain: "With repetition and sleep, memories move from the hippocampus to the cerebral cortex for permanent storage."
-        },
-        {
-            q: "In dementia, OLD memories (like childhood) are often retained better because they are stored in the...",
-            options: ["Damaged hippocampus", "Cortex (not dependent on the damaged hippocampus)", "Short-term memory buffer", "Sensory cortex only"],
-            correct: 1,
-            explain: "Old memories already live in the cortex and no longer depend on the damaged hippocampus, so they survive longer."
-        }
-    ];
-
-    const quizContainer = document.getElementById('quizContainer');
-    const submitQuizBtn = document.getElementById('submitQuiz');
-    const quizScoreEl = document.getElementById('quizScore');
-    const userAnswers = new Array(quizQuestions.length).fill(null);
-
-    quizQuestions.forEach((q, qi) => {
-        const qDiv = document.createElement('div');
-        qDiv.className = 'quiz-question';
-        qDiv.innerHTML = `<div class="q-text">${qi + 1}. ${q.q}</div>`;
-        q.options.forEach((opt, oi) => {
-            const optDiv = document.createElement('div');
-            optDiv.className = 'quiz-option';
-            optDiv.textContent = opt;
-            optDiv.addEventListener('click', () => {
-                if (submitQuizBtn.disabled) return;
-                qDiv.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
-                optDiv.classList.add('selected');
-                userAnswers[qi] = oi;
-            });
-            qDiv.appendChild(optDiv);
-        });
-        const fb = document.createElement('div');
-        fb.className = 'quiz-feedback';
-        qDiv.appendChild(fb);
-        quizContainer.appendChild(qDiv);
-    });
-
-    submitQuizBtn.addEventListener('click', () => {
-        if (userAnswers.includes(null)) {
-            alert('Please answer all questions before submitting.');
-            return;
-        }
-        let score = 0;
-        const qDivs = quizContainer.querySelectorAll('.quiz-question');
-        qDivs.forEach((qDiv, qi) => {
-            const opts = qDiv.querySelectorAll('.quiz-option');
-            const fb = qDiv.querySelector('.quiz-feedback');
-            const correctIdx = quizQuestions[qi].correct;
-            const userIdx = userAnswers[qi];
-            opts.forEach((o, oi) => {
-                o.classList.remove('selected');
-                if (oi === correctIdx) o.classList.add('correct');
-                else if (oi === userIdx) o.classList.add('incorrect');
-            });
-            if (userIdx === correctIdx) {
-                score++;
-                fb.className = 'quiz-feedback show correct';
-                fb.textContent = 'Correct! ' + quizQuestions[qi].explain;
-            } else {
-                fb.className = 'quiz-feedback show incorrect';
-                fb.textContent = 'Not quite. ' + quizQuestions[qi].explain;
-            }
-        });
-        quizScoreEl.className = 'quiz-score show';
-        quizScoreEl.textContent = `You scored ${score} out of ${quizQuestions.length}`;
-        submitQuizBtn.disabled = true;
-        submitQuizBtn.textContent = 'Submitted';
-
-        if (score === quizQuestions.length) {
-            quizScoreEl.textContent += ' — Perfect score!';
-            if (window.Celebration && typeof window.Celebration.celebrate === 'function') {
-                window.Celebration.celebrate({ duration: 4000 });
-            }
-        }
-    });
 </script>
 </body>
 </html>
