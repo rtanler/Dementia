@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dementia Stages Interactive Timeline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Dementia Stages Interactive Timeline</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> dementia-stages-interactive-timeline</p>
+            <p><strong>Library:</strong> HTML/CSS/JavaScript with SVG or Canvas for drawing lines</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Analyze how dementia progresses through stages over time and how different domains decline at different rates (Bloom Level 4 - Analyze)</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: timeline
+    
+    Learning Objective: Analyze how dementia progresses through stages over time and how different domains decline at different rates (Bloom Level 4 - Analyze)
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: Analyze, examine, compare, differentiate
+    
+    Purpose: Show the progression of dementia through stages with multiple capability domains declining at different rates, helping families understand the trajectory and variability
+    
+    Layout: Horizontal timeline with multiple declining trend lines
+    
+    X-Axis: Time (0-12 years, with stage boundaries marked)
+    Y-Axis: Capability Level (0-100%)
+    
+    Stage Boundaries (marked with vertical lines):
+    - 0-3 years: Early Stage (light green background)
+    - 3-8 years: Moderate Stage (yellow background)
+    - 8-12 years: Late Stage (orange background)
+    - Note: "Duration varies by individual and dementia type"
+    
+    Multiple Declining Lines (each a different color, all starting at 100%):
+    
+    Line 1 - Recent Memory (Red)
+    - Declines sharply in early stage
+    - Reaches near zero by end of moderate stage
+    - Flat line at zero through late stage
+    
+    Line 2 - Language (Blue)
+    - Gradual decline in early stage
+    - Steeper decline in moderate stage
+    - Minimal function in late stage
+    
+    Line 3 - Daily Living Skills (Green)
+    - Slight decline in early stage (still mostly independent)
+    - Significant decline in moderate stage
+    - Near complete loss in late stage
+    
+    Line 4 - Remote Memory (Purple)
+    - Preserved through much of early stage
+    - Gradual decline in moderate stage
+    - Significant loss only in late stage
+    
+    Line 5 - Emotional Capacity (Orange)
+    - Relatively preserved through early and moderate stages
+    - Gradual decline in late stage but often not to zero
+    - Never reaches complete zero (emotional capacity often retained longest)
+    
+    Line 6 - Physical Abilities (Brown)
+    - Minimal decline in early stage
+    - Variable in moderate stage
+    - Significant decline in late stage
+    
+    Interactive Features:
+    - Hover over any line to see specific capability at that time point
+    - Click on line to highlight it and dim others
+    - Click on stage area to see popup with characteristics of that stage
+    - "Show/Hide Lines" checkboxes to toggle specific capability lines
+    - Slider to "fast-forward" through timeline showing how capabilities decline
+    - Click milestone markers showing typical events:
+      * "Diagnosis" (around year 1-2)
+      * "Stop driving" (around year 2-4)
+      * "Need daily assistance" (around year 4-6)
+      * "Move to residential care" (variable, marked with range)
+      * "Hospice care" (typically late stage)
+    
+    Bottom Information Panel:
+    "Important Notes:"
+    - Everyone progresses differently—this timeline shows typical Alzheimer's disease progression
+    - Some people progress faster, others slower
+    - Different dementia types have different progression patterns
+    - Vascular dementia may show stepwise decline rather than gradual
+    - Frontotemporal dementia often has earlier behavioral/personality changes
+    
+    Control Panel (right side):
+    - "Dementia Type" selector:
+      * Alzheimer's Disease (default)
+      * Vascular Dementia (shows stepwise declines)
+      * Lewy Body Dementia (shows fluctuations)
+      * Frontotemporal Dementia (earlier personality/behavior decline)
+    - Selecting different types adjusts the line patterns appropriately
+    
+    Educational Value:
+    - Shows that different capabilities decline at different rates
+    - Demonstrates that emotional capacity is often preserved longest
+    - Helps families understand what changes to expect and when
+    - Shows variability between dementia types
+    - Provides realistic timeline for planning
+    
+    Visual Style: Clean timeline with smooth declining curves
+    Color coding: Each capability line has distinct color, stages have background tints
+    Responsive design: Timeline compresses on narrow screens, lines remain visible
+    
+    Implementation: HTML/CSS/JavaScript with SVG or Canvas for drawing lines
+    Canvas size: 1000x600px, fully responsive
+    -->
+</body>
+</html>

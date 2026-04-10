@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Aging vs. MCI vs. Dementia Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Normal Aging vs. MCI vs. Dementia Comparison</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> normal-aging-vs-mci-vs-dementia-comparison</p>
+            <p><strong>Library:</strong> HTML/CSS/JavaScript with interactive hover and click events</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Differentiate between normal aging, mild cognitive impairment, and dementia across multiple dimensions (Bloom Level 4 - Analyze)</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    
+    Learning Objective: Differentiate between normal aging, mild cognitive impairment, and dementia across multiple dimensions (Bloom Level 4 - Analyze)
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: Differentiate, distinguish, compare, contrast
+    
+    Purpose: Provide an interactive visual comparison showing how normal aging, MCI, and dementia differ across multiple criteria to help users understand the distinctions
+    
+    Layout: Three-column comparison table with interactive elements
+    
+    Column Headers:
+    - Normal Aging
+    - Mild Cognitive Impairment (MCI)
+    - Dementia
+    
+    Comparison Dimensions (rows):
+    
+    1. Memory Changes
+    - Normal: Occasional forgetfulness, remembers later
+    - MCI: Frequent forgetfulness, may not remember later, but compensates
+    - Dementia: Severe memory problems, cannot compensate, affects daily life
+    - Interactive: Hover to see concrete examples for each
+    
+    2. Independence
+    - Normal: Fully independent in all activities
+    - MCI: Independent, may take longer or use strategies
+    - Dementia: Requires assistance with complex or routine tasks
+    - Interactive: Click to see list of affected activities
+    
+    3. Awareness of Problems
+    - Normal: Usually aware, may joke about "senior moments"
+    - MCI: Aware and often concerned
+    - Dementia: Often unaware or minimizes problems
+    - Interactive: Hover for explanation of anosognosia
+    
+    4. Testing Performance
+    - Normal: Scores within expected range for age/education
+    - MCI: Scores below expected but not in dementia range
+    - Dementia: Scores in impaired range
+    - Interactive: Click to see example test score ranges
+    
+    5. Rate of Progression
+    - Normal: Stable or very gradually changing over many years
+    - MCI: Noticeable change over 1-2 years
+    - Dementia: Progressive worsening over months to years
+    - Interactive: Hover to see typical progression timelines
+    
+    6. Ability to Compensate
+    - Normal: Compensatory strategies work well (lists, calendars)
+    - MCI: Compensation required more often but still effective
+    - Dementia: Compensation insufficient for functioning
+    - Interactive: Click for examples of compensatory strategies
+    
+    7. Impact on Work/Hobbies
+    - Normal: Can perform complex work, pursue hobbies
+    - MCI: May need extra effort but can continue
+    - Dementia: Cannot perform complex work, may abandon hobbies
+    - Interactive: Hover for specific examples
+    
+    8. Social Functioning
+    - Normal: Normal social interactions
+    - MCI: Normal social functioning
+    - Dementia: Difficulty with complex social situations, may withdraw
+    - Interactive: Click to see examples of affected social situations
+    
+    9. Risk of Progression
+    - Normal: 1-2% per year develop dementia
+    - MCI: 10-15% per year develop dementia
+    - Dementia: Progressive by definition
+    - Interactive: Hover to see 5-year progression statistics
+    
+    10. Medical Intervention
+    - Normal: No specific treatment needed
+    - MCI: Monitoring, lifestyle interventions, treat underlying conditions
+    - Dementia: Medications, comprehensive care planning
+    - Interactive: Click to see intervention options
+    
+    Interactive Features:
+    - Hover over any cell to highlight that row across all three columns
+    - Click dimension label to see detailed explanation
+    - Toggle "Show Examples" to display concrete scenarios for each cell
+    - "Compare Two" mode that highlights two columns for direct comparison
+    - Color coding: Green (Normal), Yellow (MCI), Orange (Dementia)
+    - "Print Summary" button generates printer-friendly comparison
+    
+    Bottom Panel:
+    Key Message: "MCI represents a middle ground—more than normal aging but not yet dementia. Early recognition enables monitoring and intervention."
+    
+    Visual Style: Clean table with clear visual hierarchy
+    Color scheme: Green → Yellow → Orange gradient showing progression
+    Responsive design: Table becomes accordion-style on narrow screens
+    
+    Implementation: HTML/CSS/JavaScript with interactive hover and click events
+    Canvas size: 900x600px, fully responsive
+    -->
+</body>
+</html>

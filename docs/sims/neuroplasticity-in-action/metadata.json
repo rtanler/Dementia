@@ -1,0 +1,21 @@
+{
+  "title": "Neuroplasticity in Action",
+  "description": "Understand how neural connections strengthen through repeated use and learning (Bloom Level 2 - Understand)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "neuroplasticity-in-action",
+  "library": "p5.js with physics simulation for network layout",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Demonstrate, illustrate, explain",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Brain Anatomy and Function",
+  "chapter_dir": "02-brain-anatomy-function"
+}

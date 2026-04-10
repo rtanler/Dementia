@@ -1,0 +1,14 @@
+{
+  "sim_id": "the-brain-s-major-regions",
+  "diagram_name": "The Brain's Major Regions",
+  "chapter_number": 1,
+  "chapter_title": "Introduction to Dementia and Cognitive Health",
+  "chapter_dir": "01-intro-to-dementia",
+  "library": "HTML/CSS/JavaScript with SVG graphics or p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "Identify, locate, recognize",
+  "learning_objective": "Remember and identify the major regions of the brain and their basic functions (Bloom Level 1 - Remember)",
+  "completion_status": "specified",
+  "extracted_date": "2026-04-10",
+  "specification": "Type: infographic\n\nLearning Objective: Remember and identify the major regions of the brain and their basic functions (Bloom Level 1 - Remember)\n\nBloom Taxonomy Level: Remember (L1)\nBloom Verb: Identify, locate, recognize\n\nPurpose: Help students visualize and identify the major regions of the brain and understand their primary functions through an interactive clickable diagram.\n\nLayout: Side view (sagittal) of the human brain showing major structures with clickable regions\n\nRegions to Display:\n1. Cerebral Cortex (outer layer, gray)\n   - Hover text: \"The brain's outer layer responsible for thinking, planning, and processing information\"\n\n2. Frontal Lobe (front portion, light blue)\n   - Hover text: \"Controls decision-making, problem-solving, planning, and personality\"\n\n3. Temporal Lobe (side region, yellow)\n   - Hover text: \"Processes sound, speech, and memory formation\"\n\n4. Parietal Lobe (top-middle, green)\n   - Hover text: \"Processes touch, spatial awareness, and integrates sensory information\"\n\n5. Occipital Lobe (back, purple)\n   - Hover text: \"Processes visual information from your eyes\"\n\n6. Hippocampus (inner structure, orange)\n   - Hover text: \"Critical for forming new memories and spatial navigation\"\n\n7. Cerebellum (lower back, pink)\n   - Hover text: \"Coordinates movement, balance, and posture\"\n\nInteractive Features:\n- Click on any region to highlight it and display detailed information panel\n- Hover over regions to see brief function description\n- \"Show All\" button to display all region names at once\n- \"Quiz Mode\" button that hides labels and asks user to identify regions\n\nVisual Style:\n- Clean, simplified anatomical illustration\n- Distinct colors for each major region\n- Clear boundary lines between structures\n- Labels with connecting lines to specific regions\n\nResponsive Design:\n- Canvas must resize based on window width\n- Maintain aspect ratio\n- Text size adjusts for readability on all screen sizes\n\nImplementation: HTML/CSS/JavaScript with SVG graphics or p5.js\nCanvas size: 100% width, 550px height"
+}

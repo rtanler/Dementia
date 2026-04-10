@@ -1,0 +1,21 @@
+{
+  "title": "Building Cognitive Reserve Over a Lifetime",
+  "description": "Understand how cognitive reserve accumulates through life experiences and activities (Bloom Level 2 - Understand)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "building-cognitive-reserve-over-a-lifetime",
+  "library": "HTML/CSS/JavaScript with D3.js or Chart.js for graph",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Explain, illustrate",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Introduction to Dementia and Cognitive Health",
+  "chapter_dir": "01-intro-to-dementia"
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dementia Types Comparison Matrix</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Dementia Types Comparison Matrix</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> dementia-types-comparison-matrix</p>
+            <p><strong>Library:</strong> HTML/CSS/JavaScript with interactive table library</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Analyze and compare the distinguishing features of major dementia types (Bloom Level 4 - Analyze)</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    
+    Learning Objective: Analyze and compare the distinguishing features of major dementia types (Bloom Level 4 - Analyze)
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: Compare, contrast, differentiate, distinguish
+    
+    Purpose: Help students identify key differences between major dementia types across multiple dimensions
+    
+    Layout: Interactive comparison matrix with dementia types as columns and characteristics as rows
+    
+    Dementia Types Displayed (Columns):
+    1. Alzheimer's Disease
+    2. Vascular Dementia
+    3. Lewy Body Dementia
+    4. Frontotemporal Dementia
+    5. Mixed Dementia
+    
+    Comparison Dimensions (Rows):
+    
+    1. Primary Cause:
+       - Alzheimer's: Amyloid plaques and tau tangles
+       - Vascular: Reduced blood flow, strokes
+       - Lewy body: Alpha-synuclein deposits (Lewy bodies)
+       - Frontotemporal: Tau or TDP-43 protein in frontal/temporal lobes
+       - Mixed: Combination of pathologies
+    
+    2. First Symptoms:
+       - Alzheimer's: Memory loss for recent events
+       - Vascular: Executive dysfunction, slowed thinking
+       - Lewy body: Fluctuating cognition, hallucinations
+       - Frontotemporal: Personality/behavior changes
+       - Mixed: Varies based on combination
+    
+    3. Progression Pattern:
+       - Alzheimer's: Gradual, steady decline
+       - Vascular: Stepwise (sudden drops after strokes)
+       - Lewy body: Fluctuating with gradual decline
+       - Frontotemporal: Progressive, often rapid
+       - Mixed: Variable
+    
+    4. Memory Affected:
+       - Alzheimer's: Severely affected early
+       - Vascular: Moderately affected
+       - Lewy body: Moderately affected
+       - Frontotemporal: Relatively preserved early
+       - Mixed: Varies
+    
+    5. Movement Problems:
+       - Alzheimer's: Late stages only
+       - Vascular: Possible if strokes affect motor areas
+       - Lewy body: Common, Parkinson-like symptoms
+       - Frontotemporal: Rare (unless motor variant)
+       - Mixed: Depends on combination
+    
+    6. Hallucinations:
+       - Alzheimer's: Rare, late stages
+       - Vascular: Uncommon
+       - Lewy body: Common, detailed visual hallucinations
+       - Frontotemporal: Rare
+       - Mixed: Possible if includes LBD
+    
+    7. Typical Age of Onset:
+       - Alzheimer's: Usually 65+
+       - Vascular: Usually 65+, often older
+       - Lewy body: Usually 50+
+       - Frontotemporal: Usually 45-65 (younger onset)
+       - Mixed: Usually 70+
+    
+    8. Most Affected Brain Regions:
+       - Alzheimer's: Hippocampus, temporal cortex
+       - Vascular: Varies (wherever blood flow reduced)
+       - Lewy body: Cortex, brainstem, substantia nigra
+       - Frontotemporal: Frontal and temporal lobes
+       - Mixed: Multiple regions
+    
+    9. Genetic Risk:
+       - Alzheimer's: Some genetic factors (APOE ε4)
+       - Vascular: Family history of stroke/heart disease
+       - Lewy body: Rare genetic cases
+       - Frontotemporal: 30-40% inherited
+       - Mixed: Varies
+    
+    10. Available Treatments:
+       - Alzheimer's: Cholinesterase inhibitors, memantine
+       - Vascular: Control vascular risk factors
+       - Lewy body: Cholinesterase inhibitors, dopamine drugs
+       - Frontotemporal: Symptomatic management only
+       - Mixed: Combination approach
+    
+    Interactive Features:
+    - Hover over any cell: Shows detailed explanation with examples
+    - Click column header: Highlights that dementia type across all rows
+    - Click row header: Highlights that characteristic across all types
+    - "Compare Two Types" mode:
+      - Select any two dementia types
+      - Side-by-side detailed comparison
+      - Highlights similarities and differences
+    - "Quiz Mode":
+      - Given symptoms, identify likely dementia type
+      - Immediate feedback with explanation
+      - Progressive difficulty
+    - Filter by: "Most distinctive features" to see what makes each type unique
+    - "Show Real Cases" button: Brief case studies exemplifying each type
+    
+    Visual Design:
+    - Color-coded cells:
+      - Green: Strongly characteristic
+      - Yellow: Moderately characteristic
+      - Red: Rare or absent
+      - Gray: Variable or unknown
+    - Icons for quick visual scanning
+    - Clear typography with good contrast
+    
+    Additional Information Panel:
+    - "Key Diagnostic Features" summary for each type
+    - "Red flags" that suggest a particular diagnosis
+    - "Overlap areas" showing where types are hardest to distinguish
+    
+    Responsive Design:
+    - Table scrolls horizontally on narrow screens
+    - Sticky headers remain visible
+    - Touch-friendly for tapping cells
+    
+    Implementation: HTML/CSS/JavaScript with interactive table library
+    Canvas size: 100% width, 650px height
+    -->
+</body>
+</html>

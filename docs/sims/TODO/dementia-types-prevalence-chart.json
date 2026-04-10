@@ -1,0 +1,14 @@
+{
+  "sim_id": "dementia-types-prevalence-chart",
+  "diagram_name": "Dementia Types Prevalence Chart",
+  "chapter_number": 3,
+  "chapter_title": "Understanding Different Types of Dementia",
+  "chapter_dir": "03-types-of-dementia",
+  "library": "Chart.js or D3.js with custom interactions",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Compare, interpret",
+  "learning_objective": "Understand the relative prevalence of different dementia types (Bloom Level 2 - Understand)",
+  "completion_status": "specified",
+  "extracted_date": "2026-04-10",
+  "specification": "Type: chart\n\nLearning Objective: Understand the relative prevalence of different dementia types (Bloom Level 2 - Understand)\n\nBloom Taxonomy Level: Understand (L2)\nBloom Verb: Compare, interpret\n\nPurpose: Visualize the relative frequency of different dementia types to understand which are most common\n\nChart type: Interactive pie chart with detailed breakdown\n\nData to display:\n- Alzheimer's disease: 60-70% (largest slice, blue)\n- Vascular dementia: 15-20% (orange)\n- Mixed dementia: 10-15% (purple)\n- Lewy body dementia: 5-10% (green)\n- Frontotemporal dementia: 5-10% (yellow)\n- Other rare types: 1-5% (gray)\n\nVisual Features:\n- Pie chart with clear percentage labels\n- Color-coded slices\n- Total cases represented: \"Approximately 55 million people worldwide\"\n\nInteractive Elements:\n- Hover over slice: Shows detailed information\n  - Exact percentage range\n  - Estimated number of people affected\n  - Key characteristics\n  - Typical age of onset\n- Click on slice: Expands to show sub-categories\n  - Example: \"Other rare types\" expands to show individual rare dementias\n- Toggle view: Switch between pie chart and bar chart\n- \"Show Age Distribution\" button: Overlay showing which types are more common at different ages\n\nAdditional Information Panels:\nFor each dementia type (on hover/click):\n- Most affected age group\n- Male vs. female prevalence\n- Geographic variations if significant\n- Trend over time (increasing/stable/decreasing diagnosis rates)\n\nAnnotations:\n- \"60-70%: Alzheimer's disease is by far the most common type\"\n- \"Mixed dementia often goes undiagnosed until autopsy\"\n- \"FTD is the most common dementia in people under 60\"\n\nResponsive Design:\n- Chart resizes to fit screen width\n- Labels remain readable at all sizes\n- Touch-friendly for mobile devices\n\nImplementation: Chart.js or D3.js with custom interactions\nCanvas size: 100% width, 500px height"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Early-Stage Dementia Characteristics",
+  "description": "Understand the characteristics of early-stage dementia across cognitive, functional, personality, behavioral, and mood domains (Bloom Level 2 - Understand)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "early-stage-dementia-characteristics",
+  "library": "HTML/CSS/JavaScript with SVG for wheel diagram",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Understand, explain, describe",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Progression Through Dementia Stages",
+  "chapter_dir": "06-dementia-stages"
+}

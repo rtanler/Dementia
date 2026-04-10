@@ -1,0 +1,21 @@
+{
+  "title": "Dementia Types Comparison Matrix",
+  "description": "Analyze and compare the distinguishing features of major dementia types (Bloom Level 4 - Analyze)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "dementia-types-comparison-matrix",
+  "library": "HTML/CSS/JavaScript with interactive table library",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Compare, contrast, differentiate, distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Understanding Different Types of Dementia",
+  "chapter_dir": "03-types-of-dementia"
+}

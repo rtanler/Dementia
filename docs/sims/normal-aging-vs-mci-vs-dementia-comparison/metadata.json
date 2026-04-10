@@ -1,0 +1,21 @@
+{
+  "title": "Normal Aging vs. MCI vs. Dementia Comparison",
+  "description": "Differentiate between normal aging, mild cognitive impairment, and dementia across multiple dimensions (Bloom Level 4 - Analyze)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "normal-aging-vs-mci-vs-dementia-comparison",
+  "library": "HTML/CSS/JavaScript with interactive hover and click events",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "Differentiate, distinguish, compare, contrast",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Signs, Symptoms, and Early Recognition",
+  "chapter_dir": "05-signs-symptoms-recognition"
+}

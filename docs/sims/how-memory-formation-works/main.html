@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Memory Formation Works</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>How Memory Formation Works</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> how-memory-formation-works</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Understand how the brain processes information to create memories through the three stages of encoding, storage, and retrieval (Bloom Level 2 - Understand)</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    
+    Learning Objective: Understand how the brain processes information to create memories through the three stages of encoding, storage, and retrieval (Bloom Level 2 - Understand)
+    
+    Bloom Taxonomy Level: Understand (L2)
+    Bloom Verb: Explain, describe
+    
+    Instructional Rationale: Step-through with worked examples is appropriate because the Understand/explain objective requires learners to trace the process with concrete data showing how a specific experience becomes a memory. This allows students to predict what happens at each stage before seeing the result.
+    
+    Purpose: Demonstrate the three-stage process of memory formation using a concrete example
+    
+    Canvas Layout:
+    - Main area (700px): Visual representation of memory stages
+    - Control panel (100px): Step-through controls and information display
+    
+    Example Scenario: "Meeting someone new at a party"
+    
+    Data Visibility Requirements:
+    Stage 1 - Encoding (Sensory Input):
+      Show: Person shaking hands with "Sarah"
+      Display sensory inputs:
+        - Visual: Sarah's face, red dress, brown hair
+        - Auditory: Voice saying "Hi, I'm Sarah"
+        - Context: Party setting, music playing
+      Caption: "Your senses gather information about the new person"
+    
+    Stage 2 - Storage (Brain Processing):
+      Show: Information traveling from sensory areas to hippocampus
+      Display processing steps:
+        - Pattern recognition: Face features identified
+        - Association: Name connected to face
+        - Context tagging: Party location, time, emotions
+        - Hippocampus consolidation: Temporary memory formed
+      Caption: "The hippocampus processes and consolidates the information"
+    
+    Stage 3 - Long-term Storage:
+      Show: Memory moving from hippocampus to cerebral cortex
+      Display:
+        - Synaptic connections forming (illustrated as connected nodes)
+        - Memory integrated with related memories (other Sarahs you know, other parties)
+        - Strength indicator: Initial memory strength (medium)
+      Caption: "With repetition and sleep, the memory becomes permanent in the cortex"
+    
+    Stage 4 - Retrieval:
+      Show: Seeing Sarah again at another event
+      Display retrieval process:
+        - Cue: Seeing Sarah's face triggers memory search
+        - Hippocampus activates relevant cortex regions
+        - Memory reconstructed: Name, context, previous meeting recalled
+        - Success indicator: "That's Sarah from the party!"
+      Caption: "When you see Sarah again, cues trigger memory retrieval"
+    
+    Interactive Controls:
+    - "Next Step" button - Advances to next stage
+    - "Previous Step" button - Goes back one stage
+    - "Reset" button - Returns to beginning
+    - "Show All" button - Displays all four stages simultaneously for comparison
+    - Progress indicator showing current step (1 of 4, 2 of 4, etc.)
+    
+    Visual Elements:
+    - Simple human silhouettes for people
+    - Color-coded brain regions (hippocampus in orange, cortex in blue)
+    - Animated arrows showing information flow between stages
+    - Icon-based representation of sensory inputs (eye, ear, hand)
+    - Node-and-connection diagram for synaptic connections
+    
+    What Happens in Dementia Panel:
+    After completing all four stages, display comparison:
+    - Show how hippocampus damage in dementia disrupts encoding
+    - Illustrate difficulty forming new memories
+    - Demonstrate why old memories (already in cortex) remain longer
+    
+    Implementation: p5.js
+    Canvas: 100% width, 600px height
+    Default state: Stage 1 visible, others hidden
+    Animation: Smooth transitions between stages (300ms)
+    -->
+</body>
+</html>

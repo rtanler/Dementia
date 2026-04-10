@@ -1,0 +1,21 @@
+{
+  "title": "Memory Loss Recognition Tool",
+  "description": "Apply knowledge to distinguish normal age-related memory changes from concerning dementia symptoms (Bloom Level 3 - Apply)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "memory-loss-recognition-tool",
+  "library": "HTML/CSS/JavaScript with scenario data structure",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "Apply, demonstrate, solve",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Signs, Symptoms, and Early Recognition",
+  "chapter_dir": "05-signs-symptoms-recognition"
+}

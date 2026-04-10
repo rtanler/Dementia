@@ -1,0 +1,21 @@
+{
+  "title": "Brain Regions Affected in Rare Tauopathies",
+  "description": "Identify which brain regions are primarily affected in rare tauopathies and relate regional damage to characteristic symptoms (Bloom Level 2 - Understand)",
+  "creator": "Dementia Education Project",
+  "date": "2026-04-10",
+  "subject": [
+    "dementia"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "brain-regions-affected-in-rare-tauopathies",
+  "library": "SVG-based interactive brain diagrams with JavaScript for interactivity",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "Identify, relate, connect",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "The Neuroscience of Neurodegeneration",
+  "chapter_dir": "04-neuroscience-neurodegeneration"
+}

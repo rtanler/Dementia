@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Aggregation Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Protein Aggregation Comparison</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> protein-aggregation-comparison</p>
+            <p><strong>Library:</strong> HTML/CSS/JavaScript with interactive toggles and hover states</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze)</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    
+    Learning Objective: Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze)
+    
+    Bloom Taxonomy Level: Analyze (L4)
+    Bloom Verb: Compare, contrast, distinguish, differentiate
+    
+    Purpose: Enable students to compare and contrast the three major pathological proteins in dementia by examining their normal functions, aggregation patterns, and disease associations
+    
+    Layout: Three-column comparison with interactive elements
+    
+    Column 1 - Beta-Amyloid:
+    - Top: Icon of plaque between neurons
+    - Normal function: "Uncertain—may play role in synaptic function and plasticity"
+    - Misfolded form: "Aggregates into oligomers and fibrils"
+    - Location of deposits: "Extracellular plaques between neurons"
+    - Associated diseases: "Alzheimer's disease, Down syndrome dementia"
+    - Spread pattern: "Does not appear to spread neuron-to-neuron"
+    - Color coding: Orange/red
+    
+    Column 2 - Tau:
+    - Top: Icon of tangle inside neuron
+    - Normal function: "Stabilizes microtubules, enables axonal transport"
+    - Misfolded form: "Hyperphosphorylated, forms paired helical filaments"
+    - Location of deposits: "Intracellular neurofibrillary tangles"
+    - Associated diseases: "Alzheimer's, Pick's, PSP, CBD, and other tauopathies"
+    - Spread pattern: "Spreads through neural networks in predictable pattern"
+    - Color coding: Purple/violet
+    
+    Column 3 - Alpha-Synuclein:
+    - Top: Icon of Lewy body inside neuron
+    - Normal function: "Regulates synaptic vesicle release and recycling"
+    - Misfolded form: "Forms fibrils that aggregate into Lewy bodies"
+    - Location of deposits: "Intracellular Lewy bodies and Lewy neurites"
+    - Associated diseases: "Lewy body dementia, Parkinson's disease"
+    - Spread pattern: "Appears to spread through connected brain regions"
+    - Color coding: Green/teal
+    
+    Interactive Elements:
+    - Hover over any protein name to highlight that column
+    - Click "Normal vs. Abnormal" toggle to switch between showing normal protein function and pathological aggregation
+    - Click on disease names to see which brain regions are primarily affected
+    - Hover over "Spread pattern" to see animated diagram of how pathology spreads
+    - Click "Show Commonalities" button to highlight shared features across all three proteins
+    
+    Bottom Summary Panel (expandable):
+    "What all three proteins have in common:"
+    - All are normally present in healthy brains
+    - All undergo conformational change (misfolding)
+    - All form aggregates that are toxic to neurons
+    - All resist normal cellular clearance mechanisms
+    - All accumulate progressively over years
+    - All are targets for experimental therapies
+    
+    Visual Style: Modern scientific infographic with consistent iconography
+    Responsive Design: Columns stack vertically on narrow screens
+    
+    Implementation: HTML/CSS/JavaScript with interactive toggles and hover states
+    Canvas size: 1000x650px, fully responsive to window resize
+    -->
+</body>
+</html>
