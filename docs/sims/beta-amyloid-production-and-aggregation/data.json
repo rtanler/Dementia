@@ -12,7 +12,7 @@
       "color": "#3B6FB3",
       "hint": "The large blue protein on the far left that crosses through the cell membrane.",
       "description": "Amyloid Precursor Protein (APP) is a normal, healthy protein that sits embedded in the membrane of neurons. Most of the APP molecule sticks out into the extracellular space, with a short section crossing the membrane and a small tail inside the neuron. APP is found in many tissues, but in the brain it plays a role in neuron growth, repair, and cell-to-cell signaling.",
-      "ap_tip": "Alzheimer's relevance: APP itself is harmless — problems only begin when it is cut in the wrong place by the wrong enzymes."
+      "ap_tip": "<strong>Alzheimer's Relevance:</strong> APP itself is harmless — problems only begin when it is cut in the wrong place by the wrong enzymes."
     },
     {
       "id": 2,
@@ -23,7 +23,7 @@
       "color": "#4CAF50",
       "hint": "The first green scissor-shaped enzyme cutting the top of the APP protein.",
       "description": "The enzyme beta-secretase makes the first cut in the APP protein, snipping it just above the cell membrane. This first cut is the critical step that starts the harmful pathway — if beta-secretase never made this cut, toxic beta-amyloid would never form. The process happens quickly, within seconds.",
-      "ap_tip": "Alzheimer's relevance: Drugs that block beta-secretase have been studied as possible Alzheimer's treatments to stop beta-amyloid before it forms."
+      "ap_tip": "<strong>Alzheimer's Relevance:</strong> Drugs that block beta-secretase have been studied as possible Alzheimer's treatments to stop beta-amyloid before it forms."
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "color": "#2E7D32",
       "hint": "The second darker-green enzyme cutting at the membrane, releasing a small orange fragment.",
       "description": "A second enzyme, gamma-secretase, makes another cut right at the membrane. This second cut releases a small peptide fragment called beta-amyloid 42 (Aβ42), which is 42 amino acids long. The freshly released Aβ42 drifts away from the membrane into the space between neurons.",
-      "ap_tip": "Alzheimer's relevance: The Aβ42 version is especially sticky and prone to clumping — longer fragments like Aβ40 are much less harmful."
+      "ap_tip": "<strong>Alzheimer's Relevance:</strong> The Aβ42 version is especially sticky and prone to clumping — longer fragments like Aβ40 are much less harmful."
     },
     {
       "id": 4,
@@ -45,7 +45,7 @@
       "color": "#F57C00",
       "hint": "The small orange peptides floating freely above the membrane in the middle of the image.",
       "description": "At this stage, individual beta-amyloid monomers float freely in the extracellular space between neurons. A monomer is a single copy of the Aβ42 peptide. In a healthy brain, these monomers are quickly cleared away by the brain's waste-removal systems before they can cause trouble.",
-      "ap_tip": "Alzheimer's relevance: The brain's glymphatic system clears Aβ monomers mostly during deep sleep — one reason poor sleep is a risk factor for Alzheimer's."
+      "ap_tip": "<strong>Alzheimer's Relevance:</strong> The brain's glymphatic system clears Aβ monomers mostly during deep sleep — one reason poor sleep is a risk factor for Alzheimer's."
     },
     {
       "id": 5,
@@ -56,7 +56,7 @@
       "color": "#E65100",
       "hint": "The small cluster of 2-3 orange monomers sticking together above the membrane.",
       "description": "When clearance fails, Aβ42 monomers begin to stick together into small clusters of 2 to 10 peptides called oligomers. This clumping happens over hours to days. Scientists now believe these small soluble oligomers — not the larger plaques — are actually the most toxic form of beta-amyloid, because they can damage synapses and kill neurons directly.",
-      "ap_tip": "Alzheimer's relevance: Oligomers are thought to be the main driver of early memory loss in Alzheimer's, even before large plaques appear."
+      "ap_tip": "<strong>Alzheimer's Relevance:</strong> Oligomers are thought to be the main driver of early memory loss in Alzheimer's, even before large plaques appear."
     },
     {
       "id": 6,
@@ -67,7 +67,7 @@
       "color": "#D84315",
       "hint": "The larger, rope-like red-orange aggregate to the right of the oligomer.",
       "description": "Oligomers continue to grow by adding more monomers, forming longer, thread-like structures called protofibrils. Protofibrils are bigger and more stable than oligomers, and they begin to take on the twisted, fiber-like shape that will eventually become a mature plaque. This stage takes days to weeks.",
-      "ap_tip": "Alzheimer's relevance: Some newer Alzheimer's drugs, such as lecanemab, are designed to target and clear protofibrils before they grow into full plaques."
+      "ap_tip": "<strong>Alzheimer's Relevance:</strong> Some newer Alzheimer's drugs, such as lecanemab, are designed to target and clear protofibrils before they grow into full plaques."
     },
     {
       "id": 7,
@@ -78,7 +78,7 @@
       "color": "#8B2E1F",
       "hint": "The large, dark red, irregular blob at the far right — the end stage of the process.",
       "description": "Over months to years, protofibrils pile up into dense, insoluble deposits called amyloid plaques. Plaques sit in the extracellular space between neurons and disrupt normal communication. They are the hallmark feature used to diagnose Alzheimer's disease after death and can now be detected in living patients with PET brain scans.",
-      "ap_tip": "Alzheimer's relevance: Amyloid plaques can begin forming 15-20 years before memory symptoms appear, making early detection and prevention a major research goal."
+      "ap_tip": "<strong>Alzheimer's Relevance:</strong> Amyloid plaques can begin forming 15-20 years before memory symptoms appear, making early detection and prevention a major research goal."
     }
   ],
   "layout": "side-panel"
