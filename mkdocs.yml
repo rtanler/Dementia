@@ -172,14 +172,13 @@ extra_javascript:
 # Copyright
 copyright: Copyright &copy; 2026 Richard Tandler. All rights reserved.
 
+
 # Extra configuration
 extra:
   generator: false               # Hide "Made with Material" footer
-  # Social links (optional)
-  social:
-    - icon: fontawesome/brands/github
-      link: 'https://github.com/rtanler/Dementia.git'
-    # - icon: fontawesome/brands/twitter
-    #   link: https://twitter.com/username
-    # - icon: fontawesome/brands/linkedin
-    #   link: https://linkedin.com/in/username
+
+# Google Analytics Configuration is on Dan's Google Analytics account, property G-RTFFK4DK3H
+  analytics:
+    provider: google
+    property: G-RTFFK4DK3H
+

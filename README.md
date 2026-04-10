@@ -21,6 +21,22 @@ The guidebook follows Bloom's Taxonomy (2001 revision) for learning outcomes and
 
 Whether you're a patient newly diagnosed with dementia, a family member becoming a caregiver, or a healthcare provider seeking structured educational materials, this guidebook provides comprehensive coverage from basic neuroscience to practical daily care strategies, legal planning, and emotional support resources.
 
+## Kanban Board for Book Task Status
+
+We track the status of book development tasks on a GitHub Projects Kanban board:
+
+**[https://github.com/users/dmccreary/projects/10/](https://github.com/users/dmccreary/projects/10/)**
+
+The board uses the following columns to organize work:
+
+| Column | Purpose |
+|--------|---------|
+| **Backlog** | Tasks that have been identified but not yet started. New ideas, planned chapters, MicroSims, or improvements get added here while they wait to be prioritized. |
+| **Ready** | Tasks that have been refined, prioritized, and are ready to be picked up. The scope is clear enough that work can begin without further clarification. |
+| **In progress** | Tasks that are actively being worked on. Content is being drafted, code is being written, or a MicroSim is being built. |
+| **In review** | Tasks where the work is complete and is being reviewed for accuracy, readability, accessibility, or technical quality before being marked done. |
+| **Done** | Tasks that have been completed, reviewed, and merged or published to the live site. |
+
 ## Site Status and Metrics
 
 | Metric | Count |
