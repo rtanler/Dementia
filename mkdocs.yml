@@ -192,7 +192,7 @@ markdown_extensions:
   - abbr                         # Abbreviations with tooltips
   - toc:
       permalink: true            # Anchor links for headings
-      toc_depth: 3               # TOC depth
+      toc_depth: 4               # TOC depth (includes #### Diagram: headers)
 
   # PyMdown Extensions
   - pymdownx.details             # Collapsible content blocks
