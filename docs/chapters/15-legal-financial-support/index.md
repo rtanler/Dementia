@@ -8,6 +8,18 @@ version: '1.0'
 
 # Chapter 15: Legal, Financial, and Support Resources
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi, it's Tokie — and I'm so glad you made it to this last chapter
+    with me. I know this is the one a lot of people want to skip. Legal
+    forms, Medicare, Medicaid, long-term care insurance, care
+    facilities — it all feels like homework on top of heartbreak. But I
+    promise, this is also the chapter with the most *leverage*. A few
+    good decisions here can protect your person's savings, your
+    sanity, and the care choices you'll have later. We'll go slow. Take
+    what you need, skip what doesn't apply yet, and come back when life
+    changes. You've got this — and you've got me.
+
 ## Introduction
 
 A dementia diagnosis affects not just the individual but the entire support system—family, finances, legal matters, healthcare, and community connections. Navigating this complex landscape can feel overwhelming, especially when you're also providing daily care and managing emotions.
@@ -17,6 +29,17 @@ This comprehensive chapter serves as your resource guide through the essential l
 **The Importance of Early Planning**: Many legal and financial decisions are best made early in the disease when the person with dementia can still participate in the planning. Don't wait for a crisis to address these critical issues.
 
 ## Part I: Legal Planning and Documents
+
+!!! mascot-encourage "Scary, Yes. But Absolutely Doable."
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    If the words "power of attorney" and "advance directive" make your
+    stomach tighten, you are not alone. Most people put this chapter
+    off. But here's what I want you to hold on to: every document we
+    talk about is just a piece of paper that lets the people who love
+    someone keep helping them. That's it. You don't need a law degree.
+    You need one good elder-law attorney, one honest conversation with
+    your family, and an afternoon. Break it into small steps. Pick the
+    next one. Then the next. That's how this mountain gets climbed.
 
 Proper legal planning protects the person with dementia, empowers trusted individuals to make decisions when needed, and prevents family conflict. These documents should be established as early as possible after diagnosis.
 
@@ -313,6 +336,19 @@ Advance Directives is an umbrella term for legal documents that communicate your
 - Advance Directives: For everyone
 - Have both; they complement each other
 
+!!! mascot-tip "Do This While You Still Can"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    Here's the single most important piece of legal advice in this
+    whole chapter: **these documents only work if they're signed while
+    your person still has legal capacity.** That window closes quietly,
+    often before anyone is ready to believe it has. If a diagnosis is
+    fresh and your loved one is still able to understand and agree,
+    *now* is the moment to call an elder-law attorney and get these in
+    place. Waiting until "things get worse" usually means waiting
+    until it's too late, and then you're stuck in the guardianship
+    court system — slow, expensive, and stressful. A few hundred dollars
+    spent today can save tens of thousands down the road.
+
 ### 5. Guardianship
 
 Guardianship is a legal process where a court appoints someone to make decisions for a person (the "ward") who is deemed incapacitated.
@@ -594,6 +630,19 @@ Medicaid pays for long-term care for people who meet income and asset requiremen
 - Gifts or asset transfers during look-back period cause penalties
 - Penalty period = value of gift ÷ average monthly nursing home cost in your state
 - Planning must begin well in advance
+
+!!! mascot-warning "Please Don't DIY This One"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Tokie warns you">
+    I want to wave a big flag here. The Medicaid look-back rule
+    catches more families off-guard than almost anything else in
+    dementia care. A well-meaning gift to a grandchild, a transfer of
+    the family home, or "just helping a relative out" can trigger
+    months — sometimes *years* — of Medicaid ineligibility exactly when
+    you need coverage the most. Please do not move assets around on
+    your own based on something you read online. An elder-law attorney
+    will charge a few thousand dollars up front and save your family
+    tens or hundreds of thousands on the other end. This is the single
+    most expensive mistake I see people make. Please get help.
 
 **Exempt Assets** (not counted toward limit):
 - Primary residence (up to equity limit, varies by state)
@@ -3069,3 +3118,41 @@ A dementia diagnosis brings many challenges, but you are not alone. The legal, f
 - [Chapter 7: Managing Challenging Behaviors](../07-managing-behaviors/index.md) - Behavioral management strategies
 - [Chapter 12: Daily Living and Caregiving Skills](../12-daily-living-caregiving/index.md) - Practical caregiving skills
 - [Chapter 14: Safety and Home Modifications](../14-safety-home-modifications/index.md) - Creating safe environments
+
+!!! mascot-celebration "You Finished the Whole Book"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    I want you to stop for a second and really let this land: **you
+    just finished the whole book.** Fifteen chapters. From what
+    dementia actually is, through the biology of the brain, the
+    different types, the stages, the diagnosis, the treatments, the
+    therapies, the hard behaviors, the daily care, the communication,
+    the home, the law, the money, and the people who can help. That
+    is an enormous amount of ground, and the fact that you stayed with
+    it says everything about the love you're carrying.
+
+    Here's what I want you to do next. Don't try to remember it all —
+    nobody can, not even me. Instead, pick **one small thing** from
+    somewhere in this book to act on this week. Maybe it's calling an
+    elder-law attorney. Maybe it's trying a validation phrase instead
+    of correcting. Maybe it's installing a grab bar, or finding a
+    support group, or just giving yourself permission to take a
+    break. One thing. Then another next week. That's how this whole
+    journey gets walked.
+
+    And please remember: you are not alone on this road. The
+    Alzheimer's Association helpline (1-800-272-3900) is staffed
+    around the clock by real humans who understand. Your local Area
+    Agency on Aging can connect you to services in your specific
+    community. Support groups exist for exactly how you're feeling
+    right now. Lean on them. That's what they're there for.
+
+    Thank you for letting me walk beside you through all of this.
+    Caring for someone with dementia — or preparing yourself, or
+    grieving your own diagnosis — is one of the hardest things a
+    human heart is ever asked to do. And you showed up for it, page
+    after page. That matters more than you know. Be gentle with
+    yourself. Take it one day at a time. And whenever you need a
+    reminder, come back and find me. I'll be right here.
+
+    With love,
+    Tokie

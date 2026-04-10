@@ -8,6 +8,17 @@ version: 0.03
 
 # Understanding Different Types of Dementia
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hey, it's Tokie again — so glad you're still with me! In Chapters 1
+    and 2 we built a foundation together; now I want to introduce you to
+    the main types of dementia by name. You'll meet Alzheimer's, vascular
+    dementia, Lewy body dementia, frontotemporal dementia, and a few
+    rarer conditions too. Don't worry about memorizing all the details —
+    what matters is noticing that "dementia" is really a family of
+    different conditions, each with its own fingerprint. I'll walk you
+    through each one gently.
+
 ## Summary
 
 This chapter introduces the major types of dementia and their distinguishing characteristics. You will learn about Alzheimer's disease (the most common form), vascular dementia, Lewy body dementia, frontotemporal dementia, and mixed dementia. The chapter also covers less common forms including cerebrovascular disease, mini-strokes, and rare dementia types such as Wernicke-Korsakoff syndrome, Creutzfeldt-Jakob disease, Huntington's disease, Parkinson's disease dementia, and normal pressure hydrocephalus. Understanding these different types will help you recognize that dementia is not a single disease but rather a collection of conditions with varying causes and presentations.
@@ -128,6 +139,15 @@ Responsive Design:
 Implementation: Chart.js or D3.js with custom interactions
 Canvas size: 100% width, 500px height
 </details>
+
+!!! mascot-thinking "The Big Picture"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    Before we dive into each type, here's the idea I most want you to
+    carry forward: Alzheimer's is the biggest slice of the pie, but it's
+    nowhere near the whole pie. And many people have *more than one*
+    type at once. That's why a good diagnosis matters so much — the
+    treatment, the outlook, and the day-to-day challenges can all look
+    quite different depending on which type (or types) are at work.
 
 ## Alzheimer's Disease: The Most Common Type
 
@@ -348,6 +368,17 @@ The key distinguishing feature of frontotemporal dementia is that personality an
 - Emotional flatness or excessive emotions
 
 Unlike Alzheimer's, a person with FTD may score well on memory tests but show dramatic changes in personality that make daily life and relationships extremely difficult.
+
+!!! mascot-encourage "A Lot of Names in One Chapter"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    I know — four big types, and we're not done yet. If your brain feels
+    full, that's a good sign you're actually paying attention. You
+    don't need to memorize every sub-variant. What I'd love you to walk
+    away with is a feel for the *fingerprints*: Alzheimer's starts with
+    memory, vascular often steps down after little strokes, Lewy body
+    brings hallucinations and fluctuation, and frontotemporal shows up
+    as personality change. That's it. Everything else is detail you can
+    come back to.
 
 ## Mixed Dementia: When Types Overlap
 
@@ -605,6 +636,16 @@ Accurately determining which type of dementia a person has requires careful eval
 
 Even with all these tools, diagnosis can be challenging because symptoms overlap and many people have mixed dementia. Doctors often make a "probable" diagnosis based on the most characteristic features, remaining open to revising the diagnosis as more information becomes available.
 
+!!! mascot-tip "Tokie's Tip"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    If you're heading to a doctor's appointment with a loved one, bring
+    a written timeline of the changes you've noticed — when they started,
+    what they look like, and how they've progressed. A good symptom
+    history is one of the most useful diagnostic tools a doctor has, and
+    you're often the person best placed to provide it. Your notes can
+    genuinely shape the diagnosis and the care plan. Don't underestimate
+    how much they matter.
+
 ## Why Knowing the Type Matters
 
 Understanding which type of dementia a person has is important for several reasons:
@@ -663,3 +704,14 @@ Before moving to the next chapter, reflect on these questions:
 6. What is the key difference between Lewy body dementia and Parkinson's disease dementia?
 
 If you can answer these questions, you understand the major differences between dementia types and are ready to learn about the molecular mechanisms underlying neurodegeneration in Chapter 4.
+
+!!! mascot-celebration "Three Chapters Down!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    Look how far you've come! You now know the four big types of
+    dementia, you can tell the difference between Lewy body and
+    Parkinson's disease dementia, and you understand why mixed dementia
+    muddies the picture. That's real, practical knowledge — the kind
+    that helps you make sense of a diagnosis or advocate for a loved
+    one in a doctor's office. Take a breath, stretch, maybe grab some
+    water. When you're ready, I'll meet you in Chapter 4 where we'll
+    peek under the hood at what's happening to brain cells themselves.

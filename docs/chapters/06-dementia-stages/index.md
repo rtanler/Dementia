@@ -8,6 +8,17 @@ version: 0.03
 
 # Progression Through Dementia Stages
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hey, it's Tokie again. I want to be up front with you: this chapter
+    is a tender one. We'll walk together through the three broad stages
+    of dementia — early, moderate, and late — and I'll explain what
+    changes to expect in personality, behavior, and mood along the way.
+    If any of this hits close to home, please pause when you need to.
+    Knowing the road ahead is hard, but it also helps you plan, reduces
+    fear of the unknown, and lets you focus your energy on what matters
+    most: connection and comfort. I'll be right here with you.
+
 ## Summary
 
 This chapter describes how dementia progresses through distinct stages and the changes in personality, behavior, and mood that often accompany the condition. You will learn about the characteristics of early-stage dementia (when symptoms are mild and the person retains considerable independence), moderate-stage dementia (when assistance becomes necessary for daily activities), and late-stage dementia (when round-the-clock care is typically required). Understanding these stages helps families anticipate challenges, plan for future care needs, and recognize what changes are part of the disease progression versus what requires immediate medical attention.
@@ -48,6 +59,17 @@ Why does understanding stages matter?
 - **Realistic expectations** - Understanding the trajectory helps set appropriate goals for each stage
 
 This chapter will explore three broad stages of dementia—early, moderate, and late—while also examining the personality changes, behavioral changes, and mood changes that occur throughout the disease. Remember that individuals progress at different rates, and not everyone experiences all changes in the same way or order.
+
+!!! mascot-thinking "Hold This Thought"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    Before we go further, I want to offer you the single most helpful
+    idea in this whole chapter: when someone with dementia seems
+    "different," they aren't choosing to be. Their brain is literally
+    rewiring the circuits that shaped their personality for a lifetime.
+    That's not a moral failing — it's biology. I know it can feel like
+    you've lost the person you knew. You haven't, not entirely. But it
+    helps to stop blaming them (or yourself) for changes neither of you
+    picked. Hold on to this; it'll make the rest of the chapter easier.
 
 ## Personality, Behavioral, and Mood Changes: The Emotional Landscape
 
@@ -414,6 +436,17 @@ Implementation: HTML/CSS/JavaScript with interactive flowchart logic
 Canvas size: 900x650px, fully responsive
 </details>
 
+!!! mascot-encourage "Take a Breath With Me"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    Okay — we're about to step into the section on late-stage dementia,
+    and I want you to breathe with me for a moment before we do. This
+    part is hard. If you're reading it because of someone you love, the
+    words ahead may feel like a weight. I promise we'll focus on what
+    still remains and on what you can do, not just on what's lost.
+    Comfort, gentle touch, a familiar song, your presence — these still
+    reach people even in the deepest stages. Love is never wasted here.
+    When you're ready, let's keep going.
+
 ## Late-Stage Dementia: When Round-the-Clock Care is Needed
 
 **Late-stage dementia** (sometimes called severe or end-stage dementia) is characterized by profound cognitive impairment, loss of most verbal communication, complete dependence on others for all daily needs, and significant physical decline. This stage typically lasts 1-3 years, though some people remain in late stage for longer.
@@ -690,6 +723,18 @@ While we've described typical stage durations and progression patterns, it's imp
 
 It's impossible to predict exactly how quickly any individual will progress, but understanding these factors helps set realistic expectations and highlights areas where intervention might help.
 
+!!! mascot-warning "Don't Miss These"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Tokie warns you">
+    I want to flag the next section carefully. Dementia usually gets
+    worse slowly — over months or years. So when someone declines
+    *suddenly* (over hours or a couple of days), that is almost never
+    "just the dementia." It's often a treatable medical problem like a
+    urinary tract infection, a medication reaction, pain, or dehydration
+    hiding underneath. Please don't chalk sudden changes up to the
+    disease and wait it out. A quick call to the doctor can make a real
+    difference — and sometimes it's the difference between a bad week
+    and a preventable crisis.
+
 ## Recognizing When to Seek Medical Attention
 
 While many changes are part of expected dementia progression, some require immediate medical evaluation. Families should contact healthcare providers for:
@@ -800,3 +845,14 @@ Understanding dementia stages helps families anticipate needs, plan appropriatel
 ---
 
 *In the next chapter, we'll explore specific behavioral challenges in dementia—including aggression, wandering, and sundowning—and learn detailed strategies for managing these difficult situations.*
+
+!!! mascot-celebration "You Made It Through"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    I know this chapter wasn't an easy one, and I'm really proud of you
+    for sticking with it. You now understand how dementia moves through
+    early, moderate, and late stages, what changes to expect in
+    personality and mood, and — just as importantly — which sudden
+    changes deserve a phone call to the doctor. That knowledge turns
+    fear of the unknown into a map you can actually use. Take a moment
+    to step away from the page, drink some water, and do something kind
+    for yourself. When you're ready, I'll meet you in Chapter 7.

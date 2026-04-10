@@ -89,7 +89,7 @@ This process happens incredibly fast—in just milliseconds—allowing you to pe
 
 #### Diagram: Synaptic Communication
 
-<iframe src="../../sims/synaptic-communication/index.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/synaptic-communication/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Synaptic Communication Step-Through MicroSim</summary>
@@ -249,7 +249,7 @@ The cerebral cortex has two hemispheres (left and right) connected by a thick bu
 
 #### Diagram: The Four Lobes of the Brain
 
-<iframe src="../../sims/brain-lobes-interactive/index.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/the-four-lobes-of-the-brain/main.html" width="100%" height="550px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Brain Lobes Explorer</summary>
@@ -480,7 +480,7 @@ This is excellent news for brain health. Engaging in activities that promote neu
 
 #### Diagram: Neuroplasticity in Action
 
-<iframe src="../../sims/neuroplasticity-demo/index.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/neuroplasticity-in-action/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Neuroplasticity Learning MicroSim</summary>

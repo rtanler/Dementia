@@ -8,6 +8,17 @@ version: '1.0'
 
 # Chapter 13: Communication Techniques
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hey friend, Tokie here. This chapter is about something that matters
+    so much: how to stay connected with your person when words start
+    slipping away. We'll talk about tone, pace, listening, validation,
+    visual cues, and the quiet power of body language. I want you to
+    know going in — this isn't about "managing" someone. It's about
+    staying in relationship with someone you love, even as the ground
+    shifts. A lot of what we cover will feel like permission to stop
+    doing things the hard way. I'm so glad you're here.
+
 ## Introduction
 
 Communication is the foundation of human connection. For people living with dementia, communication abilities gradually decline as the disease progresses, but the need and desire to connect with others remains. Effective communication techniques can reduce frustration, preserve dignity, maintain relationships, and improve quality of life for both the person with dementia and their caregivers.
@@ -277,6 +288,16 @@ Instead of "Get dressed," try:
 - **Middle stage**: Regularly use simple language, one idea at a time
 - **Late stage**: Very simple sentences, key words only
 
+!!! mascot-tip "Phrases to Keep in Your Back Pocket"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    Here are a few phrases that work in a lot of tight moments. Try them
+    on and see which ones feel natural in your own voice: "Let's do this
+    together." "I'm right here." "Tell me more about that." "I can see
+    you're upset — what do you need?" "We'll figure it out." Notice
+    that none of them are arguments, and none of them demand that your
+    person remember anything. They just open a door. When you're tired
+    and words are hard to find, these give you somewhere soft to land.
+
 ## 5. Visual Cues
 
 Visual cues are objects, pictures, or demonstrations that support verbal communication. They're especially helpful as verbal comprehension declines.
@@ -528,6 +549,18 @@ Developed by Naomi Feil, validation therapy recognizes that:
 - Reduces caregiver-care recipient conflict
 - Honors the person's emotional experience
 - Prevents catastrophic reactions
+
+!!! mascot-thinking "The Shift That Changes Everything"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    I want you to pause here, because this is one of the biggest
+    mindset shifts in the whole book: **being right is not the goal
+    anymore.** For most of your relationship, telling the truth was
+    love. It was how you showed up. But when dementia rewrites someone's
+    sense of time and place, correcting them doesn't restore their
+    reality — it just tells them they're wrong and leaves them scared.
+    Validation isn't lying. It's choosing the feeling over the fact
+    because the feeling is the thing that's still real. Once this
+    clicks, a huge amount of daily friction just melts away.
 
 ## 8. Redirection
 
@@ -1035,6 +1068,19 @@ Sometimes you must communicate difficult information (death, illness, move):
 - Focus on connection, not recognition
 - They may not know your name but feel your love
 
+!!! mascot-encourage "When They Don't Know Your Name"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    The day someone you love looks at you without recognition is one
+    of the hardest days in this whole journey. If you're dreading it,
+    or living through it right now, I'm so sorry. Please hear this:
+    you are not being forgotten in the way that phrase usually means.
+    The part of the brain that stores names is failing, but the part
+    that feels safe around you often isn't. People with advanced
+    dementia still light up for the person who makes them feel calm,
+    even when they can't say why. You are still the reason their
+    shoulders drop when you walk in. That is love recognizing love,
+    even without a name attached.
+
 ### Communicating with Healthcare Providers
 
 **Preparation**:
@@ -1275,3 +1321,16 @@ Even in final days:
 - [Chapter 10: Therapeutic Interventions](../10-therapeutic-interventions/index.md) - Validation therapy and reality orientation
 - [Chapter 12: Daily Living and Caregiving Skills](../12-daily-living-caregiving/index.md) - Applying communication during care activities
 - [Chapter 7: Managing Challenging Behaviors](../07-managing-behaviors/index.md) - Communication's role in behavior management
+
+!!! mascot-celebration "Look at the Language You Just Learned"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    You just worked through one of the most important chapters in the
+    whole book. You now know how to slow down, simplify, validate,
+    redirect, and read a room with your eyes and heart, not just your
+    ears. None of this will feel automatic at first — that's fine.
+    Pick one idea from this chapter to practice tomorrow. Just one.
+    Then another next week. Little by little, you'll build a whole new
+    way of being with your person, and the hard moments will get a
+    little softer. In Chapter 14, we'll shift gears to safety — how to
+    make the home feel calm, supportive, and free of the little hazards
+    that cause big problems. See you there.

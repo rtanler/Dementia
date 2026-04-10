@@ -8,6 +8,18 @@ version: 1.0
 
 # Medical Treatments and Medications
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hey, it's Tokie again — glad you're back. This chapter is about
+    medications, and I want to be upfront with you: there's a lot of hope
+    and a lot of worry wrapped up in this topic, and both are
+    understandable. We'll walk through the main Alzheimer's drugs
+    together — what they are, what they can realistically do, and what
+    to watch for. You don't need a medical background to follow along.
+    I'll translate every term, and we'll take the honest path: what
+    works, what doesn't, and how to make good decisions with your care
+    team.
+
 ## Summary
 
 This chapter explains the current medical treatments available for dementia, focusing primarily on medications approved for Alzheimer's disease. You will learn about cholinesterase inhibitors (including donepezil, rivastigmine, and galantamine) and memantine, understanding how these medications work, their potential benefits, and side effects. The chapter also covers symptom management strategies and introduces the concept of clinical trials for those interested in participating in research studies. While these medications cannot cure dementia or stop its progression, understanding treatment options helps families make informed decisions about care and maintain realistic expectations about what medical interventions can achieve.
@@ -65,6 +77,18 @@ Currently, the FDA has approved several medications specifically for Alzheimer's
 Other dementia types have fewer specific treatments, though some Alzheimer's medications may be used off-label.
 
 This chapter will explain how these medications work, what benefits they may provide, potential side effects, and how they're used in practice.
+
+!!! mascot-thinking "Slow, Not Cure"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    I want us to pause and sit with this idea before we go any further,
+    because it matters. Today's dementia medications *slow* the disease
+    for some people for a while — they don't cure it, and they don't
+    rebuild what's already been lost. I know that's hard to hear if you
+    were hoping for more. But here's the other side: buying six extra
+    months of conversation, or of someone still recognizing the people
+    they love, is not a small thing. It's months of memories. Holding
+    both truths at once — the limit and the value — is what I'll ask
+    you to do as we look at each medication.
 
 ## Cholinesterase Inhibitors: Boosting Acetylcholine
 
@@ -367,6 +391,18 @@ Extended-release galantamine: Taken once daily with breakfast. Starting dose of 
 - Difficulty urinating (especially in men)
 - Severe skin reaction to rivastigmine patch
 
+!!! mascot-tip "A Few Things That Really Help"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    If you're the caregiver juggling all this, here are a few simple
+    habits that make a real difference. Keep one running list of every
+    medication, the dose, and the time of day — paper on the fridge
+    works as well as any app. Bring that list to every appointment.
+    Start a new medication on a calm weekend, not before a big event,
+    so you have room to notice side effects. Give new side effects two
+    to four weeks to settle before panicking — most of the early nausea
+    fades. And if something feels wrong, call the prescriber. You are
+    not bothering them; you are being a good partner in care.
+
 ## Memantine: A Different Mechanism
 
 **Memantine** (brand name Namenda) represents a completely different approach to Alzheimer's treatment compared to cholinesterase inhibitors. Rather than affecting acetylcholine, memantine modulates glutamate, an excitatory neurotransmitter.
@@ -660,6 +696,19 @@ Sleep disturbances are common in dementia. Non-drug approaches (sleep hygiene, l
 - **Anticholinergic sleep aids** (Benadryl, Unisom): Worsen cognition and confusion
 - **Ambien, Lunesta**: Increase falls and confusion in elderly
 
+!!! mascot-warning "Please Read This Part Carefully"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Tokie warns you">
+    I don't usually raise my voice, but this is one place I want to.
+    Several common over-the-counter sleep aids and allergy pills —
+    including Benadryl and most "PM" versions of pain relievers — can
+    make confusion much worse in someone with dementia. They're called
+    anticholinergics, which means they block the very same memory
+    chemical (acetylcholine) that the main dementia medications are
+    working to boost. You can undo weeks of benefit with one well-meaning
+    trip to the drugstore. Before giving *any* new over-the-counter
+    medicine, run it by the prescriber or pharmacist. A quick phone
+    call can prevent a rough week.
+
 ### Pain Management
 
 Unrecognized pain often causes behavioral symptoms in dementia. People with advanced dementia may be unable to report pain verbally, so caregivers must watch for signs:
@@ -915,3 +964,16 @@ The landscape of dementia treatment continues to evolve. Researchers are testing
 ---
 
 **Next**: [Chapter 10: Therapeutic Interventions](../10-therapeutic-interventions/index.md) explores non-pharmacological approaches to dementia care, including cognitive stimulation, physical exercise, music therapy, and other therapeutic interventions that improve quality of life.
+
+!!! mascot-celebration "You Made It Through the Pharmacy"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    That was a heavy chapter, and you stayed with it — thank you. You
+    now know what the main Alzheimer's medications are actually doing
+    inside the brain, what realistic benefits look like, which side
+    effects to watch for, and which over-the-counter helpers to steer
+    clear of. That's enough to walk into a doctor's appointment
+    prepared and ask good questions, which is honestly one of the most
+    powerful things a caregiver can do. In Chapter 10 we'll shift
+    gears to the non-drug therapies — music, exercise, cognitive
+    stimulation, and other things you can actually try at home. See
+    you there.

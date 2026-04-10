@@ -8,6 +8,17 @@ version: '1.0'
 
 # Chapter 10: Therapeutic Interventions
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi again — it's Tokie. After a heavy chapter on medications, I'm
+    genuinely happy to bring you into this one. These are the
+    non-drug therapies: music, movement, art, memory work, touch, and
+    simple ways of connecting. A lot of these you can try today, with
+    nothing fancier than a playlist and a hand cupped gently around
+    another hand. Some of them work just as well as pills. I think
+    you're going to leave this chapter with a handful of concrete,
+    hopeful things to try. Let's dig in.
+
 ## Introduction
 
 While medications play a role in managing dementia symptoms, non-pharmacological therapeutic interventions are equally—and sometimes more—effective in improving quality of life, maintaining function, and addressing behavioral symptoms. These therapies offer person-centered approaches that engage individuals with dementia in meaningful activities, preserve dignity, and support emotional well-being.
@@ -63,6 +74,18 @@ Research demonstrates that CST:
 - **Improves communication** and social interaction
 - **May delay cognitive decline** when continued as maintenance CST
 - **Cost-effective** compared to pharmacological interventions
+
+!!! mascot-thinking "Let That Sink In"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    Did you catch that first bullet? A structured conversation group —
+    twice a week, 45 minutes, with themed activities — improves thinking
+    *comparably* to the main Alzheimer's medications in the research.
+    That's not a warm fuzzy; that's the data. I share this not to
+    diminish medicines, but to lift up something we tend to undervalue:
+    real human engagement is a *therapy*. When we play music, tell
+    stories, share meals, or work on a puzzle together, we're not
+    "just passing time." We're doing real brain work. Hold that idea
+    as you read the rest of this chapter.
 
 #### Practical Application
 
@@ -440,6 +463,19 @@ Research shows music therapy can:
 - Music & Memory program (personalized playlists for nursing homes)
 - Dementia-friendly concerts and music programs
 - Simple percussion instruments (online or music stores)
+
+!!! mascot-tip "Build One Playlist This Week"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    If you do nothing else from this chapter, try this: build a
+    20-song playlist of music your loved one loved when they were
+    roughly 15 to 25 years old. That's the era that usually anchors
+    the strongest musical memories. Ask siblings, old friends, or
+    check a "top hits of 1962" kind of list online. Save it on a
+    phone or a small speaker you can keep bedside. Then play it
+    during the hard moments — the bath that goes sideways, the
+    restless hour before dinner, the long drive home from an
+    appointment. I've seen these little playlists change whole days.
+    You can start tonight.
 
 ---
 
@@ -1406,6 +1442,18 @@ Avoid massage if person has:
 - Consider hiring a professional massage therapist experienced with dementia care
 - Look for therapists trained in geriatric massage, hospice massage, or compassionate touch
 
+!!! mascot-encourage "You Really Can Do This"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    I want to say this gently, because I know how it feels to read a
+    long list of therapies and think, "There's no way I can do all of
+    this." You don't have to. You really don't. Pick one thing that
+    sounds doable — a five-minute hand massage after breakfast, a
+    favorite song at sundowning, a photo album on the couch, a short
+    walk around the block. Do that one thing for a week and see what
+    happens. You are already giving your loved one something the best
+    medication in the world cannot: your attention, your touch, your
+    voice. That is powerful care. Please don't underestimate it.
+
 ---
 
 ## Key Takeaways
@@ -1503,3 +1551,15 @@ Avoid massage if person has:
 ---
 
 *This chapter provides an overview of therapeutic interventions for dementia. For specific implementations, consider consultation with trained professionals in each therapeutic area. Always individualize approaches based on the person's preferences, abilities, cultural background, and stage of dementia.*
+
+!!! mascot-celebration "Look at Your Toolkit Now!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    You just walked through more than a dozen non-drug therapies —
+    cognitive stimulation, occupational and physical therapy, music,
+    art, reminiscence, validation, sensory work, pet therapy,
+    aromatherapy, and massage. That's a real toolkit. I hope one or
+    two of them jumped out as something you'd like to try. In
+    Chapter 11 we're going to turn the camera around and look at
+    risk and prevention — the things that might help *any* of us
+    protect our brains over a lifetime. Some of the best news in the
+    whole book is waiting in that chapter. I'll see you there.

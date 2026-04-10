@@ -8,6 +8,17 @@ version: '1.0'
 
 # Chapter 14: Safety and Home Modifications
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi again, it's Tokie. This chapter is all about turning the home
+    you love into a place that also takes care of your person — quietly,
+    in the background, so they can live as normally as possible. We'll
+    walk through fall prevention, lighting, grab bars, door locks,
+    kitchens, medications, and emergency planning. You don't have to do
+    everything at once. Start where the biggest risks are, and let the
+    rest come as you have time and energy. This chapter is a
+    companion, not a checklist to beat yourself up with.
+
 ## Introduction
 
 Creating a safe home environment is one of the most important responsibilities in dementia care. As cognitive abilities decline, the person with dementia becomes more vulnerable to accidents, injuries, and potentially dangerous situations. What was once a familiar, comfortable home can become filled with hazards.
@@ -321,6 +332,17 @@ A systematic home safety assessment identifies hazards before accidents occur. C
 - When new behaviors emerge (wandering, agitation)
 - After hospitalization
 - When moving to new residence
+
+!!! mascot-tip "Walk Through the House on Your Knees"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    Here's a trick that reveals hazards you'd never spot standing up:
+    get on your hands and knees and crawl through each room the way
+    someone unsteady on their feet would see it. You'll suddenly notice
+    every cord, every rug edge, every sharp corner, every shadowy step.
+    If that feels silly, sit in a chair with wheels and roll through the
+    main walking routes. You are looking for the world from their
+    perspective, not yours. Five minutes of this will change what you
+    put on your fix-it list.
 
 ## 3. Grab Bars
 
@@ -912,6 +934,19 @@ The kitchen, particularly the stove, presents serious hazards including fire and
 - Using inappropriate cookware (plastic, metal in microwave)
 - Forgetting how to use appliances
 - Attempting to extinguish fire improperly
+
+!!! mascot-warning "The Stove Is the One You Can't Wait On"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Tokie warns you">
+    I want to be very direct with you about this one. A forgotten pot
+    on a stove is one of the most common — and most devastating —
+    accidents in dementia care. It happens fast, it happens to people
+    who "have always been careful," and by the time the smoke alarm
+    goes off the kitchen may already be on fire. If you notice your
+    person leaving burners on, pulling out cookware when no one is
+    watching, or putting non-food things on the stovetop, please don't
+    wait to see if it happens again. Pull the knobs, flip the breaker,
+    or install an auto shut-off *this week*. This is the one safety
+    decision I'd never ask you to hesitate on.
 
 ### Stove Safety Solutions
 
@@ -1669,6 +1704,18 @@ Medical alert systems provide quick access to help in emergencies, especially im
 
 ## Creating a Safe Environment While Maintaining Dignity
 
+!!! mascot-thinking "Safety Isn't the Same as Restriction"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    I want you to pause on this idea because it's easy to get wrong:
+    the goal of a safe home is not to lock your person down — it's to
+    free them *up*. Every hazard you remove is one less thing a
+    caregiver has to hover over. Every grab bar is a little bit of
+    independence in the bathroom. Every night light is a trip to the
+    toilet that doesn't end in a fall. Good safety design *expands*
+    the world your person can still move through confidently. When a
+    change starts to feel more like a cage than a helping hand, that's
+    your signal to rethink it.
+
 **The Balance**:
 Safety modifications should not make the home feel institutional or stripped of personality. The goal is to maintain familiar, comfortable surroundings while reducing risks.
 
@@ -1894,3 +1941,15 @@ Safety modifications should not make the home feel institutional or stripped of 
 - [Chapter 7: Managing Challenging Behaviors](../07-managing-behaviors/index.md) - Behavioral approaches to wandering
 - [Chapter 12: Daily Living and Caregiving Skills](../12-daily-living-caregiving/index.md) - Transfer techniques and fall prevention
 - [Chapter 9: Medical Treatments and Medications](../09-medical-treatments/index.md) - Medication information
+
+!!! mascot-celebration "One More Chapter to Go"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    Look at what you just finished — a whole chapter on making a home
+    safer without making it feel like a hospital. That's a tough
+    balance, and you walked through it thoughtfully. My gentle
+    encouragement: don't try to do it all this weekend. Pick the two
+    highest-risk things on your list and tackle those first. The rest
+    can wait. And then take a breath, because we've arrived at the
+    last chapter of this whole book. Chapter 15 is about legal and
+    financial planning — the part most people dread. I'll be right
+    beside you for it. Let's finish strong.

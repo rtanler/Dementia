@@ -8,6 +8,17 @@ version: 0.03
 
 # Signs, Symptoms, and Early Recognition
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hey, it's Tokie — welcome back! This chapter is a big one, because
+    it's the one people come looking for when they notice something
+    isn't quite right with themselves or a loved one. We'll walk
+    through the signs of dementia, from the familiar ones like memory
+    loss to the less-obvious ones with unusual names like apraxia and
+    agnosia. My goal isn't to scare you — it's to give you the words
+    and the patterns so you can tell a worry from a pattern worth
+    bringing to a doctor. Let's go gently.
+
 ## Summary
 
 This chapter covers the wide range of symptoms that can indicate dementia, helping you recognize early warning signs and understand how dementia manifests in daily life. You will learn about memory loss, confusion, disorientation, and language difficulties, as well as more specialized symptoms like apraxia (difficulty with motor tasks), agnosia (difficulty recognizing objects), and aphasia (language impairment). The chapter also introduces visual-spatial problems, judgment impairment, and the important concept of mild cognitive impairment (MCI) as a potential precursor to dementia. Recognizing these symptoms early enables timely medical evaluation and intervention.
@@ -176,6 +187,16 @@ Implementation: HTML/CSS/JavaScript with scenario data structure
 Canvas size: 800x600px, fully responsive
 </details>
 
+!!! mascot-thinking "It's the Pattern, Not the Moment"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    If there's one idea I want you to carry through this whole chapter,
+    it's this: no single forgetful moment means dementia. What matters
+    is the *pattern* — forgetting that's frequent, that gets steadily
+    worse, that interferes with daily life, and that the person often
+    doesn't notice in themselves. Everyone loses their keys. The
+    concern isn't one missed key; it's finding the keys in the freezer
+    and having no idea how they got there.
+
 ## Confusion: When the World Doesn't Make Sense
 
 **Confusion** in the context of dementia refers to a state of mental uncertainty, disorientation, and difficulty understanding what is happening in the present moment. While everyone experiences occasional confusion (like waking disoriented from a nap), confusion in dementia is more frequent, more severe, and interferes significantly with daily functioning.
@@ -302,6 +323,16 @@ Language problems affect daily life in numerous ways:
 - **Independence loss** - Problems understanding written instructions (medications, bills, directions) threaten independent living
 
 Recognizing language difficulties early allows families to develop communication strategies and set up support systems before problems become severe.
+
+!!! mascot-tip "Tokie's Tip for Tough Conversations"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    When someone you love is struggling to find a word, the kindest
+    thing you can do is wait. Don't rush to fill the silence or finish
+    their sentence — that can feel dismissive, even if you mean well.
+    Give them a moment. Make gentle eye contact. If they're truly
+    stuck, offer one quiet guess ("Did you mean the phone?"). Slowing
+    down a conversation isn't a burden — it's a kindness that
+    preserves dignity and connection.
 
 ## Aphasia: When Language Systems Break Down
 
@@ -850,6 +881,17 @@ Implementation: HTML/CSS/JavaScript with interactive hover and click events
 Canvas size: 900x600px, fully responsive
 </details>
 
+!!! mascot-encourage "Hold On to This About MCI"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    If you or someone you love has been told the words "mild cognitive
+    impairment," please take a breath. MCI is not dementia, and not
+    everyone with MCI goes on to develop it. Some people stay stable
+    for years. Some even improve. What MCI *does* give you is a
+    precious window — time to put legal and financial plans in place,
+    time to double down on sleep, exercise, and social connection, and
+    time to have the conversations that matter most. Hard news, yes.
+    But also opportunity. You're not alone in this.
+
 ## Putting It All Together: Patterns of Symptoms
 
 Understanding individual symptoms is important, but recognizing patterns of symptoms helps distinguish between different types of dementia and guides appropriate evaluation and treatment. No single symptom confirms dementia—it's the pattern, severity, progression, and impact on functioning that matter.
@@ -936,3 +978,15 @@ Understanding these symptoms empowers you to recognize concerning changes, seek 
 ---
 
 *In the next chapter, we'll explore the stages of dementia progression, learning how symptoms typically evolve over time and what changes to expect as dementia advances through early, middle, and late stages.*
+
+!!! mascot-celebration "You Learned to See the Signs"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    That was a lot to take in, and I'm proud of you for making it
+    through. You can now recognize the difference between an ordinary
+    forgetful moment and a pattern worth investigating. You know what
+    aphasia, agnosia, and apraxia mean — words most people have never
+    heard. And you understand why MCI matters as a window of
+    opportunity, not a sentence. That's the kind of knowledge that
+    helps real families make real decisions. Rest a minute. When
+    you're ready, Chapter 6 is where we'll see how dementia typically
+    unfolds over time, stage by stage.

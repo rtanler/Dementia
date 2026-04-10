@@ -8,6 +8,18 @@ version: 1.0
 
 # Managing Challenging Behaviors
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi again — Tokie here. If you're opening this chapter, there's a
+    good chance something hard is happening at home, and you're looking
+    for answers. I want to say right at the start: what you're dealing
+    with is real, it's exhausting, and you're not failing at it.
+    Together we'll look at the behaviors that trouble caregivers most —
+    sundowning, wandering, agitation, aggression, hallucinations, and
+    more — and I'll share practical strategies that actually help. None
+    of this is about blame. It's about understanding what's driving a
+    behavior so you can respond with tools instead of just willpower.
+
 ## Summary
 
 This chapter addresses the challenging behaviors commonly associated with dementia and provides strategies for understanding and managing them. You will learn about sundowning (increased confusion in late afternoon/evening), wandering, agitation, aggression, hallucinations, delusions, and repetitive behaviors. The chapter also covers sleep disturbances and catastrophic reactions (sudden emotional outbursts). Each behavior is explained in context of the underlying brain changes, helping caregivers respond with compassion and effective strategies rather than frustration. Understanding that these behaviors are symptoms of the disease, not intentional actions, is crucial for providing quality care.
@@ -40,6 +52,17 @@ This chapter builds on concepts from:
 Perhaps no aspect of dementia caregiving is more stressful than managing challenging behaviors. When someone with dementia becomes agitated, aggressive, or experiences hallucinations, family members often feel bewildered, frustrated, and even frightened. The person they love may seem transformed into someone unrecognizable—shouting at imagined threats, wandering away from home, or becoming combative during routine care.
 
 The single most important principle to understand is this: **Challenging behaviors are symptoms of brain disease, not character flaws or intentional actions.** The person with dementia is not "being difficult," "manipulating you," or "doing this on purpose." Their damaged brain is producing these behaviors, just as a damaged liver produces jaundice or damaged lungs produce shortness of breath. This neurological understanding transforms how we respond—from frustration and blame to compassion and problem-solving.
+
+!!! mascot-encourage "This Is Not Your Fault"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    If you're caring for someone whose behavior has changed, I want you
+    to hear this from me clearly: you did not cause it, and you can't
+    love it away. Feeling frustrated, scared, or even angry sometimes
+    doesn't make you a bad caregiver — it makes you human. The tools in
+    this chapter work much better than willpower or patience alone, and
+    they get easier with practice. Please be as gentle with yourself as
+    you're trying to be with the person you're caring for. You deserve
+    that too.
 
 ### The ABCs of Behavior Analysis
 
@@ -149,6 +172,18 @@ The exact mechanisms of sundowning aren't fully understood, but several factors 
 - Ensure adequate treatment of sleep disturbances
 
 **Example**: Margaret experiences sundowning every evening around 5 PM, becoming convinced she needs to "go home" (despite being in her home of 40 years) and becoming increasingly agitated. Her daughter implements several strategies: afternoon snack at 3:30 PM, turning on all lights by 4 PM, closing curtains to prevent disturbing window reflections, and playing Margaret's favorite big band music at 5 PM while looking through photo albums together. The combination significantly reduces the severity and duration of evening agitation.
+
+!!! mascot-warning "Wandering Is a True Safety Issue"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Tokie warns you">
+    I need you to take the next section seriously, even if wandering
+    hasn't happened in your home yet. People with dementia who get lost
+    outdoors and aren't found within 24 hours are at real risk of
+    serious harm. The strategies ahead — door alarms, ID bracelets, a
+    Safe Return registration, letting neighbors and local police know —
+    aren't overreactions. They're the kind of thing you want already in
+    place *before* you need them. Please don't wait for the first scare
+    to start. Setting these up now is one of the most loving,
+    protective things you can do.
 
 ## Wandering: When Walking Becomes a Risk
 
@@ -710,6 +745,18 @@ Antipsychotic medications can reduce delusions but carry risks. Reserve for:
 
 **Example**: George repeatedly accuses his wife of 40 years of having an affair, checking her belongings and becoming agitated when she leaves the house. His wife initially tried to reason with him, which escalated his suspicions. After consultation with his doctor (who ruled out infection and medication causes), she changes her approach: validating his underlying fear of loss ("You're worried about our relationship. I love you and I'm not going anywhere"), providing reassurance, redirecting his attention to looking at their wedding photos together, and ensuring he has meaningful activity when she needs to leave the house. The delusion persists but with much less distress and agitation.
 
+!!! mascot-tip "A Small Shift That Helps a Lot"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    Here's one of the most useful things I've learned about repetitive
+    questions: the question itself usually isn't what the person is
+    actually asking. "What time is it?" asked fifty times in an hour is
+    rarely about the time — it's often "I'm anxious" or "I need
+    something to do." So instead of just answering the surface
+    question, try answering the feeling underneath. A gentle "You're
+    safe, I'm right here" or offering a small task like folding towels
+    can quiet the loop in a way that a clock never will. It's a small
+    shift, but it can save both of you a lot of frustration.
+
 ## Repetitive Behaviors: When Actions and Questions Loop
 
 **Repetitive behaviors** involve repeating the same action, question, or statement over and over, often within short time periods. This is one of the most common and frustrating behaviors for caregivers, as the person may ask the same question dozens or even hundreds of times per day.
@@ -1226,3 +1273,15 @@ Remember that you are not alone. Healthcare professionals, support groups, respi
 ---
 
 **Next**: [Chapter 8: Diagnosis and Assessment](../08-diagnosis-assessment/index.md) explores how dementia is diagnosed through clinical evaluation, cognitive testing, brain imaging, and biomarker assessment.
+
+!!! mascot-celebration "You Did Something Hard"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    Look at what you just carried through — sundowning, wandering,
+    agitation, aggression, hallucinations, delusions, repetitive
+    behaviors, sleep disturbances, and catastrophic reactions. That's a
+    heavy load, and you're still here. You now have a real toolkit:
+    look for the cause, address unmet needs, modify the environment,
+    validate the feeling, and keep medications as a last resort. And
+    please hear me on the last one — respite and support aren't extras.
+    You deserve rest too. I'm proud of you. Whenever you're ready,
+    Chapter 8 is waiting.

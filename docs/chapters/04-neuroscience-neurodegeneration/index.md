@@ -8,6 +8,17 @@ version: 0.03
 
 # The Neuroscience of Neurodegeneration
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi again — Tokie here! This chapter gets a little more technical, so
+    I want you to take your time. We're going to look at what's
+    actually happening inside brain cells when dementia takes hold —
+    the sticky proteins, the tangled fibers, the cells that slowly stop
+    working. I know that sounds intense, but understanding this helps
+    everything else click into place, and I promise to translate every
+    scientific word as we go. You don't need a biology degree — you
+    just need to come along.
+
 ## Summary
 
 This chapter examines the pathological mechanisms underlying different forms of dementia at the cellular and molecular level. You will learn about amyloid plaques and neurofibrillary tangles (hallmarks of Alzheimer's disease), as well as specific proteins involved in neurodegeneration including tau protein, beta-amyloid, and alpha-synuclein. The chapter also covers rare neurodegenerative conditions like Pick's disease, corticobasal degeneration, and progressive supranuclear palsy. Understanding these biological processes helps explain why dementia develops and provides context for current and future treatment strategies.
@@ -41,6 +52,16 @@ In Chapters 2 and 3, we learned about the brain's structure and the different ty
 Think of neurodegeneration like rust spreading through a metal structure. Just as rust weakens and eventually destroys metal from the inside out, abnormal proteins in the brain gradually damage and kill neurons. Unlike a scraped knee or broken bone, neurons in most brain regions cannot regenerate or repair themselves once damaged. This is why dementia is progressive—once neurodegeneration begins, it continues unless we can find ways to stop or reverse it.
 
 Neurodegeneration doesn't happen randomly throughout the brain. Different types of dementia involve degeneration in specific brain regions, which explains why different dementias produce different symptoms. In this chapter, we'll explore the molecular and cellular processes that drive this degeneration.
+
+!!! mascot-thinking "Three Troublemakers"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    Here's a little map to hold in your mind before we zoom in. Most of
+    what we're about to explore comes down to just *three* misbehaving
+    proteins: **beta-amyloid**, **tau**, and **alpha-synuclein**. Each
+    one normally does a useful job in a healthy brain. Each one can
+    fold into the wrong shape and clump together in ways that hurt
+    neurons. If you can keep those three names straight, you'll follow
+    the rest of the chapter just fine.
 
 ## The Role of Proteins in Brain Health and Disease
 
@@ -340,6 +361,17 @@ Implementation: HTML/CSS/JavaScript with interactive toggles and hover states
 Canvas size: 1000x650px, fully responsive to window resize
 </details>
 
+!!! mascot-encourage "You're Doing the Hard Part"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    This is probably the most technical chapter in the whole book, and
+    look — you're still here. That matters. You don't need to remember
+    every amino acid or enzyme name. What I want you to walk away with
+    is the big idea: misfolded proteins clump together, the clumps hurt
+    neurons, and different clumps cause different types of dementia.
+    That's the heart of it. If you've got that, you've got the chapter.
+    The next section introduces a few rarer conditions — feel free to
+    skim if the names start blurring together.
+
 ## Rare Tauopathies: Pick's Disease, CBD, and PSP
 
 While Alzheimer's disease is the most common condition involving tau pathology, several rarer neurodegenerative diseases are also characterized by abnormal tau protein accumulation. These are collectively called "tauopathies" because tau protein dysfunction is their primary pathological feature. Three important rare tauopathies are Pick's disease, corticobasal degeneration, and progressive supranuclear palsy.
@@ -542,6 +574,17 @@ You might wonder why patients and caregivers need to understand the molecular de
 
 The molecular details matter because they guide treatment development, inform diagnostic testing, and ultimately will lead to therapies that can prevent or slow neurodegeneration before extensive damage occurs.
 
+!!! mascot-tip "A Reason for Hope"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    Here's something worth holding on to. Every one of these proteins —
+    beta-amyloid, tau, alpha-synuclein — is a target that researchers
+    are actively working on right now. New drugs are in trials,
+    biomarker tests can spot trouble years earlier than before, and
+    prevention research is growing fast. If you or a loved one are
+    facing dementia, ask your care team about clinical trials in your
+    area. Participating isn't just for you — it helps build the
+    treatments the next generation will count on.
+
 ## Key Takeaways
 
 This chapter has explored the molecular and cellular processes that drive neurodegeneration in dementia. Here are the essential points to remember:
@@ -570,3 +613,14 @@ Understanding these neuroscientific foundations prepares you for the next chapte
 ---
 
 *In the next chapter, we'll examine how the neurodegeneration and protein pathology described here produce the observable signs, symptoms, and behavioral changes that characterize different types of dementia.*
+
+!!! mascot-celebration "You Tackled the Science!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    That was a heavy chapter, and you made it all the way through. You
+    now know the molecular story behind dementia — the misfolded
+    proteins, the plaques and tangles, the way pathology spreads from
+    neuron to neuron. That's genuinely advanced material, and you've
+    earned a little celebration. Go stretch, hydrate, maybe take a
+    walk (remember, that's brain-healthy!). When you're ready, Chapter
+    5 waits for us, and we'll zoom back out to the symptoms you or a
+    loved one might actually notice in daily life.

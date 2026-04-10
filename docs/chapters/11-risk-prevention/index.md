@@ -8,6 +8,18 @@ version: '1.0'
 
 # Chapter 11: Risk Factors and Prevention Strategies
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi again — Tokie here. This chapter is genuinely hopeful, and I've
+    been looking forward to it. We're going to look at what raises the
+    risk of dementia and — more importantly — what you can actually do
+    about it. I'm not going to preach at you or hand you a perfect diet
+    plan. I just want to share what the science says works, in plain
+    language, so you can pick the one or two things that fit your real
+    life. Whether you're worried about your own brain, or you're
+    caring for someone else and thinking about your own future too,
+    there's good news here. Let's go find it.
+
 ## Introduction
 
 While there is no guaranteed way to prevent dementia, research increasingly shows that many dementia cases may be prevented or delayed through lifestyle modifications. Understanding risk factors empowers individuals to make informed choices that support long-term brain health.
@@ -246,6 +258,19 @@ The brain requires **20% of the body's blood flow** despite being only 2% of bod
 6. **Synergy with Alzheimer's Pathology**: Vascular damage worsens amyloid/tau effects
 
 **Key Insight**: Many dementia cases involve **mixed pathology**—both Alzheimer's changes (amyloid/tau) and vascular damage. Controlling cardiovascular risk factors may reduce dementia risk even in those with genetic susceptibility.
+
+!!! mascot-thinking "The Part I Want You to Remember"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    I want to pause on this idea, because it's one of the most
+    important in the whole book: even if dementia runs in your family,
+    even if your genes aren't the luck of the draw, the choices you
+    make about blood pressure, blood sugar, weight, and exercise still
+    matter. A lot. Researchers now believe that something like 40% of
+    dementia cases worldwide could be prevented or delayed through
+    lifestyle. That's not a guarantee, and it's not your fault if
+    dementia shows up anyway — genes and bad luck are real. But it
+    *does* mean you have more power than the word "genetic" might
+    suggest. That's worth holding on to.
 
 ---
 
@@ -608,6 +633,18 @@ Multiple mechanisms:
 - Stay hydrated
 - Wear appropriate footwear
 - Listen to your body—stop if you experience pain, dizziness, or shortness of breath
+
+!!! mascot-tip "If You Only Do One Thing"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    If this chapter feels like a giant to-do list, here's my honest
+    shortcut: start walking. A brisk 20-to-30-minute walk, most days
+    of the week, checks more brain-health boxes than almost any other
+    single habit. It helps blood pressure, blood sugar, weight, sleep,
+    and mood. If you walk with a friend, it covers social engagement
+    too. You don't need a gym, special gear, or a plan. You just need
+    shoes and a door. Start with ten minutes today, and stretch it a
+    little longer each week. The best exercise plan in the world is
+    the one you'll actually do.
 
 ---
 
@@ -1153,6 +1190,19 @@ Break goals into concrete actions:
 - Each social interaction matters
 - It's never too early or too late to start
 
+!!! mascot-encourage "You're Not Behind"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    If you're reading this and thinking, "I wish I'd started sooner"
+    — I want to sit with you for a second. You are not behind.
+    Research keeps showing that the brain responds to healthy changes
+    at any age, even well into the 70s and 80s. A walk you take next
+    Tuesday still counts. A new hobby at 68 still builds new
+    connections. A conversation with an old friend next weekend still
+    protects your mood and your memory. Guilt about the past doesn't
+    help anyone's brain. A kind, patient start *today* does. Pick one
+    thing that feels doable and begin there. I'm proud of you for
+    reading this far.
+
 ---
 
 ## Key Takeaways
@@ -1260,3 +1310,15 @@ Break goals into concrete actions:
 ---
 
 *This chapter provides evidence-based information on dementia risk factors and prevention strategies. Individual risk profiles vary; consult with healthcare providers for personalized guidance. While these strategies may reduce dementia risk, no intervention can guarantee prevention.*
+
+!!! mascot-celebration "That Was Hopeful, Wasn't It?"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    You made it through the prevention chapter — and I hope it left
+    you with more hope than worry. You now know which risk factors
+    you can do something about, why cardiovascular health is brain
+    health, and how exercise, diet, sleep, social connection, and
+    mental challenge all weave together into a brain-healthy life.
+    No one does this perfectly, me included. The goal isn't a
+    flawless plan; it's a steady, gentle one. In the next chapter
+    we'll turn our attention to daily care and practical routines.
+    Take a breath, maybe a walk, and I'll see you there.

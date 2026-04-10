@@ -8,6 +8,18 @@ version: 1.0
 
 # Diagnosis and Assessment
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hey, it's Tokie again. The road to a dementia diagnosis can feel
+    scary and confusing — lots of appointments, unfamiliar tests, and
+    big words you've never heard before. My goal in this chapter is to
+    pull back the curtain so nothing feels like a mystery. We'll walk
+    through what doctors actually do: the conversations, the cognitive
+    tests (MMSE, MoCA, clock drawing), brain scans, blood work, and how
+    they sort through possibilities. By the end, you'll know what to
+    expect and how to make the process work *for* you instead of feeling
+    like it's happening *to* you.
+
 ## Summary
 
 This comprehensive chapter covers the diagnostic process for dementia, including cognitive assessments, brain imaging, laboratory tests, and differential diagnosis. You will learn about cognitive screening tools like the Mini-Mental State Exam (MMSE), Montreal Cognitive Assessment (MoCA), and Clock Drawing Test. The chapter explains various brain imaging techniques (MRI, CT, PET, and SPECT scans), blood tests, cerebrospinal fluid analysis, genetic testing, and biomarkers. You will also understand how doctors distinguish dementia from other conditions like delirium and depression through differential diagnosis, and how functional assessments evaluate a person's ability to perform daily activities. This knowledge helps families understand what to expect during medical evaluations and how diagnostic information guides treatment planning.
@@ -64,6 +76,18 @@ Understanding the diagnostic process serves multiple purposes:
 The diagnostic process for dementia is inherently complex because there's no single definitive test. Unlike diagnosing diabetes (where a blood sugar test provides a clear answer) or a broken bone (where an X-ray shows the fracture), dementia diagnosis requires synthesizing information from multiple sources: clinical history, cognitive testing, brain imaging, laboratory tests, and functional assessments.
 
 This chapter will walk you through each component of the diagnostic process, explaining what happens, why it matters, and what the results mean. By the end, you'll understand how physicians piece together diverse information to arrive at a diagnosis and distinguish dementia from other conditions.
+
+!!! mascot-tip "Prepare Before the Appointment"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    Before the first visit, I want you to do a little homework — it
+    will pay off hugely. Jot down when you first noticed changes, what
+    they looked like, and how they've shifted over time. Bring a
+    current list of every medication, supplement, and vitamin (the
+    actual bottles if you can). If you're going as a family member,
+    ask to speak with the doctor privately for a few minutes, because
+    people with memory trouble often don't realize the full picture.
+    Doctors rely on these details more than any blood test. You are
+    bringing the most important data in the room.
 
 ## The Foundation: Medical History and Clinical Evaluation
 
@@ -171,6 +195,18 @@ A neurological examination for dementia typically includes:
 - Especially important for identifying Lewy body dementia and Parkinson's disease dementia
 
 The neurological exam helps differentiate types of dementia and identify comorbid conditions. For example, focal neurological signs (weakness on one side, visual field deficits) suggest vascular dementia from strokes. Parkinsonian features early in the course suggest Lewy body dementia or Parkinson's disease dementia. An unsteady, magnetic gait (feet seeming to stick to the floor) may indicate normal pressure hydrocephalus, a potentially treatable cause of cognitive impairment.
+
+!!! mascot-thinking "What These Tests Really Show"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    I want to reframe the cognitive tests for you before we dive in.
+    They're not pass/fail judgments, and they're not measuring whether
+    someone is "smart." They're like a mechanic listening to different
+    parts of an engine — they help the doctor figure out which
+    cognitive systems are working smoothly and which are struggling.
+    That pattern matters more than the score itself. If your loved one
+    is nervous about these tests (and most people are), it can help to
+    tell them: the doctor isn't judging you, they're listening for
+    where you need support.
 
 ## Cognitive Assessments: Measuring Mental Function
 
@@ -548,6 +584,19 @@ While structural imaging (MRI, CT) shows brain anatomy, functional imaging shows
 - Evaluating blood flow in specific clinical scenarios
 
 In practice, **FDG-PET has largely replaced SPECT** for dementia evaluation in centers where PET is available, as it provides better image quality and more specific information.
+
+!!! mascot-encourage "A Reason for Real Hope"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    I want you to pause and hold this next idea with me, because it's
+    genuinely hopeful. Not every memory problem is dementia. A low
+    thyroid, a vitamin B12 deficiency, a urinary tract infection, a
+    medication side effect, even untreated depression — any of these
+    can look just like dementia, and all of them are treatable. That's
+    why a good workup includes blood tests. Sometimes the "dementia
+    diagnosis" you were dreading turns out to be something else
+    entirely, something a prescription or a few injections can fix.
+    Waiting and wondering is the hardest part; finding out is the
+    first step toward actually helping.
 
 ## Laboratory Tests: Ruling Out Treatable Causes
 
@@ -1041,3 +1090,16 @@ The diagnostic process may seem lengthy and complex, involving multiple appointm
 ---
 
 **Next**: [Chapter 9: Medical Treatments and Medications](../09-medical-treatments/index.md) explores pharmacological treatments for dementia, including cholinesterase inhibitors, memantine, and medications for managing behavioral symptoms.
+
+!!! mascot-celebration "You Now Speak the Language"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    Look at you — you just walked through the entire dementia workup!
+    You know what a good history looks like, what the MMSE and MoCA
+    measure, why an MRI is usually preferred over a CT, what blood
+    tests can rule out, and how doctors tell dementia apart from
+    delirium and depression. The next time you're sitting in a waiting
+    room, these words won't be mysteries anymore. That's real power,
+    and it's going to help you ask better questions and advocate for
+    the person you love. Take a breath, celebrate, and when you're
+    ready I'll see you in Chapter 9 — that's where we start talking
+    about treatment.

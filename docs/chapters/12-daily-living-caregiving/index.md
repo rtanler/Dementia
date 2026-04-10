@@ -8,6 +8,16 @@ version: '1.0'
 
 # Chapter 12: Daily Living and Caregiving Skills
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hey, it's Tokie again. This chapter is the one a lot of caregivers
+    reach for when they're tired, stretched, and just trying to get
+    through the day. We'll walk through the everyday stuff together —
+    bathing, dressing, meals, toileting, moving safely, and sleep — with
+    a focus on keeping your person comfortable and dignified, and keeping
+    you sane. There's a lot here, so don't try to absorb it in one sitting.
+    Come back to the sections you need when you need them. I'm right here.
+
 ## Introduction
 
 Caring for someone with dementia involves providing assistance with everyday activities while preserving their dignity, independence, and quality of life. This chapter focuses on the practical skills caregivers need to support a person with dementia through Activities of Daily Living (ADLs)—the fundamental tasks of self-care that most of us take for granted.
@@ -103,6 +113,17 @@ Before providing help, determine what the person can still do:
 - Maintain eye contact at their level
 - Honor preferences when possible
 - Avoid infantilizing language ("Good girl!" "Let's go potty")
+
+!!! mascot-tip "Tokie's Tip"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    If you remember one phrase from this whole chapter, let it be
+    **"do with, not for."** It means pausing for an extra ten or twenty
+    seconds to let your person do the part they still *can* do — buttoning
+    a shirt, lifting a spoon, stepping into a pant leg — before you step
+    in. Those small wins matter, both for their sense of self and for
+    preserving the skills they still have. Yes, it's slower. But slower
+    is a feature, not a bug. You're not just getting a task done; you're
+    protecting someone's dignity.
 
 ---
 
@@ -311,6 +332,17 @@ For those who cannot get to bathroom:
 - Consider professional home health aide
 
 **Validation approach**: "I can see you're upset. We don't have to do this right now. How about we have some tea first?"
+
+!!! mascot-warning "Please Don't Force a Bath"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Tokie warns you">
+    If your person is refusing a bath and you're tempted to push through
+    anyway — please, take a breath and try again later. Forcing a bath
+    almost always backfires. It can trigger real fear, physical
+    resistance, falls, and a caregiving relationship that feels like
+    combat for days afterward. Missing one bath isn't a crisis. A broken
+    hip or a shattered trust *is*. Try a different time, a different
+    caregiver, a sponge bath in bed, or just face and hands for today.
+    You have more room to be flexible than you think.
 
 ---
 
@@ -1437,6 +1469,17 @@ Incontinence care is one of the hardest aspects of caregiving. Feelings of disgu
 - It's okay to take breaks and ask for help
 - Consider home health aide for assistance
 
+!!! mascot-encourage "This Is Hard — And You're Doing It"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    I want to say this plainly: cleaning up after someone you love,
+    again and again, is one of the hardest things a person can be asked
+    to do. If you feel grief, disgust, anger, or a strange numbness — none
+    of those feelings make you a bad caregiver. They make you human. The
+    person in front of you isn't choosing this, and neither are you. What
+    you *are* choosing is to show up with kindness when it would be
+    easier not to. That matters more than you know. Please take the
+    breaks you need. Ask for help. You were never meant to do this alone.
+
 ---
 
 ## Skin Care
@@ -1990,3 +2033,15 @@ Focus on the *person*, not the disease:
 ---
 
 *This chapter provides practical guidance for supporting daily living activities. Individual situations vary—consult healthcare professionals for personalized advice. Respite care and support services are available to help caregivers maintain their own health and well-being.*
+
+!!! mascot-celebration "You Made It Through a Big One"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    That was a *long* chapter, and I know it's a heavy one. Bathing,
+    feeding, toileting, transfers, skin, sleep — every page was asking
+    you to learn something practical that real life will test. You don't
+    need to remember it all. Bookmark the sections that match what
+    you're facing this week, and come back when the situation changes.
+    Most of all, please remember that behind every tip in this chapter
+    is the same message: you are doing the hardest kind of loving there
+    is. In Chapter 13, we'll work on *how* to talk with your person so
+    that these daily moments feel a little less like a battle.
