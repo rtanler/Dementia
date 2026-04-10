@@ -17,21 +17,66 @@ nav:
 
   - Chapters:
     - Overview: chapters/index.md
-    - Chapter 1 - Introduction to Dementia and Cognitive Health: chapters/01-intro-to-dementia/index.md
-    - Chapter 2 - Brain Anatomy and Function: chapters/02-brain-anatomy-function/index.md
-    - Chapter 3 - Understanding Different Types of Dementia: chapters/03-types-of-dementia/index.md
-    - Chapter 4 - The Neuroscience of Neurodegeneration: chapters/04-neuroscience-neurodegeneration/index.md
-    - Chapter 5 - Signs, Symptoms, and Early Recognition: chapters/05-signs-symptoms-recognition/index.md
-    - Chapter 6 - Progression Through Dementia Stages: chapters/06-dementia-stages/index.md
-    - Chapter 7 - Managing Challenging Behaviors: chapters/07-managing-behaviors/index.md
-    - Chapter 8 - Diagnosis and Assessment: chapters/08-diagnosis-assessment/index.md
-    - Chapter 9 - Medical Treatments and Medications: chapters/09-medical-treatments/index.md
-    - Chapter 10 - Therapeutic Interventions: chapters/10-therapeutic-interventions/index.md
-    - Chapter 11 - Risk Factors and Prevention Strategies: chapters/11-risk-prevention/index.md
-    - Chapter 12 - Daily Living and Caregiving Skills: chapters/12-daily-living-caregiving/index.md
-    - Chapter 13 - Communication Techniques: chapters/13-communication-techniques/index.md
-    - Chapter 14 - Safety and Home Modifications: chapters/14-safety-home-modifications/index.md
-    - Chapter 15 - Legal, Financial, and Support Resources: chapters/15-legal-financial-support/index.md
+    - 1. Introduction to Dementia and Cognitive Health:
+      - Content: chapters/01-intro-to-dementia/index.md
+      - Quiz: chapters/01-intro-to-dementia/quiz.md
+      - Annotated References: chapters/01-intro-to-dementia/references.md
+    - 2. Brain Anatomy and Function:
+      - Content: chapters/02-brain-anatomy-function/index.md
+      - Quiz: chapters/02-brain-anatomy-function/quiz.md
+      - Annotated References: chapters/02-brain-anatomy-function/references.md
+    - 3. Understanding Different Types of Dementia:
+      - Content: chapters/03-types-of-dementia/index.md
+      - Quiz: chapters/03-types-of-dementia/quiz.md
+      - Annotated References: chapters/03-types-of-dementia/references.md
+    - 4. The Neuroscience of Neurodegeneration:
+      - Content: chapters/04-neuroscience-neurodegeneration/index.md
+      - Quiz: chapters/04-neuroscience-neurodegeneration/quiz.md
+      - Annotated References: chapters/04-neuroscience-neurodegeneration/references.md
+    - 5. Signs, Symptoms, and Early Recognition:
+      - Content: chapters/05-signs-symptoms-recognition/index.md
+      - Quiz: chapters/05-signs-symptoms-recognition/quiz.md
+      - Annotated References: chapters/05-signs-symptoms-recognition/references.md
+    - 6. Progression Through Dementia Stages:
+      - Content: chapters/06-dementia-stages/index.md
+      - Quiz: chapters/06-dementia-stages/quiz.md
+      - Annotated References: chapters/06-dementia-stages/references.md
+    - 7. Managing Challenging Behaviors:
+      - Content: chapters/07-managing-behaviors/index.md
+      - Quiz: chapters/07-managing-behaviors/quiz.md
+      - Annotated References: chapters/07-managing-behaviors/references.md
+    - 8. Diagnosis and Assessment:
+      - Content: chapters/08-diagnosis-assessment/index.md
+      - Quiz: chapters/08-diagnosis-assessment/quiz.md
+      - Annotated References: chapters/08-diagnosis-assessment/references.md
+    - 9. Medical Treatments and Medications:
+      - Content: chapters/09-medical-treatments/index.md
+      - Quiz: chapters/09-medical-treatments/quiz.md
+      - Annotated References: chapters/09-medical-treatments/references.md
+    - 10. Therapeutic Interventions:
+      - Content: chapters/10-therapeutic-interventions/index.md
+      - Quiz: chapters/10-therapeutic-interventions/quiz.md
+      - Annotated References: chapters/10-therapeutic-interventions/references.md
+    - 11. Risk Factors and Prevention Strategies:
+      - Content: chapters/11-risk-prevention/index.md
+      - Quiz: chapters/11-risk-prevention/quiz.md
+      - Annotated References: chapters/11-risk-prevention/references.md
+    - 12. Daily Living and Caregiving Skills:
+      - Content: chapters/12-daily-living-caregiving/index.md
+      - Quiz: chapters/12-daily-living-caregiving/quiz.md
+      - Annotated References: chapters/12-daily-living-caregiving/references.md
+    - 13. Communication Techniques:
+      - Content: chapters/13-communication-techniques/index.md
+      - Quiz: chapters/13-communication-techniques/quiz.md
+      - Annotated References: chapters/13-communication-techniques/references.md
+    - 14. Safety and Home Modifications:
+      - Content: chapters/14-safety-home-modifications/index.md
+      - Quiz: chapters/14-safety-home-modifications/quiz.md
+      - Annotated References: chapters/14-safety-home-modifications/references.md
+    - 15. Legal, Financial, and Support Resources:
+      - Content: chapters/15-legal-financial-support/index.md
+      - Quiz: chapters/15-legal-financial-support/quiz.md
+      - Annotated References: chapters/15-legal-financial-support/references.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md

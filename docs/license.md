@@ -21,7 +21,9 @@ This work is licensed under the
 
 ## Commercial Licensing
 
-If you wish to use this material for commercial purposes, please contact **Richard Tandler** to discuss a commercial license agreement.
+If you wish to use this material for commercial purposes, please contact **Richard Tandler** to discuss a commercial license agreement.  You can connect to Richard using the [Contact](./contact.md) page.
+
+Note we are working with an organization that will provide a learning progress dashboard for staff.
 
 ## Copyright Notice
 

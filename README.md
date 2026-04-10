@@ -37,6 +37,22 @@ The board uses the following columns to organize work:
 | **In review** | Tasks where the work is complete and is being reviewed for accuracy, readability, accessibility, or technical quality before being marked done. |
 | **Done** | Tasks that have been completed, reviewed, and merged or published to the live site. |
 
+In addition to the status columns, each task can be tagged with a **Priority** and a **Size** to help with planning and triage:
+
+| Priority | Meaning |
+|----------|---------|
+| **P0** | Critical — must be addressed immediately. Blocks the site, breaks the build, or corrects a serious content error. |
+| **P1** | High — important work that should be done in the current development cycle. |
+| **P2** | Normal — useful improvements and enhancements that can be scheduled when capacity allows. |
+
+| Size | Meaning |
+|------|---------|
+| **XS** | Trivial — a quick fix such as a typo, link correction, or small wording change. |
+| **S**  | Small — a focused change that touches one file or a single concept. |
+| **M**  | Medium — a moderate task such as drafting a short chapter section or building a simple MicroSim. |
+| **L**  | Large — a significant task such as writing a full chapter or building a complex MicroSim. |
+| **XL** | Extra large — a multi-step initiative that may need to be broken into smaller tasks before work begins. |
+
 ## Site Status and Metrics
 
 | Metric | Count |
