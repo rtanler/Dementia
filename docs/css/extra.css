@@ -431,3 +431,31 @@ iframe {
    - Color blindness considerations
    ============================================
 */
+
+/* ============================================
+   PAGE STATUS INDICATORS (LEFT NAV)
+   ============================================
+   Three-state review status for MicroSims and other pages.
+   Configured in mkdocs.yml under extra.status.
+
+   - scaffold  (red)    : Specification and scaffold only
+   - generated (orange) : JavaScript generated, awaiting review
+   - approved  (green)  : Approved by Rick or another team member
+
+   The default mkdocs-material .md-status icon is an info circle
+   rendered via a mask-image. We replace that mask with a solid
+   filled circle and tint it with background-color so each status
+   shows up as a colored dot in the navigation.
+*/
+
+.md-status--scaffold,
+.md-status--generated,
+.md-status--approved {
+    /* Solid filled circle SVG used as the icon mask */
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>');
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>');
+}
+
+.md-status--scaffold  { background-color: #e53935; } /* red    */
+.md-status--generated { background-color: #fb8c00; } /* orange */
+.md-status--approved  { background-color: #43a047; } /* green  */

@@ -1,7 +1,7 @@
 ---
 title: How Memory Formation Works
 description: Step through the four stages of memory formation using the example of meeting Sarah at a party.
-status: implemented
+status: generated
 library: Custom HTML/CSS/JavaScript with SVG
 bloom_level: Understand (L2)
 ---

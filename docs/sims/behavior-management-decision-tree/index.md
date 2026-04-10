@@ -1,10 +1,12 @@
 ---
 title: Behavior Management Decision Tree
 description: Apply systematic problem-solving to challenging behaviors in moderate-stage dementia (Bloom Level 3 - Apply)
-status: implemented
-library: Custom HTML/CSS/JavaScript
-bloom_level: Apply (L3)
+status: generated
 ---
+
+<iframe src="main.html" width="100%" height="700" style="border:1px solid #ddd; border-radius:8px;"></iframe>
+
+[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
 # Behavior Management Decision Tree
 
@@ -25,11 +27,6 @@ decision framework.
 - **Bloom Verb:** Apply, use, implement, solve
 - **Library:** Custom HTML/CSS/JavaScript
 
-## Interactive MicroSim
-
-<iframe src="main.html" width="100%" height="700" style="border:1px solid #ddd; border-radius:8px;"></iframe>
-
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
 ## How to Use
 

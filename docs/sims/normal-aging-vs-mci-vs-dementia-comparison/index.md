@@ -1,7 +1,7 @@
 ---
 title: Normal Aging vs. MCI vs. Dementia Comparison
 description: Differentiate between normal aging, mild cognitive impairment, and dementia across multiple dimensions (Bloom Level 4 - Analyze)
-status: implemented
+status: generated
 library: Custom HTML/CSS/JavaScript
 bloom_level: Analyze (L4)
 ---

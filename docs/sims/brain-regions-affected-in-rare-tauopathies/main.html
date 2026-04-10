@@ -6,16 +6,43 @@
   <title>Brain Regions Affected in Rare Tauopathies — Interactive Diagram</title>
   <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
   <link rel="stylesheet" href="../shared-libs/style.css">
+  <style>
+    /* Drawing canvas background — match the page so the brain image
+       sits on aliceblue rather than white */
+    #layout,
+    #diagram-wrapper {
+      background: aliceblue;
+    }
+
+    /* Section name labels overlaid at the bottom of each brain image */
+    #section-labels {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(4% + 30px);
+      pointer-events: none;
+      z-index: 8;
+      line-height: 1.2;
+    }
+    .section-label {
+      position: absolute;
+      transform: translateX(-50%);
+      padding: 4px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+      background: rgba(0, 0, 0, 0.65);
+      border-radius: 14px;
+      white-space: nowrap;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    }
+    .section-label.pick    { border: 2px solid #E8663D; }
+    .section-label.cbd     { border: 2px solid #8E6FB8; }
+    .section-label.psp     { border: 2px solid #4E9A4E; }
+  </style>
 </head>
 <body>
-
-<div id="controls">
-  <button class="mode-btn active" id="btn-explore" onclick="sim.setMode('explore')">Explore</button>
-  <button class="mode-btn"        id="btn-quiz"    onclick="sim.setMode('quiz')">Quiz</button>
-  <span id="quiz-score" style="display:none">
-    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
-  </span>
-</div>
 
 <div id="layout">
   <svg id="leaders-svg"></svg>
@@ -23,11 +50,24 @@
   <div id="diagram-wrapper">
     <img id="diagram-img" src="tauopathies-brain-regions.png" alt="Three lateral side-view brain diagrams arranged horizontally comparing Pick's disease (left, orange-red frontal and anterior temporal lobe atrophy), corticobasal degeneration (middle, purple motor cortex and basal ganglia), and progressive supranuclear palsy (right, green midbrain, basal ganglia, and lighter green frontal cortex)" draggable="false">
     <div id="markers-layer"></div>
+    <div id="section-labels">
+      <div class="section-label pick" style="left: 14%;">Pick's Disease</div>
+      <div class="section-label cbd"  style="left: 48%;">Corticobasal Degeneration</div>
+      <div class="section-label psp"  style="left: 78%;">Progressive Supranuclear Palsy</div>
+    </div>
   </div>
 
   <div id="label-panel">
     <!-- label rows injected by diagram.js -->
   </div>
+</div>
+
+<div id="controls">
+  <button class="mode-btn active" id="btn-explore" onclick="sim.setMode('explore')">Explore</button>
+  <button class="mode-btn"        id="btn-quiz"    onclick="sim.setMode('quiz')">Quiz</button>
+  <span id="quiz-score" style="display:none">
+    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
+  </span>
 </div>
 
 <div id="infobox">

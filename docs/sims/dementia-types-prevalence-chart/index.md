@@ -1,7 +1,7 @@
 ---
 title: Dementia Types Prevalence Chart
 description: Understand the relative prevalence of different dementia types (Bloom Level 2 - Understand)
-status: implemented
+status: generated
 library: Chart.js
 bloom_level: Understand (L2)
 ---

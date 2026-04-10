@@ -1,7 +1,7 @@
 ---
 title: Dementia Types Comparison Matrix
 description: Analyze and compare the distinguishing features of major dementia types (Bloom Level 4 - Analyze)
-status: implemented
+status: generated
 library: Custom HTML/CSS/JavaScript
 bloom_level: Analyze (L4)
 ---

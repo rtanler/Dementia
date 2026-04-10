@@ -1,7 +1,7 @@
 ---
 title: Healthy Tau vs. Abnormal Tau
 description: Interactive side-by-side comparison of normal tau protein stabilizing microtubules in a healthy neuron versus hyperphosphorylated tau forming neurofibrillary tangles in Alzheimer's disease.
-status: implemented
+status: generated
 library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
 hide:

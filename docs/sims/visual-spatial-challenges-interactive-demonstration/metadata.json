@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "visual-spatial-challenges-interactive-demonstration",
-  "library": "HTML/CSS/JavaScript with Canvas API for visual distortions",
+  "library": "Custom HTML/CSS/JavaScript with SVG/Canvas",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "Understand, explain, demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 5,
   "chapter_title": "Signs, Symptoms, and Early Recognition",
   "chapter_dir": "05-signs-symptoms-recognition"

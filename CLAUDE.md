@@ -149,6 +149,84 @@ Interactive educational visualizations using:
 - Medical terminology must be explained in plain language
 - Follow Bloom's Taxonomy (2001 revision) for learning outcomes
 - Respect concept dependencies - introduce prerequisites first
+- Voice and tone must be consistent with **Tokie**, the project's pedagogical
+  mascot (see "Tokie Mascot Voice and Tone" below)
+
+### Tokie Mascot Voice and Tone
+
+This textbook is narrated by **Tokie**, a fun, lovable pedagogical mascot who
+guides readers through difficult material with warmth and care. The reference
+page is `docs/learning-graph/mascot-test.md`. All chapter `index.md` files will
+include Tokie admonitions, so all surrounding prose must blend seamlessly with
+Tokie's voice — readers should feel one consistent companion across the whole
+book, not a clinical narrator interrupted by a friendly cartoon.
+
+#### Voice characteristics
+- **Warm and approachable** — write like a knowledgeable friend, never a
+  textbook or a doctor's chart. Address the reader as "you."
+- **Compassionate, never alarming** — this audience includes patients,
+  caregivers, and grieving families. Acknowledge difficulty; never frighten.
+- **Plain language first** — introduce a medical term, then immediately
+  translate it. Example: "anosognosia (lack of awareness of one's own deficits)."
+- **Encouraging** — assume the reader is doing their best. Validate that the
+  material is hard and reassure them that it is normal to struggle.
+- **Honest but hopeful** — do not sugarcoat prognoses, but always pair hard
+  facts with what the reader can *do* (a strategy, a resource, a next step).
+- **Conversational rhythm** — short sentences mixed with longer ones; contractions
+  are welcome ("you'll," "it's"). Avoid passive voice and hedge-y academic prose.
+
+#### Tone words to favor
+caring, gentle, steady, practical, hopeful, clear, friendly, down-to-earth,
+respectful, patient.
+
+#### Tone words to avoid
+clinical, detached, alarming, condescending, jargon-heavy, breezy, cutesy,
+patronizing, fear-inducing.
+
+#### Mascot admonition types
+
+The following custom admonitions are available (defined in
+`docs/learning-graph/mascot-test.md`). Use them sparingly and intentionally:
+
+| Admonition           | When to use                                              | Frequency           |
+|----------------------|----------------------------------------------------------|---------------------|
+| `mascot-welcome`     | Chapter openings — preview what the reader will learn   | Once per chapter (start) |
+| `mascot-thinking`    | Core concepts and connections between ideas             | 2-3 per chapter     |
+| `mascot-tip`         | Practical, actionable caregiver/family advice           | As needed           |
+| `mascot-warning`     | Misconceptions, safety risks, common errors             | As needed           |
+| `mascot-encourage`   | Emotionally heavy or medically complex content          | Where readers may struggle |
+| `mascot-celebration` | Chapter endings — celebrate progress, summarize gains   | Once per chapter (end) |
+| `mascot-neutral`     | General sidebars, context, background info              | As needed           |
+
+Each admonition includes the corresponding mascot image (e.g.
+`<img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="...">`)
+followed by Tokie's message in first person ("I", "let's").
+
+#### Restraint rules
+- **Maximum 5-6 mascot admonitions per chapter.** More than that and Tokie
+  becomes wallpaper instead of a guide.
+- **Never place mascot admonitions back-to-back.** They need surrounding prose
+  to land.
+- **Always exactly one `mascot-welcome` at the very start** and **one
+  `mascot-celebration` at the very end** of each chapter `index.md`.
+- **Voice consistency check**: when surrounding prose follows a mascot
+  admonition, the prose should sound like the same person who just spoke.
+  If switching from a Tokie callout to a paragraph creates voice whiplash,
+  rewrite the paragraph.
+
+#### Example pattern for chapter openings
+
+```markdown
+# Chapter Title
+
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi, I'm Tokie. In this chapter we'll explore [topic] together. By the
+    end you'll understand [outcome 1], [outcome 2], and [outcome 3]. Take
+    your time — there's no rush.
+
+[Opening paragraph in Tokie's voice that flows naturally from the welcome.]
+```
 
 ### Learning Graph Integrity
 - Always validate DAG structure after CSV changes

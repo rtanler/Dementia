@@ -1,4 +1,9 @@
 ---
+title: Learning Graph Viewer
+description: Interactive learning graph viewer allows users to see all the concepts in the course and how they are related.  Used by AI to recommend personalized learning paths.
+status: approved
+image: sims/learning-graph/learning-graph.png
+og:image: sims/learning-graph/learning-graph.png
 hide:
    toc
 ---

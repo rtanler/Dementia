@@ -1,7 +1,7 @@
 ---
 title: Brain Regions Affected in Rare Tauopathies
 description: Interactive diagram comparing the distinct patterns of brain damage in Pick's disease, corticobasal degeneration, and progressive supranuclear palsy, and how each pattern produces characteristic symptoms.
-status: implemented
+status: generated
 library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
 hide:

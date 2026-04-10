@@ -6,8 +6,8 @@
     {
       "id": 1,
       "label": "Pick's: Frontal Cortex",
-      "x": 12,
-      "y": 25,
+      "x": 9.5,
+      "y": 37.5,
       "radius": 5,
       "color": "#E8663D",
       "hint": "In the leftmost brain (Pick's disease), the orange-red region at the front of the brain.",
@@ -17,8 +17,8 @@
     {
       "id": 2,
       "label": "Pick's: Anterior Temporal Lobe",
-      "x": 22,
-      "y": 65,
+      "x": 8.7,
+      "y": 46.5,
       "radius": 5,
       "color": "#E8663D",
       "hint": "In the leftmost brain, the orange-red region on the lower front side, near where the ear would be.",
@@ -28,8 +28,8 @@
     {
       "id": 3,
       "label": "CBD: Motor Cortex",
-      "x": 50,
-      "y": 15,
+      "x": 41.2,
+      "y": 37.9,
       "radius": 5,
       "color": "#8E6FB8",
       "hint": "In the middle brain (CBD), the purple region along the top toward the front.",
@@ -39,8 +39,8 @@
     {
       "id": 4,
       "label": "CBD: Parietal Cortex",
-      "x": 54,
-      "y": 25,
+      "x": 47.9,
+      "y": 44.8,
       "radius": 5,
       "color": "#8E6FB8",
       "hint": "In the middle brain, the purple region on the upper back part of the cerebrum.",
@@ -50,8 +50,8 @@
     {
       "id": 5,
       "label": "CBD: Basal Ganglia",
-      "x": 50,
-      "y": 50,
+      "x": 51.7,
+      "y": 51.1,
       "radius": 5,
       "color": "#8E6FB8",
       "hint": "In the middle brain, the deeper purple shading in the center of the cerebrum.",
@@ -60,20 +60,9 @@
     },
     {
       "id": 6,
-      "label": "PSP: Frontal Cortex",
-      "x": 78,
-      "y": 25,
-      "radius": 5,
-      "color": "#4E9A4E",
-      "hint": "In the rightmost brain (PSP), the lighter green region at the front of the brain.",
-      "description": "In progressive supranuclear palsy, the frontal lobes are affected more mildly than the midbrain, shown here in lighter green. This causes executive dysfunction — trouble planning, problem solving, and switching between tasks — along with apathy (loss of motivation and interest).",
-      "ap_tip": "Symptom link: Frontal involvement in PSP leads to executive dysfunction and apathy, which can be confused with depression early in the disease."
-    },
-    {
-      "id": 7,
       "label": "PSP: Basal Ganglia",
-      "x": 83,
-      "y": 50,
+      "x": 81.3,
+      "y": 43.6,
       "radius": 5,
       "color": "#4E9A4E",
       "hint": "In the rightmost brain, the green shading in the deeper center of the cerebrum.",
@@ -81,10 +70,10 @@
       "ap_tip": "Symptom link: Basal ganglia damage in PSP causes rigidity, bradykinesia, and unexplained backward falls — one of the most specific clues to PSP."
     },
     {
-      "id": 8,
+      "id": 7,
       "label": "PSP: Midbrain",
-      "x": 80,
-      "y": 72,
+      "x": 85.7,
+      "y": 52.2,
       "radius": 5,
       "color": "#4E9A4E",
       "hint": "In the rightmost brain, the darker green region at the top of the brainstem below the cerebrum.",
@@ -92,15 +81,15 @@
       "ap_tip": "Symptom link: Midbrain atrophy causes vertical gaze palsy, the single most characteristic sign of PSP. On MRI, the shrunken midbrain creates the famous 'hummingbird sign.'"
     },
     {
-      "id": 9,
-      "label": "Symptom Pattern Comparison",
-      "x": 50,
-      "y": 92,
+      "id": 8,
+      "label": "PSP: Frontal Cortex",
+      "x": 70.8,
+      "y": 47.1,
       "radius": 5,
-      "color": "#444444",
-      "hint": "The overall comparison between all three diseases.",
-      "description": "All three of these rare dementias are tauopathies — diseases caused by abnormal tau protein clumping in brain cells. But the regional pattern differs: Pick's damages the front of the brain (personality + language), CBD damages motor cortex and basal ganglia asymmetrically (alien limb + rigidity), and PSP damages the midbrain and basal ganglia (vertical gaze palsy + falls). Matching the pattern of damage to the symptoms is how doctors tell them apart.",
-      "ap_tip": "Big picture: Brain region affected → symptom pattern → diagnosis. This 'where damage happens' framework is the key to understanding all neurodegenerative diseases."
+      "color": "#4E9A4E",
+      "hint": "In the rightmost brain (PSP), the lighter green region at the front of the brain.",
+      "description": "In progressive supranuclear palsy, the frontal lobes are affected more mildly than the midbrain, shown here in lighter green. This causes executive dysfunction — trouble planning, problem solving, and switching between tasks — along with apathy (loss of motivation and interest).",
+      "ap_tip": "Symptom link: Frontal involvement in PSP leads to executive dysfunction and apathy, which can be confused with depression early in the disease."
     }
   ],
   "layout": "side-panel"

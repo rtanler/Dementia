@@ -1,7 +1,7 @@
 ---
 title: Beta-Amyloid Production and Aggregation
 description: Interactive diagram tracing the seven stages of beta-amyloid production, from APP protein cleavage to mature amyloid plaques, with explanations of how each stage relates to Alzheimer's disease.
-status: implemented
+status: generated
 library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
 hide:

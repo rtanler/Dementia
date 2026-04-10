@@ -1,7 +1,7 @@
 ---
 title: The Brain's Major Regions
 description: Interactive diagram to identify the major regions of the brain and their basic functions, including the cerebral cortex, four lobes, hippocampus, and cerebellum.
-status: implemented
+status: generated
 library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Remember (L1)
 hide:

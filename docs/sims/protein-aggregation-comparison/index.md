@@ -1,7 +1,7 @@
 ---
 title: Protein Aggregation Comparison
 description: Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze)
-status: implemented
+status: generated
 library: Custom HTML/CSS/JavaScript with SVG
 bloom_level: Analyze (L4)
 ---

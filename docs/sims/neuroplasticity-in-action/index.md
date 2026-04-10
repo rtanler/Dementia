@@ -1,7 +1,7 @@
 ---
 title: Neuroplasticity in Action
 description: Understand how neural connections strengthen through repeated use and learning (Bloom Level 2 - Understand)
-status: implemented
+status: generated
 library: p5.js
 bloom_level: Understand (L2)
 ---

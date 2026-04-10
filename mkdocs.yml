@@ -229,7 +229,7 @@ extra_css:
 
 # Extra JavaScript (for math support)
 extra_javascript:
-  - javascripts/mathjax.js
+  - js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
@@ -240,6 +240,13 @@ copyright: Copyright &copy; 2026 Richard Tandler. All rights reserved.
 # Extra configuration
 extra:
   generator: false               # Hide "Made with Material" footer
+
+  # Page status indicators (rendered as colored dots in the left nav)
+  # See docs/css/extra.css for the dot colors.
+  status:
+    scaffold: Specification and scaffold only
+    generated: JavaScript generated, awaiting review
+    approved: Approved by Rick or another team member
 
 # Google Analytics Configuration is on Dan's Google Analytics account, property G-RTFFK4DK3H
   analytics:

@@ -1,7 +1,7 @@
 ---
 title: Synaptic Communication
 description: Interactive diagram showing how neurons communicate across a synapse using electrical and chemical signals, with notes on how dementia damages each step of the process.
-status: implemented
+status: generated
 library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
 hide:

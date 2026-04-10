@@ -1,7 +1,7 @@
 ---
 title: Building Cognitive Reserve Over a Lifetime
 description: Understand how cognitive reserve accumulates through life experiences and activities (Bloom Level 2 - Understand)
-status: implemented
+status: generated
 library: Chart.js
 bloom_level: Understand (L2)
 ---

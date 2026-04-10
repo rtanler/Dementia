@@ -1,111 +1,70 @@
 ---
 title: Visual-Spatial Challenges Interactive Demonstration
 description: Understand how visual-spatial problems affect daily activities by experiencing simulated visual-spatial challenges (Bloom Level 2 - Understand)
-status: scaffold
-library: HTML/CSS/JavaScript with Canvas API for visual distortions
+status: generated
+library: Custom HTML/CSS/JavaScript with SVG/Canvas
 bloom_level: Understand (L2)
 ---
 
 # Visual-Spatial Challenges Interactive Demonstration
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+This MicroSim lets you experience five common visual-spatial deficits that
+affect people living with dementia. Each scenario is an abstract, interactive
+simulation of how a specific visual-spatial problem changes daily life. Switch
+between "Normal" and "Impaired" vision to feel the difference, read the
+explanation of what each deficit means, and then test your understanding with a
+short quiz.
 
 ## Learning Objective
 
-Understand how visual-spatial problems affect daily activities by experiencing simulated visual-spatial challenges (Bloom Level 2 - Understand)
+Understand how visual-spatial problems affect daily activities by experiencing
+simulated visual-spatial challenges (Bloom Level 2 - Understand).
 
 - **Bloom Level:** Understand (L2)
 - **Bloom Verb:** Understand, explain, demonstrate
-- **Library:** HTML/CSS/JavaScript with Canvas API for visual distortions
+- **Library:** Custom HTML/CSS/JavaScript with SVG/Canvas
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="800" style="border:1px solid #dbe4f0; border-radius: 8px;"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
-## Specification
+## The Five Scenarios
 
-The full specification below is extracted from
-[Chapter 5: Signs, Symptoms, and Early Recognition](../../chapters/05-signs-symptoms-recognition/index.md).
+1. **Depth Perception** — Tilt a pitcher with a slider and try to pour water
+   into a glass. In impaired mode shadows and perspective cues are removed,
+   making alignment very hard.
+2. **Figure-Ground Discrimination** — Find white pills on a tablecloth. In
+   impaired mode the busy white pattern makes the pills blend into the
+   background.
+3. **Navigation in Familiar Space** — Click rooms in a floor plan to walk from
+   the bedroom to the kitchen. In impaired mode the layout subtly rearranges
+   with every step.
+4. **Spatial Relationships** — Drag a plate, fork, knife, and glass into the
+   correct positions for a table setting. In impaired mode dragging is jittery
+   and precise placement becomes unreliable.
+5. **Left-Side Neglect** — Click all the objects you "see" on the table. In
+   impaired mode the left half of the table is ignored by the brain, leaving
+   half of the objects completely unnoticed.
 
-```text
-Type: microsim
+## How to Use
 
-Learning Objective: Understand how visual-spatial problems affect daily activities by experiencing simulated visual-spatial challenges (Bloom Level 2 - Understand)
+1. Choose a scenario from the button row at the top.
+2. Read the task description and follow the on-screen instructions.
+3. Use the **Vision: Impaired / Normal** toggle to compare how each deficit
+   changes the experience.
+4. Expand the **Learn more** panel to read about daily-living impact, safety
+   concerns, and caregiver tips.
+5. After exploring all five scenarios, answer the four multiple-choice quiz
+   questions at the bottom.
 
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Understand, explain, demonstrate
+## Key Takeaways
 
-Instructional Rationale: Interactive simulation is appropriate for Understanding-level objectives because allowing users to experience visual-spatial challenges firsthand builds empathy and deeper comprehension of how these deficits affect daily life. Direct experience is more impactful than reading descriptions.
-
-Purpose: Demonstrate through interactive simulations what common visual-spatial problems feel like and how they affect everyday tasks
-
-Canvas Layout:
-- Simulation display area (600px): Shows interactive scenarios
-- Task description panel (100px): Explains current challenge
-- Control panel (100px): Scenario selection and navigation
-
-Visual Elements and Interactive Scenarios:
-
-Scenario 1: Depth Perception Challenge
-- Task: "Pour water from pitcher into glass"
-- Visualization: Pitcher and glass shown at table level
-- User uses slider to control pouring angle
-- Simulation removes depth cues (shadows, shading, perspective)
-- Result: Without depth perception, very difficult to judge when pitcher aligns with glass
-- Feedback: Shows what happens with normal depth perception vs. impaired
-
-Scenario 2: Figure-Ground Discrimination
-- Task: "Find the white pills on this table"
-- Visualization: White pills on busy white patterned tablecloth
-- User clicks on pills to identify them
-- Shows how impaired figure-ground discrimination makes objects "invisible" against similar backgrounds
-- Comparison view: Shows same scene with improved contrast
-
-Scenario 3: Navigation in Familiar Space
-- Task: "Navigate from bedroom to kitchen in this familiar home"
-- Visualization: Simple floor plan with multiple rooms
-- User selects path through rooms
-- Simulation shows how spatial disorientation makes familiar layouts confusing
-- Visual distortions make rooms appear different each time
-
-Scenario 4: Spatial Relationships
-- Task: "Set the table with plate, fork, knife, and glass"
-- Visualization: Table with four items to place
-- User drags items to positions
-- Shows difficulty understanding spatial relationships (where items go relative to each other)
-- Provides feedback on correct vs. impaired placement
-
-Scenario 5: Left-Side Neglect
-- Task: "Identify all the objects on this table"
-- Visualization: Table with objects on both left and right sides
-- Simulation shows left-side neglect by graying out left half
-- User clicks objects they "see"
-- Demonstrates how left-side neglect causes complete unawareness of one side
-
-Interactive Controls:
-- Scenario selector dropdown (5 scenarios)
-- "Try Task" button to attempt each challenge
-- "Show Normal Vision" toggle to compare normal vs. impaired
-- "Next Scenario" button
-- "Learn More" button that explains the deficit
-
-Educational Content After Each Scenario:
-- Brief explanation of the visual-spatial deficit demonstrated
-- How it affects daily living
-- Why it creates safety concerns
-- How caregivers can help compensate
-
-Visual Style: Realistic but simplified visuals
-Color coding: Blue for correct, orange for impaired vision simulation
-Responsive design adapts to window size
-
-Implementation: HTML/CSS/JavaScript with Canvas API for visual distortions
-Canvas size: 800x650px, fully responsive
-```
+Visual-spatial problems are more than "bad eyesight" — the eyes usually work
+fine. The problem is how the brain interprets visual information. These
+deficits create real safety risks and daily-living challenges, but
+understanding them helps caregivers design safer, more supportive environments.
 
 ## Related Resources
 

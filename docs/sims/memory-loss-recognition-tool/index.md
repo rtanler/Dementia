@@ -1,7 +1,7 @@
 ---
 title: Memory Loss Recognition Tool
 description: Apply knowledge to distinguish normal age-related memory changes from concerning dementia symptoms (Bloom Level 3 - Apply)
-status: implemented
+status: generated
 library: HTML/CSS/JavaScript with scenario data structure
 bloom_level: Apply (L3)
 ---

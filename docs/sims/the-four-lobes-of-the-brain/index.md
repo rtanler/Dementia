@@ -1,7 +1,7 @@
 ---
 title: The Four Lobes of the Brain
 description: Interactive diagram to identify the four lobes of the cerebral cortex and their primary functions, with dementia impact notes for each lobe.
-status: implemented
+status: generated
 library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Remember (L1)
 hide:

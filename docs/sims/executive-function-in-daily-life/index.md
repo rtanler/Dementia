@@ -1,7 +1,7 @@
 ---
 title: Executive Function in Daily Life
 description: Understand how executive function coordinates multiple cognitive processes to complete everyday tasks (Bloom Level 2 - Understand)
-status: implemented
+status: generated
 library: Custom HTML/CSS/JavaScript
 bloom_level: Understand (L2)
 ---

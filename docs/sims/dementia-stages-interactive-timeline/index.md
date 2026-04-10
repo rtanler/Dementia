@@ -1,7 +1,7 @@
 ---
 title: Dementia Stages Interactive Timeline
 description: Analyze how dementia progresses through stages over time and how different domains decline at different rates (Bloom Level 4 - Analyze)
-status: implemented
+status: generated
 library: Chart.js
 bloom_level: Analyze (L4)
 ---

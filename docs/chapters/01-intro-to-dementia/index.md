@@ -8,6 +8,16 @@ version: 0.03
 
 # Introduction to Dementia and Cognitive Health
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi, I'm Tokie! Welcome to our very first chapter together. We're going
+    to start with the basics: what dementia actually is, how it's different
+    from normal aging, and the key parts of thinking it can affect. Don't
+    worry if some of this feels heavy at first — we'll take it one idea at
+    a time, and I'll be here the whole way through. By the end of this
+    chapter you'll have a clear mental map of the territory we'll explore
+    in the rest of the book.
+
 ## Summary
 
 This foundational chapter introduces the essential concepts of dementia and cognitive health. You will learn what dementia is, how it differs from normal aging, and the fundamental cognitive processes that dementia affects. The chapter establishes a baseline understanding of brain health, memory, attention, language, and other cognitive functions that will be explored in greater depth throughout the textbook. This knowledge forms the critical foundation for understanding all subsequent topics related to dementia diagnosis, treatment, and care.
@@ -138,6 +148,15 @@ Cognition includes several key abilities:
 
 These cognitive abilities work together seamlessly in a healthy brain. When you have a conversation, for example, you use attention to focus on what the other person is saying, language to understand their words, memory to recall relevant information, and executive function to formulate an appropriate response.
 
+!!! mascot-thinking "Key Insight"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    Here's something important to hold on to: cognition isn't one single
+    thing — it's a whole team of mental abilities working together. That's
+    why dementia can look so different from one person to the next. When
+    one teammate gets injured, the rest of the team has to scramble. Keep
+    this team metaphor in mind; it'll make a lot of what comes later click
+    into place.
+
 ## Normal Aging vs. Dementia
 
 As we age, it's normal to experience some changes in cognitive abilities. You might occasionally forget where you parked your car or struggle to remember someone's name. These are typical signs of **normal aging**, not dementia. Understanding the difference is crucial.
@@ -151,10 +170,26 @@ As we age, it's normal to experience some changes in cognitive abilities. You mi
 | Sometimes feeling weary of work or social obligations | Withdrawing from work or social activities |
 | Vision changes related to cataracts or aging | Difficulty understanding visual information or spatial relationships |
 
+!!! mascot-warning "Common Mistake"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Tokie warns you">
+    Please don't read this table and start worrying every time you
+    misplace your phone! Everyone forgets things sometimes — that's normal
+    aging, not dementia. The pattern that matters is when forgetting
+    starts interfering with daily life and gets steadily worse over
+    months. One forgotten name doesn't mean anything on its own. A steady,
+    growing pattern is what's worth bringing to a doctor.
+
 Normal aging involves minor slips that don't significantly impact daily life. Dementia, in contrast, causes progressive decline that makes everyday activities increasingly difficult. The key distinction is whether cognitive changes interfere with independence and quality of life.
 
-!!! tip "When to Seek Medical Advice"
-    If you or a loved one experiences memory problems that interfere with daily activities, difficulty completing familiar tasks, confusion about time or place, or changes in mood and personality, it's important to consult a healthcare provider. Early diagnosis can lead to better outcomes.
+!!! mascot-tip "Tokie's Tip"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    If you or someone you love is having memory problems that interfere
+    with daily life, trouble with familiar tasks, confusion about time or
+    place, or noticeable changes in mood or personality, it's worth
+    booking an appointment with a healthcare provider. I know this can
+    feel scary — but early conversations open up the most options, and
+    many causes of memory trouble turn out to be treatable conditions
+    that aren't dementia at all. Knowing for sure beats wondering.
 
 ## Memory: The Foundation of Personal Experience
 
@@ -438,6 +473,17 @@ Information processing involves several steps:
 
 Processing speed naturally slows somewhat with normal aging, but dementia causes more significant slowing. People with dementia may need more time to answer questions, follow conversations, or complete tasks. This slowed processing speed contributes to many daily challenges.
 
+!!! mascot-encourage "You've Got This!"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    Whew — that was a lot of cognitive abilities to take in: memory,
+    attention, language, perception, executive function, learning, and
+    processing speed. If your head is spinning a little, that's
+    completely normal. You don't need to memorize every term right now.
+    What matters is the big picture — thinking is made up of many
+    overlapping skills, and dementia chips away at them in different
+    ways. We'll keep coming back to these ideas in later chapters, so
+    they'll feel familiar before long. Be patient with yourself.
+
 ## Cognitive Health and Brain Health
 
 **Cognitive health** refers to the ability to think clearly, learn, and remember. **Brain health** is the broader concept that includes not just cognitive function, but also emotional well-being, motor function, and the physical health of brain tissue.
@@ -624,3 +670,13 @@ In the next chapter, we'll dive deeper into brain anatomy and function, explorin
     5. What activities in your own life might be building cognitive reserve?
 
     If you can answer these questions, you've grasped the foundational concepts and are ready to learn about brain anatomy in Chapter 2.
+
+!!! mascot-celebration "Excellent Work!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    You did it — you finished our very first chapter together! You now
+    know what dementia is, how it's different from normal aging, the
+    major cognitive abilities it can affect, and why cognitive reserve
+    matters so much. That's a real foundation, and everything we cover
+    from here builds on it. Take a moment to be proud of yourself before
+    turning the page. I'll see you in Chapter 2, where we'll get up
+    close with the brain itself.
