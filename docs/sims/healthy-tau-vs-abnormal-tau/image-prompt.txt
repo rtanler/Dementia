@@ -1,0 +1,156 @@
+# Healthy Tau vs. Abnormal Tau — Image Generation Prompt
+
+Please generate a new image.
+
+Critical Rule
+
+**This image must contain absolutely no text, labels, arrows, callout lines, numbers, or
+annotation marks of any kind.** All labeling will be added as an interactive HTML
+overlay from a separate data file. Any embedded text will conflict with the overlay
+system and must not appear.
+
+Image Specifications
+
+- **Format**: PNG
+- **Dimensions**: 1400 × 900 px (landscape, ~3:2 ratio)
+- **Background**: Clean white (#FFFFFF)
+- **Style**: Scientific watercolor illustration with soft textures and gentle
+  shading; suitable for a high school / adult patient-education textbook on
+  dementia. Hand-painted watercolor feel with clear biological accuracy.
+
+Overall Composition
+
+A single image containing TWO side-by-side panels that together form one
+cohesive illustration. The two panels must be clearly divided by a visible
+vertical gutter running down the exact center of the canvas (at x = 700 px).
+The gutter should be a soft neutral vertical band (approximately 20-30 px wide,
+very pale gray or off-white) so the two panels read as a clear comparison.
+
+- **LEFT panel** (x = 0 to ~685 px): **Healthy neuron** — intact, organized,
+  vibrant. Use a soft warm glow or pale mint-green tint behind the structures
+  to signal health.
+- **RIGHT panel** (x = ~715 to 1400 px): **Diseased neuron** — fragmented,
+  disorganized, collapsing. Use a pale warm beige or very subtle rose tint
+  behind the structures to signal pathology.
+
+Each panel must leave a 5-8% margin on its outer edges for overlay markers.
+Keep the central gutter clean so the divider is obvious at a glance.
+
+LEFT Panel — Healthy Neuron Axon Cross-Section
+
+Draw a horizontal longitudinal section through a healthy neuron's axon. The
+axon should span most of the left panel horizontally, with the cell body (soma)
+partly visible at the far left edge and the axon extending toward the center
+gutter.
+
+Microtubules (BLUE)
+
+- Three to five long, parallel horizontal "rails" running the length of the
+  axon, stacked vertically with even spacing.
+- Painted in soft sky blue (#6FA8DC) with a watercolor wash.
+- Each rail should look smooth, continuous, and intact — no breaks or gaps.
+- Suggest the subtle cylindrical tube structure of microtubules with gentle
+  shading but keep the style painterly, not technical.
+
+Normal Tau (GREEN)
+
+- Small green "cross-tie" shapes bridging between adjacent microtubule rails at
+  regular intervals (every 60-80 px along each rail).
+- Shape: short rounded bars or soft dumbbell shapes that visibly attach to the
+  blue microtubule rails, like railroad ties binding parallel tracks.
+- Color: soft sage/leaf green (#6FBF73), watercolor style.
+- They should look orderly, evenly spaced, and firmly bound to the rails.
+
+Transport Vesicles (YELLOW)
+
+- Three to four small round yellow vesicles (circles or ovals) sitting ON TOP
+  of the microtubule rails, distributed along the axon, as if being moved along
+  the rails from left to right.
+- Color: warm golden yellow (#F1C232) with soft watercolor shading to suggest
+  roundness.
+- Optional: a very subtle directional smudge behind each vesicle to hint at
+  motion along the rail.
+
+Healthy Axon Outline
+
+- The outer boundary of the axon is a soft, smooth, gently curving pale outline
+  (very light tan or pale pink #F5E6E0) enclosing all the microtubules, tau,
+  and vesicles.
+- The axon should look full, healthy, and continuous from the soma on the far
+  left all the way to the gutter on the right.
+
+RIGHT Panel — Diseased Neuron (Alzheimer Pathology)
+
+Draw a horizontal longitudinal section through a diseased neuron's axon in the
+same orientation and scale as the left panel, so the viewer can compare them
+directly. The cell body (soma) should be partly visible at the center-right
+(just inside the gutter), and the axon should extend from the soma toward the
+far right edge — roughly mirroring the left panel.
+
+Broken Microtubules (FADED BLUE)
+
+- Three to five microtubule rails in the same positions as the left panel, but
+  now FRAGMENTED: each rail is broken into short disconnected pieces with
+  visible gaps between segments.
+- Color: faded, desaturated blue-gray (#9BB5C9), watercolor wash, lower
+  saturation than the healthy blue.
+- Some segments should tilt slightly, drift out of alignment, or appear to be
+  dissolving at their edges to convey disintegration.
+
+Hyperphosphorylated Tau (ORANGE)
+
+- Orange tau blobs that have DETACHED from the microtubules and are floating
+  loose in the cytoplasm between and around the broken rail segments.
+- Some blobs should be small individual shapes; others should be clumped
+  together into larger irregular aggregates.
+- Color: warm orange (#E67E22), watercolor with slightly rougher edges than the
+  healthy green tau.
+- They must clearly NOT be bound to the microtubule rails — they float freely
+  in the space between fragments.
+
+Neurofibrillary Tangles (DARK RED / MAROON)
+
+- One or two larger, denser, tangled knot-like structures inside the cell body
+  (soma) at the right side of the panel. These are the neurofibrillary tangles.
+- Shape: irregular twisted bundles of filaments, like a tangled ball of yarn.
+- Color: deep maroon / dark red (#8B2C3D) with darker watercolor edges and a
+  slightly fibrous texture to suggest the paired helical filaments.
+
+Disrupted Transport Vesicles
+
+- Three to four small yellow vesicles similar to the left panel, but now
+  STRANDED: scattered off the rails, tilted at odd angles, stuck against
+  broken rail segments, or trapped in clumps of orange tau.
+- Same yellow color (#F1C232) but with a slightly duller, less vibrant feel.
+- No directional motion hints — they should look stuck.
+
+Diseased Axon Outline
+
+- The outer boundary of the diseased axon should be the same pale outline
+  style as the healthy one, but slightly irregular, pinched, or wavering in
+  places to suggest structural stress.
+
+Central Gutter
+
+- A clean, obvious vertical divider running the full height of the canvas at
+  the center (approximately x = 690 to x = 720 px).
+- Fill with a soft neutral pale gray (#EDEDED) or very faint off-white.
+- No text, no icons, no labels in the gutter.
+- The gutter should visually separate the two scenes clearly so students
+  immediately see this is a comparison.
+
+Style Notes
+
+- Soft watercolor scientific illustration style throughout, consistent between
+  both panels so they feel like one artwork.
+- Clean white background outside the pale panel tints.
+- Gentle shading and texture; avoid hard technical outlines or CAD-like
+  precision.
+- Both panels must use the same scale, orientation, and level of detail so the
+  comparison reads clearly.
+- Leave a 5-8% margin on the outer edges of each panel for overlay markers
+  that will be added later.
+- Do NOT add any text, labels, arrows, numbers, leader lines, legend boxes,
+  title bars, or annotations of any kind.
+- Do NOT draw a whole human figure, skull, or brain — just the two neuron
+  axon sections side by side.

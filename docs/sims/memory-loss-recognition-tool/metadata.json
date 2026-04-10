@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "memory-loss-recognition-tool",
-  "library": "HTML/CSS/JavaScript with scenario data structure",
+  "library": "Custom HTML/CSS/JavaScript",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "Apply, demonstrate, solve",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 5,
   "chapter_title": "Signs, Symptoms, and Early Recognition",
   "chapter_dir": "05-signs-symptoms-recognition"

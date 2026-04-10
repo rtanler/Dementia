@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Memory Loss Recognition Tool</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -10,140 +11,537 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f8f9fa;
             color: #212529;
+            padding: 16px;
         }
-        #container {
+        main {
             width: 100%;
-            max-width: 900px;
+            max-width: 860px;
             margin: 0 auto;
-            padding: 20px;
             background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 24px;
         }
         h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            color: #1a3a6c;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #eef4fb;
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            font-size: 15px;
+            font-weight: 600;
             color: #1a3a6c;
         }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .progress-track {
+            width: 100%;
+            height: 8px;
+            background: #dbe4f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 18px;
         }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4a90d9, #1a3a6c);
+            transition: width 0.4s ease;
+        }
+        .scenario-card {
+            background: #fdfdfd;
+            border: 2px solid #dbe4f0;
+            border-radius: 10px;
+            padding: 22px;
+            margin-bottom: 18px;
+            font-size: 17px;
+            line-height: 1.55;
+            color: #2c3e50;
+            min-height: 120px;
+        }
+        .scenario-label {
             font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6c757d;
+            margin-bottom: 10px;
+            font-weight: 700;
         }
-        .placeholder h2 {
+        .buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+        .btn {
+            padding: 18px 22px;
+            font-size: 17px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s, opacity 0.2s;
+            color: white;
+        }
+        .btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+        }
+        .btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        .btn-normal {
+            background: #2e9e5d;
+        }
+        .btn-concern {
+            background: #e8832c;
+        }
+        .btn-next {
+            background: #1a3a6c;
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .btn-next:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+        }
+        .feedback {
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-left: 6px solid;
+            animation: fadeIn 0.4s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .feedback.correct {
+            background: #e8f7ee;
+            border-color: #2e9e5d;
+        }
+        .feedback.incorrect {
+            background: #fdeee0;
+            border-color: #e8832c;
+        }
+        .feedback-header {
             font-size: 18px;
-            color: #495057;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .feedback.correct .feedback-header { color: #1e6b3f; }
+        .feedback.incorrect .feedback-header { color: #a85716; }
+        .feedback-body {
+            font-size: 15px;
+            line-height: 1.55;
+            color: #2c3e50;
+        }
+        .feedback-body p { margin-bottom: 10px; }
+        .feedback-body strong { color: #1a3a6c; }
+        .feedback-body ul {
+            margin-left: 20px;
+            margin-top: 6px;
+        }
+        .feedback-body li { margin-bottom: 4px; }
+        .hidden { display: none !important; }
+        .final-screen {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .final-score {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1a3a6c;
+            margin: 16px 0 4px;
+        }
+        .final-percent {
+            font-size: 22px;
+            color: #4a90d9;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .final-message {
+            font-size: 17px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+        .features-box {
+            background: #eef4fb;
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin-bottom: 18px;
+            text-align: left;
+        }
+        .features-box h3 {
+            color: #1a3a6c;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 10px;
+        }
+        .feature-col {
+            background: white;
+            border-radius: 8px;
+            padding: 12px 14px;
+        }
+        .feature-col.normal { border-top: 4px solid #2e9e5d; }
+        .feature-col.concern { border-top: 4px solid #e8832c; }
+        .feature-col h4 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             margin-bottom: 8px;
         }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
+        .feature-col.normal h4 { color: #1e6b3f; }
+        .feature-col.concern h4 { color: #a85716; }
+        .feature-col ul {
             font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
+            line-height: 1.5;
+            padding-left: 18px;
+            color: #2c3e50;
         }
-        .meta strong { color: #495057; }
+        .recommendation {
+            background: #fff8e6;
+            border-left: 5px solid #f2b705;
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            text-align: left;
+            font-size: 14px;
+            color: #6b4f00;
+            line-height: 1.55;
+        }
+        .btn-restart {
+            background: #1a3a6c;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.15s;
+        }
+        .btn-restart:hover { transform: translateY(-2px); }
+        @media (max-width: 560px) {
+            .buttons { grid-template-columns: 1fr; }
+            .features-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 20px; }
+            .scenario-card { font-size: 16px; }
+        }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Memory Loss Recognition Tool</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <h1>Memory Loss Recognition Tool</h1>
+    <p class="subtitle">Decide whether each scenario represents normal aging or a dementia concern.</p>
+
+    <div id="quiz-view">
+        <div class="status-bar">
+            <span id="progress-text">Scenario 1 of 10</span>
+            <span id="score-text">Correct: 0 / 10</span>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> memory-loss-recognition-tool</p>
-            <p><strong>Library:</strong> HTML/CSS/JavaScript with scenario data structure</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Apply knowledge to distinguish normal age-related memory changes from concerning dementia symptoms (Bloom Level 3 - Apply)</p>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width: 10%"></div></div>
+
+        <div class="scenario-card">
+            <div class="scenario-label">Scenario</div>
+            <div id="scenario-text"></div>
         </div>
+
+        <div class="buttons" id="answer-buttons">
+            <button class="btn btn-normal" id="btn-normal" onclick="answer('normal')">Normal Aging</button>
+            <button class="btn btn-concern" id="btn-concern" onclick="answer('concern')">Dementia Concern</button>
+        </div>
+
+        <div id="feedback" class="hidden"></div>
+
+        <button id="next-btn" class="btn-next hidden" onclick="nextScenario()">Next Scenario</button>
     </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <div id="final-view" class="hidden final-screen">
+        <h2 style="color:#1a3a6c; font-size:22px;">Quiz Complete!</h2>
+        <div class="final-score" id="final-score">0 / 10</div>
+        <div class="final-percent" id="final-percent">0%</div>
+        <div class="final-message" id="final-message"></div>
 
-    Type: microsim
-    
-    Learning Objective: Apply knowledge to distinguish normal age-related memory changes from concerning dementia symptoms (Bloom Level 3 - Apply)
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: Apply, demonstrate, solve
-    
-    Instructional Rationale: Scenario-based assessment is appropriate for Apply-level objectives because learners must use their knowledge to evaluate realistic situations and make judgments about whether symptoms are concerning. This active application reinforces learning better than passive reading.
-    
-    Purpose: Help users evaluate memory-related scenarios and determine whether they represent normal aging or potential dementia warning signs
-    
-    Canvas Layout:
-    - Scenario presentation area (500px): Displays case descriptions
-    - Decision area (300px): User selection and feedback
-    
-    Visual Elements:
-    - Scenario card showing a described memory situation
-    - Two buttons: "Normal Aging" and "Dementia Concern"
-    - Feedback panel that appears after selection
-    - Progress indicator (Scenario X of 10)
-    - Score tracker showing correct/incorrect selections
-    
-    Interactive Controls:
-    - "Normal Aging" button - Select if scenario represents typical age-related change
-    - "Dementia Concern" button - Select if scenario suggests possible dementia
-    - "Next Scenario" button (appears after feedback)
-    - "Review Answers" button at end
-    
-    Sample Scenarios (10 total):
-    1. "Margaret, 72, occasionally forgets where she parked her car in a large parking lot but figures it out by retracing her steps." (Normal)
-    2. "Robert, 68, asks his wife what time their dinner reservation is, receives an answer, then asks the same question three more times within 30 minutes." (Concern)
-    3. "Linda, 75, can't recall the name of her neighbor but recognizes her face and remembers she has two dogs." (Normal)
-    4. "James, 70, completely forgot his daughter's wedding anniversary even though they discussed it yesterday and he wrote it down." (Concern)
-    5. "Susan, 66, walked into the kitchen and forgot why, but remembered when she saw the coffee maker." (Normal)
-    6. "David, 73, drove to his weekly card game (same location for 5 years) and couldn't remember how to get there." (Concern)
-    7. "Patricia, 69, occasionally uses the wrong word but corrects herself immediately." (Normal)
-    8. "Michael, 74, repeatedly tells the same story about his grandchildren as if sharing it for the first time, several times per day." (Concern)
-    9. "Karen, 71, needs to use more lists and reminders than she did 10 years ago to remember errands." (Normal)
-    10. "Thomas, 67, can't remember taking his medication 20 minutes ago and takes another dose, happens multiple times per week." (Concern)
-    
-    Feedback Content:
-    For each scenario, provide:
-    - Correct answer
-    - Explanation of why this represents normal aging or dementia concern
-    - Key features that informed the decision
-    - What to watch for if concerned
-    
-    Final Summary:
-    - Score out of 10
-    - Review of common distinguishing features
-    - Recommendation: "If you notice these concerning patterns in yourself or a loved one, consult a healthcare provider for evaluation"
-    
-    Visual Style: Clean, approachable design with clear typography
-    Color coding: Green for normal aging, orange for dementia concern
-    Responsive design adapts to window width
-    
-    Implementation: HTML/CSS/JavaScript with scenario data structure
-    Canvas size: 800x600px, fully responsive
-    -->
+        <div class="features-box">
+            <h3>Common Distinguishing Features</h3>
+            <div class="features-grid">
+                <div class="feature-col normal">
+                    <h4>Normal Aging</h4>
+                    <ul>
+                        <li>Occasional forgetfulness that self-corrects</li>
+                        <li>Retracing steps and remembering</li>
+                        <li>Recognizing familiar people even if names slip</li>
+                        <li>Using lists and reminders as tools</li>
+                        <li>Finding the right word eventually</li>
+                    </ul>
+                </div>
+                <div class="feature-col concern">
+                    <h4>Dementia Concern</h4>
+                    <ul>
+                        <li>Asking the same question repeatedly in minutes</li>
+                        <li>Forgetting recently written-down information</li>
+                        <li>Getting lost in familiar places</li>
+                        <li>Telling the same story many times per day</li>
+                        <li>Forgetting safety-critical actions (medications)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommendation">
+            <strong>Recommendation:</strong> If you notice these concerning patterns in yourself or a loved one, consult a healthcare provider for evaluation. Early diagnosis allows for better planning, treatment options, and support.
+        </div>
+
+        <button class="btn-restart" onclick="restart()">Restart Quiz</button>
+    </div>
+</main>
+
+<script src="../shared-libs/celebration.js"></script>
+<script>
+const scenarios = [
+    {
+        id: 1,
+        text: "Margaret, 72, occasionally forgets where she parked her car in a large parking lot but figures it out by retracing her steps.",
+        answer: "normal",
+        explanation: "This is a typical example of normal age-related forgetfulness. Margaret's ability to retrace her steps and solve the problem shows her memory and reasoning systems are working well.",
+        keyFeatures: [
+            "Occasional, not frequent",
+            "She can recover the information through problem-solving",
+            "Happens in a complex environment (large lot) where even younger people forget"
+        ]
+    },
+    {
+        id: 2,
+        text: "Robert, 68, asks his wife what time their dinner reservation is, receives an answer, then asks the same question three more times within 30 minutes.",
+        answer: "concern",
+        explanation: "Asking the same question repeatedly within a short period is a classic warning sign of dementia. Robert is unable to encode new information into short-term memory.",
+        keyFeatures: [
+            "Short time window (30 minutes)",
+            "Multiple repetitions (four times total)",
+            "Inability to retain recently-received information",
+            "Does not remember having asked the question"
+        ]
+    },
+    {
+        id: 3,
+        text: "Linda, 75, can't recall the name of her neighbor but recognizes her face and remembers she has two dogs.",
+        answer: "normal",
+        explanation: "Trouble recalling names while retaining other identifying information is a very common, normal age-related change. Name recall often slows with age even in healthy adults.",
+        keyFeatures: [
+            "Face recognition is preserved",
+            "Contextual memory (the dogs) is intact",
+            "Only the name label is missing, not the relationship itself"
+        ]
+    },
+    {
+        id: 4,
+        text: "James, 70, completely forgot his daughter's wedding anniversary even though they discussed it yesterday and he wrote it down.",
+        answer: "concern",
+        explanation: "Completely forgetting an emotionally significant, recently discussed event that was also written down suggests problems with memory encoding and retrieval beyond normal aging.",
+        keyFeatures: [
+            "Loss of emotionally meaningful event",
+            "Discussed the day before",
+            "Written reminder did not help",
+            "Complete loss, not partial"
+        ]
+    },
+    {
+        id: 5,
+        text: "Susan, 66, walked into the kitchen and forgot why, but remembered when she saw the coffee maker.",
+        answer: "normal",
+        explanation: "This is the classic 'doorway effect' that happens to people of all ages. A visual cue quickly restores the memory, showing that encoding and retrieval are both functional.",
+        keyFeatures: [
+            "Brief, momentary lapse",
+            "A visual cue immediately triggers recall",
+            "Happens occasionally, not constantly"
+        ]
+    },
+    {
+        id: 6,
+        text: "David, 73, drove to his weekly card game (same location for 5 years) and couldn't remember how to get there.",
+        answer: "concern",
+        explanation: "Getting lost in a highly familiar place, especially on a well-practiced route, is a significant dementia warning sign. Spatial and procedural memory for familiar routes is usually very robust.",
+        keyFeatures: [
+            "Highly familiar location",
+            "Repeated route over 5 years",
+            "Loss of spatial navigation memory",
+            "Not just briefly confused — unable to recall the route at all"
+        ]
+    },
+    {
+        id: 7,
+        text: "Patricia, 69, occasionally uses the wrong word but corrects herself immediately.",
+        answer: "normal",
+        explanation: "Occasional word-finding difficulty with immediate self-correction is a normal age-related change. Her language monitoring system is intact — she notices the error and fixes it.",
+        keyFeatures: [
+            "Occasional, not constant",
+            "Self-awareness of the error",
+            "Immediate correction",
+            "Meaning is preserved"
+        ]
+    },
+    {
+        id: 8,
+        text: "Michael, 74, repeatedly tells the same story about his grandchildren as if sharing it for the first time, several times per day.",
+        answer: "concern",
+        explanation: "Repeating the same story multiple times per day, with no awareness of having told it before, indicates failure to form new memories of recent conversations — a hallmark of dementia.",
+        keyFeatures: [
+            "Tells story as if brand new",
+            "No memory that it was just told",
+            "Multiple times per day",
+            "No awareness of the repetition"
+        ]
+    },
+    {
+        id: 9,
+        text: "Karen, 71, needs to use more lists and reminders than she did 10 years ago to remember errands.",
+        answer: "normal",
+        explanation: "Relying more on lists and reminders is a healthy, adaptive strategy. It reflects Karen's awareness of her own memory and her ability to plan — both signs of intact cognition.",
+        keyFeatures: [
+            "Self-awareness of memory changes",
+            "Successful use of compensation strategies",
+            "Daily functioning remains independent",
+            "Tools are effective when used"
+        ]
+    },
+    {
+        id: 10,
+        text: "Thomas, 67, can't remember taking his medication 20 minutes ago and takes another dose, happens multiple times per week.",
+        answer: "concern",
+        explanation: "Forgetting a safety-critical action like medication and double-dosing repeatedly is a serious concern. It suggests a failure to encode very recent events and creates a real health risk.",
+        keyFeatures: [
+            "Very short time gap (20 minutes)",
+            "Safety-critical behavior",
+            "Happens multiple times per week",
+            "Could cause medication overdose"
+        ]
+    }
+];
+
+let current = 0;
+let score = 0;
+let answered = false;
+
+function renderScenario() {
+    answered = false;
+    const s = scenarios[current];
+    document.getElementById('scenario-text').textContent = s.text;
+    document.getElementById('progress-text').textContent = `Scenario ${current + 1} of ${scenarios.length}`;
+    document.getElementById('score-text').textContent = `Correct: ${score} / ${scenarios.length}`;
+    document.getElementById('progress-fill').style.width = `${((current) / scenarios.length) * 100}%`;
+
+    document.getElementById('btn-normal').disabled = false;
+    document.getElementById('btn-concern').disabled = false;
+    document.getElementById('feedback').classList.add('hidden');
+    document.getElementById('next-btn').classList.add('hidden');
+}
+
+function answer(choice) {
+    if (answered) return;
+    answered = true;
+    const s = scenarios[current];
+    const correct = choice === s.answer;
+    if (correct) score++;
+
+    document.getElementById('btn-normal').disabled = true;
+    document.getElementById('btn-concern').disabled = true;
+    document.getElementById('score-text').textContent = `Correct: ${score} / ${scenarios.length}`;
+
+    const fb = document.getElementById('feedback');
+    fb.className = 'feedback ' + (correct ? 'correct' : 'incorrect');
+    const correctLabel = s.answer === 'normal' ? 'Normal Aging' : 'Dementia Concern';
+    const headerText = correct ? 'Correct!' : 'Not quite.';
+    const featuresHtml = s.keyFeatures.map(f => `<li>${f}</li>`).join('');
+    fb.innerHTML = `
+        <div class="feedback-header">${headerText} The correct answer is: ${correctLabel}</div>
+        <div class="feedback-body">
+            <p>${s.explanation}</p>
+            <p><strong>Key features:</strong></p>
+            <ul>${featuresHtml}</ul>
+        </div>
+    `;
+    fb.classList.remove('hidden');
+
+    const nextBtn = document.getElementById('next-btn');
+    nextBtn.textContent = (current === scenarios.length - 1) ? 'See Final Results' : 'Next Scenario';
+    nextBtn.classList.remove('hidden');
+}
+
+function nextScenario() {
+    if (current === scenarios.length - 1) {
+        showFinal();
+        return;
+    }
+    current++;
+    renderScenario();
+}
+
+function showFinal() {
+    document.getElementById('quiz-view').classList.add('hidden');
+    const finalView = document.getElementById('final-view');
+    finalView.classList.remove('hidden');
+
+    const pct = Math.round((score / scenarios.length) * 100);
+    document.getElementById('final-score').textContent = `${score} / ${scenarios.length}`;
+    document.getElementById('final-percent').textContent = `${pct}%`;
+
+    let message;
+    if (score === 10) {
+        message = "Outstanding! You clearly understand how to distinguish normal aging from dementia warning signs.";
+    } else if (score >= 8) {
+        message = "Excellent work! You have a strong grasp of the key differences between normal aging and dementia concerns.";
+    } else if (score >= 6) {
+        message = "Good effort. Review the distinguishing features below to sharpen your recognition skills.";
+    } else {
+        message = "Keep learning. The features listed below will help you recognize warning signs with more confidence.";
+    }
+    document.getElementById('final-message').textContent = message;
+
+    if (window.Celebration) {
+        if (score >= 8) {
+            window.Celebration.celebrate({ duration: 4000 });
+        } else {
+            window.Celebration.fire({ type: 'stars', duration: 2500 });
+        }
+    }
+}
+
+function restart() {
+    current = 0;
+    score = 0;
+    answered = false;
+    document.getElementById('final-view').classList.add('hidden');
+    document.getElementById('quiz-view').classList.remove('hidden');
+    renderScenario();
+}
+
+renderScenario();
+</script>
 </body>
 </html>

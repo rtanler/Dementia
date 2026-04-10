@@ -1,124 +1,59 @@
 ---
 title: The Four Lobes of the Brain
-description: Remember and identify the four lobes of the cerebral cortex and their primary functions (Bloom Level 1 - Remember)
-status: scaffold
-library: HTML/CSS/JavaScript with SVG graphics or Three.js for 3D view
+description: Interactive diagram to identify the four lobes of the cerebral cortex and their primary functions, with dementia impact notes for each lobe.
+status: implemented
+library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Remember (L1)
+hide:
+  - toc
 ---
 
 # The Four Lobes of the Brain
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+<iframe src="main.html" width="100%" height="700" style="border:1px solid #ccc; border-radius:8px;" scrolling="no" allowfullscreen></iframe>
+
+[Open full screen](main.html){:target="_blank"}
 
 ## Learning Objective
 
-Remember and identify the four lobes of the cerebral cortex and their primary functions (Bloom Level 1 - Remember)
+Remember and identify the four lobes of the cerebral cortex and their primary
+functions (Bloom Level 1 - Remember).
 
-- **Bloom Level:** Remember (L1)
-- **Bloom Verb:** Identify, locate, recognize
-- **Library:** HTML/CSS/JavaScript with SVG graphics or Three.js for 3D view
+## Overview
 
-## Preview
+The cerebrum, the largest part of the human brain, is divided into four lobes.
+Each lobe handles different types of thinking, sensing, and movement. When
+dementia damages brain tissue, the symptoms a person experiences depend on
+which lobe is affected first. Learning where these lobes sit and what they do
+helps caregivers and families understand why their loved one may be struggling
+with specific tasks.
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## How to Use This Diagram
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+**Explore Mode** — Hover over any numbered marker or label to see a description
+of that lobe and how dementia can affect it.
 
-## Specification
+**Quiz Mode** — Click "Quiz" to test your knowledge. Read the hint, then click
+the correct marker on the brain. Your score is tracked, and a celebration plays
+when you answer all four correctly.
 
-The full specification below is extracted from
-[Chapter 2: Brain Anatomy and Function](../../chapters/02-brain-anatomy-function/index.md).
+## The Four Lobes
 
-```text
-Type: infographic
-
-Learning Objective: Remember and identify the four lobes of the cerebral cortex and their primary functions (Bloom Level 1 - Remember)
-
-Bloom Taxonomy Level: Remember (L1)
-Bloom Verb: Identify, locate, recognize
-
-Purpose: Help students visualize, identify, and learn the locations and functions of the four brain lobes through interactive exploration
-
-Layout: Side view of brain showing all four lobes with clear color-coded regions
-
-Brain Lobes to Display:
-
-1. Frontal Lobe (front third, blue)
-   Location: Front of brain, behind forehead
-   Primary Functions:
-     - Executive functions (planning, organizing)
-     - Problem solving and decision making
-     - Personality and behavior control
-     - Voluntary movement
-     - Speech production (Broca's area)
-   Dementia Impact: "Early changes in frontotemporal dementia affect personality and judgment"
-
-2. Parietal Lobe (upper middle, green)
-   Location: Top-middle of brain
-   Primary Functions:
-     - Processing touch and temperature
-     - Spatial awareness and navigation
-     - Integrating sensory information
-     - Understanding numerical concepts
-   Dementia Impact: "Damage causes difficulty with spatial tasks like dressing or finding way home"
-
-3. Temporal Lobe (side, yellow)
-   Location: Sides of brain, near ears
-   Primary Functions:
-     - Processing sound and language comprehension
-     - Memory formation (includes hippocampus)
-     - Face recognition
-     - Emotional responses
-   Dementia Impact: "Often affected early in Alzheimer's, causing memory and language problems"
-
-4. Occipital Lobe (back, purple)
-   Location: Back of brain
-   Primary Functions:
-     - Visual processing
-     - Color recognition
-     - Motion detection
-     - Distance perception
-   Dementia Impact: "Visual processing problems in Lewy body dementia can cause hallucinations"
-
-Interactive Features:
-- Hover over each lobe to highlight and show basic information
-- Click on lobe to expand detailed function panel showing:
-  - List of specific functions
-  - Examples of tasks controlled by that lobe
-  - How dementia affects that region
-- "Test Yourself" mode:
-  - Labels hidden
-  - Click on highlighted region to identify the lobe
-  - Immediate feedback (correct/incorrect)
-  - Score tracking
-- "Show Functions" toggle to display/hide function overlays
-- Rotation control to see different views (side, top, front)
-
-Visual Style:
-- Clean 3D-style brain illustration
-- Distinct colors for each lobe
-- Clear boundary lines between regions
-- Labels with connecting leader lines
-- Semi-transparent overlays for function areas
-
-Additional Features:
-- Mini-quiz at bottom: "Which lobe controls...?"
-  - Multiple choice questions
-  - Instant feedback with explanation
-- "Real-World Examples" button for each lobe showing practical activities
-- Comparison mode: "Healthy brain vs. Dementia-affected brain" showing atrophy patterns
-
-Responsive Design:
-- Brain illustration scales to fit screen
-- Text remains readable at all sizes
-- Touch-friendly for mobile devices
-- Vertical stacking on narrow screens
-
-Implementation: HTML/CSS/JavaScript with SVG graphics or Three.js for 3D view
-Canvas size: 100% width, 550px height
-```
+1. **Frontal Lobe** (blue, front of brain) — Executive functions: planning,
+   decision making, personality, behavior, voluntary movement, and speech
+   production (Broca's area). *Dementia impact: Early changes in frontotemporal
+   dementia affect personality and judgment.*
+2. **Parietal Lobe** (green, top of brain) — Processes touch and temperature,
+   spatial awareness, navigation, and understanding of numbers. *Dementia
+   impact: Damage causes difficulty with spatial tasks like dressing or finding
+   the way home.*
+3. **Temporal Lobe** (yellow, side of brain, near ears) — Processes sound and
+   language, forms memories (contains the hippocampus), recognizes faces, and
+   handles emotional responses. *Dementia impact: Often affected early in
+   Alzheimer's disease, causing memory and language problems.*
+4. **Occipital Lobe** (purple, back of brain) — Visual processing: color
+   recognition, motion detection, and distance perception. *Dementia impact:
+   Visual processing problems in Lewy body dementia can cause hallucinations.*
 
 ## Related Resources
 

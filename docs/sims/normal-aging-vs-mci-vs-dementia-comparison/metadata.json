@@ -11,11 +11,23 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "normal-aging-vs-mci-vs-dementia-comparison",
-  "library": "HTML/CSS/JavaScript with interactive hover and click events",
+  "library": "Custom HTML/CSS/JavaScript",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "Differentiate, distinguish, compare, contrast",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
+  "implemented_date": "2026-04-10",
   "chapter_number": 5,
   "chapter_title": "Signs, Symptoms, and Early Recognition",
-  "chapter_dir": "05-signs-symptoms-recognition"
+  "chapter_dir": "05-signs-symptoms-recognition",
+  "features": [
+    "Three-column comparison table (Normal Aging, MCI, Dementia)",
+    "Ten dimensions: memory, independence, awareness, testing, progression, compensation, work/hobbies, social function, risk, treatment",
+    "Color coding green/yellow/orange showing progression",
+    "Click cell for expanded detail panel",
+    "Click dimension label to highlight row",
+    "Explore / Quiz mode toggle",
+    "Five scenario-based quiz questions with feedback",
+    "Celebration animation on perfect quiz score",
+    "Responsive layout"
+  ]
 }

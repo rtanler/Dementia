@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "neuroplasticity-in-action",
-  "library": "p5.js with physics simulation for network layout",
+  "library": "p5.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "Demonstrate, illustrate, explain",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 2,
   "chapter_title": "Brain Anatomy and Function",
   "chapter_dir": "02-brain-anatomy-function"

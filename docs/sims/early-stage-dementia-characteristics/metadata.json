@@ -4,18 +4,31 @@
   "creator": "Dementia Education Project",
   "date": "2026-04-10",
   "subject": [
-    "dementia"
+    "dementia",
+    "early-stage dementia",
+    "cognitive domains",
+    "behavioral changes",
+    "functional assessment"
   ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "early-stage-dementia-characteristics",
-  "library": "HTML/CSS/JavaScript with SVG for wheel diagram",
+  "library": "Custom HTML/CSS/JavaScript with SVG",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "Understand, explain, describe",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 6,
   "chapter_title": "Progression Through Dementia Stages",
-  "chapter_dir": "06-dementia-stages"
+  "chapter_dir": "06-dementia-stages",
+  "features": [
+    "Interactive SVG wheel with 5 domain petals",
+    "Click-to-expand detail panel with impaired vs preserved abilities",
+    "Impairment meter gauge per domain",
+    "Explore / Quiz mode toggle",
+    "4-question domain classification quiz",
+    "Celebration animation on perfect quiz score",
+    "Responsive layout"
+  ]
 }

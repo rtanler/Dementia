@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "protein-aggregation-comparison",
-  "library": "HTML/CSS/JavaScript with interactive toggles and hover states",
+  "library": "Custom HTML/CSS/JavaScript with SVG",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "Compare, contrast, distinguish, differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 4,
   "chapter_title": "The Neuroscience of Neurodegeneration",
   "chapter_dir": "04-neuroscience-neurodegeneration"

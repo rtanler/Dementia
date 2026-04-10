@@ -1,106 +1,63 @@
 ---
 title: Early-Stage Dementia Characteristics
 description: Understand the characteristics of early-stage dementia across cognitive, functional, personality, behavioral, and mood domains (Bloom Level 2 - Understand)
-status: scaffold
-library: HTML/CSS/JavaScript with SVG for wheel diagram
+status: implemented
+library: Custom HTML/CSS/JavaScript with SVG
 bloom_level: Understand (L2)
 ---
 
 # Early-Stage Dementia Characteristics
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
-
-## Learning Objective
-
-Understand the characteristics of early-stage dementia across cognitive, functional, personality, behavioral, and mood domains (Bloom Level 2 - Understand)
-
-- **Bloom Level:** Understand (L2)
-- **Bloom Verb:** Understand, explain, describe
-- **Library:** HTML/CSS/JavaScript with SVG for wheel diagram
+An interactive SVG wheel diagram that shows what early-stage dementia looks
+like across five different domains. Each "petal" of the wheel reveals what
+is typically impaired and what usually remains preserved, so families can
+focus on a person's retained capabilities rather than only on losses.
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="750px" frameborder="0"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
-## Specification
+## Learning Objective
 
-The full specification below is extracted from
-[Chapter 6: Progression Through Dementia Stages](../../chapters/06-dementia-stages/index.md).
+Understand the characteristics of early-stage dementia across cognitive,
+functional, personality, behavioral, and mood domains
+(Bloom Level 2 - Understand).
 
-```text
-Type: infographic
+- **Bloom Level:** Understand (L2)
+- **Bloom Verb:** Understand, explain, describe
+- **Library:** Custom HTML/CSS/JavaScript with SVG
 
-Learning Objective: Understand the characteristics of early-stage dementia across cognitive, functional, personality, behavioral, and mood domains (Bloom Level 2 - Understand)
+## The Five Domains
 
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Understand, explain, describe
+The wheel shows five domains of early-stage dementia. In each case, some
+abilities are mildly impaired while many others remain intact.
 
-Purpose: Provide an interactive visual overview of early-stage dementia showing what is impaired versus what remains intact, helping families understand capabilities and limitations
+1. **Cognitive Abilities** - Recent memory and new learning are affected,
+   while remote memory, basic reasoning, and familiar knowledge are preserved.
+2. **Daily Function** - Complex tasks like finances and cooking become
+   difficult, but self-care and basic routines remain largely independent.
+3. **Personality** - The person may become more anxious or rigid, yet their
+   core personality and values stay recognizable.
+4. **Behavior** - Repetition and withdrawal from new situations increase,
+   but cooperation and social engagement are usually preserved.
+5. **Mood** - Depression, anxiety, and frustration may emerge in response
+   to awareness of decline, while the full range of positive emotions
+   still remains accessible.
 
-Layout: Multi-domain wheel diagram with interactive sections
+## How To Use
 
-Central Circle:
-"Early-Stage Dementia: Independence with Support"
+- **Explore mode** - Click any section of the wheel to see impairment and
+  preserved abilities for that domain, along with an impairment meter.
+  Toggle "Show Examples" to see concrete scenarios.
+- **Quiz mode** - Read four real-world scenarios and match each one to the
+  correct domain. A celebration plays when all four are answered correctly.
 
-Five Outer Sections (like petals):
+## Key Message
 
-Section 1 - Cognitive Abilities
-- Impaired: Recent memory, learning new information, complex planning
-- Preserved: Remote memory, basic reasoning, familiar knowledge
-- Click to expand with specific examples
-- Color: Orange gradient (impaired darker, preserved lighter)
-
-Section 2 - Daily Function
-- Impaired: Managing finances, complex cooking, medication management without reminders
-- Preserved: Self-care (bathing, dressing), eating, basic household tasks
-- Click to expand with examples
-- Color: Blue gradient
-
-Section 3 - Personality
-- Changes: May be more anxious, less spontaneous, more rigid about routines
-- Preserved: Core personality recognizable, values generally intact
-- Click to expand with examples
-- Color: Purple gradient
-
-Section 4 - Behavior
-- Changes: More repetition, some social withdrawal, difficulty with new situations
-- Preserved: Generally cooperative, able to engage socially, follows most social norms
-- Click to expand with examples
-- Color: Green gradient
-
-Section 5 - Mood
-- Changes: May have depression, anxiety about decline, frustration
-- Preserved: Can experience full range of emotions, joy in positive experiences
-- Click to expand with examples
-- Color: Yellow gradient
-
-Interactive Features:
-- Hover over any section to see brief summary
-- Click section to expand with detailed examples
-- Toggle "Show Examples" to display specific scenarios
-- "Compare Stages" button to see early vs moderate vs late side-by-side
-- Each section shows a meter/gauge indicating degree of impairment (early stage shows mild impairment)
-
-Example Scenarios (appear on click):
-Cognitive: "Can remember childhood home address but forgets conversation from this morning"
-Daily Function: "Can shower independently but needs help balancing checkbook"
-Personality: "Still friendly but less interested in trying new restaurants"
-Behavior: "Asks 'What time is dinner?' multiple times but follows through appropriately"
-Mood: "Aware of memory problems and feels sad about losing abilities"
-
-Bottom Panel:
-Key Message: "In early-stage dementia, much remains intact. Focus on what the person CAN do, not just what they can't."
-
-Visual Style: Clean, modern wheel design with clear color coding
-Responsive design: Wheel adjusts size, sections stack on narrow screens
-
-Implementation: HTML/CSS/JavaScript with SVG for wheel diagram
-Canvas size: 800x550px, fully responsive
-```
+In early-stage dementia, much remains intact. Focus on what the person
+*can* do, not just what they *can't*.
 
 ## Related Resources
 

@@ -1,143 +1,76 @@
 ---
 title: Synaptic Communication
-description: Understand how neurons communicate across synapses through electrical and chemical signals (Bloom Level 2 - Understand)
-status: scaffold
-library: p5.js
+description: Interactive diagram showing how neurons communicate across a synapse using electrical and chemical signals, with notes on how dementia damages each step of the process.
+status: implemented
+library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
+hide:
+  - toc
 ---
 
 # Synaptic Communication
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+<iframe src="main.html" width="100%" height="750" style="border:1px solid #ccc; border-radius:8px;" scrolling="no" allowfullscreen></iframe>
+
+[Open full screen](main.html){:target="_blank"}
 
 ## Learning Objective
 
-Understand how neurons communicate across synapses through electrical and chemical signals (Bloom Level 2 - Understand)
+Understand how neurons communicate across synapses through electrical and
+chemical signals (Bloom Level 2 - Understand).
 
-- **Bloom Level:** Understand (L2)
-- **Bloom Verb:** Explain, describe
-- **Library:** p5.js
+## Overview
 
-## Preview
+Every thought, memory, and movement depends on neurons passing signals to each
+other. They do this at tiny junctions called **synapses**, where the end of one
+neuron almost touches the beginning of another. The signal starts as
+electricity traveling down an axon, becomes a burst of chemical messengers
+across a microscopic gap, and then turns back into electricity in the next
+neuron. This entire process takes less than a thousandth of a second — and it
+happens trillions of times per second in a healthy brain.
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+Dementia damages synapses in several ways. Understanding how a normal synapse
+works is the first step toward understanding what goes wrong when brain
+diseases like Alzheimer's disease take hold.
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+## How to Use This Diagram
 
-## Specification
+**Explore Mode** — Hover over any numbered marker or label to see a description
+of that structure and how dementia can affect it.
 
-The full specification below is extracted from
-[Chapter 2: Brain Anatomy and Function](../../chapters/02-brain-anatomy-function/index.md).
+**Quiz Mode** — Click "Quiz" to test your knowledge. Read the hint, then click
+the correct marker on the image. Your score is tracked, and a celebration
+plays when you answer all nine correctly.
 
-```text
-Type: microsim
+## Structures and Events in the Synapse
 
-Learning Objective: Understand how neurons communicate across synapses through electrical and chemical signals (Bloom Level 2 - Understand)
+1. **Presynaptic Neuron** — The sending neuron that starts the signal.
+2. **Action Potential** — The electrical impulse traveling down the axon from
+   the cell body toward the axon terminal.
+3. **Axon Terminal** — The bulb-shaped end of the sending neuron's axon, where
+   the electrical signal is converted into a chemical signal.
+4. **Synaptic Vesicles** — Tiny bubbles inside the axon terminal filled with
+   neurotransmitter molecules, waiting to be released.
+5. **Vesicle Fusion** — When the action potential arrives, vesicles merge with
+   the membrane and pour their contents into the synaptic gap.
+6. **Synaptic Cleft** — The narrow gap (about 20-40 nanometers wide) between
+   the two neurons.
+7. **Neurotransmitters in Cleft** — The chemical messengers (such as
+   acetylcholine, dopamine, and glutamate) that diffuse across the gap.
+8. **Receptor Sites** — Lock-shaped proteins on the receiving neuron that only
+   fit specific neurotransmitter "keys."
+9. **Postsynaptic Neuron** — The receiving neuron that generates a new
+   electrical signal once enough receptors have been activated.
 
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Explain, describe
+## Why This Matters for Dementia
 
-Instructional Rationale: Step-through demonstration is appropriate because understanding synaptic communication requires learners to trace the process with concrete visualization of both electrical and chemical events. Allowing students to progress at their own pace helps them grasp the conversion from electrical to chemical to electrical signals.
-
-Purpose: Demonstrate the step-by-step process of neural communication across a synapse
-
-Canvas Layout:
-- Main visualization area (700px): Shows two neurons with synapse between them
-- Control panel (100px): Step controls and information display
-
-Data Visibility Requirements:
-
-Step 1 - Resting State:
-  Show: Two neurons at rest separated by synaptic gap
-  Display:
-    - Presynaptic neuron (sending) with axon terminal
-    - Synaptic cleft (gap) clearly marked
-    - Postsynaptic neuron (receiving) with dendrite receptors
-    - Vesicles containing neurotransmitters in axon terminal
-  Caption: "Neurons at rest, ready to communicate"
-
-Step 2 - Electrical Signal Arrives:
-  Show: Action potential (electrical wave) traveling down axon
-  Display:
-    - Animated electrical signal moving along axon
-    - Signal represented as colored wave (yellow/orange)
-    - Voltage indicator showing change from -70mV to +40mV
-  Caption: "Electrical signal travels down the axon toward the synapse"
-
-Step 3 - Neurotransmitter Release:
-  Show: Vesicles releasing neurotransmitters into synaptic cleft
-  Display:
-    - Vesicles moving to membrane and releasing contents
-    - Neurotransmitter molecules (small colored circles) visible in cleft
-    - Number count: "50 neurotransmitter molecules released"
-  Caption: "Electrical signal triggers chemical release"
-
-Step 4 - Crossing the Gap:
-  Show: Neurotransmitters diffusing across synapse
-  Display:
-    - Molecules moving across gap (animated)
-    - Distance marker: "40 nanometers"
-    - Time elapsed: "0.5 milliseconds"
-  Caption: "Chemical messengers cross the synaptic gap"
-
-Step 5 - Binding to Receptors:
-  Show: Neurotransmitters binding to receptor sites
-  Display:
-    - Molecules fitting into receptors (lock-and-key visual)
-    - Binding count: "30 of 50 molecules successfully bind"
-    - Receptor types labeled
-  Caption: "Neurotransmitters bind to receptors like keys in locks"
-
-Step 6 - New Signal Generated:
-  Show: Electrical signal starting in receiving neuron
-  Display:
-    - New action potential beginning in postsynaptic neuron
-    - Voltage change: -70mV → -65mV → threshold → new signal
-    - Signal strength indicator
-  Caption: "Binding triggers a new electrical signal in the next neuron"
-
-Step 7 - Signal Continuation:
-  Show: Signal traveling along second neuron
-  Display:
-    - Full communication cycle complete
-    - Neurotransmitters being recycled/cleared from cleft
-    - Ready for next signal
-  Caption: "The signal continues through the neural network"
-
-Interactive Controls:
-- "Next Step" button - Advances to next stage
-- "Previous Step" button - Returns to previous stage
-- "Reset" button - Returns to resting state
-- "Play All" button - Auto-advances through all steps
-- Progress indicator (1/7, 2/7, etc.)
-- Speed control slider (for auto-play)
-
-Visual Elements:
-- Color-coded neurons (blue for presynaptic, green for postsynaptic)
-- Animated action potential (yellow wave)
-- Neurotransmitter molecules (small red/orange circles)
-- Receptor binding sites (lock shapes on postsynaptic membrane)
-- Clear labeling of all structures
-- Voltage meters showing electrical changes
-
-Impact of Dementia Panel:
-After completing all steps, show comparison:
-- Normal synapse: Strong signal transmission
-- Dementia-affected synapse: Fewer neurotransmitters, damaged receptors, weakened signal
-- Illustrate how synapse loss contributes to cognitive decline
-
-Responsive Design:
-- Canvas adjusts to window width
-- Maintains clear visibility of all elements
-- Text size scales for readability
-
-Implementation: p5.js
-Canvas: 100% width, 600px height
-Default state: Step 1 visible
-Animation timing: 500ms transitions between steps
-```
+Synapse loss is one of the strongest predictors of memory and thinking problems
+in Alzheimer's disease — even stronger than the total number of dying neurons.
+Most current dementia medications work at the synapse, either by increasing
+the amount of available neurotransmitter (especially acetylcholine) or by
+protecting receptors from being over-stimulated by glutamate. Learning the
+parts of the synapse helps you understand how these medications work and why
+they can help slow symptoms.
 
 ## Related Resources
 

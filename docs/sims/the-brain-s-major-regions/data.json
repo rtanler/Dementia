@@ -1,0 +1,85 @@
+{
+  "title": "The Brain's Major Regions",
+  "orientation": "landscape",
+  "image": "brain-regions.png",
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Cerebral Cortex",
+      "x": 45,
+      "y": 8,
+      "radius": 5,
+      "color": "#6B6B6B",
+      "hint": "The thin, wrinkled outer layer that covers the top of the entire cerebrum.",
+      "description": "The cerebral cortex is the brain's outer layer, the gray wrinkled surface you see on the top and sides of the brain. It is responsible for thinking, planning, language, and processing information from the senses. Almost everything we think of as 'conscious thought' happens here.",
+      "ap_tip": "Dementia impact: Alzheimer's disease causes widespread shrinkage of the cortex, leading to problems with memory, reasoning, and language."
+    },
+    {
+      "id": 2,
+      "label": "Frontal Lobe",
+      "x": 18,
+      "y": 25,
+      "radius": 5,
+      "color": "#2E74B5",
+      "hint": "The large blue region at the front of the brain, behind where the forehead would be.",
+      "description": "The frontal lobe sits at the front of the brain and controls decision-making, problem-solving, planning, and personality. It also directs voluntary movement and produces speech.",
+      "ap_tip": "Dementia impact: Early changes in frontotemporal dementia affect personality, judgment, and social behavior."
+    },
+    {
+      "id": 3,
+      "label": "Temporal Lobe",
+      "x": 32,
+      "y": 72,
+      "radius": 5,
+      "color": "#D4A017",
+      "hint": "The yellow region on the lower side of the brain, near where the ears would be.",
+      "description": "The temporal lobe sits on the side of the brain, near the ears. It processes sound, speech, and memory formation. It also helps us recognize faces and understand language.",
+      "ap_tip": "Dementia impact: Often affected early in Alzheimer's disease, causing memory loss and difficulty finding the right words."
+    },
+    {
+      "id": 4,
+      "label": "Parietal Lobe",
+      "x": 52,
+      "y": 18,
+      "radius": 5,
+      "color": "#3C8D40",
+      "hint": "The green region on the upper-middle top of the brain, behind the frontal lobe.",
+      "description": "The parietal lobe sits on top of the brain, behind the frontal lobe. It processes touch, spatial awareness, and integrates sensory information from different parts of the body.",
+      "ap_tip": "Dementia impact: Damage causes difficulty with spatial tasks like dressing, reading a map, or finding the way home."
+    },
+    {
+      "id": 5,
+      "label": "Occipital Lobe",
+      "x": 82,
+      "y": 42,
+      "radius": 5,
+      "color": "#6B4F9B",
+      "hint": "The purple region at the back of the brain.",
+      "description": "The occipital lobe sits at the back of the brain. It processes visual information from your eyes, including color, motion, and distance. Almost everything we 'see' is interpreted here.",
+      "ap_tip": "Dementia impact: Visual processing problems in Lewy body dementia can cause hallucinations and trouble judging distances."
+    },
+    {
+      "id": 6,
+      "label": "Hippocampus",
+      "x": 48,
+      "y": 58,
+      "radius": 5,
+      "color": "#E8833A",
+      "hint": "The small orange structure deep inside the brain, tucked within the temporal region.",
+      "description": "The hippocampus is a small, seahorse-shaped structure buried deep inside the temporal lobe. It is critical for forming new memories and for spatial navigation — helping you remember where you are and how to get home.",
+      "ap_tip": "Dementia impact: The hippocampus is one of the first structures damaged in Alzheimer's disease, which is why forgetting recent events is often the earliest symptom."
+    },
+    {
+      "id": 7,
+      "label": "Cerebellum",
+      "x": 82,
+      "y": 80,
+      "radius": 5,
+      "color": "#E68FA8",
+      "hint": "The pink, finely-ridged structure at the lower back of the brain.",
+      "description": "The cerebellum sits at the lower back of the brain. It coordinates movement, balance, and posture, making sure your muscles work together smoothly. It also helps with fine motor skills like writing or buttoning a shirt.",
+      "ap_tip": "Dementia impact: While the cerebellum is usually less affected early in dementia, balance and coordination problems often develop as the disease progresses, increasing fall risk."
+    }
+  ],
+  "layout": "side-panel"
+}

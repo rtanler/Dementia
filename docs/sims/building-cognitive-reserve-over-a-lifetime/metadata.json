@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "building-cognitive-reserve-over-a-lifetime",
-  "library": "HTML/CSS/JavaScript with D3.js or Chart.js for graph",
+  "library": "Chart.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "Explain, illustrate",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 1,
   "chapter_title": "Introduction to Dementia and Cognitive Health",
   "chapter_dir": "01-intro-to-dementia"

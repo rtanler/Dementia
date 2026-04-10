@@ -1,100 +1,96 @@
 ---
 title: Brain Regions Affected in Rare Tauopathies
-description: Identify which brain regions are primarily affected in rare tauopathies and relate regional damage to characteristic symptoms (Bloom Level 2 - Understand)
-status: scaffold
-library: SVG-based interactive brain diagrams with JavaScript for interactivity
+description: Interactive diagram comparing the distinct patterns of brain damage in Pick's disease, corticobasal degeneration, and progressive supranuclear palsy, and how each pattern produces characteristic symptoms.
+status: implemented
+library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
+hide:
+  - toc
 ---
 
 # Brain Regions Affected in Rare Tauopathies
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+<iframe src="main.html" width="100%" height="750" style="border:1px solid #ccc; border-radius:8px;" scrolling="no" allowfullscreen></iframe>
+
+[Open full screen](main.html){:target="_blank"}
 
 ## Learning Objective
 
-Identify which brain regions are primarily affected in rare tauopathies and relate regional damage to characteristic symptoms (Bloom Level 2 - Understand)
+Identify which brain regions are primarily affected in rare tauopathies and
+relate regional damage to characteristic symptoms (Bloom Level 2 - Understand).
 
-- **Bloom Level:** Understand (L2)
-- **Bloom Verb:** Identify, relate, connect
-- **Library:** SVG-based interactive brain diagrams with JavaScript for interactivity
+## Overview
 
-## Preview
+Pick's disease, corticobasal degeneration (CBD), and progressive supranuclear
+palsy (PSP) are all *tauopathies* — rare dementias caused by a toxic buildup of
+abnormal tau protein inside brain cells. Even though they share the same
+underlying protein problem, each disease attacks a different set of brain
+regions. That pattern of damage is why each disease produces its own
+recognizable set of symptoms. Learning the pattern makes it much easier to tell
+the three diseases apart.
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+This interactive diagram shows all three brains side by side. Hover over any
+numbered marker to learn which region is affected and what symptom it produces.
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+## How to Use This Diagram
 
-## Specification
+**Explore Mode** — Hover over any numbered marker or label to see a description
+of that affected region and the symptoms it causes.
 
-The full specification below is extracted from
-[Chapter 4: The Neuroscience of Neurodegeneration](../../chapters/04-neuroscience-neurodegeneration/index.md).
+**Quiz Mode** — Click "Quiz" to test your knowledge. Read the hint, then click
+the correct marker on the brain. A celebration plays when you answer all nine
+questions correctly.
 
-```text
-Type: diagram
+## Pick's Disease — Frontotemporal Pattern
 
-Learning Objective: Identify which brain regions are primarily affected in rare tauopathies and relate regional damage to characteristic symptoms (Bloom Level 2 - Understand)
+Pick's disease is one of the frontotemporal dementias. The damage is
+concentrated in the **frontal lobes** and the **front of the temporal lobes**,
+while the rest of the brain stays relatively spared early on.
 
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Identify, relate, connect
+- **Frontal cortex atrophy** → personality changes, poor judgment, and
+  disinhibition (saying or doing things a person would normally filter out)
+- **Anterior temporal atrophy** → language difficulties (primary progressive
+  aphasia), trouble finding words, and difficulty naming familiar things
 
-Purpose: Show the distinct patterns of neurodegeneration in three rare tauopathies and help students understand how regional damage causes specific symptoms
+Memory is often *preserved* early in Pick's, which is a key clue that helps
+distinguish it from Alzheimer's disease.
 
-Layout: Three side-view brain diagrams arranged horizontally, each showing a different disease
+## Corticobasal Degeneration — Cortical and Subcortical
 
-Diagram 1 - Pick's Disease:
-- Brain outline in lateral view
-- Frontal lobes highlighted in orange/red (showing atrophy)
-- Anterior temporal lobes highlighted in orange/red
-- Other brain regions shown in gray (relatively spared)
-- Annotations pointing to affected areas:
-  * "Frontal cortex atrophy → personality changes, disinhibition"
-  * "Temporal cortex atrophy → language difficulties (aphasia)"
-- Label: "Pick's Disease - Frontotemporal Pattern"
+CBD damages both the surface of the brain (cortex) and the structures deep
+inside it, and it usually does so **asymmetrically** — one side of the body is
+affected first and stays worse than the other.
 
-Diagram 2 - Corticobasal Degeneration:
-- Brain outline in lateral view
-- Asymmetric highlighting (one hemisphere more affected)
-- Motor cortex and parietal cortex highlighted in purple
-- Basal ganglia (shown in cross-section inset) highlighted in purple
-- Annotations:
-  * "Motor/sensory cortex → limb apraxia, alien limb"
-  * "Basal ganglia → rigidity, bradykinesia"
-  * "Asymmetric onset (typically one side first)"
-- Label: "Corticobasal Degeneration - Cortical and Subcortical"
+- **Motor and sensory cortex** → limb apraxia (inability to carry out learned
+  purposeful movements) and the dramatic "alien limb" phenomenon
+- **Parietal cortex** → trouble coordinating complex movements and using tools
+- **Basal ganglia** → rigidity and bradykinesia (slow movement) that do not
+  respond well to Parkinson's medications
 
-Diagram 3 - Progressive Supranuclear Palsy:
-- Brain outline in lateral view with brain stem visible
-- Midbrain highlighted in green
-- Basal ganglia highlighted in green
-- Frontal lobes highlighted in lighter green
-- Annotations:
-  * "Midbrain (superior colliculus) → vertical gaze palsy"
-  * "Basal ganglia → rigidity, bradykinesia, falls"
-  * "Frontal cortex → executive dysfunction, apathy"
-- Label: "Progressive Supranuclear Palsy - Brain Stem and Basal Ganglia"
+Asymmetric onset is one of the most helpful clinical clues for CBD.
 
-Interactive Elements:
-- Hover over any highlighted region to see popup with:
-  - Region name
-  - Degree of damage (mild/moderate/severe)
-  - Associated symptoms
-- Click disease name to highlight all affected regions for that disease
-- Toggle button: "Show Symptom Connections" - draws lines from affected regions to symptom list
-- Click "Compare All Three" to show all three diagrams with alignment markers showing overlapping and distinct regions
+## Progressive Supranuclear Palsy — Brain Stem and Basal Ganglia
 
-Bottom Comparison Summary:
-- Common features: All three involve abnormal tau protein (4-repeat tau in CBD and PSP, 3-repeat tau in Pick's)
-- Key distinctions: Different regional patterns explain different symptom profiles
-- Clinical implication: Brain region affected → symptom pattern → helps with diagnosis
+PSP attacks deeper structures first: the **midbrain** (part of the brain stem)
+and the **basal ganglia**. The frontal lobes are also affected, but usually
+more mildly.
 
-Visual Style: Clean anatomical diagrams with color-coded affected regions
-Color coding: Pick's (orange/red), CBD (purple), PSP (green)
+- **Midbrain (near the superior colliculus)** → vertical gaze palsy, the
+  inability to look up or down voluntarily — the single most specific sign of
+  PSP
+- **Basal ganglia** → rigidity, bradykinesia, and frequent **backward falls**,
+  often within the first year of symptoms
+- **Frontal cortex (mild)** → executive dysfunction and apathy
 
-Implementation: SVG-based interactive brain diagrams with JavaScript for interactivity
-Canvas size: 1000x600px, responsive design that stacks diagrams vertically on narrow screens
-```
+On MRI, the shrunken midbrain of PSP produces a famous "hummingbird sign" when
+viewed from the side.
+
+## The Big Picture
+
+All three diseases involve abnormal tau protein, but the **regional pattern**
+of damage explains the very different symptom profiles. Matching region to
+symptom is how clinicians tell these rare dementias apart — and it is a
+powerful framework for understanding every neurodegenerative disease.
 
 ## Related Resources
 

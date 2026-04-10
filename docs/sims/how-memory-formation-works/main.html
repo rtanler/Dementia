@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>How Memory Formation Works</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -10,158 +11,708 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f8f9fa;
             color: #212529;
+            padding: 10px;
         }
-        #container {
-            width: 100%;
+        main {
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
             background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
             border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
         }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
+        .title-bar {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 16px 20px;
+        }
+        .title-bar h1 {
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+        .title-bar p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .step-indicator {
+            background: #eff6ff;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #dbeafe;
+        }
+        .step-indicator .step-label {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 16px;
+        }
+        .step-dots {
+            display: flex;
+            gap: 8px;
+        }
+        .step-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            transition: background 0.3s;
+        }
+        .step-dot.active {
+            background: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+        }
+        .step-dot.completed {
+            background: #10b981;
+        }
+        .viz-area {
+            padding: 20px;
+            min-height: 380px;
+            position: relative;
+            background: #fafbfc;
+        }
+        .stage {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        .stage.visible {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .stage-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .stage-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 2px 10px;
             border-radius: 12px;
             font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
         }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
+        .sensory-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+        .sensory-card {
+            background: white;
+            border: 2px solid #dbeafe;
+            border-radius: 8px;
+            padding: 14px;
+            text-align: center;
+        }
+        .sensory-icon {
+            font-size: 38px;
+            margin-bottom: 6px;
+        }
+        .sensory-card h4 {
+            color: #1e40af;
+            font-size: 14px;
             margin-bottom: 8px;
         }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
+        .sensory-card ul {
+            list-style: none;
+            font-size: 12px;
+            color: #475569;
         }
-        .meta {
-            margin-top: 20px;
+        .sensory-card li {
+            padding: 2px 0;
+        }
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .flow-box {
+            background: white;
+            border: 2px solid #3b82f6;
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-align: center;
+            min-width: 120px;
+        }
+        .flow-box.hippocampus {
+            border-color: #f97316;
+            background: #fff7ed;
+        }
+        .flow-box.hippocampus h4 { color: #c2410c; }
+        .flow-box.cortex {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+        .flow-box.cortex h4 { color: #1e40af; }
+        .flow-box.sensory {
+            border-color: #8b5cf6;
+            background: #f5f3ff;
+        }
+        .flow-box.sensory h4 { color: #6d28d9; }
+        .flow-box.cue {
+            border-color: #ec4899;
+            background: #fdf2f8;
+        }
+        .flow-box.cue h4 { color: #be185d; }
+        .flow-box h4 {
             font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
+            margin-bottom: 4px;
         }
-        .meta strong { color: #495057; }
+        .flow-box ul {
+            list-style: none;
+            font-size: 11px;
+            text-align: left;
+            color: #475569;
+            margin-top: 4px;
+        }
+        .flow-box li::before {
+            content: "• ";
+            color: #94a3b8;
+        }
+        .arrow {
+            font-size: 28px;
+            color: #64748b;
+            font-weight: bold;
+        }
+        .arrow-reverse {
+            color: #ec4899;
+        }
+        .synaptic-svg {
+            display: block;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .success-banner {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 14px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .caption {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 12px 16px;
+            margin: 14px 20px 0;
+            border-radius: 4px;
+            font-style: italic;
+            color: #78350f;
+        }
+        .controls {
+            padding: 14px 20px;
+            background: #f1f5f9;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-top: 1px solid #e2e8f0;
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 9px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        button:hover { background: #2563eb; }
+        button:disabled {
+            background: #cbd5e1;
+            cursor: not-allowed;
+        }
+        button.reset { background: #64748b; }
+        button.reset:hover { background: #475569; }
+        button.show-all { background: #8b5cf6; }
+        button.show-all:hover { background: #7c3aed; }
+        .dementia-panel {
+            margin: 20px;
+            padding: 16px;
+            background: #fef2f2;
+            border: 2px solid #fca5a5;
+            border-radius: 8px;
+            display: none;
+        }
+        .dementia-panel.visible { display: block; }
+        .dementia-panel h3 {
+            color: #991b1b;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .dementia-panel p {
+            color: #7f1d1d;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        .show-all-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+        .show-all-grid .stage {
+            display: block;
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            border-radius: 6px;
+            background: white;
+        }
+        .show-all-grid .sensory-grid {
+            grid-template-columns: 1fr;
+            gap: 6px;
+        }
+        .show-all-grid .sensory-card { padding: 6px; }
+        .show-all-grid .sensory-icon { font-size: 22px; }
+        .show-all-grid .flow-diagram { margin: 6px 0; }
+        .show-all-grid .flow-box { min-width: 80px; padding: 6px 8px; }
+        .show-all-grid .stage-title { font-size: 14px; }
+        .quiz-section {
+            padding: 20px;
+            background: #f8fafc;
+            border-top: 3px solid #3b82f6;
+        }
+        .quiz-section h2 {
+            color: #1e3a8a;
+            margin-bottom: 14px;
+            font-size: 20px;
+        }
+        .quiz-question {
+            background: white;
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        .quiz-question .q-text {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 10px;
+        }
+        .quiz-option {
+            display: block;
+            padding: 8px 12px;
+            margin: 6px 0;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+            background: white;
+        }
+        .quiz-option:hover { border-color: #3b82f6; }
+        .quiz-option.selected { border-color: #3b82f6; background: #eff6ff; }
+        .quiz-option.correct {
+            border-color: #10b981;
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .quiz-option.incorrect {
+            border-color: #ef4444;
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .quiz-feedback {
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            display: none;
+        }
+        .quiz-feedback.show { display: block; }
+        .quiz-feedback.correct { background: #d1fae5; color: #065f46; }
+        .quiz-feedback.incorrect { background: #fee2e2; color: #991b1b; }
+        .quiz-submit {
+            margin-top: 10px;
+            background: #10b981;
+        }
+        .quiz-submit:hover { background: #059669; }
+        .quiz-score {
+            margin-top: 14px;
+            padding: 14px;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #3b82f6;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e3a8a;
+            display: none;
+        }
+        .quiz-score.show { display: block; }
     </style>
 </head>
 <body>
-    <div id="container">
+<main>
+    <div class="title-bar">
         <h1>How Memory Formation Works</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> how-memory-formation-works</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Understand how the brain processes information to create memories through the three stages of encoding, storage, and retrieval (Bloom Level 2 - Understand)</p>
+        <p>Step through the four stages of memory using the example: "Meeting Sarah at a party"</p>
+    </div>
+
+    <div class="step-indicator">
+        <div class="step-label" id="stepLabel">Step 1 of 4: Encoding</div>
+        <div class="step-dots">
+            <div class="step-dot active" data-step="1"></div>
+            <div class="step-dot" data-step="2"></div>
+            <div class="step-dot" data-step="3"></div>
+            <div class="step-dot" data-step="4"></div>
         </div>
     </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <div class="viz-area" id="vizArea">
+        <!-- STAGE 1: ENCODING -->
+        <div class="stage visible" data-stage="1">
+            <div class="stage-title">
+                <span class="stage-badge">Stage 1</span>
+                Encoding — Gathering Sensory Input
+            </div>
+            <div class="sensory-grid">
+                <div class="sensory-card">
+                    <div class="sensory-icon">&#128065;</div>
+                    <h4>Visual</h4>
+                    <ul>
+                        <li>Sarah's face</li>
+                        <li>Red dress</li>
+                        <li>Brown hair</li>
+                    </ul>
+                </div>
+                <div class="sensory-card">
+                    <div class="sensory-icon">&#128066;</div>
+                    <h4>Auditory</h4>
+                    <ul>
+                        <li>Voice: "Hi, I'm Sarah"</li>
+                        <li>Music playing</li>
+                        <li>Party chatter</li>
+                    </ul>
+                </div>
+                <div class="sensory-card">
+                    <div class="sensory-icon">&#127881;</div>
+                    <h4>Context</h4>
+                    <ul>
+                        <li>Party setting</li>
+                        <li>Friday evening</li>
+                        <li>Feeling happy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    Type: microsim
-    
-    Learning Objective: Understand how the brain processes information to create memories through the three stages of encoding, storage, and retrieval (Bloom Level 2 - Understand)
-    
-    Bloom Taxonomy Level: Understand (L2)
-    Bloom Verb: Explain, describe
-    
-    Instructional Rationale: Step-through with worked examples is appropriate because the Understand/explain objective requires learners to trace the process with concrete data showing how a specific experience becomes a memory. This allows students to predict what happens at each stage before seeing the result.
-    
-    Purpose: Demonstrate the three-stage process of memory formation using a concrete example
-    
-    Canvas Layout:
-    - Main area (700px): Visual representation of memory stages
-    - Control panel (100px): Step-through controls and information display
-    
-    Example Scenario: "Meeting someone new at a party"
-    
-    Data Visibility Requirements:
-    Stage 1 - Encoding (Sensory Input):
-      Show: Person shaking hands with "Sarah"
-      Display sensory inputs:
-        - Visual: Sarah's face, red dress, brown hair
-        - Auditory: Voice saying "Hi, I'm Sarah"
-        - Context: Party setting, music playing
-      Caption: "Your senses gather information about the new person"
-    
-    Stage 2 - Storage (Brain Processing):
-      Show: Information traveling from sensory areas to hippocampus
-      Display processing steps:
-        - Pattern recognition: Face features identified
-        - Association: Name connected to face
-        - Context tagging: Party location, time, emotions
-        - Hippocampus consolidation: Temporary memory formed
-      Caption: "The hippocampus processes and consolidates the information"
-    
-    Stage 3 - Long-term Storage:
-      Show: Memory moving from hippocampus to cerebral cortex
-      Display:
-        - Synaptic connections forming (illustrated as connected nodes)
-        - Memory integrated with related memories (other Sarahs you know, other parties)
-        - Strength indicator: Initial memory strength (medium)
-      Caption: "With repetition and sleep, the memory becomes permanent in the cortex"
-    
-    Stage 4 - Retrieval:
-      Show: Seeing Sarah again at another event
-      Display retrieval process:
-        - Cue: Seeing Sarah's face triggers memory search
-        - Hippocampus activates relevant cortex regions
-        - Memory reconstructed: Name, context, previous meeting recalled
-        - Success indicator: "That's Sarah from the party!"
-      Caption: "When you see Sarah again, cues trigger memory retrieval"
-    
-    Interactive Controls:
-    - "Next Step" button - Advances to next stage
-    - "Previous Step" button - Goes back one stage
-    - "Reset" button - Returns to beginning
-    - "Show All" button - Displays all four stages simultaneously for comparison
-    - Progress indicator showing current step (1 of 4, 2 of 4, etc.)
-    
-    Visual Elements:
-    - Simple human silhouettes for people
-    - Color-coded brain regions (hippocampus in orange, cortex in blue)
-    - Animated arrows showing information flow between stages
-    - Icon-based representation of sensory inputs (eye, ear, hand)
-    - Node-and-connection diagram for synaptic connections
-    
-    What Happens in Dementia Panel:
-    After completing all four stages, display comparison:
-    - Show how hippocampus damage in dementia disrupts encoding
-    - Illustrate difficulty forming new memories
-    - Demonstrate why old memories (already in cortex) remain longer
-    
-    Implementation: p5.js
-    Canvas: 100% width, 600px height
-    Default state: Stage 1 visible, others hidden
-    Animation: Smooth transitions between stages (300ms)
-    -->
+        <!-- STAGE 2: STORAGE -->
+        <div class="stage" data-stage="2">
+            <div class="stage-title">
+                <span class="stage-badge">Stage 2</span>
+                Storage — Brain Processing in the Hippocampus
+            </div>
+            <div class="flow-diagram">
+                <div class="flow-box sensory">
+                    <h4>Sensory Input</h4>
+                    <ul>
+                        <li>Sight</li>
+                        <li>Sound</li>
+                        <li>Context</li>
+                    </ul>
+                </div>
+                <div class="arrow">&#8594;</div>
+                <div class="flow-box hippocampus">
+                    <h4>HIPPOCAMPUS</h4>
+                    <ul>
+                        <li>Pattern recognition</li>
+                        <li>Association</li>
+                        <li>Context tagging</li>
+                        <li>Consolidation</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align:center;color:#64748b;font-size:13px;margin-top:8px;">
+                The hippocampus links face to name and tags it with "party, Friday, happy"
+            </p>
+        </div>
+
+        <!-- STAGE 3: LONG-TERM STORAGE -->
+        <div class="stage" data-stage="3">
+            <div class="stage-title">
+                <span class="stage-badge">Stage 3</span>
+                Long-term Storage — Moving Memory to the Cortex
+            </div>
+            <div class="flow-diagram">
+                <div class="flow-box hippocampus">
+                    <h4>HIPPOCAMPUS</h4>
+                    <ul><li>Temporary memory</li></ul>
+                </div>
+                <div class="arrow">&#8594;</div>
+                <div class="flow-box cortex">
+                    <h4>CEREBRAL CORTEX</h4>
+                    <ul><li>Permanent storage</li></ul>
+                </div>
+            </div>
+            <svg class="synaptic-svg" width="100%" height="140" viewBox="0 0 600 140">
+                <!-- Synaptic connections: dots and lines -->
+                <line x1="100" y1="70" x2="200" y2="40" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="100" y1="70" x2="200" y2="100" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="200" y1="40" x2="300" y2="70" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="200" y1="100" x2="300" y2="70" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="300" y1="70" x2="400" y2="30" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="300" y1="70" x2="400" y2="110" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="400" y1="30" x2="500" y2="70" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="400" y1="110" x2="500" y2="70" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="200" y1="40" x2="300" y2="20" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="3,3"/>
+                <line x1="300" y1="20" x2="400" y2="30" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="3,3"/>
+                <!-- Nodes -->
+                <circle cx="100" cy="70" r="10" fill="#f97316"/>
+                <circle cx="200" cy="40" r="9" fill="#3b82f6"/>
+                <circle cx="200" cy="100" r="9" fill="#3b82f6"/>
+                <circle cx="300" cy="70" r="11" fill="#3b82f6"/>
+                <circle cx="300" cy="20" r="7" fill="#8b5cf6"/>
+                <circle cx="400" cy="30" r="9" fill="#3b82f6"/>
+                <circle cx="400" cy="110" r="9" fill="#3b82f6"/>
+                <circle cx="500" cy="70" r="10" fill="#3b82f6"/>
+                <!-- Labels -->
+                <text x="100" y="100" text-anchor="middle" font-size="11" fill="#64748b">From Hippocampus</text>
+                <text x="500" y="100" text-anchor="middle" font-size="11" fill="#64748b">Stored in Cortex</text>
+                <text x="300" y="135" text-anchor="middle" font-size="11" fill="#8b5cf6" font-style="italic">Synaptic connections form</text>
+            </svg>
+            <p style="text-align:center;color:#64748b;font-size:13px;">
+                Memory strength: <strong style="color:#f59e0b;">Medium</strong> &mdash; strengthens with repetition and sleep
+            </p>
+        </div>
+
+        <!-- STAGE 4: RETRIEVAL -->
+        <div class="stage" data-stage="4">
+            <div class="stage-title">
+                <span class="stage-badge">Stage 4</span>
+                Retrieval — Recognizing Sarah Later
+            </div>
+            <div class="flow-diagram">
+                <div class="flow-box cue">
+                    <h4>Cue</h4>
+                    <ul><li>See Sarah again</li></ul>
+                </div>
+                <div class="arrow arrow-reverse">&#8594;</div>
+                <div class="flow-box hippocampus">
+                    <h4>HIPPOCAMPUS</h4>
+                    <ul><li>Triggers search</li></ul>
+                </div>
+                <div class="arrow arrow-reverse">&#8594;</div>
+                <div class="flow-box cortex">
+                    <h4>CORTEX</h4>
+                    <ul><li>Retrieves memory</li></ul>
+                </div>
+            </div>
+            <div class="success-banner">
+                &#10003; "That's Sarah from the party!"
+            </div>
+        </div>
+    </div>
+
+    <div class="caption" id="caption">
+        Your senses gather information about the new person.
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn" disabled>&larr; Previous</button>
+        <button id="nextBtn">Next &rarr;</button>
+        <button id="resetBtn" class="reset">Reset</button>
+        <button id="showAllBtn" class="show-all">Show All</button>
+    </div>
+
+    <div class="dementia-panel" id="dementiaPanel">
+        <h3>&#9888; What Happens in Dementia</h3>
+        <p><strong>Encoding is disrupted:</strong> Hippocampus damage makes it hard to form new memories. Meeting "Sarah" at a party today may never be stored.</p>
+        <p><strong>New memories fail first:</strong> This is why people with dementia often cannot remember what they ate for breakfast.</p>
+        <p><strong>Old memories remain longer:</strong> Memories already in the cortex (childhood, wedding day, longtime friends) are preserved because they no longer depend on the damaged hippocampus.</p>
+    </div>
+
+    <div class="quiz-section">
+        <h2>Check Your Understanding</h2>
+        <div id="quizContainer"></div>
+        <button id="submitQuiz" class="quiz-submit">Submit Answers</button>
+        <div class="quiz-score" id="quizScore"></div>
+    </div>
+</main>
+
+<script src="../shared-libs/celebration.js"></script>
+<script>
+    // Stage data
+    const captions = {
+        1: "Your senses gather information about the new person.",
+        2: "The hippocampus processes and consolidates the information.",
+        3: "With repetition and sleep, the memory becomes permanent in the cortex.",
+        4: "When you see Sarah again, cues trigger memory retrieval."
+    };
+    const stageLabels = {
+        1: "Step 1 of 4: Encoding",
+        2: "Step 2 of 4: Storage",
+        3: "Step 3 of 4: Long-term Storage",
+        4: "Step 4 of 4: Retrieval"
+    };
+
+    let currentStep = 1;
+    let showingAll = false;
+
+    const vizArea = document.getElementById('vizArea');
+    const stages = document.querySelectorAll('.stage');
+    const dots = document.querySelectorAll('.step-dot');
+    const caption = document.getElementById('caption');
+    const stepLabel = document.getElementById('stepLabel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const showAllBtn = document.getElementById('showAllBtn');
+    const dementiaPanel = document.getElementById('dementiaPanel');
+
+    function showStep(n) {
+        showingAll = false;
+        vizArea.classList.remove('show-all-grid');
+        currentStep = n;
+        stages.forEach(s => {
+            s.classList.toggle('visible', parseInt(s.dataset.stage) === n);
+        });
+        dots.forEach((d, i) => {
+            d.classList.remove('active', 'completed');
+            if (i + 1 < n) d.classList.add('completed');
+            else if (i + 1 === n) d.classList.add('active');
+        });
+        caption.textContent = captions[n];
+        caption.style.display = 'block';
+        stepLabel.textContent = stageLabels[n];
+        prevBtn.disabled = n === 1;
+        nextBtn.disabled = n === 4;
+        if (n === 4) {
+            dementiaPanel.classList.add('visible');
+        }
+    }
+
+    function showAll() {
+        showingAll = true;
+        vizArea.classList.add('show-all-grid');
+        stages.forEach(s => s.classList.add('visible'));
+        caption.style.display = 'none';
+        stepLabel.textContent = "Showing All 4 Stages";
+        dots.forEach(d => d.classList.add('completed'));
+        dementiaPanel.classList.add('visible');
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+    }
+
+    function reset() {
+        vizArea.classList.remove('show-all-grid');
+        dementiaPanel.classList.remove('visible');
+        showStep(1);
+    }
+
+    prevBtn.addEventListener('click', () => { if (currentStep > 1) showStep(currentStep - 1); });
+    nextBtn.addEventListener('click', () => { if (currentStep < 4) showStep(currentStep + 1); });
+    resetBtn.addEventListener('click', reset);
+    showAllBtn.addEventListener('click', showAll);
+
+    // ============ QUIZ ============
+    const quizQuestions = [
+        {
+            q: "The memory stage that 'gathers information from the senses' is called...",
+            options: ["Retrieval", "Encoding", "Consolidation", "Forgetting"],
+            correct: 1,
+            explain: "Encoding is the first stage, where your senses capture input like Sarah's face, voice, and the party setting."
+        },
+        {
+            q: "Which brain region consolidates new memories before they move to long-term storage?",
+            options: ["Cerebellum", "Amygdala", "Hippocampus", "Brain stem"],
+            correct: 2,
+            explain: "The hippocampus links face to name, tags context, and consolidates the temporary memory."
+        },
+        {
+            q: "Memories become PERMANENT when they are stored in the...",
+            options: ["Hippocampus", "Cerebral cortex", "Spinal cord", "Optic nerve"],
+            correct: 1,
+            explain: "With repetition and sleep, memories move from the hippocampus to the cerebral cortex for permanent storage."
+        },
+        {
+            q: "In dementia, OLD memories (like childhood) are often retained better because they are stored in the...",
+            options: ["Damaged hippocampus", "Cortex (not dependent on the damaged hippocampus)", "Short-term memory buffer", "Sensory cortex only"],
+            correct: 1,
+            explain: "Old memories already live in the cortex and no longer depend on the damaged hippocampus, so they survive longer."
+        }
+    ];
+
+    const quizContainer = document.getElementById('quizContainer');
+    const submitQuizBtn = document.getElementById('submitQuiz');
+    const quizScoreEl = document.getElementById('quizScore');
+    const userAnswers = new Array(quizQuestions.length).fill(null);
+
+    quizQuestions.forEach((q, qi) => {
+        const qDiv = document.createElement('div');
+        qDiv.className = 'quiz-question';
+        qDiv.innerHTML = `<div class="q-text">${qi + 1}. ${q.q}</div>`;
+        q.options.forEach((opt, oi) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'quiz-option';
+            optDiv.textContent = opt;
+            optDiv.addEventListener('click', () => {
+                if (submitQuizBtn.disabled) return;
+                qDiv.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
+                optDiv.classList.add('selected');
+                userAnswers[qi] = oi;
+            });
+            qDiv.appendChild(optDiv);
+        });
+        const fb = document.createElement('div');
+        fb.className = 'quiz-feedback';
+        qDiv.appendChild(fb);
+        quizContainer.appendChild(qDiv);
+    });
+
+    submitQuizBtn.addEventListener('click', () => {
+        if (userAnswers.includes(null)) {
+            alert('Please answer all questions before submitting.');
+            return;
+        }
+        let score = 0;
+        const qDivs = quizContainer.querySelectorAll('.quiz-question');
+        qDivs.forEach((qDiv, qi) => {
+            const opts = qDiv.querySelectorAll('.quiz-option');
+            const fb = qDiv.querySelector('.quiz-feedback');
+            const correctIdx = quizQuestions[qi].correct;
+            const userIdx = userAnswers[qi];
+            opts.forEach((o, oi) => {
+                o.classList.remove('selected');
+                if (oi === correctIdx) o.classList.add('correct');
+                else if (oi === userIdx) o.classList.add('incorrect');
+            });
+            if (userIdx === correctIdx) {
+                score++;
+                fb.className = 'quiz-feedback show correct';
+                fb.textContent = 'Correct! ' + quizQuestions[qi].explain;
+            } else {
+                fb.className = 'quiz-feedback show incorrect';
+                fb.textContent = 'Not quite. ' + quizQuestions[qi].explain;
+            }
+        });
+        quizScoreEl.className = 'quiz-score show';
+        quizScoreEl.textContent = `You scored ${score} out of ${quizQuestions.length}`;
+        submitQuizBtn.disabled = true;
+        submitQuizBtn.textContent = 'Submitted';
+
+        if (score === quizQuestions.length) {
+            quizScoreEl.textContent += ' — Perfect score!';
+            if (window.Celebration && typeof window.Celebration.celebrate === 'function') {
+                window.Celebration.celebrate({ duration: 4000 });
+            }
+        }
+    });
+</script>
 </body>
 </html>

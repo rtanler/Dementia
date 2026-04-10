@@ -1,129 +1,56 @@
 ---
 title: Executive Function in Daily Life
 description: Understand how executive function coordinates multiple cognitive processes to complete everyday tasks (Bloom Level 2 - Understand)
-status: scaffold
-library: HTML/CSS/JavaScript with interactive hover states
+status: implemented
+library: Custom HTML/CSS/JavaScript
 bloom_level: Understand (L2)
 ---
 
 # Executive Function in Daily Life
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+This interactive workflow shows how a simple everyday task &mdash; making
+scrambled eggs and toast for breakfast &mdash; actually requires six
+different executive function skills working together. Click any stage
+in the workflow to see what the brain is doing at that step, then toggle
+**Impact of Dementia** mode to see how each skill can break down in a
+person living with dementia.
 
 ## Learning Objective
 
-Understand how executive function coordinates multiple cognitive processes to complete everyday tasks (Bloom Level 2 - Understand)
+Understand how executive function coordinates multiple cognitive processes
+to complete everyday tasks (**Bloom Level 2 - Understand**). Learners
+explain and identify the role of goal setting, planning, time management,
+working memory, flexible thinking, and self-monitoring.
 
 - **Bloom Level:** Understand (L2)
 - **Bloom Verb:** Explain, identify
-- **Library:** HTML/CSS/JavaScript with interactive hover states
+- **Library:** Custom HTML/CSS/JavaScript
 
-## Preview
+## Interactive MicroSim
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="700" style="border:1px solid #ddd; border-radius:8px;"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
-## Specification
+## How to Use
 
-The full specification below is extracted from
-[Chapter 1: Introduction to Dementia and Cognitive Health](../../chapters/01-intro-to-dementia/index.md).
+1. Click any of the six stage cards in the workflow to see a detailed
+   description of what that executive function does.
+2. Click the **Switch to Impact of Dementia** button to see how each
+   stage can be affected in a person with dementia.
+3. Scroll to the quiz at the bottom and answer all four questions
+   correctly to trigger a celebration.
 
-```text
-Type: infographic
+## The Six Executive Functions
 
-Learning Objective: Understand how executive function coordinates multiple cognitive processes to complete everyday tasks (Bloom Level 2 - Understand)
-
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Explain, identify
-
-Purpose: Show how a simple daily task (making breakfast) actually requires complex executive function coordination
-
-Layout: Horizontal workflow showing the task broken down into executive function components
-
-Example Task: "Making breakfast - scrambled eggs and toast"
-
-Workflow Stages:
-1. Goal Setting
-   Icon: Target/bullseye
-   Display: "I want to make scrambled eggs and toast for breakfast"
-   Executive functions used: Planning, decision-making
-
-2. Planning
-   Icon: Calendar/checklist
-   Display steps needed:
-     - Get ingredients from refrigerator
-     - Heat pan on stove
-     - Crack eggs, whisk
-     - Make toast
-     - Cook eggs
-     - Plate food
-   Executive functions used: Sequencing, organizing
-
-3. Time Management
-   Icon: Clock
-   Display timeline:
-     - Total estimated time: 10 minutes
-     - Toast: 3 minutes
-     - Eggs: 5 minutes
-     - Parallel processing: Start toast, then eggs
-   Executive functions used: Time estimation, prioritizing
-
-4. Working Memory
-   Icon: Brain with active connections
-   Display information held in mind:
-     - Where is the butter? (refrigerator)
-     - How many eggs? (2)
-     - What heat setting? (medium)
-     - Toast darkness? (medium-brown)
-   Executive functions used: Holding multiple pieces of information
-
-5. Flexible Thinking
-   Icon: Branching paths
-   Display problem-solving:
-     - Problem: Out of butter
-     - Solution: Use cooking spray instead
-     - Adaptation: Adjust cooking method
-   Executive functions used: Problem-solving, adapting
-
-6. Self-Monitoring
-   Icon: Magnifying glass over checklist
-   Display quality checks:
-     - Are eggs cooking too fast? → Reduce heat
-     - Is toast burning? → Check progress
-     - Is everything ready together? → Timing adjustment
-   Executive functions used: Monitoring, adjusting
-
-Interactive Features:
-- Hover over each stage to see detailed description
-- Click on stage to expand and show specific executive functions in action
-- Toggle "Impact of Dementia" mode showing how executive function problems affect each stage:
-  - Goal setting: Difficulty deciding what to eat
-  - Planning: Forgetting steps or doing them out of order
-  - Time management: Starting toast and eggs at wrong times
-  - Working memory: Forgetting where items are mid-task
-  - Flexible thinking: Becoming frustrated when plans change
-  - Self-monitoring: Not noticing when food is burning
-
-Color Coding:
-- Green: Completed successfully
-- Yellow: Requires active executive function
-- Red (in dementia mode): Executive function breakdown
-
-Visual Style: Clean, modern infographic with icons and connecting arrows
-Flow direction: Left to right
-Background: Light gray with white cards for each stage
-
-Responsive Design:
-- Stacks vertically on narrow screens
-- Maintains readability at all sizes
-- Icons scale proportionally
-
-Implementation: HTML/CSS/JavaScript with interactive hover states
-Canvas size: 100% width, 500px height
-```
+| Stage | Skill | Example |
+|-------|-------|---------|
+| 1. Goal Setting | Deciding what to do | "I want scrambled eggs and toast" |
+| 2. Planning | Sequencing steps | Ingredients &rarr; pan &rarr; eggs &rarr; toast &rarr; plate |
+| 3. Time Management | Parallel processing | Start toast first, then eggs |
+| 4. Working Memory | Holding info active | Heat setting, egg count, butter location |
+| 5. Flexible Thinking | Adapting | Out of butter &rarr; use spray |
+| 6. Self-Monitoring | Error detection | Eggs cooking too fast &rarr; reduce heat |
 
 ## Related Resources
 

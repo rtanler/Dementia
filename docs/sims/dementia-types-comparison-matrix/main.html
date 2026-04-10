@@ -3,215 +3,719 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Dementia Types Comparison Matrix</title>
+    <script src="../shared-libs/celebration.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f8f9fa;
             color: #212529;
+            line-height: 1.5;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
+        main {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
-            background: white;
+            padding: 14px;
+            background: #ffffff;
         }
-        h1 {
-            font-size: 22px;
+        .title-bar {
+            border-bottom: 3px solid #1e3a8a;
+            padding-bottom: 8px;
             margin-bottom: 10px;
-            color: #1a3a6c;
         }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
+        .title-bar h1 {
+            font-size: 20px;
+            color: #1e3a8a;
+        }
+        .title-bar p {
+            font-size: 13px;
+            color: #495057;
+            margin-top: 3px;
+        }
+        .mode-bar {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            gap: 8px;
             align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
         }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
+        .mode-bar button {
+            background: #e9ecef;
             color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
+            border: 1px solid #ced4da;
+            padding: 6px 14px;
+            font-size: 13px;
             font-weight: 600;
-            margin-bottom: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.15s;
         }
-        .placeholder h2 {
-            font-size: 18px;
+        .mode-bar button:hover { background: #dee2e6; }
+        .mode-bar button.active {
+            background: #1e3a8a;
+            color: #ffffff;
+            border-color: #1e3a8a;
+        }
+        .legend {
+            display: flex;
+            gap: 12px;
+            font-size: 11px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: auto;
+        }
+        .legend-item { display: flex; align-items: center; gap: 4px; }
+        .legend-swatch {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            border: 1px solid rgba(0,0,0,0.15);
+        }
+        .sw-green { background: #c8e6c9; }
+        .sw-yellow { background: #fff3bf; }
+        .sw-red { background: #ffcdd2; }
+        .sw-gray { background: #e0e0e0; }
+
+        /* Explore mode: matrix table */
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            max-height: 430px;
+            overflow-y: auto;
+        }
+        table.matrix {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            min-width: 820px;
+            font-size: 12px;
+        }
+        table.matrix th, table.matrix td {
+            border-right: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+            padding: 8px 10px;
+            vertical-align: top;
+            text-align: left;
+        }
+        table.matrix thead th {
+            position: sticky;
+            top: 0;
+            background: #1e3a8a;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 12px;
+            z-index: 3;
+            text-align: center;
+        }
+        table.matrix tbody th {
+            position: sticky;
+            left: 0;
+            background: #e3ecfb;
+            color: #1e3a8a;
+            font-weight: 700;
+            z-index: 2;
+            min-width: 140px;
+        }
+        table.matrix thead th:first-child {
+            left: 0;
+            z-index: 4;
+            background: #0f1e4a;
+        }
+        table.matrix td {
+            cursor: pointer;
+            transition: filter 0.15s, outline 0.15s;
+            min-width: 130px;
+        }
+        table.matrix td:hover { filter: brightness(0.95); }
+        table.matrix td.selected {
+            outline: 3px solid #1e3a8a;
+            outline-offset: -3px;
+        }
+        .cell-green { background: #c8e6c9; }
+        .cell-yellow { background: #fff3bf; }
+        .cell-red { background: #ffcdd2; }
+        .cell-gray { background: #eceff1; }
+
+        /* Detail panel */
+        .detail-panel {
+            margin-top: 14px;
+            border: 2px solid #1e3a8a;
+            border-radius: 6px;
+            padding: 12px 14px;
+            background: #f8faff;
+            min-height: 100px;
+        }
+        .detail-panel h3 {
+            font-size: 14px;
+            color: #1e3a8a;
+            margin-bottom: 6px;
+        }
+        .detail-panel .detail-meta {
+            font-size: 12px;
+            color: #495057;
+            margin-bottom: 6px;
+        }
+        .detail-panel .detail-body {
+            font-size: 13px;
+            color: #212529;
+        }
+        .detail-panel .detail-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 6px;
+        }
+        .tag-green { background: #c8e6c9; color: #1b5e20; }
+        .tag-yellow { background: #fff3bf; color: #7a5b00; }
+        .tag-red { background: #ffcdd2; color: #8b1a1a; }
+        .tag-gray { background: #e0e0e0; color: #343a40; }
+
+        /* Quiz mode */
+        .quiz-panel { display: none; }
+        .quiz-panel.active { display: block; }
+        .explore-panel.hidden { display: none; }
+        .quiz-card {
+            border: 2px solid #1e3a8a;
+            border-radius: 8px;
+            padding: 16px;
+            background: #f8faff;
+        }
+        .quiz-progress {
+            font-size: 12px;
             color: #495057;
             margin-bottom: 8px;
+            font-weight: 600;
         }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
+        .quiz-scenario {
+            font-size: 15px;
+            color: #212529;
+            margin-bottom: 14px;
+            padding: 12px;
+            background: #ffffff;
+            border-left: 4px solid #1e3a8a;
+            border-radius: 4px;
         }
-        .meta {
-            margin-top: 20px;
+        .quiz-question {
             font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 8px;
         }
-        .meta strong { color: #495057; }
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .quiz-option {
+            background: #ffffff;
+            border: 2px solid #ced4da;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: #212529;
+            text-align: center;
+            transition: all 0.15s;
+        }
+        .quiz-option:hover:not(:disabled) {
+            border-color: #1e3a8a;
+            background: #e3ecfb;
+        }
+        .quiz-option.correct {
+            background: #c8e6c9;
+            border-color: #2e7d32;
+            color: #1b5e20;
+        }
+        .quiz-option.wrong {
+            background: #ffcdd2;
+            border-color: #c62828;
+            color: #8b1a1a;
+        }
+        .quiz-option:disabled { cursor: default; }
+        .quiz-feedback {
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: none;
+        }
+        .quiz-feedback.show { display: block; }
+        .quiz-feedback.correct {
+            background: #c8e6c9;
+            color: #1b5e20;
+            border-left: 4px solid #2e7d32;
+        }
+        .quiz-feedback.wrong {
+            background: #ffcdd2;
+            color: #8b1a1a;
+            border-left: 4px solid #c62828;
+        }
+        .quiz-controls {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+        .quiz-controls button {
+            background: #1e3a8a;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .quiz-controls button:hover { background: #162d6b; }
+        .quiz-complete {
+            text-align: center;
+            padding: 20px;
+        }
+        .quiz-complete h2 {
+            font-size: 22px;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+        .quiz-complete p {
+            font-size: 14px;
+            color: #495057;
+            margin-bottom: 14px;
+        }
+
+        @media (max-width: 640px) {
+            .legend { font-size: 10px; }
+            table.matrix { font-size: 11px; }
+        }
     </style>
 </head>
 <body>
-    <div id="container">
+<main>
+    <div class="title-bar">
         <h1>Dementia Types Comparison Matrix</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> dementia-types-comparison-matrix</p>
-            <p><strong>Library:</strong> HTML/CSS/JavaScript with interactive table library</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Analyze and compare the distinguishing features of major dementia types (Bloom Level 4 - Analyze)</p>
+        <p>Compare five major dementia types across ten clinical dimensions. Click any cell for details.</p>
+    </div>
+
+    <div class="mode-bar">
+        <button id="mode-explore" class="active" type="button">Explore</button>
+        <button id="mode-quiz" type="button">Quiz</button>
+        <div class="legend">
+            <div class="legend-item"><span class="legend-swatch sw-green"></span>Strong</div>
+            <div class="legend-item"><span class="legend-swatch sw-yellow"></span>Moderate</div>
+            <div class="legend-item"><span class="legend-swatch sw-red"></span>Rare / Absent</div>
+            <div class="legend-item"><span class="legend-swatch sw-gray"></span>Variable</div>
         </div>
     </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <div class="explore-panel" id="explore-panel">
+        <div class="table-wrap">
+            <table class="matrix" id="matrix-table">
+                <thead>
+                    <tr>
+                        <th>Dimension</th>
+                        <th>Alzheimer's</th>
+                        <th>Vascular</th>
+                        <th>Lewy Body</th>
+                        <th>Frontotemporal</th>
+                        <th>Mixed</th>
+                    </tr>
+                </thead>
+                <tbody id="matrix-body"></tbody>
+            </table>
+        </div>
 
-    Type: infographic
-    
-    Learning Objective: Analyze and compare the distinguishing features of major dementia types (Bloom Level 4 - Analyze)
-    
-    Bloom Taxonomy Level: Analyze (L4)
-    Bloom Verb: Compare, contrast, differentiate, distinguish
-    
-    Purpose: Help students identify key differences between major dementia types across multiple dimensions
-    
-    Layout: Interactive comparison matrix with dementia types as columns and characteristics as rows
-    
-    Dementia Types Displayed (Columns):
-    1. Alzheimer's Disease
-    2. Vascular Dementia
-    3. Lewy Body Dementia
-    4. Frontotemporal Dementia
-    5. Mixed Dementia
-    
-    Comparison Dimensions (Rows):
-    
-    1. Primary Cause:
-       - Alzheimer's: Amyloid plaques and tau tangles
-       - Vascular: Reduced blood flow, strokes
-       - Lewy body: Alpha-synuclein deposits (Lewy bodies)
-       - Frontotemporal: Tau or TDP-43 protein in frontal/temporal lobes
-       - Mixed: Combination of pathologies
-    
-    2. First Symptoms:
-       - Alzheimer's: Memory loss for recent events
-       - Vascular: Executive dysfunction, slowed thinking
-       - Lewy body: Fluctuating cognition, hallucinations
-       - Frontotemporal: Personality/behavior changes
-       - Mixed: Varies based on combination
-    
-    3. Progression Pattern:
-       - Alzheimer's: Gradual, steady decline
-       - Vascular: Stepwise (sudden drops after strokes)
-       - Lewy body: Fluctuating with gradual decline
-       - Frontotemporal: Progressive, often rapid
-       - Mixed: Variable
-    
-    4. Memory Affected:
-       - Alzheimer's: Severely affected early
-       - Vascular: Moderately affected
-       - Lewy body: Moderately affected
-       - Frontotemporal: Relatively preserved early
-       - Mixed: Varies
-    
-    5. Movement Problems:
-       - Alzheimer's: Late stages only
-       - Vascular: Possible if strokes affect motor areas
-       - Lewy body: Common, Parkinson-like symptoms
-       - Frontotemporal: Rare (unless motor variant)
-       - Mixed: Depends on combination
-    
-    6. Hallucinations:
-       - Alzheimer's: Rare, late stages
-       - Vascular: Uncommon
-       - Lewy body: Common, detailed visual hallucinations
-       - Frontotemporal: Rare
-       - Mixed: Possible if includes LBD
-    
-    7. Typical Age of Onset:
-       - Alzheimer's: Usually 65+
-       - Vascular: Usually 65+, often older
-       - Lewy body: Usually 50+
-       - Frontotemporal: Usually 45-65 (younger onset)
-       - Mixed: Usually 70+
-    
-    8. Most Affected Brain Regions:
-       - Alzheimer's: Hippocampus, temporal cortex
-       - Vascular: Varies (wherever blood flow reduced)
-       - Lewy body: Cortex, brainstem, substantia nigra
-       - Frontotemporal: Frontal and temporal lobes
-       - Mixed: Multiple regions
-    
-    9. Genetic Risk:
-       - Alzheimer's: Some genetic factors (APOE ε4)
-       - Vascular: Family history of stroke/heart disease
-       - Lewy body: Rare genetic cases
-       - Frontotemporal: 30-40% inherited
-       - Mixed: Varies
-    
-    10. Available Treatments:
-       - Alzheimer's: Cholinesterase inhibitors, memantine
-       - Vascular: Control vascular risk factors
-       - Lewy body: Cholinesterase inhibitors, dopamine drugs
-       - Frontotemporal: Symptomatic management only
-       - Mixed: Combination approach
-    
-    Interactive Features:
-    - Hover over any cell: Shows detailed explanation with examples
-    - Click column header: Highlights that dementia type across all rows
-    - Click row header: Highlights that characteristic across all types
-    - "Compare Two Types" mode:
-      - Select any two dementia types
-      - Side-by-side detailed comparison
-      - Highlights similarities and differences
-    - "Quiz Mode":
-      - Given symptoms, identify likely dementia type
-      - Immediate feedback with explanation
-      - Progressive difficulty
-    - Filter by: "Most distinctive features" to see what makes each type unique
-    - "Show Real Cases" button: Brief case studies exemplifying each type
-    
-    Visual Design:
-    - Color-coded cells:
-      - Green: Strongly characteristic
-      - Yellow: Moderately characteristic
-      - Red: Rare or absent
-      - Gray: Variable or unknown
-    - Icons for quick visual scanning
-    - Clear typography with good contrast
-    
-    Additional Information Panel:
-    - "Key Diagnostic Features" summary for each type
-    - "Red flags" that suggest a particular diagnosis
-    - "Overlap areas" showing where types are hardest to distinguish
-    
-    Responsive Design:
-    - Table scrolls horizontally on narrow screens
-    - Sticky headers remain visible
-    - Touch-friendly for tapping cells
-    
-    Implementation: HTML/CSS/JavaScript with interactive table library
-    Canvas size: 100% width, 650px height
-    -->
+        <div class="detail-panel" id="detail-panel">
+            <h3 id="detail-title">Click any cell to see details</h3>
+            <div class="detail-meta" id="detail-meta">Select a cell from the matrix above to read a longer explanation of that characteristic for the chosen dementia type.</div>
+            <div class="detail-body" id="detail-body"></div>
+        </div>
+    </div>
+
+    <div class="quiz-panel" id="quiz-panel">
+        <div class="quiz-card" id="quiz-card">
+            <div class="quiz-progress" id="quiz-progress">Question 1 of 5</div>
+            <div class="quiz-scenario" id="quiz-scenario"></div>
+            <div class="quiz-question">Which dementia type is MOST likely?</div>
+            <div class="quiz-options" id="quiz-options"></div>
+            <div class="quiz-feedback" id="quiz-feedback"></div>
+            <div class="quiz-controls">
+                <button id="quiz-next" type="button" style="display:none;">Next</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+(function() {
+    "use strict";
+
+    // Column definitions (dementia types)
+    const TYPES = [
+        { key: "alz",  label: "Alzheimer's Disease" },
+        { key: "vasc", label: "Vascular Dementia" },
+        { key: "lbd",  label: "Lewy Body Dementia" },
+        { key: "ftd",  label: "Frontotemporal Dementia" },
+        { key: "mix",  label: "Mixed Dementia" }
+    ];
+
+    // Row definitions and cell data
+    const ROWS = [
+        {
+            dim: "Primary Cause",
+            cells: {
+                alz:  { short: "Amyloid plaques and tau tangles", color: "gray",
+                        full: "Alzheimer's disease is caused by the build-up of amyloid-beta plaques between neurons and abnormal tau protein tangles inside neurons. These proteins disrupt cell signaling and eventually kill brain cells." },
+                vasc: { short: "Reduced blood flow, strokes", color: "gray",
+                        full: "Vascular dementia results from conditions that block or reduce blood flow to parts of the brain, including strokes, mini-strokes (TIAs), and chronic small vessel disease, depriving neurons of oxygen and nutrients." },
+                lbd:  { short: "Alpha-synuclein deposits (Lewy bodies)", color: "gray",
+                        full: "Lewy body dementia is caused by abnormal clumps of alpha-synuclein protein called Lewy bodies that form inside neurons in the cortex and brainstem, disrupting thinking, movement, and sleep." },
+                ftd:  { short: "Tau or TDP-43 protein in frontal/temporal lobes", color: "gray",
+                        full: "Frontotemporal dementia is caused by abnormal accumulation of tau or TDP-43 proteins specifically in the frontal and temporal lobes of the brain, causing those regions to shrink (atrophy)." },
+                mix:  { short: "Combination of pathologies", color: "gray",
+                        full: "Mixed dementia involves two or more pathologies at once, most commonly Alzheimer's plaques and tangles combined with vascular damage, but any combination is possible." }
+            }
+        },
+        {
+            dim: "First Symptoms",
+            cells: {
+                alz:  { short: "Memory loss for recent events", color: "green",
+                        full: "The earliest and most characteristic symptom of Alzheimer's is difficulty remembering recently learned information, such as forgetting conversations, appointments, or where items were placed." },
+                vasc: { short: "Executive dysfunction, slowed thinking", color: "green",
+                        full: "Vascular dementia often begins with problems in planning, organizing, making decisions, and slowed information processing, rather than prominent memory loss at first." },
+                lbd:  { short: "Fluctuating cognition, hallucinations", color: "green",
+                        full: "Lewy body dementia typically begins with striking fluctuations in alertness and thinking, along with recurrent detailed visual hallucinations, sometimes even before memory is affected." },
+                ftd:  { short: "Personality/behavior changes", color: "green",
+                        full: "Frontotemporal dementia (behavioral variant) first presents with personality changes, loss of empathy, socially inappropriate behavior, or language problems, with memory often preserved early." },
+                mix:  { short: "Varies based on combination", color: "gray",
+                        full: "First symptoms of mixed dementia depend entirely on which underlying pathologies are present and where in the brain the damage is most severe." }
+            }
+        },
+        {
+            dim: "Progression Pattern",
+            cells: {
+                alz:  { short: "Gradual, steady decline", color: "yellow",
+                        full: "Alzheimer's disease typically progresses slowly and steadily over 8-10 years, with a continuous downward slope rather than sudden changes." },
+                vasc: { short: "Stepwise (sudden drops after strokes)", color: "green",
+                        full: "Vascular dementia is classically described as 'stepwise': the person may be relatively stable, then suddenly get worse after a new stroke, then stabilize again until the next event." },
+                lbd:  { short: "Fluctuating with gradual decline", color: "green",
+                        full: "Lewy body dementia shows day-to-day and even hour-to-hour fluctuations in attention and alertness, superimposed on a gradual overall decline." },
+                ftd:  { short: "Progressive, often rapid", color: "yellow",
+                        full: "Frontotemporal dementia often progresses more rapidly than Alzheimer's, with noticeable decline over just a few years and median survival of 6-8 years from symptom onset." },
+                mix:  { short: "Variable", color: "gray",
+                        full: "Progression in mixed dementia depends on which pathologies dominate and can show features of gradual decline combined with stepwise drops." }
+            }
+        },
+        {
+            dim: "Memory Affected",
+            cells: {
+                alz:  { short: "Severely affected early", color: "green",
+                        full: "Memory, especially for recent events, is the hallmark early feature of Alzheimer's. Short-term memory loss is usually the first and most severe cognitive problem." },
+                vasc: { short: "Moderately affected", color: "yellow",
+                        full: "Memory may be affected in vascular dementia but is usually not as severe or as early as in Alzheimer's; executive problems often dominate instead." },
+                lbd:  { short: "Moderately affected", color: "yellow",
+                        full: "In Lewy body dementia, memory is typically less affected early on compared to Alzheimer's. Visual-spatial and attention problems are usually more prominent." },
+                ftd:  { short: "Relatively preserved early", color: "red",
+                        full: "Memory is often surprisingly well preserved in the early stages of frontotemporal dementia. Behavior and language change dramatically while the person can still recall recent events." },
+                mix:  { short: "Varies", color: "gray",
+                        full: "Memory impact in mixed dementia varies based on the specific combination of pathologies, though Alzheimer's-type memory loss is common if AD is one component." }
+            }
+        },
+        {
+            dim: "Movement Problems",
+            cells: {
+                alz:  { short: "Late stages only", color: "red",
+                        full: "Movement problems such as rigidity, shuffling gait, and falls are uncommon early in Alzheimer's and usually appear only in the advanced stages of the disease." },
+                vasc: { short: "Possible if strokes affect motor areas", color: "yellow",
+                        full: "Movement symptoms in vascular dementia depend on stroke location. A stroke affecting motor pathways can cause weakness, spasticity, or walking problems at any stage." },
+                lbd:  { short: "Common, Parkinson-like symptoms", color: "green",
+                        full: "Parkinson-like motor symptoms (rigidity, tremor, shuffling gait, balance problems) are a core feature of Lewy body dementia and often appear within a year of cognitive symptoms." },
+                ftd:  { short: "Rare (unless motor variant)", color: "red",
+                        full: "Most forms of frontotemporal dementia do not cause movement problems. However, rare motor variants like FTD with ALS or progressive supranuclear palsy do involve motor symptoms." },
+                mix:  { short: "Depends on combination", color: "gray",
+                        full: "Movement problems in mixed dementia depend entirely on the underlying mix of pathologies; LBD or vascular components are the most likely to cause them." }
+            }
+        },
+        {
+            dim: "Hallucinations",
+            cells: {
+                alz:  { short: "Rare, late stages", color: "red",
+                        full: "Hallucinations are uncommon in Alzheimer's and, when they do occur, typically appear only in the later stages of the illness." },
+                vasc: { short: "Uncommon", color: "red",
+                        full: "Visual hallucinations are not a typical feature of vascular dementia, though they can occur if strokes affect certain visual areas." },
+                lbd:  { short: "Common, detailed visual hallucinations", color: "green",
+                        full: "Recurrent, well-formed visual hallucinations (often of people or animals) are a core diagnostic feature of Lewy body dementia and usually appear early." },
+                ftd:  { short: "Rare", color: "red",
+                        full: "Hallucinations are unusual in frontotemporal dementia. Their presence usually points toward a different diagnosis like Lewy body dementia." },
+                mix:  { short: "Possible if includes LBD", color: "yellow",
+                        full: "Hallucinations in mixed dementia suggest that Lewy body pathology is one of the contributing causes." }
+            }
+        },
+        {
+            dim: "Typical Age of Onset",
+            cells: {
+                alz:  { short: "Usually 65+", color: "yellow",
+                        full: "Most Alzheimer's cases begin after age 65 (late-onset). Early-onset forms (before 65) exist but are much less common, often with stronger genetic links." },
+                vasc: { short: "Usually 65+, often older", color: "yellow",
+                        full: "Vascular dementia most often affects people over 65, with incidence increasing sharply with age as vascular risk factors accumulate." },
+                lbd:  { short: "Usually 50+", color: "yellow",
+                        full: "Lewy body dementia tends to emerge around age 50 or later, slightly earlier on average than Alzheimer's." },
+                ftd:  { short: "Usually 45-65 (younger onset)", color: "green",
+                        full: "Frontotemporal dementia is distinctive for its younger age of onset, typically between 45 and 65. It is one of the most common causes of dementia in people under 60." },
+                mix:  { short: "Usually 70+", color: "yellow",
+                        full: "Mixed dementia is most often seen in older adults (70+), because the likelihood of having multiple coexisting pathologies increases with age." }
+            }
+        },
+        {
+            dim: "Most Affected Brain Regions",
+            cells: {
+                alz:  { short: "Hippocampus, temporal cortex", color: "gray",
+                        full: "Alzheimer's first attacks the hippocampus (the brain's memory hub) and nearby temporal cortex, then spreads to other cortical areas over time." },
+                vasc: { short: "Varies (wherever blood flow reduced)", color: "gray",
+                        full: "The affected regions in vascular dementia depend on which blood vessels are blocked. Small vessel disease often affects deep white matter; larger strokes can hit any cortical region." },
+                lbd:  { short: "Cortex, brainstem, substantia nigra", color: "gray",
+                        full: "Lewy body disease affects the cortex (thinking), brainstem (sleep and autonomic function), and substantia nigra (movement control, the same area affected in Parkinson's)." },
+                ftd:  { short: "Frontal and temporal lobes", color: "gray",
+                        full: "Frontotemporal dementia causes focal atrophy of the frontal lobes (behavior, executive function) and temporal lobes (language, semantic memory)." },
+                mix:  { short: "Multiple regions", color: "gray",
+                        full: "Mixed dementia affects whichever regions correspond to the combined pathologies, typically involving both hippocampus and small-vessel white matter damage." }
+            }
+        },
+        {
+            dim: "Genetic Risk",
+            cells: {
+                alz:  { short: "Some genetic factors (APOE \u03b54)", color: "yellow",
+                        full: "The APOE \u03b54 allele is the strongest genetic risk factor for late-onset Alzheimer's. Rare autosomal-dominant mutations (APP, PSEN1, PSEN2) cause early-onset familial forms." },
+                vasc: { short: "Family history of stroke/heart disease", color: "yellow",
+                        full: "Vascular dementia risk is shaped by inherited vascular risk factors like hypertension, diabetes, and high cholesterol, rather than dementia-specific genes." },
+                lbd:  { short: "Rare genetic cases", color: "red",
+                        full: "Most Lewy body dementia is sporadic. Only a small fraction of cases have known genetic causes (e.g., SNCA, GBA variants)." },
+                ftd:  { short: "30-40% inherited", color: "green",
+                        full: "FTD has the strongest genetic component of any major dementia: 30-40% of cases have a family history, and several specific genes (MAPT, GRN, C9orf72) are known to cause it." },
+                mix:  { short: "Varies", color: "gray",
+                        full: "Genetic risk in mixed dementia depends on which underlying pathologies are present." }
+            }
+        },
+        {
+            dim: "Available Treatments",
+            cells: {
+                alz:  { short: "Cholinesterase inhibitors, memantine", color: "green",
+                        full: "Cholinesterase inhibitors (donepezil, rivastigmine, galantamine) and memantine can modestly improve symptoms. Newer anti-amyloid antibodies (lecanemab, donanemab) target underlying pathology in early disease." },
+                vasc: { short: "Control vascular risk factors", color: "yellow",
+                        full: "The main treatment strategy is aggressive control of blood pressure, diabetes, cholesterol, and smoking to prevent further strokes. Some cholinesterase inhibitors may help symptoms." },
+                lbd:  { short: "Cholinesterase inhibitors, dopamine drugs", color: "green",
+                        full: "Cholinesterase inhibitors often help cognition and hallucinations in LBD. Low-dose levodopa may help movement, but antipsychotics must be avoided or used with extreme care." },
+                ftd:  { short: "Symptomatic management only", color: "red",
+                        full: "There are no approved disease-modifying treatments for FTD. Care focuses on managing behavioral symptoms, supporting caregivers, and speech therapy for language variants." },
+                mix:  { short: "Combination approach", color: "yellow",
+                        full: "Treatment of mixed dementia combines strategies from each contributing diagnosis, such as cholinesterase inhibitors plus vascular risk factor control." }
+            }
+        }
+    ];
+
+    // ---- Build matrix table ----
+    const tbody = document.getElementById("matrix-body");
+    ROWS.forEach((row, rIdx) => {
+        const tr = document.createElement("tr");
+        const th = document.createElement("th");
+        th.scope = "row";
+        th.textContent = row.dim;
+        tr.appendChild(th);
+        TYPES.forEach(t => {
+            const td = document.createElement("td");
+            const cell = row.cells[t.key];
+            td.className = "cell-" + cell.color;
+            td.textContent = cell.short;
+            td.dataset.row = rIdx;
+            td.dataset.col = t.key;
+            td.addEventListener("click", () => selectCell(td, rIdx, t.key));
+            tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+    });
+
+    let currentCell = null;
+    function selectCell(td, rIdx, colKey) {
+        if (currentCell) currentCell.classList.remove("selected");
+        currentCell = td;
+        td.classList.add("selected");
+
+        const row = ROWS[rIdx];
+        const type = TYPES.find(t => t.key === colKey);
+        const cell = row.cells[colKey];
+
+        const tagClass = "tag-" + cell.color;
+        const tagLabel = {
+            green: "Strong / Characteristic",
+            yellow: "Moderate",
+            red: "Rare or Absent",
+            gray: "Variable"
+        }[cell.color];
+
+        document.getElementById("detail-title").textContent = type.label + " \u2014 " + row.dim;
+        document.getElementById("detail-meta").innerHTML =
+            '<span class="detail-tag ' + tagClass + '">' + tagLabel + '</span>' + cell.short;
+        document.getElementById("detail-body").textContent = cell.full;
+    }
+
+    // ---- Mode toggle ----
+    const modeExplore = document.getElementById("mode-explore");
+    const modeQuiz = document.getElementById("mode-quiz");
+    const explorePanel = document.getElementById("explore-panel");
+    const quizPanel = document.getElementById("quiz-panel");
+
+    modeExplore.addEventListener("click", () => {
+        modeExplore.classList.add("active");
+        modeQuiz.classList.remove("active");
+        explorePanel.classList.remove("hidden");
+        quizPanel.classList.remove("active");
+    });
+    modeQuiz.addEventListener("click", () => {
+        modeQuiz.classList.add("active");
+        modeExplore.classList.remove("active");
+        explorePanel.classList.add("hidden");
+        quizPanel.classList.add("active");
+        startQuiz();
+    });
+
+    // ---- Quiz logic ----
+    const QUIZ_QUESTIONS = [
+        {
+            scenario: "A 75-year-old has sudden memory loss after a stroke, then stays stable for months, then has another sudden drop in thinking after a second small stroke.",
+            answer: "vasc",
+            explain: "The classic 'stepwise' decline tied to strokes is the signature of vascular dementia. Each stroke causes a sudden drop, followed by a relatively stable period."
+        },
+        {
+            scenario: "A 62-year-old reports detailed visual hallucinations of small children in the living room and has Parkinson-like rigidity. Family notes that alertness fluctuates dramatically from day to day.",
+            answer: "lbd",
+            explain: "Detailed visual hallucinations, parkinsonism, and fluctuating cognition are the three core features of Lewy body dementia."
+        },
+        {
+            scenario: "A 55-year-old used to be reserved and polite but has become blunt, inappropriate in social situations, and apathetic about family. Memory testing shows recent events are still recalled well.",
+            answer: "ftd",
+            explain: "Behavioral variant frontotemporal dementia is defined by early personality and behavior changes with relatively preserved memory, typically in people under 65."
+        },
+        {
+            scenario: "A 78-year-old has gradually worsening trouble remembering recent conversations and is getting lost driving to familiar places. Decline has been slow and steady over 2-3 years.",
+            answer: "alz",
+            explain: "Gradual short-term memory loss with getting lost in familiar environments is the textbook presentation of Alzheimer's disease."
+        },
+        {
+            scenario: "An 82-year-old with high blood pressure and diabetes shows BOTH gradual memory decline AND occasional stepwise drops in function. Imaging shows hippocampal shrinkage plus several small strokes.",
+            answer: "mix",
+            explain: "The combination of Alzheimer's-type gradual decline plus vascular stepwise events, with imaging showing both pathologies, is characteristic of mixed dementia."
+        }
+    ];
+
+    let quizIndex = 0;
+    let quizCorrect = 0;
+    let quizAnswered = false;
+
+    function startQuiz() {
+        quizIndex = 0;
+        quizCorrect = 0;
+        renderQuestion();
+    }
+
+    function renderQuestion() {
+        quizAnswered = false;
+        const card = document.getElementById("quiz-card");
+        card.innerHTML =
+            '<div class="quiz-progress" id="quiz-progress"></div>' +
+            '<div class="quiz-scenario" id="quiz-scenario"></div>' +
+            '<div class="quiz-question">Which dementia type is MOST likely?</div>' +
+            '<div class="quiz-options" id="quiz-options"></div>' +
+            '<div class="quiz-feedback" id="quiz-feedback"></div>' +
+            '<div class="quiz-controls"><button id="quiz-next" type="button" style="display:none;">Next</button></div>';
+
+        const q = QUIZ_QUESTIONS[quizIndex];
+        document.getElementById("quiz-progress").textContent =
+            "Question " + (quizIndex + 1) + " of " + QUIZ_QUESTIONS.length +
+            "  \u00b7  Correct: " + quizCorrect;
+        document.getElementById("quiz-scenario").textContent = q.scenario;
+
+        const optsDiv = document.getElementById("quiz-options");
+        TYPES.forEach(t => {
+            const btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = "quiz-option";
+            btn.textContent = t.label;
+            btn.dataset.key = t.key;
+            btn.addEventListener("click", () => answerQuestion(btn, t.key));
+            optsDiv.appendChild(btn);
+        });
+
+        const nextBtn = document.getElementById("quiz-next");
+        nextBtn.addEventListener("click", nextQuestion);
+    }
+
+    function answerQuestion(btn, key) {
+        if (quizAnswered) return;
+        quizAnswered = true;
+        const q = QUIZ_QUESTIONS[quizIndex];
+        const feedback = document.getElementById("quiz-feedback");
+        const buttons = document.querySelectorAll(".quiz-option");
+
+        buttons.forEach(b => {
+            b.disabled = true;
+            if (b.dataset.key === q.answer) b.classList.add("correct");
+            else if (b === btn) b.classList.add("wrong");
+        });
+
+        if (key === q.answer) {
+            quizCorrect++;
+            feedback.className = "quiz-feedback show correct";
+            feedback.innerHTML = "<strong>Correct!</strong> " + q.explain;
+        } else {
+            const correctLabel = TYPES.find(t => t.key === q.answer).label;
+            feedback.className = "quiz-feedback show wrong";
+            feedback.innerHTML = "<strong>Not quite.</strong> The best answer is <em>" + correctLabel + "</em>. " + q.explain;
+        }
+
+        document.getElementById("quiz-progress").textContent =
+            "Question " + (quizIndex + 1) + " of " + QUIZ_QUESTIONS.length +
+            "  \u00b7  Correct: " + quizCorrect;
+
+        const nextBtn = document.getElementById("quiz-next");
+        nextBtn.style.display = "inline-block";
+        nextBtn.textContent = (quizIndex + 1 >= QUIZ_QUESTIONS.length) ? "See Results" : "Next";
+    }
+
+    function nextQuestion() {
+        quizIndex++;
+        if (quizIndex >= QUIZ_QUESTIONS.length) {
+            showResults();
+        } else {
+            renderQuestion();
+        }
+    }
+
+    function showResults() {
+        const card = document.getElementById("quiz-card");
+        const perfect = (quizCorrect === QUIZ_QUESTIONS.length);
+        card.innerHTML =
+            '<div class="quiz-complete">' +
+                '<h2>' + (perfect ? "Perfect Score!" : "Quiz Complete") + '</h2>' +
+                '<p>You got <strong>' + quizCorrect + ' of ' + QUIZ_QUESTIONS.length + '</strong> questions correct.</p>' +
+                (perfect
+                    ? '<p>You correctly distinguished all five dementia types from their clinical presentations.</p>'
+                    : '<p>Review the explore matrix to study the distinguishing features, then try again.</p>') +
+                '<div class="quiz-controls" style="justify-content:center;">' +
+                    '<button id="quiz-restart" type="button">Try Again</button>' +
+                '</div>' +
+            '</div>';
+        document.getElementById("quiz-restart").addEventListener("click", startQuiz);
+
+        if (perfect && window.Celebration && typeof window.Celebration.celebrate === "function") {
+            window.Celebration.celebrate({ duration: 4000 });
+        }
+    }
+})();
+</script>
 </body>
 </html>

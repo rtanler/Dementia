@@ -1,20 +1,25 @@
 {
   "title": "Synaptic Communication",
-  "description": "Understand how neurons communicate across synapses through electrical and chemical signals (Bloom Level 2 - Understand)",
+  "description": "Interactive diagram showing how neurons communicate across a synapse using electrical and chemical signals, with notes on how dementia damages each step of the process.",
   "creator": "Dementia Education Project",
   "date": "2026-04-10",
   "subject": [
-    "dementia"
+    "dementia",
+    "neurons",
+    "synapse",
+    "neurotransmitters",
+    "brain anatomy"
   ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "synaptic-communication",
-  "library": "p5.js",
+  "library": "Interactive Infographic Overlay (diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "Explain, describe",
-  "completion_status": "scaffold",
+  "learning_objective": "Understand how neurons communicate across synapses through electrical and chemical signals (Bloom Level 2 - Understand)",
+  "completion_status": "implemented",
   "chapter_number": 2,
   "chapter_title": "Brain Anatomy and Function",
   "chapter_dir": "02-brain-anatomy-function"

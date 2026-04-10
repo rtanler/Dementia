@@ -80,8 +80,27 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - Graph Viewer: sims/graph-viewer/index.md
+    - Behavior Management Decision Tree: sims/behavior-management-decision-tree/index.md
+    - Beta-Amyloid Production and Aggregation: sims/beta-amyloid-production-and-aggregation/index.md
+    - Brain Regions Affected in Rare Tauopathies: sims/brain-regions-affected-in-rare-tauopathies/index.md
+    - Building Cognitive Reserve Over a Lifetime: sims/building-cognitive-reserve-over-a-lifetime/index.md
+    - Dementia Stages Interactive Timeline: sims/dementia-stages-interactive-timeline/index.md
+    - Dementia Types Comparison Matrix: sims/dementia-types-comparison-matrix/index.md
+    - Dementia Types Prevalence Chart: sims/dementia-types-prevalence-chart/index.md
     - Early-Stage Dementia Characteristics: sims/early-stage-characteristics/index.md
+    - Early-Stage Dementia Characteristics (Detailed): sims/early-stage-dementia-characteristics/index.md
+    - Executive Function in Daily Life: sims/executive-function-in-daily-life/index.md
+    - Graph Viewer: sims/graph-viewer/index.md
+    - Healthy Tau vs. Abnormal Tau: sims/healthy-tau-vs-abnormal-tau/index.md
+    - How Memory Formation Works: sims/how-memory-formation-works/index.md
+    - Memory Loss Recognition Tool: sims/memory-loss-recognition-tool/index.md
+    - Neuroplasticity in Action: sims/neuroplasticity-in-action/index.md
+    - Normal Aging vs. MCI vs. Dementia Comparison: sims/normal-aging-vs-mci-vs-dementia-comparison/index.md
+    - Protein Aggregation Comparison: sims/protein-aggregation-comparison/index.md
+    - Synaptic Communication: sims/synaptic-communication/index.md
+    - The Brain's Major Regions: sims/the-brain-s-major-regions/index.md
+    - The Four Lobes of the Brain: sims/the-four-lobes-of-the-brain/index.md
+    - Visual-Spatial Challenges Interactive Demonstration: sims/visual-spatial-challenges-interactive-demonstration/index.md
     # Add MicroSim entries here:
     # - Sim Name: sims/sim-name/index.md
 

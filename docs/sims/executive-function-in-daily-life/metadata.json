@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "executive-function-in-daily-life",
-  "library": "HTML/CSS/JavaScript with interactive hover states",
+  "library": "Custom HTML/CSS/JavaScript",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "Explain, identify",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 1,
   "chapter_title": "Introduction to Dementia and Cognitive Health",
   "chapter_dir": "01-intro-to-dementia"

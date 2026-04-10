@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "behavior-management-decision-tree",
-  "library": "HTML/CSS/JavaScript with interactive flowchart logic",
+  "library": "Custom HTML/CSS/JavaScript",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "Apply, use, implement, solve",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 6,
   "chapter_title": "Progression Through Dementia Stages",
   "chapter_dir": "06-dementia-stages"

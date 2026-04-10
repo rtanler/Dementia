@@ -1,196 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synaptic Communication</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synaptic Communication — Interactive Diagram</title>
+  <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+  <link rel="stylesheet" href="../shared-libs/style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Synaptic Communication</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> synaptic-communication</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Understand how neurons communicate across synapses through electrical and chemical signals (Bloom Level 2 - Understand)</p>
-        </div>
-    </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+<div id="controls">
+  <button class="mode-btn active" id="btn-explore" onclick="sim.setMode('explore')">Explore</button>
+  <button class="mode-btn"        id="btn-quiz"    onclick="sim.setMode('quiz')">Quiz</button>
+  <span id="quiz-score" style="display:none">
+    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
+  </span>
+</div>
 
-    Type: microsim
-    
-    Learning Objective: Understand how neurons communicate across synapses through electrical and chemical signals (Bloom Level 2 - Understand)
-    
-    Bloom Taxonomy Level: Understand (L2)
-    Bloom Verb: Explain, describe
-    
-    Instructional Rationale: Step-through demonstration is appropriate because understanding synaptic communication requires learners to trace the process with concrete visualization of both electrical and chemical events. Allowing students to progress at their own pace helps them grasp the conversion from electrical to chemical to electrical signals.
-    
-    Purpose: Demonstrate the step-by-step process of neural communication across a synapse
-    
-    Canvas Layout:
-    - Main visualization area (700px): Shows two neurons with synapse between them
-    - Control panel (100px): Step controls and information display
-    
-    Data Visibility Requirements:
-    
-    Step 1 - Resting State:
-      Show: Two neurons at rest separated by synaptic gap
-      Display:
-        - Presynaptic neuron (sending) with axon terminal
-        - Synaptic cleft (gap) clearly marked
-        - Postsynaptic neuron (receiving) with dendrite receptors
-        - Vesicles containing neurotransmitters in axon terminal
-      Caption: "Neurons at rest, ready to communicate"
-    
-    Step 2 - Electrical Signal Arrives:
-      Show: Action potential (electrical wave) traveling down axon
-      Display:
-        - Animated electrical signal moving along axon
-        - Signal represented as colored wave (yellow/orange)
-        - Voltage indicator showing change from -70mV to +40mV
-      Caption: "Electrical signal travels down the axon toward the synapse"
-    
-    Step 3 - Neurotransmitter Release:
-      Show: Vesicles releasing neurotransmitters into synaptic cleft
-      Display:
-        - Vesicles moving to membrane and releasing contents
-        - Neurotransmitter molecules (small colored circles) visible in cleft
-        - Number count: "50 neurotransmitter molecules released"
-      Caption: "Electrical signal triggers chemical release"
-    
-    Step 4 - Crossing the Gap:
-      Show: Neurotransmitters diffusing across synapse
-      Display:
-        - Molecules moving across gap (animated)
-        - Distance marker: "40 nanometers"
-        - Time elapsed: "0.5 milliseconds"
-      Caption: "Chemical messengers cross the synaptic gap"
-    
-    Step 5 - Binding to Receptors:
-      Show: Neurotransmitters binding to receptor sites
-      Display:
-        - Molecules fitting into receptors (lock-and-key visual)
-        - Binding count: "30 of 50 molecules successfully bind"
-        - Receptor types labeled
-      Caption: "Neurotransmitters bind to receptors like keys in locks"
-    
-    Step 6 - New Signal Generated:
-      Show: Electrical signal starting in receiving neuron
-      Display:
-        - New action potential beginning in postsynaptic neuron
-        - Voltage change: -70mV → -65mV → threshold → new signal
-        - Signal strength indicator
-      Caption: "Binding triggers a new electrical signal in the next neuron"
-    
-    Step 7 - Signal Continuation:
-      Show: Signal traveling along second neuron
-      Display:
-        - Full communication cycle complete
-        - Neurotransmitters being recycled/cleared from cleft
-        - Ready for next signal
-      Caption: "The signal continues through the neural network"
-    
-    Interactive Controls:
-    - "Next Step" button - Advances to next stage
-    - "Previous Step" button - Returns to previous stage
-    - "Reset" button - Returns to resting state
-    - "Play All" button - Auto-advances through all steps
-    - Progress indicator (1/7, 2/7, etc.)
-    - Speed control slider (for auto-play)
-    
-    Visual Elements:
-    - Color-coded neurons (blue for presynaptic, green for postsynaptic)
-    - Animated action potential (yellow wave)
-    - Neurotransmitter molecules (small red/orange circles)
-    - Receptor binding sites (lock shapes on postsynaptic membrane)
-    - Clear labeling of all structures
-    - Voltage meters showing electrical changes
-    
-    Impact of Dementia Panel:
-    After completing all steps, show comparison:
-    - Normal synapse: Strong signal transmission
-    - Dementia-affected synapse: Fewer neurotransmitters, damaged receptors, weakened signal
-    - Illustrate how synapse loss contributes to cognitive decline
-    
-    Responsive Design:
-    - Canvas adjusts to window width
-    - Maintains clear visibility of all elements
-    - Text size scales for readability
-    
-    Implementation: p5.js
-    Canvas: 100% width, 600px height
-    Default state: Step 1 visible
-    Animation timing: 500ms transitions between steps
-    -->
+<div id="layout">
+  <svg id="leaders-svg"></svg>
+
+  <div id="diagram-wrapper">
+    <img id="diagram-img" src="synapse-anatomy.png" alt="Scientific watercolor illustration of a chemical synapse: a pale blue presynaptic neuron in the upper-left with an axon terminal holding bright blue synaptic vesicles, a yellow action potential traveling along the axon, orange neurotransmitter molecules crossing a narrow synaptic cleft, purple receptor sites on a pale green postsynaptic dendrite in the lower-right." draggable="false">
+    <div id="markers-layer"></div>
+  </div>
+
+  <div id="label-panel">
+    <!-- label rows injected by diagram.js -->
+  </div>
+</div>
+
+<div id="infobox">
+  <div id="infobox-prompt">Hover over a numbered marker or a label to learn about each part of the synapse.</div>
+  <div id="infobox-content">
+    <div id="infobox-label"></div>
+    <div id="infobox-desc"></div>
+    <div id="infobox-ap-tip"></div>
+    <button id="quiz-restart" onclick="sim.restartQuiz()">Try Again</button>
+  </div>
+</div>
+
+<div id="edit-panel">
+  <h3>Edit Mode — drag markers to calibrate positions</h3>
+  <div id="coord-display">Drag a marker to see its live coordinates.</div>
+  <textarea id="json-output" readonly spellcheck="false"></textarea>
+  <div id="edit-actions">
+    <button id="copy-json-btn" onclick="sim.copyJSON()">Copy JSON</button>
+    <span id="copy-confirm"></span>
+  </div>
+</div>
+
+<script src="../shared-libs/celebration.js"></script>
+<script src="../shared-libs/diagram.js"></script>
+<script>
+(function() {
+  let lastScore = -1;
+  setInterval(function() {
+    const total = document.getElementById('score-total');
+    const val = document.getElementById('score-val');
+    if (!total || !val) return;
+    const t = parseInt(total.textContent, 10);
+    const v = parseInt(val.textContent, 10);
+    if (t > 0 && v === t && v !== lastScore) {
+      lastScore = v;
+      if (window.Celebration) window.Celebration.celebrate({ duration: 4000 });
+    }
+    if (v < t) lastScore = -1;
+  }, 400);
+})();
+</script>
 </body>
 </html>

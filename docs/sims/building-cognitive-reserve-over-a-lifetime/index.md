@@ -1,136 +1,65 @@
 ---
 title: Building Cognitive Reserve Over a Lifetime
 description: Understand how cognitive reserve accumulates through life experiences and activities (Bloom Level 2 - Understand)
-status: scaffold
-library: HTML/CSS/JavaScript with D3.js or Chart.js for graph
+status: implemented
+library: Chart.js
 bloom_level: Understand (L2)
 ---
 
 # Building Cognitive Reserve Over a Lifetime
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+This interactive MicroSim shows how the brain's cognitive reserve is
+built through everyday activities, education, and social engagement
+across the lifespan, and how a higher reserve delays the age at which
+dementia symptoms may appear.
 
 ## Learning Objective
 
-Understand how cognitive reserve accumulates through life experiences and activities (Bloom Level 2 - Understand)
+Understand how cognitive reserve accumulates through life experiences
+and activities (Bloom Level 2 - Understand).
 
 - **Bloom Level:** Understand (L2)
 - **Bloom Verb:** Explain, illustrate
-- **Library:** HTML/CSS/JavaScript with D3.js or Chart.js for graph
+- **Library:** Chart.js 4 (line chart with threshold line)
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="700" frameborder="0"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
-## Specification
+## How to Use
 
-The full specification below is extracted from
-[Chapter 1: Introduction to Dementia and Cognitive Health](../../chapters/01-intro-to-dementia/index.md).
+1. **Click a life stage card** at the top (Early Childhood, School Age,
+   Young Adult, Middle Age, or Older Adult) to see the activities that
+   build cognitive reserve during that period.
+2. **Watch the chart** to compare two lifetime trajectories:
+   - **Green line:** A person who builds high cognitive reserve through
+     varied education, mentally demanding work, and lifelong learning.
+   - **Orange line:** A person with fewer reserve-building experiences.
+   - **Dashed red line:** The dementia symptom threshold. When a person's
+     reserve falls below this level, cognitive symptoms typically begin.
+3. **Use the toggle button** to view each scenario separately and see
+   how the high-reserve line crosses the threshold much later in life.
+4. **Answer the quiz** at the bottom to check your understanding.
 
-```text
-Type: timeline
+## Key Insight
 
-Learning Objective: Understand how cognitive reserve accumulates through life experiences and activities (Bloom Level 2 - Understand)
+Both people in this example experience similar brain changes with age,
+but the person with higher cognitive reserve crosses the dementia
+symptom threshold roughly 20 years later. Reserve does not prevent
+brain pathology - it provides a buffer that delays when symptoms
+appear.
 
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Explain, illustrate
+## Life Stages Summary
 
-Purpose: Illustrate how different life activities contribute to building cognitive reserve across the lifespan
-
-Time Period: Birth to 80+ years
-
-Orientation: Horizontal timeline with activity markers above and cognitive reserve level graph below
-
-Life Stages and Reserve-Building Activities:
-
-Early Childhood (0-5 years):
-- Rich language environment
-- Play and exploration
-- Early learning experiences
-Reserve contribution: Foundation building (baseline)
-
-School Age (6-18 years):
-- Formal education
-- Learning to read and write
-- Learning musical instrument
-- Playing sports
-- Social interactions with peers
-Reserve contribution: Major growth period
-
-Young Adult (19-30 years):
-- Higher education (college/university)
-- Career training
-- Learning new skills
-- Building social networks
-- Travel and new experiences
-Reserve contribution: Continued building
-
-Middle Age (31-65 years):
-- Mentally demanding career
-- Continuing education/professional development
-- Hobbies (reading, puzzles, crafts)
-- Maintaining social connections
-- Physical exercise routine
-- Learning new technology
-Reserve contribution: Peak reserve, maintenance
-
-Older Adult (65-80+ years):
-- Retirement activities
-- Volunteering
-- Lifelong learning classes
-- Social engagement
-- Physical activity
-- Mentally stimulating hobbies
-Reserve contribution: Maintenance and gradual decline (normal aging) OR steeper decline (with dementia)
-
-Visual Elements:
-- Upper timeline: Activity icons at specific life stages
-- Lower graph: Cognitive reserve level (y-axis) vs. age (x-axis)
-- Two lines on graph:
-  1. High Reserve (green): Person with rich cognitive activities
-  2. Low Reserve (orange): Person with fewer stimulating activities
-- Shaded area showing "dementia symptom threshold"
-- Annotations showing how high reserve delays crossing threshold
-
-Interactive Features:
-- Hover over activity icons to see how they build reserve
-- Click on life stages to see detailed activity recommendations
-- Toggle between "high reserve" and "low reserve" life paths
-- Show "dementia impact" overlay illustrating how reserve provides buffer
-
-Key Annotations:
-- "Education Years: Major reserve builder"
-- "Career Complexity: Sustained reserve growth"
-- "Retirement: Continued engagement maintains reserve"
-- "Dementia Threshold: Higher reserve delays symptom onset"
-
-Compare Two Scenarios:
-Scenario A: High education, mentally demanding career, active retirement
-  - Crosses dementia threshold at age 78
-  - Later symptom onset despite same brain pathology
-
-Scenario B: Less education, routine work, sedentary retirement
-  - Crosses dementia threshold at age 68
-  - Earlier symptom onset with same brain pathology
-
-Color Scheme:
-- Green: Reserve-building activities
-- Blue: Timeline milestones
-- Orange: Warning/threshold zone
-- Gray: Background/inactive areas
-
-Responsive Design:
-- Timeline wraps to vertical on narrow screens
-- Graph maintains readability
-- Activity icons resize appropriately
-
-Implementation: HTML/CSS/JavaScript with D3.js or Chart.js for graph
-Canvas size: 100% width, 550px height
-```
+| Stage | Ages | Reserve Contribution |
+| --- | --- | --- |
+| Early Childhood | 0-5 | Foundation building |
+| School Age | 6-18 | Major growth period |
+| Young Adult | 19-30 | Continued building |
+| Middle Age | 31-65 | Peak reserve and maintenance |
+| Older Adult | 65-90+ | Maintenance and engagement |
 
 ## Related Resources
 

@@ -1,91 +1,58 @@
 ---
 title: The Brain's Major Regions
-description: Remember and identify the major regions of the brain and their basic functions (Bloom Level 1 - Remember)
-status: scaffold
-library: HTML/CSS/JavaScript with SVG graphics or p5.js
+description: Interactive diagram to identify the major regions of the brain and their basic functions, including the cerebral cortex, four lobes, hippocampus, and cerebellum.
+status: implemented
+library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Remember (L1)
+hide:
+  - toc
 ---
 
 # The Brain's Major Regions
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+<iframe src="main.html" width="100%" height="700" style="border:1px solid #ccc; border-radius:8px;" scrolling="no" allowfullscreen></iframe>
+
+[Open full screen](main.html){:target="_blank"}
 
 ## Learning Objective
 
-Remember and identify the major regions of the brain and their basic functions (Bloom Level 1 - Remember)
+Remember and identify the major regions of the brain and their basic functions
+(Bloom Level 1 - Remember).
 
-- **Bloom Level:** Remember (L1)
-- **Bloom Verb:** Identify, locate, recognize
-- **Library:** HTML/CSS/JavaScript with SVG graphics or p5.js
+## Overview
 
-## Preview
+The human brain is made up of several major regions, each with its own job.
+Understanding where these regions sit and what they do is the first step to
+understanding how dementia affects thinking, memory, movement, and behavior.
+When dementia damages brain tissue, the symptoms a person experiences depend on
+which regions are affected first.
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## How to Use This Diagram
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+**Explore Mode** — Hover over any numbered marker or label to see a description
+of that brain region and how dementia can affect it.
 
-## Specification
+**Quiz Mode** — Click "Quiz" to test your knowledge. Read the hint, then click
+the correct marker on the brain. Your score is tracked, and a celebration plays
+when you answer all seven correctly.
 
-The full specification below is extracted from
-[Chapter 1: Introduction to Dementia and Cognitive Health](../../chapters/01-intro-to-dementia/index.md).
+## The Seven Major Regions
 
-```text
-Type: infographic
-
-Learning Objective: Remember and identify the major regions of the brain and their basic functions (Bloom Level 1 - Remember)
-
-Bloom Taxonomy Level: Remember (L1)
-Bloom Verb: Identify, locate, recognize
-
-Purpose: Help students visualize and identify the major regions of the brain and understand their primary functions through an interactive clickable diagram.
-
-Layout: Side view (sagittal) of the human brain showing major structures with clickable regions
-
-Regions to Display:
-1. Cerebral Cortex (outer layer, gray)
-   - Hover text: "The brain's outer layer responsible for thinking, planning, and processing information"
-
-2. Frontal Lobe (front portion, light blue)
-   - Hover text: "Controls decision-making, problem-solving, planning, and personality"
-
-3. Temporal Lobe (side region, yellow)
-   - Hover text: "Processes sound, speech, and memory formation"
-
-4. Parietal Lobe (top-middle, green)
-   - Hover text: "Processes touch, spatial awareness, and integrates sensory information"
-
-5. Occipital Lobe (back, purple)
-   - Hover text: "Processes visual information from your eyes"
-
-6. Hippocampus (inner structure, orange)
-   - Hover text: "Critical for forming new memories and spatial navigation"
-
-7. Cerebellum (lower back, pink)
-   - Hover text: "Coordinates movement, balance, and posture"
-
-Interactive Features:
-- Click on any region to highlight it and display detailed information panel
-- Hover over regions to see brief function description
-- "Show All" button to display all region names at once
-- "Quiz Mode" button that hides labels and asks user to identify regions
-
-Visual Style:
-- Clean, simplified anatomical illustration
-- Distinct colors for each major region
-- Clear boundary lines between structures
-- Labels with connecting lines to specific regions
-
-Responsive Design:
-- Canvas must resize based on window width
-- Maintain aspect ratio
-- Text size adjusts for readability on all screen sizes
-
-Implementation: HTML/CSS/JavaScript with SVG graphics or p5.js
-Canvas size: 100% width, 550px height
-```
+1. **Cerebral Cortex** (gray, outer layer) — The brain's outer layer
+   responsible for thinking, planning, and processing information.
+2. **Frontal Lobe** (blue, front of brain) — Controls decision-making,
+   problem-solving, planning, and personality.
+3. **Temporal Lobe** (yellow, side of brain) — Processes sound, speech, and
+   memory formation.
+4. **Parietal Lobe** (green, top of brain) — Processes touch, spatial
+   awareness, and integrates sensory information.
+5. **Occipital Lobe** (purple, back of brain) — Processes visual information
+   from your eyes.
+6. **Hippocampus** (orange, inner structure) — Critical for forming new
+   memories and spatial navigation.
+7. **Cerebellum** (pink, lower back of brain) — Coordinates movement, balance,
+   and posture.
 
 ## Related Resources
 
-- [Chapter 1: Introduction to Dementia and Cognitive Health](../../chapters/01-intro-to-dementia/index.md)
+- [Chapter 1: Introduction to Dementia](../../chapters/01-intro-to-dementia/index.md)

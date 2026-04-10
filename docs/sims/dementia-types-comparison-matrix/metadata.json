@@ -11,10 +11,10 @@
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "dementia-types-comparison-matrix",
-  "library": "HTML/CSS/JavaScript with interactive table library",
+  "library": "Custom HTML/CSS/JavaScript",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "Compare, contrast, differentiate, distinguish",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 3,
   "chapter_title": "Understanding Different Types of Dementia",
   "chapter_dir": "03-types-of-dementia"

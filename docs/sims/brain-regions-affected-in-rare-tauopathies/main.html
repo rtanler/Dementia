@@ -1,153 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brain Regions Affected in Rare Tauopathies</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Regions Affected in Rare Tauopathies — Interactive Diagram</title>
+  <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+  <link rel="stylesheet" href="../shared-libs/style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Brain Regions Affected in Rare Tauopathies</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> brain-regions-affected-in-rare-tauopathies</p>
-            <p><strong>Library:</strong> SVG-based interactive brain diagrams with JavaScript for interactivity</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Identify which brain regions are primarily affected in rare tauopathies and relate regional damage to characteristic symptoms (Bloom Level 2 - Understand)</p>
-        </div>
-    </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+<div id="controls">
+  <button class="mode-btn active" id="btn-explore" onclick="sim.setMode('explore')">Explore</button>
+  <button class="mode-btn"        id="btn-quiz"    onclick="sim.setMode('quiz')">Quiz</button>
+  <span id="quiz-score" style="display:none">
+    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
+  </span>
+</div>
 
-    Type: diagram
-    
-    Learning Objective: Identify which brain regions are primarily affected in rare tauopathies and relate regional damage to characteristic symptoms (Bloom Level 2 - Understand)
-    
-    Bloom Taxonomy Level: Understand (L2)
-    Bloom Verb: Identify, relate, connect
-    
-    Purpose: Show the distinct patterns of neurodegeneration in three rare tauopathies and help students understand how regional damage causes specific symptoms
-    
-    Layout: Three side-view brain diagrams arranged horizontally, each showing a different disease
-    
-    Diagram 1 - Pick's Disease:
-    - Brain outline in lateral view
-    - Frontal lobes highlighted in orange/red (showing atrophy)
-    - Anterior temporal lobes highlighted in orange/red
-    - Other brain regions shown in gray (relatively spared)
-    - Annotations pointing to affected areas:
-      * "Frontal cortex atrophy → personality changes, disinhibition"
-      * "Temporal cortex atrophy → language difficulties (aphasia)"
-    - Label: "Pick's Disease - Frontotemporal Pattern"
-    
-    Diagram 2 - Corticobasal Degeneration:
-    - Brain outline in lateral view
-    - Asymmetric highlighting (one hemisphere more affected)
-    - Motor cortex and parietal cortex highlighted in purple
-    - Basal ganglia (shown in cross-section inset) highlighted in purple
-    - Annotations:
-      * "Motor/sensory cortex → limb apraxia, alien limb"
-      * "Basal ganglia → rigidity, bradykinesia"
-      * "Asymmetric onset (typically one side first)"
-    - Label: "Corticobasal Degeneration - Cortical and Subcortical"
-    
-    Diagram 3 - Progressive Supranuclear Palsy:
-    - Brain outline in lateral view with brain stem visible
-    - Midbrain highlighted in green
-    - Basal ganglia highlighted in green
-    - Frontal lobes highlighted in lighter green
-    - Annotations:
-      * "Midbrain (superior colliculus) → vertical gaze palsy"
-      * "Basal ganglia → rigidity, bradykinesia, falls"
-      * "Frontal cortex → executive dysfunction, apathy"
-    - Label: "Progressive Supranuclear Palsy - Brain Stem and Basal Ganglia"
-    
-    Interactive Elements:
-    - Hover over any highlighted region to see popup with:
-      - Region name
-      - Degree of damage (mild/moderate/severe)
-      - Associated symptoms
-    - Click disease name to highlight all affected regions for that disease
-    - Toggle button: "Show Symptom Connections" - draws lines from affected regions to symptom list
-    - Click "Compare All Three" to show all three diagrams with alignment markers showing overlapping and distinct regions
-    
-    Bottom Comparison Summary:
-    - Common features: All three involve abnormal tau protein (4-repeat tau in CBD and PSP, 3-repeat tau in Pick's)
-    - Key distinctions: Different regional patterns explain different symptom profiles
-    - Clinical implication: Brain region affected → symptom pattern → helps with diagnosis
-    
-    Visual Style: Clean anatomical diagrams with color-coded affected regions
-    Color coding: Pick's (orange/red), CBD (purple), PSP (green)
-    
-    Implementation: SVG-based interactive brain diagrams with JavaScript for interactivity
-    Canvas size: 1000x600px, responsive design that stacks diagrams vertically on narrow screens
-    -->
+<div id="layout">
+  <svg id="leaders-svg"></svg>
+
+  <div id="diagram-wrapper">
+    <img id="diagram-img" src="tauopathies-brain-regions.png" alt="Three lateral side-view brain diagrams arranged horizontally comparing Pick's disease (left, orange-red frontal and anterior temporal lobe atrophy), corticobasal degeneration (middle, purple motor cortex and basal ganglia), and progressive supranuclear palsy (right, green midbrain, basal ganglia, and lighter green frontal cortex)" draggable="false">
+    <div id="markers-layer"></div>
+  </div>
+
+  <div id="label-panel">
+    <!-- label rows injected by diagram.js -->
+  </div>
+</div>
+
+<div id="infobox">
+  <div id="infobox-prompt">Hover over a numbered marker or a label to learn about the brain region affected in each rare tauopathy.</div>
+  <div id="infobox-content">
+    <div id="infobox-label"></div>
+    <div id="infobox-desc"></div>
+    <div id="infobox-ap-tip"></div>
+    <button id="quiz-restart" onclick="sim.restartQuiz()">Try Again</button>
+  </div>
+</div>
+
+<div id="edit-panel">
+  <h3>Edit Mode — drag markers to calibrate positions</h3>
+  <div id="coord-display">Drag a marker to see its live coordinates.</div>
+  <textarea id="json-output" readonly spellcheck="false"></textarea>
+  <div id="edit-actions">
+    <button id="copy-json-btn" onclick="sim.copyJSON()">Copy JSON</button>
+    <span id="copy-confirm"></span>
+  </div>
+</div>
+
+<script src="../shared-libs/celebration.js"></script>
+<script src="../shared-libs/diagram.js"></script>
+<script>
+(function() {
+  let lastScore = -1;
+  setInterval(function() {
+    const total = document.getElementById('score-total');
+    const val = document.getElementById('score-val');
+    if (!total || !val) return;
+    const t = parseInt(total.textContent, 10);
+    const v = parseInt(val.textContent, 10);
+    if (t > 0 && v === t && v !== lastScore) {
+      lastScore = v;
+      if (window.Celebration) window.Celebration.celebrate({ duration: 4000 });
+    }
+    if (v < t) lastScore = -1;
+  }, 400);
+})();
+</script>
 </body>
 </html>

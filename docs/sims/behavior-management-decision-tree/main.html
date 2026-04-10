@@ -1,169 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behavior Management Decision Tree</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behavior Management Decision Tree</title>
+  <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+  <style>
+    :root {
+      --color-medical: #E63946;
+      --color-environment: #F4A261;
+      --color-needs: #F1C40F;
+      --color-task: #2A9D8F;
+      --color-communication: #4D96FF;
+      --color-bg: #f7f9fc;
+      --color-card: #ffffff;
+      --color-text: #1d3557;
+      --color-muted: #6b7280;
+      --shadow: 0 4px 14px rgba(0,0,0,0.08);
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    header.sim-header {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    header.sim-header h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.45rem;
+      color: var(--color-text);
+    }
+    header.sim-header p {
+      margin: 0;
+      color: var(--color-muted);
+      font-size: 0.9rem;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 12px 0;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: 0.9rem;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      border: 1px solid #d0d7de;
+      background: #fff;
+      color: var(--color-text);
+      cursor: pointer;
+      transition: background 0.15s, transform 0.08s;
+    }
+    button:hover { background: #eef3f9; }
+    button:active { transform: scale(0.98); }
+    button.primary {
+      background: var(--color-communication);
+      color: #fff;
+      border-color: var(--color-communication);
+    }
+    button.primary:hover { background: #3b84ef; }
+
+    button.btn-yes {
+      background: #e8f5e9;
+      border-color: #81c784;
+      color: #1b5e20;
+    }
+    button.btn-no {
+      background: #ffebee;
+      border-color: #ef9a9a;
+      color: #b71c1c;
+    }
+    button.btn-yes:hover { background: #c8e6c9; }
+    button.btn-no:hover { background: #ffcdd2; }
+
+    .card {
+      background: var(--color-card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      border-left: 6px solid #d0d7de;
+    }
+    .card h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.05rem;
+    }
+    .card p { margin: 4px 0; font-size: 0.92rem; }
+
+    .start-card { border-left-color: #6c757d; }
+    .decision-medical { border-left-color: var(--color-medical); }
+    .decision-environment { border-left-color: var(--color-environment); }
+    .decision-needs { border-left-color: var(--color-needs); }
+    .decision-task { border-left-color: var(--color-task); }
+    .decision-communication { border-left-color: var(--color-communication); }
+
+    .action-box {
+      margin-top: 10px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #f1f5f9;
+      font-size: 0.9rem;
+    }
+    .action-box strong { display: block; margin-bottom: 4px; }
+    .action-box ul { margin: 6px 0 0 18px; padding: 0; }
+    .action-box li { margin-bottom: 3px; }
+    .action-box .example {
+      margin-top: 8px;
+      padding: 8px;
+      background: #fff3cd;
+      border-left: 3px solid #f0ad4e;
+      font-style: italic;
+      font-size: 0.85rem;
+    }
+
+    .action-medical { background: #fdecea; }
+    .action-environment { background: #fdf2e3; }
+    .action-needs { background: #fffce3; }
+    .action-task { background: #e3f5f1; }
+    .action-communication { background: #e3edff; }
+
+    .decision-buttons {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .scenario-banner {
+      background: #e3f2fd;
+      border-left: 4px solid var(--color-communication);
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+    .scenario-banner strong { color: var(--color-communication); }
+
+    .analysis-box {
+      background: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    .log-panel {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      margin-top: 14px;
+    }
+    .log-panel h3 { margin: 0 0 8px 0; font-size: 1rem; }
+    .log-panel .log-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .log-panel input[type="text"] {
+      flex: 1;
+      min-width: 140px;
+      padding: 6px 10px;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.88rem;
+    }
+    .log-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 140px;
+      overflow-y: auto;
+    }
+    .log-panel li {
+      padding: 6px 8px;
+      border-bottom: 1px solid #eee;
+      font-size: 0.85rem;
+    }
+    .log-panel li:last-child { border-bottom: none; }
+
+    .principles {
+      background: linear-gradient(135deg, #4D96FF, #6c63ff);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-top: 14px;
+    }
+    .principles h3 { margin: 0 0 8px 0; font-size: 1rem; }
+    .principles ol { margin: 0; padding-left: 20px; }
+    .principles li { margin-bottom: 4px; font-size: 0.88rem; }
+
+    .quiz {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px 18px;
+      margin-top: 14px;
+      display: none;
+    }
+    .quiz h3 { margin: 0 0 8px 0; }
+    .quiz .question { margin-bottom: 12px; }
+    .quiz .question p { margin: 4px 0 6px 0; font-weight: 600; font-size: 0.92rem; }
+    .quiz .options { display: flex; flex-direction: column; gap: 5px; }
+    .quiz .options button {
+      text-align: left;
+      font-size: 0.88rem;
+      padding: 7px 10px;
+    }
+    .quiz .options button.correct {
+      background: #c8e6c9;
+      border-color: #4caf50;
+      color: #1b5e20;
+    }
+    .quiz .options button.incorrect {
+      background: #ffcdd2;
+      border-color: #e57373;
+      color: #b71c1c;
+    }
+    .quiz .feedback {
+      font-size: 0.85rem;
+      margin-top: 4px;
+      min-height: 16px;
+    }
+    .quiz .complete-msg {
+      display: none;
+      margin-top: 12px;
+      padding: 12px;
+      background: linear-gradient(135deg, #6BCB77, #4D96FF);
+      color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 10px; }
+      header.sim-header h1 { font-size: 1.2rem; }
+      .toolbar button { flex: 1 1 auto; }
+    }
+  </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Behavior Management Decision Tree</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> behavior-management-decision-tree</p>
-            <p><strong>Library:</strong> HTML/CSS/JavaScript with interactive flowchart logic</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Apply systematic problem-solving to challenging behaviors in moderate-stage dementia (Bloom Level 3 - Apply)</p>
-        </div>
+  <main>
+    <header class="sim-header">
+      <h1>Behavior Management Decision Tree</h1>
+      <p>Systematic assessment for challenging behaviors in moderate-stage dementia</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" id="btn-start">Start Assessment</button>
+      <button id="btn-example">Try an Example</button>
+      <button id="btn-reset">Reset</button>
     </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <div id="scenario-banner" class="scenario-banner" style="display:none;"></div>
 
-    Type: workflow
-    
-    Learning Objective: Apply systematic problem-solving to challenging behaviors in moderate-stage dementia (Bloom Level 3 - Apply)
-    
-    Bloom Taxonomy Level: Apply (L3)
-    Bloom Verb: Apply, use, implement, solve
-    
-    Instructional Rationale: Decision tree format is appropriate for Apply-level objectives because learners must use knowledge to work through real scenarios and determine appropriate responses. The structured approach teaches systematic problem-solving for behavior management.
-    
-    Purpose: Guide caregivers through systematic assessment and response to challenging behaviors common in moderate-stage dementia
-    
-    Visual Style: Interactive flowchart with decision points and action boxes
-    
-    Starting Point:
-    "Challenging behavior observed (agitation, aggression, wandering, resistance, etc.)"
-    
-    Decision Point 1: Could there be a medical cause?
-    Question: "Is the behavior new or suddenly worse?"
-    - YES → Check for: pain, infection, constipation, medication side effects, hunger, thirst
-      Action Box: "Contact healthcare provider to rule out medical causes"
-      Example: "Sudden agitation might indicate urinary tract infection"
-    - NO → Proceed to Decision Point 2
-    
-    Decision Point 2: Could there be an environmental trigger?
-    Question: "Is the environment overstimulating, confusing, or uncomfortable?"
-    - YES → Check for: too much noise, too many people, too hot/cold, poor lighting, unfamiliar setting
-      Action Box: "Modify environment: reduce noise, adjust temperature, improve lighting, simplify space"
-      Example: "Sundowning worse in dark rooms—increase lighting in late afternoon"
-    - NO → Proceed to Decision Point 3
-    
-    Decision Point 3: Could there be an unmet need?
-    Question: "Could the person be trying to communicate a need?"
-    - YES → Check for: hunger, thirst, need for bathroom, pain, boredom, loneliness, need for activity
-      Action Box: "Address the need: offer food/water, take to bathroom, provide comfort, offer activity"
-      Example: "Wandering might mean 'I need to go to the bathroom' or 'I'm bored'"
-    - NO → Proceed to Decision Point 4
-    
-    Decision Point 4: Could the task or situation be too difficult?
-    Question: "Is the person being asked to do something beyond their current abilities?"
-    - YES → Identify difficulty: too many steps, too complex, unfamiliar routine, requires skills they've lost
-      Action Box: "Simplify the task: break into smaller steps, provide more help, adjust expectations"
-      Example: "If bathing causes agitation, break it into smaller parts: wash face, rest, wash arms, rest..."
-    - NO → Proceed to Decision Point 5
-    
-    Decision Point 5: Communication and emotional support
-    All paths lead here eventually
-    Action Box: "Respond with calm reassurance:
-    - Stay calm yourself
-    - Use simple, soothing language
-    - Validate emotions ('I see you're upset')
-    - Don't argue or correct
-    - Distract and redirect to pleasant activity
-    - Allow time for emotions to settle"
-    
-    Interactive Features:
-    - User clicks through decision points based on scenario
-    - Each decision highlights relevant path
-    - Action boxes expand to show detailed strategies
-    - "Try an Example" button loads common scenarios:
-      1. "Mother becomes agitated every evening around 5 PM"
-      2. "Father refuses to let you help him shower"
-      3. "Mother is walking around the house calling for her mother who died years ago"
-    - After working through example, shows analysis: "This is sundowning, likely triggered by fatigue and environmental changes (darkening sky). Address by: increasing lighting, offering calming activity, simplifying environment."
-    - "Behavior Log" feature to track what triggers led to behavior and what helped
-    
-    Bottom Panel - Key Principles:
-    1. Look for causes before trying to change behavior
-    2. Medical issues should always be ruled out first
-    3. Most behaviors are attempts to communicate needs
-    4. Environment has huge impact on behavior
-    5. Distraction and redirection often work better than confrontation
-    
-    Visual Style: Clean flowchart with color-coded paths
-    Color coding: Red (medical), Orange (environmental), Yellow (needs), Green (task modification), Blue (communication)
-    Responsive design adapts to window width
-    
-    Implementation: HTML/CSS/JavaScript with interactive flowchart logic
-    Canvas size: 900x650px, fully responsive
-    -->
+    <div id="tree-container"></div>
+
+    <div id="analysis" class="analysis-box" style="display:none;"></div>
+
+    <div class="log-panel">
+      <h3>Behavior Log</h3>
+      <div class="log-form">
+        <input type="text" id="log-trigger" placeholder="Trigger (e.g., loud TV)">
+        <input type="text" id="log-helped" placeholder="What helped (e.g., quiet room)">
+        <button id="btn-log-add">Add Entry</button>
+      </div>
+      <ul id="log-list"></ul>
+    </div>
+
+    <div class="principles">
+      <h3>Key Principles</h3>
+      <ol>
+        <li>Look for causes before trying to change behavior</li>
+        <li>Medical issues should always be ruled out first</li>
+        <li>Most behaviors are attempts to communicate needs</li>
+        <li>Environment has a huge impact on behavior</li>
+        <li>Distraction and redirection often work better than confrontation</li>
+      </ol>
+    </div>
+
+    <div id="quiz" class="quiz">
+      <h3>Check Your Understanding</h3>
+      <p style="font-size:0.88rem;color:var(--color-muted);margin-top:0;">
+        Apply the decision-tree framework to these scenarios:
+      </p>
+      <div id="quiz-questions"></div>
+      <div id="quiz-complete" class="complete-msg">
+        Excellent! You have mastered the behavior management framework.
+      </div>
+    </div>
+  </main>
+
+  <script src="../shared-libs/celebration.js"></script>
+  <script>
+    const DECISION_POINTS = [
+      {
+        id: 'medical',
+        cssClass: 'decision-medical',
+        actionClass: 'action-medical',
+        title: '1. Could there be a medical cause?',
+        question: 'Is the behavior new or suddenly worse?',
+        yesAction: {
+          heading: 'YES — Rule out medical causes',
+          bullets: [
+            'Check for pain, infection, or constipation',
+            'Review medication side effects',
+            'Check hunger, thirst, and dehydration',
+            'Contact the healthcare provider promptly'
+          ],
+          example: 'Sudden agitation might indicate a urinary tract infection.'
+        }
+      },
+      {
+        id: 'environment',
+        cssClass: 'decision-environment',
+        actionClass: 'action-environment',
+        title: '2. Could there be an environmental trigger?',
+        question: 'Is the environment overstimulating, confusing, or uncomfortable?',
+        yesAction: {
+          heading: 'YES — Modify the environment',
+          bullets: [
+            'Reduce noise and number of people',
+            'Adjust temperature to a comfortable range',
+            'Improve lighting, especially in late afternoon',
+            'Simplify and de-clutter the space'
+          ],
+          example: 'Sundowning worsens in dark rooms — increase lighting in late afternoon.'
+        }
+      },
+      {
+        id: 'needs',
+        cssClass: 'decision-needs',
+        actionClass: 'action-needs',
+        title: '3. Could there be an unmet need?',
+        question: 'Could the person be trying to communicate a need?',
+        yesAction: {
+          heading: 'YES — Address the unmet need',
+          bullets: [
+            'Offer food or water',
+            'Take the person to the bathroom',
+            'Provide comfort and reassurance',
+            'Offer a meaningful activity'
+          ],
+          example: 'Wandering might mean "I need the bathroom" or "I am bored."'
+        }
+      },
+      {
+        id: 'task',
+        cssClass: 'decision-task',
+        actionClass: 'action-task',
+        title: '4. Is the task or situation too difficult?',
+        question: 'Is the person being asked to do something beyond their current abilities?',
+        yesAction: {
+          heading: 'YES — Simplify the task',
+          bullets: [
+            'Break the task into smaller steps',
+            'Provide more hands-on help',
+            'Adjust expectations to current abilities',
+            'Use familiar routines and cues'
+          ],
+          example: 'If bathing causes agitation, break it into parts: wash face, rest, wash arms, rest...'
+        }
+      }
+    ];
+
+    const COMMUNICATION_STEP = {
+      id: 'communication',
+      cssClass: 'decision-communication',
+      actionClass: 'action-communication',
+      title: '5. Communication and emotional support',
+      yesAction: {
+        heading: 'Always respond with calm reassurance',
+        bullets: [
+          'Stay calm yourself',
+          'Use simple, soothing language',
+          "Validate emotions ('I see you are upset')",
+          'Do not argue or correct',
+          'Distract and redirect to a pleasant activity',
+          'Allow time for emotions to settle'
+        ],
+        example: 'Every path on the decision tree ends here — communication is universal.'
+      }
+    };
+
+    const EXAMPLES = [
+      {
+        text: 'Mother becomes agitated every evening around 5 PM.',
+        answers: { medical: 'no', environment: 'yes', needs: 'no', task: 'no' },
+        analysis: 'This is sundowning, likely triggered by fatigue and environmental changes (darkening sky). Address by increasing lighting, offering a calming activity, and simplifying the environment.'
+      },
+      {
+        text: 'Father refuses to let you help him shower.',
+        answers: { medical: 'no', environment: 'no', needs: 'no', task: 'yes' },
+        analysis: 'Bathing is likely too complex or feels threatening. Break it into small steps, use warm towels, respect privacy, and offer gentle reassurance at each step.'
+      },
+      {
+        text: 'Mother is walking around the house calling for her mother who died years ago.',
+        answers: { medical: 'no', environment: 'no', needs: 'yes', task: 'no' },
+        analysis: 'She is expressing a need for comfort and connection. Do not correct her — validate her feelings, offer reassurance, and redirect to a comforting activity like looking at old photos.'
+      }
+    ];
+
+    const state = {
+      currentScenario: null,
+      log: [],
+      completedOnce: false
+    };
+
+    const treeContainer = document.getElementById('tree-container');
+    const analysisDiv = document.getElementById('analysis');
+    const scenarioBanner = document.getElementById('scenario-banner');
+    const quizDiv = document.getElementById('quiz');
+
+    function renderStart() {
+      analysisDiv.style.display = 'none';
+      treeContainer.innerHTML = '';
+      const startCard = document.createElement('div');
+      startCard.className = 'card start-card';
+      startCard.innerHTML = `
+        <h3>Starting Point</h3>
+        <p>Challenging behavior observed (agitation, aggression, wandering, resistance, etc.).</p>
+        <p style="color:var(--color-muted);font-size:0.85rem;">Work through the five decision points below to find an effective response.</p>
+      `;
+      treeContainer.appendChild(startCard);
+      renderStep(0);
+    }
+
+    function renderStep(index) {
+      if (index >= DECISION_POINTS.length) {
+        renderCommunicationStep();
+        return;
+      }
+      const dp = DECISION_POINTS[index];
+      const card = document.createElement('div');
+      card.className = 'card ' + dp.cssClass;
+      card.id = 'step-' + dp.id;
+      card.innerHTML = `
+        <h3>${dp.title}</h3>
+        <p><strong>${dp.question}</strong></p>
+        <div class="decision-buttons">
+          <button class="btn-yes">YES</button>
+          <button class="btn-no">NO</button>
+        </div>
+      `;
+      treeContainer.appendChild(card);
+      card.querySelector('.btn-yes').addEventListener('click', () => handleAnswer(index, 'yes'));
+      card.querySelector('.btn-no').addEventListener('click', () => handleAnswer(index, 'no'));
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function handleAnswer(index, answer) {
+      const dp = DECISION_POINTS[index];
+      const card = document.getElementById('step-' + dp.id);
+      if (!card) return;
+      const btns = card.querySelector('.decision-buttons');
+      if (btns) btns.remove();
+
+      if (answer === 'yes') {
+        const actionBox = document.createElement('div');
+        actionBox.className = 'action-box ' + dp.actionClass;
+        actionBox.innerHTML = `
+          <strong>${dp.yesAction.heading}</strong>
+          <ul>${dp.yesAction.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+          <div class="example">Example: ${dp.yesAction.example}</div>
+        `;
+        card.appendChild(actionBox);
+      } else {
+        const note = document.createElement('p');
+        note.style.color = 'var(--color-muted)';
+        note.style.fontSize = '0.85rem';
+        note.textContent = 'No → moving to the next consideration.';
+        card.appendChild(note);
+      }
+
+      // Only advance if the next step isn't already rendered
+      if (!document.getElementById('step-' + (DECISION_POINTS[index + 1] ? DECISION_POINTS[index + 1].id : 'communication'))) {
+        renderStep(index + 1);
+      }
+    }
+
+    function renderCommunicationStep() {
+      if (document.getElementById('step-communication')) return;
+      const dp = COMMUNICATION_STEP;
+      const card = document.createElement('div');
+      card.className = 'card ' + dp.cssClass;
+      card.id = 'step-communication';
+      card.innerHTML = `
+        <h3>${dp.title}</h3>
+        <p>All paths lead here. Communication and emotional support apply to every situation.</p>
+        <div class="action-box ${dp.actionClass}">
+          <strong>${dp.yesAction.heading}</strong>
+          <ul>${dp.yesAction.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+          <div class="example">${dp.yesAction.example}</div>
+        </div>
+      `;
+      treeContainer.appendChild(card);
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      if (state.currentScenario) {
+        analysisDiv.style.display = 'block';
+        analysisDiv.innerHTML = `<strong>Analysis:</strong> ${state.currentScenario.analysis}`;
+      }
+
+      if (!state.completedOnce) {
+        state.completedOnce = true;
+        showQuiz();
+      }
+    }
+
+    function runExample() {
+      reset();
+      const ex = EXAMPLES[Math.floor(Math.random() * EXAMPLES.length)];
+      state.currentScenario = ex;
+      scenarioBanner.style.display = 'block';
+      scenarioBanner.innerHTML = `<strong>Scenario:</strong> ${ex.text}`;
+      renderStart();
+      autoWalk(ex);
+    }
+
+    function autoWalk(ex) {
+      const stepOrder = ['medical', 'environment', 'needs', 'task'];
+      let i = 0;
+      function stepNext() {
+        if (i >= stepOrder.length) return;
+        const id = stepOrder[i];
+        const answer = ex.answers[id] || 'no';
+        handleAnswer(i, answer);
+        i++;
+        setTimeout(stepNext, 450);
+      }
+      setTimeout(stepNext, 450);
+    }
+
+    function reset() {
+      state.currentScenario = null;
+      treeContainer.innerHTML = '';
+      analysisDiv.style.display = 'none';
+      scenarioBanner.style.display = 'none';
+      scenarioBanner.innerHTML = '';
+    }
+
+    const logList = document.getElementById('log-list');
+    document.getElementById('btn-log-add').addEventListener('click', () => {
+      const trigger = document.getElementById('log-trigger').value.trim();
+      const helped = document.getElementById('log-helped').value.trim();
+      if (!trigger && !helped) return;
+      const entry = {
+        time: new Date().toLocaleString(),
+        trigger: trigger || '(no trigger noted)',
+        helped: helped || '(nothing yet)'
+      };
+      state.log.push(entry);
+      renderLog();
+      document.getElementById('log-trigger').value = '';
+      document.getElementById('log-helped').value = '';
+    });
+
+    function renderLog() {
+      logList.innerHTML = '';
+      if (state.log.length === 0) {
+        const li = document.createElement('li');
+        li.style.color = 'var(--color-muted)';
+        li.textContent = 'No entries yet. Track triggers and what helped to find patterns.';
+        logList.appendChild(li);
+        return;
+      }
+      state.log.slice().reverse().forEach(e => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${e.time}</strong> — Trigger: ${e.trigger} | Helped: ${e.helped}`;
+        logList.appendChild(li);
+      });
+    }
+
+    const QUIZ_QUESTIONS = [
+      {
+        q: 'Mother is suddenly agitated and confused. What should you check FIRST?',
+        options: [
+          'Modify the environment',
+          'Check for a medical cause',
+          'Distract her with TV',
+          'Give her food immediately'
+        ],
+        correct: 1
+      },
+      {
+        q: 'Father gets agitated every evening at 6pm. What is most likely?',
+        options: [
+          'Hunger',
+          'Sundowning — an environmental/lighting trigger',
+          'A medical emergency',
+          'Boredom only'
+        ],
+        correct: 1
+      },
+      {
+        q: 'When a person with dementia refuses help, the BEST first response is to:',
+        options: [
+          'Insist firmly that they cooperate',
+          'Use simple, soothing language and validate emotions',
+          'Walk away and ignore them',
+          'Immediately call their doctor'
+        ],
+        correct: 1
+      }
+    ];
+
+    let quizAnswered = [];
+    let quizCorrect = 0;
+
+    function showQuiz() {
+      quizDiv.style.display = 'block';
+      renderQuiz();
+      quizDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function renderQuiz() {
+      const container = document.getElementById('quiz-questions');
+      container.innerHTML = '';
+      quizAnswered = new Array(QUIZ_QUESTIONS.length).fill(false);
+      quizCorrect = 0;
+      QUIZ_QUESTIONS.forEach((qd, qi) => {
+        const qDiv = document.createElement('div');
+        qDiv.className = 'question';
+        qDiv.innerHTML = `<p>${qi + 1}. ${qd.q}</p>`;
+        const opts = document.createElement('div');
+        opts.className = 'options';
+        qd.options.forEach((opt, oi) => {
+          const b = document.createElement('button');
+          b.textContent = String.fromCharCode(65 + oi) + ') ' + opt;
+          b.addEventListener('click', () => handleQuizAnswer(qi, oi, b, qDiv));
+          opts.appendChild(b);
+        });
+        qDiv.appendChild(opts);
+        const fb = document.createElement('div');
+        fb.className = 'feedback';
+        qDiv.appendChild(fb);
+        container.appendChild(qDiv);
+      });
+      document.getElementById('quiz-complete').style.display = 'none';
+    }
+
+    function handleQuizAnswer(qi, oi, btn, qDiv) {
+      if (quizAnswered[qi]) return;
+      const qd = QUIZ_QUESTIONS[qi];
+      const fb = qDiv.querySelector('.feedback');
+      if (oi === qd.correct) {
+        btn.classList.add('correct');
+        fb.textContent = 'Correct!';
+        fb.style.color = '#1b5e20';
+        quizAnswered[qi] = true;
+        quizCorrect++;
+        checkQuizComplete();
+      } else {
+        btn.classList.add('incorrect');
+        btn.disabled = true;
+        fb.textContent = 'Not quite — try another answer.';
+        fb.style.color = '#b71c1c';
+      }
+    }
+
+    function checkQuizComplete() {
+      if (quizCorrect === QUIZ_QUESTIONS.length) {
+        document.getElementById('quiz-complete').style.display = 'block';
+        if (window.Celebration && typeof window.Celebration.celebrate === 'function') {
+          window.Celebration.celebrate({ duration: 4000 });
+        }
+      }
+    }
+
+    document.getElementById('btn-start').addEventListener('click', () => {
+      reset();
+      renderStart();
+    });
+    document.getElementById('btn-example').addEventListener('click', runExample);
+    document.getElementById('btn-reset').addEventListener('click', () => {
+      reset();
+      renderStart();
+    });
+
+    renderStart();
+    renderLog();
+  </script>
 </body>
 </html>

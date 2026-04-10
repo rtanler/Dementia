@@ -1,85 +1,67 @@
 ---
 title: Beta-Amyloid Production and Aggregation
-description: Understand how beta-amyloid is produced from APP and how it aggregates into toxic forms (Bloom Level 2 - Understand)
-status: scaffold
-library: p5.js with step-through controls
+description: Interactive diagram tracing the seven stages of beta-amyloid production, from APP protein cleavage to mature amyloid plaques, with explanations of how each stage relates to Alzheimer's disease.
+status: implemented
+library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
+hide:
+  - toc
 ---
 
 # Beta-Amyloid Production and Aggregation
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+<iframe src="main.html" width="100%" height="750" style="border:1px solid #ccc; border-radius:8px;" scrolling="no" allowfullscreen></iframe>
+
+[Open full screen](main.html){:target="_blank"}
 
 ## Learning Objective
 
-Understand how beta-amyloid is produced from APP and how it aggregates into toxic forms (Bloom Level 2 - Understand)
+Understand how beta-amyloid is produced from APP and how it aggregates into
+toxic forms (Bloom Level 2 - Understand).
 
-- **Bloom Level:** Understand (L2)
-- **Bloom Verb:** Explain, describe
-- **Library:** p5.js with step-through controls
+## Overview
 
-## Preview
+Beta-amyloid is a small protein fragment that plays a central role in
+Alzheimer's disease. It starts out as part of a much larger, harmless protein
+called **Amyloid Precursor Protein (APP)**, which sits in the membranes of
+neurons. When APP is cut by two enzymes in just the wrong way, it releases a
+sticky peptide (Aβ42) that can clump together into oligomers, protofibrils,
+and finally into the large amyloid plaques that are a hallmark of Alzheimer's.
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+This interactive diagram walks through all seven stages of this process along a
+single neuron cell membrane, so you can see how a normal protein is transformed
+into a pathological plaque step by step.
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+## How to Use This Diagram
 
-## Specification
+**Explore Mode** — Hover over any numbered marker or label to see a description
+of that stage and how it connects to Alzheimer's disease.
 
-The full specification below is extracted from
-[Chapter 4: The Neuroscience of Neurodegeneration](../../chapters/04-neuroscience-neurodegeneration/index.md).
+**Quiz Mode** — Click "Quiz" to test your knowledge. Read the hint, then click
+the correct marker on the diagram. Your score is tracked, and a celebration
+plays when you answer all seven correctly.
 
-```text
-Type: microsim
+## The Seven Stages
 
-Learning Objective: Understand how beta-amyloid is produced from APP and how it aggregates into toxic forms (Bloom Level 2 - Understand)
-
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Explain, describe
-
-Instructional Rationale: Step-through demonstration is appropriate because understanding beta-amyloid production requires learners to trace the process with concrete visualization of protein cutting and aggregation. Allowing students to progress at their own pace helps them grasp how APP is cleaved and how beta-amyloid monomers aggregate into oligomers and plaques.
-
-Purpose: Demonstrate the step-by-step process of beta-amyloid production from APP and its aggregation into toxic structures
-
-Canvas Layout:
-- Main visualization area (700px): Shows the neuron membrane and beta-amyloid processing
-- Control panel (100px): Step controls and information display
-
-Data Visibility Requirements:
-Stage 1: Show APP protein embedded in neuron membrane (large protein spanning membrane)
-Stage 2: Show beta-secretase enzyme cutting APP at first site (arrow indicating cut location)
-Stage 3: Show gamma-secretase enzyme cutting at second site, releasing beta-amyloid fragment (Aβ42)
-Stage 4: Show single beta-amyloid monomer floating free
-Stage 5: Show 2-3 monomers beginning to stick together (oligomer formation)
-Stage 6: Show larger aggregates forming (protofibrils)
-Stage 7: Show mature amyloid plaque structure with many aggregated proteins
-
-Visual Elements:
-- APP protein shown as large molecule crossing cell membrane
-- Beta-secretase and gamma-secretase shown as scissors or cutting enzymes
-- Beta-amyloid monomers as small peptide chains
-- Oligomers as small clusters (2-10 monomers)
-- Plaques as large irregular deposits outside the cell
-- Color coding: APP (blue), enzymes (green), Aβ monomers (orange), aggregates (red)
-
-Interactive Controls:
-- "Next Step" button to advance through stages
-- "Previous Step" button to review earlier stages
-- "Reset" button to start over
-- Information panel showing current stage description
-- Counter showing "Stage X of 7"
-
-Annotations:
-- Label APP as "Amyloid Precursor Protein"
-- Label Aβ42 as "Beta-Amyloid (42 amino acids)"
-- Indicate "Extracellular space" vs "Inside neuron"
-- Show timeline: "Seconds" for cutting, "Hours to days" for aggregation, "Months to years" for plaque formation
-
-Implementation: p5.js with step-through controls
-Canvas size: 800x600px responsive design
-```
+1. **APP in the Membrane** (blue) — Amyloid Precursor Protein sits embedded in
+   the neuron's cell membrane, where it normally helps with neuron growth and
+   signaling.
+2. **Beta-Secretase Cut** (green) — The enzyme beta-secretase makes the first
+   cut in APP, starting the harmful pathway. This happens in seconds.
+3. **Gamma-Secretase Cut** (darker green) — A second enzyme cuts at the
+   membrane, releasing the small Aβ42 peptide fragment into the space between
+   neurons.
+4. **Free Aβ42 Monomers** (orange) — Single Aβ42 peptides drift freely in the
+   extracellular space. In a healthy brain, they are cleared away before
+   causing harm.
+5. **Oligomer Formation** (burnt orange) — When clearance fails, 2-10 monomers
+   stick together into small clusters called oligomers. These soluble clumps
+   are now thought to be the most toxic form of beta-amyloid.
+6. **Protofibrils** (red-orange) — Oligomers grow into longer, thread-like
+   aggregates over days to weeks.
+7. **Mature Amyloid Plaque** (dark red) — Over months to years, protofibrils
+   pile up into dense, insoluble plaques that disrupt communication between
+   neurons — the hallmark feature of Alzheimer's disease.
 
 ## Related Resources
 

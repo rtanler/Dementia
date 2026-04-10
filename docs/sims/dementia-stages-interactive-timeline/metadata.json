@@ -4,17 +4,20 @@
   "creator": "Dementia Education Project",
   "date": "2026-04-10",
   "subject": [
-    "dementia"
+    "dementia",
+    "disease progression",
+    "stages",
+    "cognitive decline"
   ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en-US",
   "rights": "CC BY 4.0",
   "identifier": "dementia-stages-interactive-timeline",
-  "library": "HTML/CSS/JavaScript with SVG or Canvas for drawing lines",
+  "library": "Chart.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "Analyze, examine, compare, differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "implemented",
   "chapter_number": 6,
   "chapter_title": "Progression Through Dementia Stages",
   "chapter_dir": "06-dementia-stages"

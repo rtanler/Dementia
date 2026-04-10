@@ -1,0 +1,107 @@
+{
+  "title": "Brain Regions Affected in Rare Tauopathies",
+  "orientation": "landscape",
+  "image": "tauopathies-brain-regions.png",
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Pick's: Frontal Cortex",
+      "x": 12,
+      "y": 25,
+      "radius": 5,
+      "color": "#E8663D",
+      "hint": "In the leftmost brain (Pick's disease), the orange-red region at the front of the brain.",
+      "description": "In Pick's disease, the frontal cortex undergoes severe atrophy. This part of the brain normally controls personality, judgment, planning, and behavior. When it shrinks, people experience personality changes, disinhibition (saying or doing things they would normally hold back), and loss of social judgment.",
+      "ap_tip": "Symptom link: Frontal cortex atrophy causes personality changes and disinhibition, often the earliest and most noticeable signs of Pick's disease."
+    },
+    {
+      "id": 2,
+      "label": "Pick's: Anterior Temporal Lobe",
+      "x": 22,
+      "y": 65,
+      "radius": 5,
+      "color": "#E8663D",
+      "hint": "In the leftmost brain, the orange-red region on the lower front side, near where the ear would be.",
+      "description": "The front part of the temporal lobe shrinks in Pick's disease. This region is important for understanding words and naming objects. Damage here causes primary progressive aphasia — a gradual loss of language — where people struggle to find words, name familiar items, or follow conversations.",
+      "ap_tip": "Symptom link: Anterior temporal atrophy causes language difficulties (aphasia), one of the hallmark features of the frontotemporal dementia spectrum."
+    },
+    {
+      "id": 3,
+      "label": "CBD: Motor Cortex",
+      "x": 50,
+      "y": 15,
+      "radius": 5,
+      "color": "#8E6FB8",
+      "hint": "In the middle brain (CBD), the purple region along the top toward the front.",
+      "description": "In corticobasal degeneration, the motor and sensory cortex along the top of the brain degenerates, often asymmetrically (one side more than the other). This region plans and controls voluntary movement. Damage causes limb apraxia — the inability to perform purposeful movements even when the muscles still work — and the unsettling 'alien limb' phenomenon where an arm moves on its own.",
+      "ap_tip": "Symptom link: Motor cortex degeneration causes limb apraxia and alien limb syndrome. Asymmetric onset is a key clue — symptoms usually start on one side of the body."
+    },
+    {
+      "id": 4,
+      "label": "CBD: Parietal Cortex",
+      "x": 54,
+      "y": 25,
+      "radius": 5,
+      "color": "#8E6FB8",
+      "hint": "In the middle brain, the purple region on the upper back part of the cerebrum.",
+      "description": "The parietal cortex is also affected in CBD. This region integrates sensory information and helps with spatial awareness and coordinating complex movements. Damage adds to apraxia and causes trouble with tasks like dressing, using tools, or recognizing objects by touch.",
+      "ap_tip": "Symptom link: Parietal involvement explains why CBD patients struggle with complex, learned motor tasks (ideomotor apraxia) even when strength is preserved."
+    },
+    {
+      "id": 5,
+      "label": "CBD: Basal Ganglia",
+      "x": 50,
+      "y": 50,
+      "radius": 5,
+      "color": "#8E6FB8",
+      "hint": "In the middle brain, the deeper purple shading in the center of the cerebrum.",
+      "description": "The basal ganglia are clusters of cells deep inside the brain that help fine-tune movement. When CBD damages them, the result is rigidity (stiff muscles) and bradykinesia (slow movement) that resembles Parkinson's disease but typically does not respond to Parkinson's medications.",
+      "ap_tip": "Symptom link: Basal ganglia damage in CBD causes rigidity and bradykinesia. Poor response to levodopa helps distinguish CBD from Parkinson's disease."
+    },
+    {
+      "id": 6,
+      "label": "PSP: Frontal Cortex",
+      "x": 78,
+      "y": 25,
+      "radius": 5,
+      "color": "#4E9A4E",
+      "hint": "In the rightmost brain (PSP), the lighter green region at the front of the brain.",
+      "description": "In progressive supranuclear palsy, the frontal lobes are affected more mildly than the midbrain, shown here in lighter green. This causes executive dysfunction — trouble planning, problem solving, and switching between tasks — along with apathy (loss of motivation and interest).",
+      "ap_tip": "Symptom link: Frontal involvement in PSP leads to executive dysfunction and apathy, which can be confused with depression early in the disease."
+    },
+    {
+      "id": 7,
+      "label": "PSP: Basal Ganglia",
+      "x": 83,
+      "y": 50,
+      "radius": 5,
+      "color": "#4E9A4E",
+      "hint": "In the rightmost brain, the green shading in the deeper center of the cerebrum.",
+      "description": "The basal ganglia degenerate in PSP just as they do in CBD, but the damage pattern is typically symmetric. This produces rigidity, slow movement (bradykinesia), and — very characteristically — frequent backward falls. Falls early in the disease are a major red flag for PSP.",
+      "ap_tip": "Symptom link: Basal ganglia damage in PSP causes rigidity, bradykinesia, and unexplained backward falls — one of the most specific clues to PSP."
+    },
+    {
+      "id": 8,
+      "label": "PSP: Midbrain",
+      "x": 80,
+      "y": 72,
+      "radius": 5,
+      "color": "#4E9A4E",
+      "hint": "In the rightmost brain, the darker green region at the top of the brainstem below the cerebrum.",
+      "description": "The midbrain — specifically structures near the superior colliculus — degenerates severely in PSP. These structures control vertical eye movements. Damage here produces the signature symptom of PSP: vertical gaze palsy, the inability to look up or down voluntarily. This finding often clinches the diagnosis.",
+      "ap_tip": "Symptom link: Midbrain atrophy causes vertical gaze palsy, the single most characteristic sign of PSP. On MRI, the shrunken midbrain creates the famous 'hummingbird sign.'"
+    },
+    {
+      "id": 9,
+      "label": "Symptom Pattern Comparison",
+      "x": 50,
+      "y": 92,
+      "radius": 5,
+      "color": "#444444",
+      "hint": "The overall comparison between all three diseases.",
+      "description": "All three of these rare dementias are tauopathies — diseases caused by abnormal tau protein clumping in brain cells. But the regional pattern differs: Pick's damages the front of the brain (personality + language), CBD damages motor cortex and basal ganglia asymmetrically (alien limb + rigidity), and PSP damages the midbrain and basal ganglia (vertical gaze palsy + falls). Matching the pattern of damage to the symptoms is how doctors tell them apart.",
+      "ap_tip": "Big picture: Brain region affected → symptom pattern → diagnosis. This 'where damage happens' framework is the key to understanding all neurodegenerative diseases."
+    }
+  ],
+  "layout": "side-panel"
+}

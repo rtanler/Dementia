@@ -1,97 +1,55 @@
 ---
 title: Protein Aggregation Comparison
 description: Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze)
-status: scaffold
-library: HTML/CSS/JavaScript with interactive toggles and hover states
+status: implemented
+library: Custom HTML/CSS/JavaScript with SVG
 bloom_level: Analyze (L4)
 ---
 
 # Protein Aggregation Comparison
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
-
 ## Learning Objective
 
-Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze)
+Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze).
 
 - **Bloom Level:** Analyze (L4)
 - **Bloom Verb:** Compare, contrast, distinguish, differentiate
-- **Library:** HTML/CSS/JavaScript with interactive toggles and hover states
+- **Library:** Custom HTML/CSS/JavaScript with SVG
 
 ## Preview
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="750" style="border:1px solid #dee2e6; border-radius:6px;"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
-## Specification
+## Overview
 
-The full specification below is extracted from
-[Chapter 4: The Neuroscience of Neurodegeneration](../../chapters/04-neuroscience-neurodegeneration/index.md).
+This three-column interactive infographic compares the three major
+pathological proteins in dementia: beta-amyloid, tau, and alpha-synuclein.
+Each column uses an abstract SVG icon and color-coded card
+(orange/red for beta-amyloid, purple/violet for tau, and green/teal for
+alpha-synuclein) so learners can tell the proteins apart at a glance.
 
-```text
-Type: infographic
+### What Each Column Shows
 
-Learning Objective: Analyze the similarities and differences between beta-amyloid, tau, and alpha-synuclein aggregation (Bloom Level 4 - Analyze)
+| Row | Beta-Amyloid | Tau | Alpha-Synuclein |
+|---|---|---|---|
+| Normal function | Possible role in synaptic plasticity | Stabilizes microtubules, axonal transport | Regulates synaptic vesicle release |
+| Misfolded form | Oligomers and fibrils | Hyperphosphorylated paired helical filaments | Fibrils aggregating into Lewy bodies |
+| Location | Extracellular plaques | Intracellular neurofibrillary tangles | Intracellular Lewy bodies and Lewy neurites |
+| Diseases | Alzheimer's, Down syndrome dementia | Alzheimer's, Pick's, PSP, CBD | Lewy body dementia, Parkinson's |
+| Spread pattern | Does not spread neuron-to-neuron | Spreads along neural networks | Spreads through connected regions |
 
-Bloom Taxonomy Level: Analyze (L4)
-Bloom Verb: Compare, contrast, distinguish, differentiate
+### How to Use
 
-Purpose: Enable students to compare and contrast the three major pathological proteins in dementia by examining their normal functions, aggregation patterns, and disease associations
-
-Layout: Three-column comparison with interactive elements
-
-Column 1 - Beta-Amyloid:
-- Top: Icon of plaque between neurons
-- Normal function: "Uncertain—may play role in synaptic function and plasticity"
-- Misfolded form: "Aggregates into oligomers and fibrils"
-- Location of deposits: "Extracellular plaques between neurons"
-- Associated diseases: "Alzheimer's disease, Down syndrome dementia"
-- Spread pattern: "Does not appear to spread neuron-to-neuron"
-- Color coding: Orange/red
-
-Column 2 - Tau:
-- Top: Icon of tangle inside neuron
-- Normal function: "Stabilizes microtubules, enables axonal transport"
-- Misfolded form: "Hyperphosphorylated, forms paired helical filaments"
-- Location of deposits: "Intracellular neurofibrillary tangles"
-- Associated diseases: "Alzheimer's, Pick's, PSP, CBD, and other tauopathies"
-- Spread pattern: "Spreads through neural networks in predictable pattern"
-- Color coding: Purple/violet
-
-Column 3 - Alpha-Synuclein:
-- Top: Icon of Lewy body inside neuron
-- Normal function: "Regulates synaptic vesicle release and recycling"
-- Misfolded form: "Forms fibrils that aggregate into Lewy bodies"
-- Location of deposits: "Intracellular Lewy bodies and Lewy neurites"
-- Associated diseases: "Lewy body dementia, Parkinson's disease"
-- Spread pattern: "Appears to spread through connected brain regions"
-- Color coding: Green/teal
-
-Interactive Elements:
-- Hover over any protein name to highlight that column
-- Click "Normal vs. Abnormal" toggle to switch between showing normal protein function and pathological aggregation
-- Click on disease names to see which brain regions are primarily affected
-- Hover over "Spread pattern" to see animated diagram of how pathology spreads
-- Click "Show Commonalities" button to highlight shared features across all three proteins
-
-Bottom Summary Panel (expandable):
-"What all three proteins have in common:"
-- All are normally present in healthy brains
-- All undergo conformational change (misfolding)
-- All form aggregates that are toxic to neurons
-- All resist normal cellular clearance mechanisms
-- All accumulate progressively over years
-- All are targets for experimental therapies
-
-Visual Style: Modern scientific infographic with consistent iconography
-Responsive Design: Columns stack vertically on narrow screens
-
-Implementation: HTML/CSS/JavaScript with interactive toggles and hover states
-Canvas size: 1000x650px, fully responsive to window resize
-```
+- **Toggle view:** Click "Normal Function" or "Pathological Aggregation"
+  to highlight the relevant rows across all three protein columns.
+- **Show Commonalities:** Expand the panel to see the six features all
+  three proteins share, from misfolding to resistance against cellular
+  clearance.
+- **Check Your Understanding:** Answer five multiple-choice questions and
+  submit to see immediate feedback. Getting all five correct triggers a
+  celebration animation.
 
 ## Related Resources
 

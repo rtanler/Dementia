@@ -3,180 +3,595 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Executive Function in Daily Life</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            background: #f1f4f9;
+            color: #1f2d3d;
+            line-height: 1.5;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
+        main {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
-            background: white;
+            padding: 16px;
         }
-        h1 {
+        .title-bar {
+            background: linear-gradient(135deg, #1a3a6c, #2f6fb5);
+            color: #fff;
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .title-bar h1 {
             font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
+            margin-bottom: 4px;
         }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
+        .title-bar p {
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .controls {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
             align-items: center;
+            margin-bottom: 16px;
         }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
+        .mode-toggle {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 12px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
         }
-        .placeholder h2 {
-            font-size: 18px;
+        .mode-toggle:hover { transform: translateY(-1px); }
+        .mode-toggle.dementia {
+            background: #c0392b;
+        }
+        .mode-label {
+            font-size: 14px;
             color: #495057;
+            font-weight: 500;
+        }
+        .scenario {
+            background: #fff;
+            border-left: 4px solid #f1c40f;
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: #495057;
+        }
+        .workflow {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            overflow-x: auto;
+            padding: 8px 4px 18px 4px;
+            margin-bottom: 16px;
+        }
+        .stage-card {
+            flex: 1 1 0;
+            min-width: 140px;
+            background: #fff;
+            border: 2px solid #d6e2ef;
+            border-radius: 10px;
+            padding: 14px 10px;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .stage-card:hover {
+            border-color: #2f6fb5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(47,111,181,0.18);
+        }
+        .stage-card.active {
+            border-color: #1a3a6c;
+            background: #eaf2fb;
+            box-shadow: 0 4px 14px rgba(26,58,108,0.25);
+        }
+        .stage-card.normal-mode {
+            border-top: 6px solid #f1c40f;
+        }
+        .stage-card.dementia-mode {
+            border-top: 6px solid #c0392b;
+            background: #fdecea;
+        }
+        .stage-card.dementia-mode.active {
+            background: #fbd4cf;
+        }
+        .stage-icon {
+            font-size: 34px;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .stage-number {
+            display: inline-block;
+            background: #2f6fb5;
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .stage-card.dementia-mode .stage-number {
+            background: #c0392b;
+        }
+        .stage-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1f2d3d;
+        }
+        .stage-arrow {
+            flex: 0 0 auto;
+            align-self: center;
+            color: #2f6fb5;
+            font-size: 22px;
+            font-weight: bold;
+            user-select: none;
+        }
+        .detail-panel {
+            background: #fff;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 18px;
+            min-height: 120px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            border-left: 5px solid #2f6fb5;
+        }
+        .detail-panel.dementia {
+            border-left-color: #c0392b;
+        }
+        .detail-panel h2 {
+            font-size: 18px;
+            color: #1a3a6c;
             margin-bottom: 8px;
         }
-        .placeholder p {
+        .detail-panel.dementia h2 {
+            color: #c0392b;
+        }
+        .detail-panel p {
+            margin-bottom: 8px;
             font-size: 14px;
-            max-width: 480px;
         }
-        .meta {
-            margin-top: 20px;
+        .detail-panel ul {
+            margin: 6px 0 10px 22px;
+            font-size: 14px;
+        }
+        .detail-panel .ef-used {
+            background: #eaf2fb;
+            padding: 8px 12px;
+            border-radius: 6px;
             font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
+            color: #1a3a6c;
+            margin-top: 8px;
         }
-        .meta strong { color: #495057; }
+        .detail-panel .impact-box {
+            background: #fdecea;
+            border-left: 3px solid #c0392b;
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #7a1f15;
+        }
+        .detail-panel .impact-box strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #c0392b;
+        }
+        .quiz-section {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            margin-bottom: 18px;
+        }
+        .quiz-section h2 {
+            font-size: 20px;
+            color: #1a3a6c;
+            margin-bottom: 6px;
+        }
+        .quiz-section > p {
+            font-size: 14px;
+            color: #495057;
+            margin-bottom: 14px;
+        }
+        .quiz-question {
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .quiz-question:last-child { border-bottom: none; }
+        .quiz-question p {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .quiz-option {
+            display: block;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            padding: 8px 12px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.15s;
+        }
+        .quiz-option:hover { background: #eaf2fb; border-color: #2f6fb5; }
+        .quiz-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+            font-weight: 600;
+        }
+        .quiz-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        .quiz-option.disabled {
+            pointer-events: none;
+            opacity: 0.85;
+        }
+        .quiz-feedback {
+            margin-top: 8px;
+            font-size: 13px;
+            font-style: italic;
+            color: #495057;
+            min-height: 18px;
+        }
+        .quiz-score {
+            margin-top: 10px;
+            padding: 12px;
+            background: #eaf2fb;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            color: #1a3a6c;
+            display: none;
+        }
+        .quiz-score.show { display: block; }
+        .quiz-reset {
+            background: #6c757d;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 13px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .quiz-reset:hover { background: #5a6268; }
+
+        /* Responsive - stack vertically on narrow screens */
+        @media (max-width: 760px) {
+            .workflow {
+                flex-direction: column;
+                overflow-x: visible;
+            }
+            .stage-card {
+                min-width: 100%;
+            }
+            .stage-arrow {
+                transform: rotate(90deg);
+                text-align: center;
+                padding: 4px 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="container">
+<main>
+    <div class="title-bar">
         <h1>Executive Function in Daily Life</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> executive-function-in-daily-life</p>
-            <p><strong>Library:</strong> HTML/CSS/JavaScript with interactive hover states</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Understand how executive function coordinates multiple cognitive processes to complete everyday tasks (Bloom Level 2 - Understand)</p>
-        </div>
+        <p>How a simple breakfast requires six coordinated thinking skills</p>
     </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <div class="controls">
+        <button id="modeToggle" class="mode-toggle">Switch to Impact of Dementia</button>
+        <span id="modeLabel" class="mode-label">Current: Normal Mode</span>
+    </div>
 
-    Type: infographic
-    
-    Learning Objective: Understand how executive function coordinates multiple cognitive processes to complete everyday tasks (Bloom Level 2 - Understand)
-    
-    Bloom Taxonomy Level: Understand (L2)
-    Bloom Verb: Explain, identify
-    
-    Purpose: Show how a simple daily task (making breakfast) actually requires complex executive function coordination
-    
-    Layout: Horizontal workflow showing the task broken down into executive function components
-    
-    Example Task: "Making breakfast - scrambled eggs and toast"
-    
-    Workflow Stages:
-    1. Goal Setting
-       Icon: Target/bullseye
-       Display: "I want to make scrambled eggs and toast for breakfast"
-       Executive functions used: Planning, decision-making
-    
-    2. Planning
-       Icon: Calendar/checklist
-       Display steps needed:
-         - Get ingredients from refrigerator
-         - Heat pan on stove
-         - Crack eggs, whisk
-         - Make toast
-         - Cook eggs
-         - Plate food
-       Executive functions used: Sequencing, organizing
-    
-    3. Time Management
-       Icon: Clock
-       Display timeline:
-         - Total estimated time: 10 minutes
-         - Toast: 3 minutes
-         - Eggs: 5 minutes
-         - Parallel processing: Start toast, then eggs
-       Executive functions used: Time estimation, prioritizing
-    
-    4. Working Memory
-       Icon: Brain with active connections
-       Display information held in mind:
-         - Where is the butter? (refrigerator)
-         - How many eggs? (2)
-         - What heat setting? (medium)
-         - Toast darkness? (medium-brown)
-       Executive functions used: Holding multiple pieces of information
-    
-    5. Flexible Thinking
-       Icon: Branching paths
-       Display problem-solving:
-         - Problem: Out of butter
-         - Solution: Use cooking spray instead
-         - Adaptation: Adjust cooking method
-       Executive functions used: Problem-solving, adapting
-    
-    6. Self-Monitoring
-       Icon: Magnifying glass over checklist
-       Display quality checks:
-         - Are eggs cooking too fast? → Reduce heat
-         - Is toast burning? → Check progress
-         - Is everything ready together? → Timing adjustment
-       Executive functions used: Monitoring, adjusting
-    
-    Interactive Features:
-    - Hover over each stage to see detailed description
-    - Click on stage to expand and show specific executive functions in action
-    - Toggle "Impact of Dementia" mode showing how executive function problems affect each stage:
-      - Goal setting: Difficulty deciding what to eat
-      - Planning: Forgetting steps or doing them out of order
-      - Time management: Starting toast and eggs at wrong times
-      - Working memory: Forgetting where items are mid-task
-      - Flexible thinking: Becoming frustrated when plans change
-      - Self-monitoring: Not noticing when food is burning
-    
-    Color Coding:
-    - Green: Completed successfully
-    - Yellow: Requires active executive function
-    - Red (in dementia mode): Executive function breakdown
-    
-    Visual Style: Clean, modern infographic with icons and connecting arrows
-    Flow direction: Left to right
-    Background: Light gray with white cards for each stage
-    
-    Responsive Design:
-    - Stacks vertically on narrow screens
-    - Maintains readability at all sizes
-    - Icons scale proportionally
-    
-    Implementation: HTML/CSS/JavaScript with interactive hover states
-    Canvas size: 100% width, 500px height
-    -->
+    <div class="scenario">
+        <strong>Task:</strong> Making breakfast &mdash; scrambled eggs and toast.
+        Click any stage below to learn about the executive functions involved.
+    </div>
+
+    <div id="workflow" class="workflow"></div>
+
+    <div id="detailPanel" class="detail-panel">
+        <h2>Click a stage above</h2>
+        <p>Each card represents an executive function skill needed to complete this everyday task. Toggle the mode button to see how dementia can affect each step.</p>
+    </div>
+
+    <div class="quiz-section">
+        <h2>Check Your Understanding</h2>
+        <p>Match each difficulty to the correct executive function. Answer all four correctly to celebrate.</p>
+        <div id="quizContainer"></div>
+        <div id="quizScore" class="quiz-score"></div>
+        <button id="quizReset" class="quiz-reset">Reset Quiz</button>
+    </div>
+</main>
+
+<script src="../shared-libs/celebration.js"></script>
+<script>
+(function() {
+    const stages = [
+        {
+            id: 'goal',
+            number: 1,
+            icon: '🎯',
+            title: 'Goal Setting',
+            description: '"I want to make scrambled eggs and toast for breakfast."',
+            details: 'Deciding what to eat requires identifying a goal and committing to it. Without a clear goal, none of the following steps can happen.',
+            ef: 'Planning, decision-making',
+            impact: 'A person with dementia may have difficulty deciding what to eat. They may open the refrigerator, forget why, or struggle to choose between options, leaving the task stalled before it begins.'
+        },
+        {
+            id: 'planning',
+            number: 2,
+            icon: '📋',
+            title: 'Planning',
+            description: 'Breaking the task into an ordered sequence of steps.',
+            details: 'The steps needed:',
+            list: [
+                'Get ingredients from refrigerator',
+                'Heat pan on stove',
+                'Crack eggs and whisk',
+                'Make toast',
+                'Cook eggs',
+                'Plate food'
+            ],
+            ef: 'Sequencing, organizing',
+            impact: 'A person with dementia may forget steps, skip steps, or perform them out of order &mdash; such as putting bread in a cold pan, or trying to crack eggs without taking them out of the carton first.'
+        },
+        {
+            id: 'time',
+            number: 3,
+            icon: '⏰',
+            title: 'Time Management',
+            description: 'Estimating how long each step takes and running steps in parallel.',
+            details: 'The timeline:',
+            list: [
+                'Total estimated time: 10 minutes',
+                'Toast: 3 minutes',
+                'Eggs: 5 minutes',
+                'Parallel processing: start toast first, then eggs'
+            ],
+            ef: 'Time estimation, prioritizing',
+            impact: 'A person with dementia may start the toast and eggs at the wrong times, so that one burns while the other is still cold. They may also lose track of how long something has been cooking.'
+        },
+        {
+            id: 'memory',
+            number: 4,
+            icon: '🧠',
+            title: 'Working Memory',
+            description: 'Holding several pieces of information in mind at once.',
+            details: 'Information held while cooking:',
+            list: [
+                'Where is the butter? (refrigerator)',
+                'How many eggs? (2)',
+                'What heat setting? (medium)',
+                'Toast darkness? (medium-brown)'
+            ],
+            ef: 'Holding multiple pieces of information active',
+            impact: 'A person with dementia may forget where the butter is mid-task, forget how many eggs they already cracked, or walk to the fridge and forget what they went for. Working memory problems are one of the earliest signs.'
+        },
+        {
+            id: 'flex',
+            number: 5,
+            icon: '🔄',
+            title: 'Flexible Thinking',
+            description: 'Adapting when something does not go as planned.',
+            details: 'Example problem and solution:',
+            list: [
+                'Problem: Out of butter',
+                'Solution: Use cooking spray instead',
+                'Adaptation: Adjust cooking method slightly'
+            ],
+            ef: 'Problem-solving, adapting, shifting plans',
+            impact: 'A person with dementia may become frustrated or upset when a recipe needs to change. Switching from butter to cooking spray may feel impossible, leading them to abandon the task entirely.'
+        },
+        {
+            id: 'monitor',
+            number: 6,
+            icon: '🔍',
+            title: 'Self-Monitoring',
+            description: 'Watching your own progress and adjusting as you go.',
+            details: 'Quality checks while cooking:',
+            list: [
+                'Are the eggs cooking too fast? &rarr; Reduce heat',
+                'Is the toast burning? &rarr; Check progress',
+                'Is everything ready together? &rarr; Timing adjustment'
+            ],
+            ef: 'Monitoring, adjusting, error detection',
+            impact: 'A person with dementia may not notice when food is burning, when the stove is still on, or when something has gone wrong. Loss of self-monitoring can create safety hazards in the kitchen.'
+        }
+    ];
+
+    let dementiaMode = false;
+    let activeStage = null;
+
+    const workflowEl = document.getElementById('workflow');
+    const detailEl = document.getElementById('detailPanel');
+    const modeBtn = document.getElementById('modeToggle');
+    const modeLabel = document.getElementById('modeLabel');
+
+    function renderWorkflow() {
+        workflowEl.innerHTML = '';
+        stages.forEach((stage, idx) => {
+            const card = document.createElement('div');
+            card.className = 'stage-card ' + (dementiaMode ? 'dementia-mode' : 'normal-mode');
+            if (activeStage === stage.id) card.classList.add('active');
+            card.innerHTML =
+                '<span class="stage-number">' + stage.number + '</span>' +
+                '<span class="stage-icon">' + stage.icon + '</span>' +
+                '<div class="stage-title">' + stage.title + '</div>';
+            card.addEventListener('click', () => {
+                activeStage = stage.id;
+                renderWorkflow();
+                renderDetail(stage);
+            });
+            workflowEl.appendChild(card);
+
+            if (idx < stages.length - 1) {
+                const arrow = document.createElement('div');
+                arrow.className = 'stage-arrow';
+                arrow.innerHTML = '&rarr;';
+                workflowEl.appendChild(arrow);
+            }
+        });
+    }
+
+    function renderDetail(stage) {
+        let html = '<h2>' + stage.number + '. ' + stage.title + ' ' + stage.icon + '</h2>';
+        html += '<p>' + stage.description + '</p>';
+        if (stage.details) html += '<p>' + stage.details + '</p>';
+        if (stage.list) {
+            html += '<ul>';
+            stage.list.forEach(item => { html += '<li>' + item + '</li>'; });
+            html += '</ul>';
+        }
+        html += '<div class="ef-used"><strong>Executive functions used:</strong> ' + stage.ef + '</div>';
+        if (dementiaMode) {
+            html += '<div class="impact-box"><strong>Impact of Dementia:</strong>' + stage.impact + '</div>';
+            detailEl.classList.add('dementia');
+        } else {
+            detailEl.classList.remove('dementia');
+        }
+        detailEl.innerHTML = html;
+    }
+
+    modeBtn.addEventListener('click', () => {
+        dementiaMode = !dementiaMode;
+        if (dementiaMode) {
+            modeBtn.textContent = 'Switch to Normal Mode';
+            modeBtn.classList.add('dementia');
+            modeLabel.textContent = 'Current: Impact of Dementia';
+        } else {
+            modeBtn.textContent = 'Switch to Impact of Dementia';
+            modeBtn.classList.remove('dementia');
+            modeLabel.textContent = 'Current: Normal Mode';
+        }
+        renderWorkflow();
+        if (activeStage) {
+            const s = stages.find(x => x.id === activeStage);
+            if (s) renderDetail(s);
+        }
+    });
+
+    // Quiz
+    const quizQuestions = [
+        {
+            q: 'Forgetting where you put items mid-task is a problem with...',
+            options: ['Goal Setting', 'Working Memory', 'Flexible Thinking', 'Time Management'],
+            answer: 1,
+            explanation: 'Working memory holds information active (like where you set down the butter) while you continue with a task.'
+        },
+        {
+            q: 'Doing steps in the wrong order in a familiar recipe is a problem with...',
+            options: ['Self-Monitoring', 'Working Memory', 'Planning / Sequencing', 'Goal Setting'],
+            answer: 2,
+            explanation: 'Planning and sequencing break a task into an ordered set of steps. Skipping or reordering steps signals a breakdown here.'
+        },
+        {
+            q: 'Not noticing when food is burning is a problem with...',
+            options: ['Self-Monitoring', 'Goal Setting', 'Flexible Thinking', 'Planning'],
+            answer: 0,
+            explanation: 'Self-monitoring is watching your own progress and detecting errors. Missing obvious cues like smoke or smell points to this skill.'
+        },
+        {
+            q: 'Becoming frustrated when a recipe needs adapting is a problem with...',
+            options: ['Working Memory', 'Time Management', 'Flexible Thinking', 'Self-Monitoring'],
+            answer: 2,
+            explanation: 'Flexible thinking lets us shift plans when circumstances change. Difficulty adapting often shows up as frustration or giving up.'
+        }
+    ];
+
+    const quizContainer = document.getElementById('quizContainer');
+    const quizScoreEl = document.getElementById('quizScore');
+    const quizResetBtn = document.getElementById('quizReset');
+    const quizState = quizQuestions.map(() => ({ answered: false, correct: false }));
+
+    function renderQuiz() {
+        quizContainer.innerHTML = '';
+        quizQuestions.forEach((qq, qi) => {
+            const block = document.createElement('div');
+            block.className = 'quiz-question';
+            let html = '<p>' + (qi + 1) + '. ' + qq.q + '</p>';
+            qq.options.forEach((opt, oi) => {
+                html += '<label class="quiz-option" data-q="' + qi + '" data-o="' + oi + '">' + opt + '</label>';
+            });
+            html += '<div class="quiz-feedback" id="feedback-' + qi + '"></div>';
+            block.innerHTML = html;
+            quizContainer.appendChild(block);
+        });
+
+        quizContainer.querySelectorAll('.quiz-option').forEach(el => {
+            el.addEventListener('click', onOptionClick);
+        });
+        quizScoreEl.classList.remove('show');
+        quizScoreEl.textContent = '';
+    }
+
+    function onOptionClick(e) {
+        const qi = parseInt(e.currentTarget.getAttribute('data-q'), 10);
+        const oi = parseInt(e.currentTarget.getAttribute('data-o'), 10);
+        if (quizState[qi].answered) return;
+        const qq = quizQuestions[qi];
+        const options = quizContainer.querySelectorAll('.quiz-option[data-q="' + qi + '"]');
+        options.forEach(op => op.classList.add('disabled'));
+
+        const feedback = document.getElementById('feedback-' + qi);
+        if (oi === qq.answer) {
+            e.currentTarget.classList.add('correct');
+            feedback.textContent = 'Correct. ' + qq.explanation;
+            quizState[qi].correct = true;
+        } else {
+            e.currentTarget.classList.add('incorrect');
+            options[qq.answer].classList.add('correct');
+            feedback.textContent = 'Not quite. ' + qq.explanation;
+        }
+        quizState[qi].answered = true;
+        checkQuizComplete();
+    }
+
+    function checkQuizComplete() {
+        if (quizState.every(s => s.answered)) {
+            const score = quizState.filter(s => s.correct).length;
+            quizScoreEl.textContent = 'You scored ' + score + ' out of ' + quizQuestions.length + '.';
+            quizScoreEl.classList.add('show');
+            if (score === quizQuestions.length && window.Celebration) {
+                window.Celebration.celebrate({ duration: 4000 });
+            }
+        }
+    }
+
+    quizResetBtn.addEventListener('click', () => {
+        quizState.forEach(s => { s.answered = false; s.correct = false; });
+        renderQuiz();
+    });
+
+    // Initial render
+    renderWorkflow();
+    renderQuiz();
+})();
+</script>
 </body>
 </html>

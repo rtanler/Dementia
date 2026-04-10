@@ -1,85 +1,68 @@
 ---
 title: Healthy Tau vs. Abnormal Tau
-description: Compare the structure and function of normal tau protein versus hyperphosphorylated tau in Alzheimer's disease (Bloom Level 2 - Understand)
-status: scaffold
-library: HTML/CSS/JavaScript with SVG graphics for neuron illustrations
+description: Interactive side-by-side comparison of normal tau protein stabilizing microtubules in a healthy neuron versus hyperphosphorylated tau forming neurofibrillary tangles in Alzheimer's disease.
+status: implemented
+library: Interactive Infographic Overlay (diagram.js)
 bloom_level: Understand (L2)
+hide:
+  - toc
 ---
 
 # Healthy Tau vs. Abnormal Tau
 
-!!! warning "Scaffold"
-    This MicroSim has been scaffolded from its specification. The interactive
-    implementation has not been built yet.
+<iframe src="main.html" width="100%" height="750" style="border:1px solid #ccc; border-radius:8px;" scrolling="no" allowfullscreen></iframe>
+
+[Open full screen](main.html){:target="_blank"}
 
 ## Learning Objective
 
-Compare the structure and function of normal tau protein versus hyperphosphorylated tau in Alzheimer's disease (Bloom Level 2 - Understand)
+Compare the structure and function of normal tau protein versus
+hyperphosphorylated tau in Alzheimer's disease (Bloom Level 2 - Understand).
 
-- **Bloom Level:** Understand (L2)
-- **Bloom Verb:** Compare, contrast, differentiate
-- **Library:** HTML/CSS/JavaScript with SVG graphics for neuron illustrations
+## Overview
 
-## Preview
+Tau is a small protein that normally keeps a neuron's internal transport
+system running. It binds to microtubules — the hollow tube-shaped "rails"
+that carry cargo up and down the axon — and holds them in stable parallel
+bundles. In Alzheimer's disease tau becomes chemically modified and lets go
+of the microtubules. The rails fall apart, the loose tau clumps together
+into neurofibrillary tangles, and the neuron slowly starves and dies.
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+This diagram lets you compare a healthy neuron (left) and a diseased neuron
+(right) side by side so you can see what goes wrong at the molecular level.
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+## How to Use This Diagram
 
-## Specification
+**Explore Mode** — Hover over any numbered marker or label to read about
+that structure. Compare corresponding parts across the two panels: blue
+microtubules to broken microtubules, green tau to orange tau, healthy
+vesicles to stranded vesicles.
 
-The full specification below is extracted from
-[Chapter 4: The Neuroscience of Neurodegeneration](../../chapters/04-neuroscience-neurodegeneration/index.md).
+**Quiz Mode** — Click "Quiz" to test your knowledge. Read the hint, then
+click the correct marker on the diagram. Your score is tracked and a
+celebration plays when you answer all eight correctly.
 
-```text
-Type: infographic
+## Comparison Table
 
-Learning Objective: Compare the structure and function of normal tau protein versus hyperphosphorylated tau in Alzheimer's disease (Bloom Level 2 - Understand)
+| Feature   | Normal Tau              | Hyperphosphorylated Tau         |
+|-----------|-------------------------|---------------------------------|
+| Location  | Bound to microtubules   | Detached, floating in cytoplasm |
+| Structure | Extended, flexible      | Misfolded, aggregated           |
+| Function  | Stabilizes transport    | Disrupts transport              |
+| Effect    | Neuron health           | Neuron dysfunction and death    |
 
-Bloom Taxonomy Level: Understand (L2)
-Bloom Verb: Compare, contrast, differentiate
+## Key Points
 
-Purpose: Show the structural and functional differences between normal tau and pathological tau through an interactive side-by-side comparison
-
-Layout: Split-screen comparison with left side showing healthy neuron, right side showing diseased neuron
-
-Left Panel - Healthy Neuron:
-- Intact microtubules shown as parallel railroad tracks running length of axon
-- Tau proteins shown as small cross-ties binding to microtubules at regular intervals
-- Transport vesicles moving smoothly along microtubules
-- Color: Microtubules (blue), Tau (green), vesicles (yellow)
-- Label: "Normal Tau Stabilizes Microtubules"
-
-Right Panel - Diseased Neuron:
-- Fragmented, disorganized microtubules falling apart
-- Hyperphosphorylated tau detached and clumping together
-- Neurofibrillary tangles forming inside cell body
-- Blocked transport with vesicles unable to move
-- Color: Microtubules (faded blue, broken), abnormal tau (orange), tangles (dark red)
-- Label: "Hyperphosphorylated Tau Forms Tangles"
-
-Interactive Elements:
-- Hover over normal tau to see popup: "Tau binds to tubulin, stabilizing microtubule structure and enabling axonal transport"
-- Hover over abnormal tau to see popup: "Hyperphosphorylated tau detaches from microtubules and aggregates into paired helical filaments"
-- Hover over microtubules (left) to see: "Stable structure allows bidirectional transport of organelles and proteins"
-- Hover over broken microtubules (right) to see: "Microtubule disintegration disrupts axonal transport, starving synapses of essential materials"
-- Hover over tangles to see: "Neurofibrillary tangles are composed of paired helical filaments of hyperphosphorylated tau"
-- Click "Show Phosphorylation" button to highlight phosphate groups attached to tau molecules
-
-Bottom Comparison Table (always visible):
-| Feature | Normal Tau | Hyperphosphorylated Tau |
-|---------|-----------|------------------------|
-| Location | Bound to microtubules | Detached, in cytoplasm |
-| Structure | Extended, flexible | Misfolded, aggregated |
-| Function | Stabilizes transport | Disrupts transport |
-| Effect | Neuron health | Neuron dysfunction/death |
-
-Visual Style: Clean scientific illustration with clear labels and color coding
-Responsive Design: Layout adapts to window width; switches to stacked layout on narrow screens
-
-Implementation: HTML/CSS/JavaScript with SVG graphics for neuron illustrations
-Canvas size: 900x550px, fully responsive
-```
+- **Normal tau** acts like railroad cross-ties, holding the microtubule
+  rails together so vesicles can be transported smoothly along the axon.
+- **Hyperphosphorylated tau** has extra phosphate groups attached that
+  change its shape, causing it to detach from microtubules.
+- **Microtubules break** when tau lets go, disrupting the neuron's
+  internal transport system.
+- **Neurofibrillary tangles** form when detached tau clumps into twisted
+  filaments inside the cell body — a hallmark of Alzheimer's disease.
+- **Synapses starve** because transport vesicles can no longer reach
+  them, eventually causing the neuron to die.
 
 ## Related Resources
 
