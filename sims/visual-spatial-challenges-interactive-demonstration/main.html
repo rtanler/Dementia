@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Visual-Spatial Challenges Interactive Demonstration</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -10,155 +11,1193 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f8f9fa;
             color: #212529;
+            padding: 16px;
         }
-        #container {
+        main {
             width: 100%;
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
             background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 24px;
         }
         h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
+            font-size: 24px;
             color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
+            margin-bottom: 6px;
             text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
+        .subtitle {
+            font-size: 14px;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .scenario-picker {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+        .scenario-picker button {
+            padding: 10px 14px;
+            font-size: 14px;
             font-weight: 600;
+            background: #eef4fb;
+            color: #1a3a6c;
+            border: 2px solid #dbe4f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .scenario-picker button:hover { background: #dbe4f0; }
+        .scenario-picker button.active {
+            background: #1a3a6c;
+            color: white;
+            border-color: #1a3a6c;
+        }
+        .scenario-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a3a6c;
+            margin-bottom: 4px;
+        }
+        .scenario-task {
+            font-size: 14px;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding: 10px 14px;
+            background: #fff8e6;
+            border-left: 4px solid #f2b705;
+            border-radius: 6px;
+        }
+        .stage {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: #fdfdfd;
+            border: 2px solid #dbe4f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 14px;
+        }
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .btn {
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+            color: white;
+            background: #1a3a6c;
+        }
+        .btn:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,0.15); }
+        .btn.toggle { background: #e8832c; }
+        .btn.toggle.on { background: #2e9e5d; }
+        .btn.secondary { background: #4a90d9; }
+        .slider-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #1a3a6c;
+            font-weight: 600;
+        }
+        .slider-group input[type=range] { width: 180px; }
+        .status {
+            font-size: 14px;
+            color: #1a3a6c;
+            font-weight: 600;
+            padding: 8px 12px;
+            background: #eef4fb;
+            border-radius: 6px;
+            display: inline-block;
+        }
+        .learn-more {
+            background: #eef4fb;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 18px;
+            border-left: 5px solid #4a90d9;
+        }
+        .learn-more summary {
+            font-weight: 700;
+            color: #1a3a6c;
+            font-size: 15px;
+            cursor: pointer;
+            outline: none;
+        }
+        .learn-more[open] summary { margin-bottom: 10px; }
+        .learn-more h4 {
+            color: #1a3a6c;
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+        .learn-more p, .learn-more li {
+            font-size: 13.5px;
+            line-height: 1.55;
+            color: #2c3e50;
+        }
+        .learn-more ul { margin-left: 20px; }
+        .quiz-section {
+            background: #fdfdfd;
+            border: 2px solid #dbe4f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .quiz-section h2 {
+            font-size: 18px;
+            color: #1a3a6c;
             margin-bottom: 12px;
         }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
+        .quiz-q {
+            margin-bottom: 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px dashed #dbe4f0;
+        }
+        .quiz-q:last-child { border-bottom: none; margin-bottom: 0; }
+        .quiz-q .q-text {
+            font-weight: 600;
+            color: #2c3e50;
             margin-bottom: 8px;
+            font-size: 15px;
         }
-        .placeholder p {
+        .quiz-q label {
+            display: block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: #f5f8fc;
+            border-radius: 6px;
+            cursor: pointer;
             font-size: 14px;
-            max-width: 480px;
+            border: 2px solid transparent;
+            transition: all 0.15s;
         }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
+        .quiz-q label:hover { background: #eef4fb; }
+        .quiz-q label.correct { background: #e8f7ee; border-color: #2e9e5d; }
+        .quiz-q label.incorrect { background: #fdeee0; border-color: #e8832c; }
+        .quiz-q input[type=radio] { margin-right: 8px; }
+        .quiz-check {
+            margin-top: 14px;
+            padding: 12px 18px;
+            background: #1a3a6c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
         }
-        .meta strong { color: #495057; }
+        .quiz-result {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            display: none;
+        }
+        .quiz-result.show { display: block; }
+        .quiz-result.good { background: #e8f7ee; color: #1e6b3f; }
+        .quiz-result.partial { background: #fff8e6; color: #6b4f00; }
+        .demo-panel {
+            margin-top: 12px;
+            padding: 14px;
+            background: #f5f8fc;
+            border-left: 4px solid #4a90d9;
+            border-radius: 6px;
+            display: none;
+        }
+        .demo-panel.show { display: block; }
+        .demo-panel h4 { color: #1a3a6c; font-size: 14px; margin-bottom: 6px; }
+        .demo-panel p, .demo-panel li { font-size: 13.5px; color: #2c3e50; line-height: 1.5; }
+        .demo-panel ul { margin-left: 18px; margin-top: 4px; }
+        @media (max-width: 560px) {
+            .stage { height: 420px; }
+            h1 { font-size: 20px; }
+            .scenario-picker button { padding: 8px 10px; font-size: 12px; }
+        }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Visual-Spatial Challenges Interactive Demonstration</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> visual-spatial-challenges-interactive-demonstration</p>
-            <p><strong>Library:</strong> HTML/CSS/JavaScript with Canvas API for visual distortions</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Understand how visual-spatial problems affect daily activities by experiencing simulated visual-spatial challenges (Bloom Level 2 - Understand)</p>
-        </div>
+<main>
+    <h1>Visual-Spatial Challenges Interactive Demonstration</h1>
+    <p class="subtitle">Experience five common visual-spatial deficits that affect people living with dementia.</p>
+
+    <div class="scenario-picker" id="scenario-picker">
+        <button data-idx="0" class="active">1. Depth Perception</button>
+        <button data-idx="1">2. Figure-Ground</button>
+        <button data-idx="2">3. Navigation</button>
+        <button data-idx="3">4. Spatial Relations</button>
+        <button data-idx="4">5. Left Neglect</button>
     </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <div class="scenario-title" id="scenario-title"></div>
+    <div class="scenario-task" id="scenario-task"></div>
 
-    Type: microsim
-    
-    Learning Objective: Understand how visual-spatial problems affect daily activities by experiencing simulated visual-spatial challenges (Bloom Level 2 - Understand)
-    
-    Bloom Taxonomy Level: Understand (L2)
-    Bloom Verb: Understand, explain, demonstrate
-    
-    Instructional Rationale: Interactive simulation is appropriate for Understanding-level objectives because allowing users to experience visual-spatial challenges firsthand builds empathy and deeper comprehension of how these deficits affect daily life. Direct experience is more impactful than reading descriptions.
-    
-    Purpose: Demonstrate through interactive simulations what common visual-spatial problems feel like and how they affect everyday tasks
-    
-    Canvas Layout:
-    - Simulation display area (600px): Shows interactive scenarios
-    - Task description panel (100px): Explains current challenge
-    - Control panel (100px): Scenario selection and navigation
-    
-    Visual Elements and Interactive Scenarios:
-    
-    Scenario 1: Depth Perception Challenge
-    - Task: "Pour water from pitcher into glass"
-    - Visualization: Pitcher and glass shown at table level
-    - User uses slider to control pouring angle
-    - Simulation removes depth cues (shadows, shading, perspective)
-    - Result: Without depth perception, very difficult to judge when pitcher aligns with glass
-    - Feedback: Shows what happens with normal depth perception vs. impaired
-    
-    Scenario 2: Figure-Ground Discrimination
-    - Task: "Find the white pills on this table"
-    - Visualization: White pills on busy white patterned tablecloth
-    - User clicks on pills to identify them
-    - Shows how impaired figure-ground discrimination makes objects "invisible" against similar backgrounds
-    - Comparison view: Shows same scene with improved contrast
-    
-    Scenario 3: Navigation in Familiar Space
-    - Task: "Navigate from bedroom to kitchen in this familiar home"
-    - Visualization: Simple floor plan with multiple rooms
-    - User selects path through rooms
-    - Simulation shows how spatial disorientation makes familiar layouts confusing
-    - Visual distortions make rooms appear different each time
-    
-    Scenario 4: Spatial Relationships
-    - Task: "Set the table with plate, fork, knife, and glass"
-    - Visualization: Table with four items to place
-    - User drags items to positions
-    - Shows difficulty understanding spatial relationships (where items go relative to each other)
-    - Provides feedback on correct vs. impaired placement
-    
-    Scenario 5: Left-Side Neglect
-    - Task: "Identify all the objects on this table"
-    - Visualization: Table with objects on both left and right sides
-    - Simulation shows left-side neglect by graying out left half
-    - User clicks objects they "see"
-    - Demonstrates how left-side neglect causes complete unawareness of one side
-    
-    Interactive Controls:
-    - Scenario selector dropdown (5 scenarios)
-    - "Try Task" button to attempt each challenge
-    - "Show Normal Vision" toggle to compare normal vs. impaired
-    - "Next Scenario" button
-    - "Learn More" button that explains the deficit
-    
-    Educational Content After Each Scenario:
-    - Brief explanation of the visual-spatial deficit demonstrated
-    - How it affects daily living
-    - Why it creates safety concerns
-    - How caregivers can help compensate
-    
-    Visual Style: Realistic but simplified visuals
-    Color coding: Blue for correct, orange for impaired vision simulation
-    Responsive design adapts to window size
-    
-    Implementation: HTML/CSS/JavaScript with Canvas API for visual distortions
-    Canvas size: 800x650px, fully responsive
-    -->
+    <div class="stage" id="stage"></div>
+
+    <div class="controls" id="controls"></div>
+
+    <div class="demo-panel" id="demo-panel"></div>
+
+    <details class="learn-more" id="learn-more">
+        <summary>Learn more about this deficit</summary>
+        <div id="learn-more-content"></div>
+    </details>
+
+    <div class="quiz-section">
+        <h2>Check Your Understanding</h2>
+        <div id="quiz"></div>
+        <button class="quiz-check" onclick="checkQuiz()">Check Answers</button>
+        <div id="quiz-result" class="quiz-result"></div>
+    </div>
+</main>
+
+<script src="../shared-libs/celebration.js"></script>
+<script>
+// ============================================================
+// Scenario metadata
+// ============================================================
+const scenarios = [
+    {
+        title: "Scenario 1: Depth Perception",
+        task: "Use the slider to tilt the pitcher. Press POUR when you think the stream will hit the glass.",
+        learnMore: {
+            desc: "Depth perception allows us to judge distance and the three-dimensional position of objects. Dementia can damage visual areas that interpret shadows, perspective, and binocular cues.",
+            daily: "Pouring drinks, stepping onto curbs, sitting down in chairs, judging stair height.",
+            safety: "Missteps on stairs, falls, spills, bumping into furniture, difficulty parking cars.",
+            tips: "Use contrasting placemats and cups. Avoid glossy floors that can look wet. Offer a hand when navigating stairs."
+        }
+    },
+    {
+        title: "Scenario 2: Figure-Ground Discrimination",
+        task: "Click all the white pills on the tablecloth. Toggle between a plain and busy background.",
+        learnMore: {
+            desc: "Figure-ground discrimination separates an object from its background. When this fails, similarly colored objects seem to blend into their surroundings.",
+            daily: "Finding food on a patterned plate, locating a white toothbrush on a white sink, reading text on cluttered backgrounds.",
+            safety: "Unable to see medications on a light countertop, tripping over objects that match the floor.",
+            tips: "Use solid, high-contrast dishware and linens. Place medications on dark trays. Avoid busy carpet patterns."
+        }
+    },
+    {
+        title: "Scenario 3: Navigation in Familiar Space",
+        task: "Click rooms to walk from the BEDROOM to the KITCHEN. In impaired mode the layout shifts every step.",
+        learnMore: {
+            desc: "Spatial memory lets us mentally hold the layout of familiar places. Damage to the hippocampus and parietal lobe can make well-known homes feel unfamiliar.",
+            daily: "Finding the bathroom at night, returning from the mailbox, navigating hospital hallways.",
+            safety: "Wandering, getting lost inside one's own home, inability to exit a building in an emergency.",
+            tips: "Use clear signage and night lights. Keep layouts consistent. Paint the bathroom door a distinctive color."
+        }
+    },
+    {
+        title: "Scenario 4: Spatial Relationships",
+        task: "Drag the plate, fork, knife and glass to the correct positions on the table setting.",
+        learnMore: {
+            desc: "Understanding spatial relationships means knowing where objects belong relative to each other. This skill supports dressing, table-setting, and tool use.",
+            daily: "Putting on clothes correctly, arranging objects, stacking dishes, organizing a purse.",
+            safety: "Tools used incorrectly, clothes put on backwards or in wrong order, difficulty using silverware.",
+            tips: "Lay out clothes in order. Pre-set the table. Give step-by-step cues for familiar routines."
+        }
+    },
+    {
+        title: "Scenario 5: Left-Side Neglect",
+        task: "Click every object you SEE on the table. In impaired mode the left half is ignored by the brain.",
+        learnMore: {
+            desc: "Hemispatial or left-side neglect means the brain fails to attend to one side of space, even though the eyes work fine. It is common after right-hemisphere stroke and in some dementias.",
+            daily: "Eating only food on the right half of a plate, shaving or combing only one side, bumping into doorways on the left.",
+            safety: "Ignoring traffic on the left, falls from missed steps, medication on the left is never taken.",
+            tips: "Place important items on the right side. Gently remind the person to 'scan left'. Approach from their attending side."
+        }
+    }
+];
+
+let current = 0;
+let impaired = true;
+
+// ============================================================
+// Scenario picker
+// ============================================================
+document.getElementById('scenario-picker').addEventListener('click', e => {
+    if (e.target.tagName !== 'BUTTON') return;
+    const idx = parseInt(e.target.dataset.idx);
+    selectScenario(idx);
+});
+
+function selectScenario(idx) {
+    current = idx;
+    document.querySelectorAll('#scenario-picker button').forEach((b, i) => {
+        b.classList.toggle('active', i === idx);
+    });
+    const s = scenarios[idx];
+    document.getElementById('scenario-title').textContent = s.title;
+    document.getElementById('scenario-task').textContent = s.task;
+    document.getElementById('demo-panel').classList.remove('show');
+    document.getElementById('demo-panel').innerHTML = '';
+
+    const lm = s.learnMore;
+    document.getElementById('learn-more-content').innerHTML = `
+        <p>${lm.desc}</p>
+        <h4>How it affects daily living</h4>
+        <p>${lm.daily}</p>
+        <h4>Safety concerns</h4>
+        <p>${lm.safety}</p>
+        <h4>Caregiver tips</h4>
+        <p>${lm.tips}</p>
+    `;
+
+    impaired = true;
+    renderScenario();
+}
+
+function showExplanation() {
+    const s = scenarios[current];
+    const lm = s.learnMore;
+    const panel = document.getElementById('demo-panel');
+    panel.innerHTML = `
+        <h4>What this demonstrates</h4>
+        <p>${lm.desc}</p>
+        <ul>
+            <li><strong>Daily impact:</strong> ${lm.daily}</li>
+            <li><strong>Safety concern:</strong> ${lm.safety}</li>
+            <li><strong>Caregiver tip:</strong> ${lm.tips}</li>
+        </ul>
+    `;
+    panel.classList.add('show');
+}
+
+// ============================================================
+// Scenario rendering dispatcher
+// ============================================================
+function renderScenario() {
+    const stage = document.getElementById('stage');
+    const controls = document.getElementById('controls');
+    stage.innerHTML = '';
+    controls.innerHTML = '';
+    switch (current) {
+        case 0: renderDepth(stage, controls); break;
+        case 1: renderFigureGround(stage, controls); break;
+        case 2: renderNavigation(stage, controls); break;
+        case 3: renderSpatialRelations(stage, controls); break;
+        case 4: renderNeglect(stage, controls); break;
+    }
+}
+
+function makeToggle(label, onChange) {
+    const btn = document.createElement('button');
+    btn.className = 'btn toggle ' + (impaired ? '' : 'on');
+    btn.textContent = impaired ? 'Vision: Impaired' : 'Vision: Normal';
+    btn.onclick = () => {
+        impaired = !impaired;
+        onChange();
+    };
+    return btn;
+}
+
+// ============================================================
+// Scenario 1: Depth Perception
+// ============================================================
+function renderDepth(stage, controls) {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', '0 0 800 500');
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '100%');
+    stage.appendChild(svg);
+
+    // Table
+    const table = document.createElementNS(svgNS, 'rect');
+    table.setAttribute('x', 0); table.setAttribute('y', 380);
+    table.setAttribute('width', 800); table.setAttribute('height', 120);
+    table.setAttribute('fill', impaired ? '#e8e8e8' : '#c89b6c');
+    svg.appendChild(table);
+
+    if (!impaired) {
+        // Add shadow / perspective lines
+        const shadow = document.createElementNS(svgNS, 'ellipse');
+        shadow.setAttribute('cx', 480); shadow.setAttribute('cy', 400);
+        shadow.setAttribute('rx', 80); shadow.setAttribute('ry', 10);
+        shadow.setAttribute('fill', 'rgba(0,0,0,0.25)');
+        svg.appendChild(shadow);
+    }
+
+    // Glass (target)
+    const glassX = 460, glassY = 260, glassW = 80, glassH = 140;
+    const glass = document.createElementNS(svgNS, 'rect');
+    glass.setAttribute('x', glassX); glass.setAttribute('y', glassY);
+    glass.setAttribute('width', glassW); glass.setAttribute('height', glassH);
+    glass.setAttribute('fill', impaired ? 'rgba(180,180,180,0.3)' : 'rgba(150,200,230,0.5)');
+    glass.setAttribute('stroke', impaired ? '#bbb' : '#1a3a6c');
+    glass.setAttribute('stroke-width', impaired ? 1 : 3);
+    svg.appendChild(glass);
+
+    const glassLabel = document.createElementNS(svgNS, 'text');
+    glassLabel.setAttribute('x', glassX + glassW/2);
+    glassLabel.setAttribute('y', glassY + glassH + 25);
+    glassLabel.setAttribute('text-anchor', 'middle');
+    glassLabel.setAttribute('font-size', '14');
+    glassLabel.setAttribute('fill', impaired ? '#888' : '#1a3a6c');
+    glassLabel.textContent = 'GLASS';
+    svg.appendChild(glassLabel);
+
+    // Pitcher (rotates based on slider)
+    const pitcherGroup = document.createElementNS(svgNS, 'g');
+    pitcherGroup.setAttribute('id', 'pitcher');
+    svg.appendChild(pitcherGroup);
+
+    // Stream (rendered on pour)
+    const streamGroup = document.createElementNS(svgNS, 'g');
+    streamGroup.setAttribute('id', 'stream');
+    svg.appendChild(streamGroup);
+
+    function drawPitcher(angle) {
+        pitcherGroup.innerHTML = '';
+        const cx = 200, cy = 300;
+        const body = document.createElementNS(svgNS, 'rect');
+        body.setAttribute('x', -50); body.setAttribute('y', -70);
+        body.setAttribute('width', 100); body.setAttribute('height', 120);
+        body.setAttribute('fill', impaired ? '#ddd' : '#4a90d9');
+        body.setAttribute('stroke', impaired ? '#bbb' : '#1a3a6c');
+        body.setAttribute('stroke-width', impaired ? 1 : 2);
+        pitcherGroup.appendChild(body);
+
+        // Spout
+        const spout = document.createElementNS(svgNS, 'polygon');
+        spout.setAttribute('points', '50,-60 75,-50 50,-30');
+        spout.setAttribute('fill', impaired ? '#ddd' : '#4a90d9');
+        spout.setAttribute('stroke', impaired ? '#bbb' : '#1a3a6c');
+        pitcherGroup.appendChild(spout);
+
+        pitcherGroup.setAttribute('transform', `translate(${cx},${cy}) rotate(${angle})`);
+    }
+
+    // Controls
+    const sliderGroup = document.createElement('div');
+    sliderGroup.className = 'slider-group';
+    sliderGroup.innerHTML = '<label>Tilt angle:</label>';
+    const slider = document.createElement('input');
+    slider.type = 'range';
+    slider.min = 0; slider.max = 90; slider.value = 0;
+    sliderGroup.appendChild(slider);
+    const angleLabel = document.createElement('span');
+    angleLabel.textContent = '0°';
+    sliderGroup.appendChild(angleLabel);
+    controls.appendChild(sliderGroup);
+
+    const pourBtn = document.createElement('button');
+    pourBtn.className = 'btn';
+    pourBtn.textContent = 'POUR';
+    controls.appendChild(pourBtn);
+
+    const toggleBtn = makeToggle('', renderScenario);
+    controls.appendChild(toggleBtn);
+
+    const status = document.createElement('span');
+    status.className = 'status';
+    status.textContent = 'Ready';
+    controls.appendChild(status);
+
+    slider.oninput = () => {
+        angleLabel.textContent = slider.value + '°';
+        drawPitcher(parseInt(slider.value));
+    };
+    drawPitcher(0);
+
+    pourBtn.onclick = () => {
+        streamGroup.innerHTML = '';
+        const angle = parseInt(slider.value);
+        // Simulate stream trajectory. Without depth perception the user
+        // has to guess where the stream lands because the perspective
+        // cues are missing. Correct angle is ~45-60 degrees for the glass.
+        const streamStartX = 200 + Math.cos((angle - 10) * Math.PI/180) * 60;
+        const streamStartY = 300 - 60 + Math.sin(angle * Math.PI/180) * 40;
+        const landX = streamStartX + angle * 4;
+        const stream = document.createElementNS(svgNS, 'path');
+        stream.setAttribute('d',
+            `M ${streamStartX} ${streamStartY} Q ${(streamStartX+landX)/2} ${streamStartY - 20} ${landX} 400`);
+        stream.setAttribute('stroke', '#4a90d9');
+        stream.setAttribute('stroke-width', '6');
+        stream.setAttribute('fill', 'none');
+        stream.setAttribute('opacity', '0.8');
+        streamGroup.appendChild(stream);
+
+        // Check if landed in glass
+        if (landX >= glassX && landX <= glassX + glassW) {
+            status.textContent = 'Success — stream in glass!';
+            status.style.background = '#e8f7ee';
+            status.style.color = '#1e6b3f';
+        } else {
+            status.textContent = `Missed! Stream landed ${Math.round(landX - (glassX + glassW/2))}px off target.`;
+            status.style.background = '#fdeee0';
+            status.style.color = '#a85716';
+        }
+        showExplanation();
+    };
+}
+
+// ============================================================
+// Scenario 2: Figure-Ground
+// ============================================================
+function renderFigureGround(stage, controls) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 800; canvas.height = 500;
+    canvas.style.width = '100%'; canvas.style.height = '100%';
+    canvas.style.cursor = 'crosshair';
+    stage.appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+
+    // Random pill positions (fixed seed for consistency)
+    const rand = mulberry32(42);
+    const pills = [];
+    const totalPills = 12;
+    for (let i = 0; i < totalPills; i++) {
+        pills.push({
+            x: 60 + rand() * 680,
+            y: 60 + rand() * 380,
+            rx: 22, ry: 12,
+            found: false
+        });
+    }
+
+    function draw() {
+        // Background
+        if (impaired) {
+            // Busy white pattern: lots of small white/near-white swirls and circles
+            ctx.fillStyle = '#f0ece4';
+            ctx.fillRect(0, 0, 800, 500);
+            const r2 = mulberry32(7);
+            for (let i = 0; i < 400; i++) {
+                ctx.beginPath();
+                ctx.arc(r2() * 800, r2() * 500, 5 + r2() * 18, 0, Math.PI * 2);
+                const shade = 235 + Math.floor(r2() * 20);
+                ctx.fillStyle = `rgb(${shade},${shade-3},${shade-8})`;
+                ctx.fill();
+            }
+            // Add some diagonal lace lines
+            ctx.strokeStyle = 'rgba(235,225,210,0.8)';
+            ctx.lineWidth = 2;
+            for (let i = -500; i < 800; i += 22) {
+                ctx.beginPath();
+                ctx.moveTo(i, 0); ctx.lineTo(i + 500, 500);
+                ctx.stroke();
+            }
+        } else {
+            // Plain dark tablecloth
+            ctx.fillStyle = '#3a5a8a';
+            ctx.fillRect(0, 0, 800, 500);
+        }
+
+        // Pills
+        pills.forEach(p => {
+            ctx.beginPath();
+            ctx.ellipse(p.x, p.y, p.rx, p.ry, 0, 0, Math.PI * 2);
+            if (p.found) {
+                ctx.fillStyle = '#2e9e5d';
+                ctx.strokeStyle = '#1e6b3f';
+            } else {
+                ctx.fillStyle = '#ffffff';
+                ctx.strokeStyle = impaired ? '#efe8d8' : '#1a3a6c';
+            }
+            ctx.lineWidth = 2;
+            ctx.fill();
+            ctx.stroke();
+            // pill line
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y - p.ry);
+            ctx.lineTo(p.x, p.y + p.ry);
+            ctx.strokeStyle = impaired && !p.found ? '#e8e0d0' : '#c0c0c0';
+            ctx.stroke();
+        });
+    }
+
+    canvas.addEventListener('click', e => {
+        const rect = canvas.getBoundingClientRect();
+        const sx = canvas.width / rect.width;
+        const sy = canvas.height / rect.height;
+        const x = (e.clientX - rect.left) * sx;
+        const y = (e.clientY - rect.top) * sy;
+        pills.forEach(p => {
+            const dx = (x - p.x) / p.rx;
+            const dy = (y - p.y) / p.ry;
+            if (dx*dx + dy*dy <= 1.2 && !p.found) {
+                p.found = true;
+            }
+        });
+        const foundCount = pills.filter(p => p.found).length;
+        status.textContent = `Found: ${foundCount} / ${totalPills}`;
+        if (foundCount === totalPills) {
+            status.style.background = '#e8f7ee';
+            status.style.color = '#1e6b3f';
+            showExplanation();
+        }
+        draw();
+    });
+
+    // Controls
+    const toggleBtn = makeToggle('', renderScenario);
+    controls.appendChild(toggleBtn);
+
+    const resetBtn = document.createElement('button');
+    resetBtn.className = 'btn secondary';
+    resetBtn.textContent = 'Reset';
+    resetBtn.onclick = () => { pills.forEach(p => p.found = false); draw(); status.textContent = 'Found: 0 / ' + totalPills; };
+    controls.appendChild(resetBtn);
+
+    const status = document.createElement('span');
+    status.className = 'status';
+    status.textContent = 'Found: 0 / ' + totalPills;
+    controls.appendChild(status);
+
+    draw();
+}
+
+function mulberry32(a) {
+    return function() {
+        var t = a += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+}
+
+// ============================================================
+// Scenario 3: Navigation
+// ============================================================
+function renderNavigation(stage, controls) {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', '0 0 800 500');
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '100%');
+    stage.appendChild(svg);
+
+    // Define base rooms
+    const baseRooms = [
+        { id: 'bedroom', label: 'BEDROOM', x: 40, y: 40, w: 260, h: 180 },
+        { id: 'bathroom', label: 'BATHROOM', x: 320, y: 40, w: 180, h: 180 },
+        { id: 'hallway', label: 'HALLWAY', x: 520, y: 40, w: 240, h: 180 },
+        { id: 'living', label: 'LIVING ROOM', x: 40, y: 240, w: 300, h: 220 },
+        { id: 'dining', label: 'DINING ROOM', x: 360, y: 240, w: 180, h: 220 },
+        { id: 'kitchen', label: 'KITCHEN', x: 560, y: 240, w: 200, h: 220 }
+    ];
+    let rooms = baseRooms.map(r => ({...r}));
+    let path = ['bedroom'];
+    let won = false;
+
+    function shuffleLayout() {
+        // In impaired mode randomly swap x/y positions of two rooms
+        const a = Math.floor(Math.random() * rooms.length);
+        let b = Math.floor(Math.random() * rooms.length);
+        while (b === a) b = Math.floor(Math.random() * rooms.length);
+        // Swap labels but keep geometric shapes so layout "rearranges"
+        const tmp = { label: rooms[a].label, id: rooms[a].id };
+        rooms[a].label = rooms[b].label;
+        rooms[a].id = rooms[b].id;
+        rooms[b].label = tmp.label;
+        rooms[b].id = tmp.id;
+    }
+
+    function draw() {
+        svg.innerHTML = '';
+        // Outer walls
+        const outer = document.createElementNS(svgNS, 'rect');
+        outer.setAttribute('x', 20); outer.setAttribute('y', 20);
+        outer.setAttribute('width', 760); outer.setAttribute('height', 460);
+        outer.setAttribute('fill', 'none');
+        outer.setAttribute('stroke', '#1a3a6c'); outer.setAttribute('stroke-width', 4);
+        svg.appendChild(outer);
+
+        rooms.forEach(r => {
+            const rect = document.createElementNS(svgNS, 'rect');
+            rect.setAttribute('x', r.x); rect.setAttribute('y', r.y);
+            rect.setAttribute('width', r.w); rect.setAttribute('height', r.h);
+            const isBed = r.id === 'bedroom';
+            const isKit = r.id === 'kitchen';
+            const isCur = r.id === path[path.length - 1];
+            let fill = '#eef4fb';
+            if (isBed) fill = '#d4e7c5';
+            if (isKit) fill = '#ffe6b3';
+            if (isCur) fill = '#4a90d9';
+            rect.setAttribute('fill', fill);
+            rect.setAttribute('stroke', '#1a3a6c');
+            rect.setAttribute('stroke-width', 2);
+            rect.style.cursor = 'pointer';
+            rect.addEventListener('click', () => onRoomClick(r.id));
+            svg.appendChild(rect);
+
+            const label = document.createElementNS(svgNS, 'text');
+            label.setAttribute('x', r.x + r.w/2);
+            label.setAttribute('y', r.y + r.h/2);
+            label.setAttribute('text-anchor', 'middle');
+            label.setAttribute('dominant-baseline', 'middle');
+            label.setAttribute('font-size', '16');
+            label.setAttribute('font-weight', '700');
+            label.setAttribute('fill', isCur ? 'white' : '#1a3a6c');
+            label.style.pointerEvents = 'none';
+            label.textContent = r.label;
+            svg.appendChild(label);
+        });
+
+        // You marker on current room
+        const cur = rooms.find(r => r.id === path[path.length - 1]);
+        if (cur) {
+            const you = document.createElementNS(svgNS, 'text');
+            you.setAttribute('x', cur.x + cur.w/2);
+            you.setAttribute('y', cur.y + cur.h/2 + 24);
+            you.setAttribute('text-anchor', 'middle');
+            you.setAttribute('font-size', '12');
+            you.setAttribute('fill', 'white');
+            you.style.pointerEvents = 'none';
+            you.textContent = '(you are here)';
+            svg.appendChild(you);
+        }
+    }
+
+    function onRoomClick(id) {
+        if (won) return;
+        path.push(id);
+        if (impaired) shuffleLayout();
+        if (id === 'kitchen') {
+            won = true;
+            status.textContent = `Reached kitchen in ${path.length - 1} step${path.length - 1 === 1 ? '' : 's'}!`;
+            status.style.background = '#e8f7ee';
+            status.style.color = '#1e6b3f';
+            showExplanation();
+        } else {
+            status.textContent = `Steps: ${path.length - 1}. Now in ${rooms.find(r=>r.id===id).label}.`;
+        }
+        draw();
+    }
+
+    draw();
+
+    const toggleBtn = makeToggle('', renderScenario);
+    controls.appendChild(toggleBtn);
+
+    const resetBtn = document.createElement('button');
+    resetBtn.className = 'btn secondary';
+    resetBtn.textContent = 'Restart';
+    resetBtn.onclick = () => { rooms = baseRooms.map(r => ({...r})); path = ['bedroom']; won = false; status.textContent = 'Click rooms to reach the kitchen'; draw(); };
+    controls.appendChild(resetBtn);
+
+    const status = document.createElement('span');
+    status.className = 'status';
+    status.textContent = 'Click rooms to reach the kitchen';
+    controls.appendChild(status);
+}
+
+// ============================================================
+// Scenario 4: Spatial Relationships
+// ============================================================
+function renderSpatialRelations(stage, controls) {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', '0 0 800 500');
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '100%');
+    stage.appendChild(svg);
+
+    // Table (placemat)
+    const mat = document.createElementNS(svgNS, 'rect');
+    mat.setAttribute('x', 200); mat.setAttribute('y', 100);
+    mat.setAttribute('width', 400); mat.setAttribute('height', 300);
+    mat.setAttribute('fill', '#f5e8d0');
+    mat.setAttribute('stroke', '#1a3a6c'); mat.setAttribute('stroke-width', 3);
+    mat.setAttribute('rx', 10);
+    svg.appendChild(mat);
+
+    // Target zones (shown as dashed outlines)
+    const targets = {
+        plate: { cx: 400, cy: 250, r: 60 },
+        fork:  { cx: 280, cy: 250, w: 30, h: 110 },
+        knife: { cx: 520, cy: 250, w: 30, h: 110 },
+        glass: { cx: 540, cy: 150, r: 35 }
+    };
+
+    // Draw target outlines
+    const plateOutline = document.createElementNS(svgNS, 'circle');
+    plateOutline.setAttribute('cx', targets.plate.cx); plateOutline.setAttribute('cy', targets.plate.cy);
+    plateOutline.setAttribute('r', targets.plate.r);
+    plateOutline.setAttribute('fill', 'none'); plateOutline.setAttribute('stroke', '#bbb');
+    plateOutline.setAttribute('stroke-dasharray', '5,5');
+    svg.appendChild(plateOutline);
+
+    const forkOutline = document.createElementNS(svgNS, 'rect');
+    forkOutline.setAttribute('x', targets.fork.cx - targets.fork.w/2);
+    forkOutline.setAttribute('y', targets.fork.cy - targets.fork.h/2);
+    forkOutline.setAttribute('width', targets.fork.w); forkOutline.setAttribute('height', targets.fork.h);
+    forkOutline.setAttribute('fill', 'none'); forkOutline.setAttribute('stroke', '#bbb');
+    forkOutline.setAttribute('stroke-dasharray', '5,5');
+    svg.appendChild(forkOutline);
+
+    const knifeOutline = document.createElementNS(svgNS, 'rect');
+    knifeOutline.setAttribute('x', targets.knife.cx - targets.knife.w/2);
+    knifeOutline.setAttribute('y', targets.knife.cy - targets.knife.h/2);
+    knifeOutline.setAttribute('width', targets.knife.w); knifeOutline.setAttribute('height', targets.knife.h);
+    knifeOutline.setAttribute('fill', 'none'); knifeOutline.setAttribute('stroke', '#bbb');
+    knifeOutline.setAttribute('stroke-dasharray', '5,5');
+    svg.appendChild(knifeOutline);
+
+    const glassOutline = document.createElementNS(svgNS, 'circle');
+    glassOutline.setAttribute('cx', targets.glass.cx); glassOutline.setAttribute('cy', targets.glass.cy);
+    glassOutline.setAttribute('r', targets.glass.r);
+    glassOutline.setAttribute('fill', 'none'); glassOutline.setAttribute('stroke', '#bbb');
+    glassOutline.setAttribute('stroke-dasharray', '5,5');
+    svg.appendChild(glassOutline);
+
+    // Items (draggable) - starting positions on left side
+    const items = [
+        { id: 'plate', x: 60, y: 120, shape: 'circle', r: 50, fill: '#ffffff', stroke: '#1a3a6c', label: 'plate' },
+        { id: 'fork',  x: 60, y: 230, shape: 'rect', w: 25, h: 100, fill: '#c0c0c0', stroke: '#1a3a6c', label: 'fork' },
+        { id: 'knife', x: 110, y: 230, shape: 'rect', w: 25, h: 100, fill: '#dcdcdc', stroke: '#1a3a6c', label: 'knife' },
+        { id: 'glass', x: 90, y: 380, shape: 'circle', r: 30, fill: 'rgba(150,200,230,0.5)', stroke: '#1a3a6c', label: 'glass' }
+    ];
+
+    const itemElements = {};
+
+    items.forEach(it => {
+        const g = document.createElementNS(svgNS, 'g');
+        g.style.cursor = 'grab';
+        let shape;
+        if (it.shape === 'circle') {
+            shape = document.createElementNS(svgNS, 'circle');
+            shape.setAttribute('r', it.r);
+        } else {
+            shape = document.createElementNS(svgNS, 'rect');
+            shape.setAttribute('x', -it.w/2); shape.setAttribute('y', -it.h/2);
+            shape.setAttribute('width', it.w); shape.setAttribute('height', it.h);
+            shape.setAttribute('rx', 4);
+        }
+        shape.setAttribute('fill', it.fill);
+        shape.setAttribute('stroke', it.stroke); shape.setAttribute('stroke-width', 3);
+        g.appendChild(shape);
+
+        const txt = document.createElementNS(svgNS, 'text');
+        txt.setAttribute('text-anchor', 'middle');
+        txt.setAttribute('dominant-baseline', 'middle');
+        txt.setAttribute('font-size', '12');
+        txt.setAttribute('fill', '#1a3a6c');
+        txt.setAttribute('font-weight', '700');
+        txt.style.pointerEvents = 'none';
+        txt.textContent = it.label;
+        g.appendChild(txt);
+
+        g.setAttribute('transform', `translate(${it.x},${it.y})`);
+        svg.appendChild(g);
+        itemElements[it.id] = g;
+
+        // Drag
+        let dragging = false, offset = { x: 0, y: 0 };
+        function getSvgPt(evt) {
+            const pt = svg.createSVGPoint();
+            pt.x = evt.clientX; pt.y = evt.clientY;
+            return pt.matrixTransform(svg.getScreenCTM().inverse());
+        }
+        g.addEventListener('pointerdown', e => {
+            dragging = true;
+            g.style.cursor = 'grabbing';
+            const p = getSvgPt(e);
+            offset.x = p.x - it.x; offset.y = p.y - it.y;
+            g.setPointerCapture(e.pointerId);
+        });
+        g.addEventListener('pointermove', e => {
+            if (!dragging) return;
+            const p = getSvgPt(e);
+            // In impaired mode add jitter so user's sense of "where it goes" is unreliable
+            let jx = 0, jy = 0;
+            if (impaired) { jx = (Math.random() - 0.5) * 8; jy = (Math.random() - 0.5) * 8; }
+            it.x = p.x - offset.x + jx;
+            it.y = p.y - offset.y + jy;
+            g.setAttribute('transform', `translate(${it.x},${it.y})`);
+        });
+        g.addEventListener('pointerup', e => {
+            dragging = false;
+            g.style.cursor = 'grab';
+            g.releasePointerCapture(e.pointerId);
+            checkPlacement();
+        });
+    });
+
+    function checkPlacement() {
+        const results = {};
+        items.forEach(it => {
+            const t = targets[it.id];
+            const dx = it.x - t.cx;
+            const dy = it.y - t.cy;
+            const tol = it.shape === 'circle' ? 40 : 35;
+            results[it.id] = (dx*dx + dy*dy) < tol * tol;
+        });
+        const correct = Object.values(results).filter(v => v).length;
+        status.textContent = `Correctly placed: ${correct} / 4`;
+        if (correct === 4) {
+            status.style.background = '#e8f7ee';
+            status.style.color = '#1e6b3f';
+            showExplanation();
+        } else {
+            status.style.background = '#eef4fb';
+            status.style.color = '#1a3a6c';
+        }
+    }
+
+    const toggleBtn = makeToggle('', renderScenario);
+    controls.appendChild(toggleBtn);
+
+    const status = document.createElement('span');
+    status.className = 'status';
+    status.textContent = 'Drag items onto the dashed outlines';
+    controls.appendChild(status);
+}
+
+// ============================================================
+// Scenario 5: Left-Side Neglect
+// ============================================================
+function renderNeglect(stage, controls) {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', '0 0 800 500');
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '100%');
+    stage.appendChild(svg);
+
+    // Table
+    const table = document.createElementNS(svgNS, 'rect');
+    table.setAttribute('x', 40); table.setAttribute('y', 180);
+    table.setAttribute('width', 720); table.setAttribute('height', 180);
+    table.setAttribute('fill', '#f5e8d0'); table.setAttribute('stroke', '#1a3a6c'); table.setAttribute('stroke-width', 3);
+    table.setAttribute('rx', 8);
+    svg.appendChild(table);
+
+    // 8 objects
+    const colors = ['#e8832c', '#4a90d9', '#2e9e5d', '#c33c54', '#f2b705', '#8e44ad', '#16a085', '#d35400'];
+    const labels = ['apple', 'cup', 'pear', 'bowl', 'banana', 'plum', 'mug', 'egg'];
+    const objects = [];
+    for (let i = 0; i < 8; i++) {
+        objects.push({
+            id: i,
+            x: 100 + i * 85,
+            y: 270,
+            color: colors[i],
+            label: labels[i],
+            clicked: false,
+            leftSide: i < 4
+        });
+    }
+
+    function draw() {
+        // Clear only non-table elements — easier to redraw fully
+        [...svg.querySelectorAll('.obj-el')].forEach(e => e.remove());
+
+        // Left-half gray overlay in impaired mode
+        const overlay = svg.querySelector('#overlay');
+        if (overlay) overlay.remove();
+        if (impaired) {
+            const ov = document.createElementNS(svgNS, 'rect');
+            ov.setAttribute('id', 'overlay');
+            ov.setAttribute('x', 0); ov.setAttribute('y', 0);
+            ov.setAttribute('width', 400); ov.setAttribute('height', 500);
+            ov.setAttribute('fill', '#888');
+            ov.setAttribute('opacity', '0.85');
+            ov.style.pointerEvents = 'none';
+            svg.appendChild(ov);
+
+            const note = document.createElementNS(svgNS, 'text');
+            note.classList.add('obj-el');
+            note.setAttribute('x', 200); note.setAttribute('y', 60);
+            note.setAttribute('text-anchor', 'middle');
+            note.setAttribute('font-size', '14');
+            note.setAttribute('fill', '#ddd');
+            note.textContent = '(brain ignores this side)';
+            svg.appendChild(note);
+        }
+
+        objects.forEach(o => {
+            const g = document.createElementNS(svgNS, 'g');
+            g.classList.add('obj-el');
+            g.setAttribute('transform', `translate(${o.x},${o.y})`);
+            g.style.cursor = 'pointer';
+
+            const c = document.createElementNS(svgNS, 'circle');
+            c.setAttribute('r', 28);
+            c.setAttribute('fill', o.clicked ? '#2e9e5d' : o.color);
+            c.setAttribute('stroke', '#1a3a6c'); c.setAttribute('stroke-width', 3);
+            g.appendChild(c);
+
+            const t = document.createElementNS(svgNS, 'text');
+            t.setAttribute('text-anchor', 'middle');
+            t.setAttribute('dominant-baseline', 'middle');
+            t.setAttribute('font-size', '11');
+            t.setAttribute('fill', 'white');
+            t.setAttribute('font-weight', '700');
+            t.style.pointerEvents = 'none';
+            t.textContent = o.label;
+            g.appendChild(t);
+
+            g.addEventListener('click', () => {
+                if (impaired && o.leftSide) {
+                    // In impaired mode clicks on left are "not seen" — ignore
+                    return;
+                }
+                o.clicked = true;
+                updateStatus();
+                draw();
+            });
+            svg.appendChild(g);
+        });
+
+        // Move overlay on top of left items so they appear hidden
+        if (impaired) {
+            const ov = svg.querySelector('#overlay');
+            if (ov) svg.appendChild(ov);
+        }
+    }
+
+    function updateStatus() {
+        const seen = objects.filter(o => o.clicked).length;
+        status.textContent = `Objects identified: ${seen} / 8`;
+        if (!impaired && seen === 8) {
+            status.style.background = '#e8f7ee';
+            status.style.color = '#1e6b3f';
+            showExplanation();
+        }
+    }
+
+    const toggleBtn = makeToggle('', renderScenario);
+    controls.appendChild(toggleBtn);
+
+    const revealBtn = document.createElement('button');
+    revealBtn.className = 'btn secondary';
+    revealBtn.textContent = 'Reveal Missed Objects';
+    revealBtn.onclick = () => {
+        const missed = objects.filter(o => !o.clicked);
+        if (missed.length === 0) {
+            status.textContent = 'You saw all 8!';
+        } else {
+            status.textContent = `You missed ${missed.length} object${missed.length===1?'':'s'} (mostly on the left).`;
+            status.style.background = '#fdeee0';
+            status.style.color = '#a85716';
+        }
+        showExplanation();
+    };
+    controls.appendChild(revealBtn);
+
+    const resetBtn = document.createElement('button');
+    resetBtn.className = 'btn secondary';
+    resetBtn.textContent = 'Reset';
+    resetBtn.onclick = () => { objects.forEach(o => o.clicked = false); draw(); updateStatus(); };
+    controls.appendChild(resetBtn);
+
+    const status = document.createElement('span');
+    status.className = 'status';
+    status.textContent = 'Objects identified: 0 / 8';
+    controls.appendChild(status);
+
+    draw();
+}
+
+// ============================================================
+// Quiz
+// ============================================================
+const quizQuestions = [
+    {
+        q: "Difficulty pouring water from a pitcher into a glass most likely suggests problems with...",
+        options: ["Short-term memory", "Depth perception", "Language processing", "Hearing"],
+        answer: 1
+    },
+    {
+        q: "An older adult cannot find the white pills sitting on a white patterned tablecloth. This is an example of...",
+        options: [
+            "Color blindness",
+            "Figure-ground discrimination difficulty",
+            "Hallucination",
+            "Near-sightedness"
+        ],
+        answer: 1
+    },
+    {
+        q: "A person with dementia gets lost walking from the bedroom to the kitchen in the home they have lived in for 30 years. This points to...",
+        options: [
+            "Intentional behavior",
+            "Normal aging",
+            "Spatial disorientation",
+            "Vision loss"
+        ],
+        answer: 2
+    },
+    {
+        q: "A person consistently eats only the food on the right half of their plate and ignores the left half. This suggests...",
+        options: [
+            "Left-side neglect",
+            "Loss of appetite",
+            "Poor taste perception",
+            "Tremor"
+        ],
+        answer: 0
+    }
+];
+
+function buildQuiz() {
+    const quiz = document.getElementById('quiz');
+    quizQuestions.forEach((q, i) => {
+        const div = document.createElement('div');
+        div.className = 'quiz-q';
+        div.innerHTML = `<div class="q-text">${i+1}. ${q.q}</div>` +
+            q.options.map((opt, j) =>
+                `<label><input type="radio" name="q${i}" value="${j}"> ${opt}</label>`
+            ).join('');
+        quiz.appendChild(div);
+    });
+}
+
+function checkQuiz() {
+    let score = 0;
+    quizQuestions.forEach((q, i) => {
+        const chosen = document.querySelector(`input[name="q${i}"]:checked`);
+        const labels = document.querySelectorAll(`input[name="q${i}"]`);
+        labels.forEach(l => {
+            l.parentElement.classList.remove('correct', 'incorrect');
+        });
+        if (!chosen) return;
+        const val = parseInt(chosen.value);
+        if (val === q.answer) {
+            score++;
+            chosen.parentElement.classList.add('correct');
+        } else {
+            chosen.parentElement.classList.add('incorrect');
+            // highlight correct
+            const correctLabel = document.querySelectorAll(`input[name="q${i}"]`)[q.answer];
+            if (correctLabel) correctLabel.parentElement.classList.add('correct');
+        }
+    });
+    const result = document.getElementById('quiz-result');
+    result.classList.add('show');
+    if (score === quizQuestions.length) {
+        result.className = 'quiz-result show good';
+        result.textContent = `Perfect! ${score} / ${quizQuestions.length} correct. You have a strong understanding of visual-spatial deficits.`;
+        if (window.Celebration) {
+            window.Celebration.celebrate({ duration: 4000 });
+        }
+    } else {
+        result.className = 'quiz-result show partial';
+        result.textContent = `Score: ${score} / ${quizQuestions.length}. Review the scenarios above and try again.`;
+    }
+}
+
+// ============================================================
+// Init
+// ============================================================
+buildQuiz();
+selectScenario(0);
+</script>
 </body>
 </html>

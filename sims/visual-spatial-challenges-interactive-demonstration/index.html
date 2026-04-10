@@ -1140,7 +1140,7 @@
     
   
   
-    <span class="md-status md-status--scaffold"></span>
+    <span class="md-status md-status--implemented"></span>
   
 
   
@@ -1158,7 +1158,7 @@
     
   
   
-    <span class="md-status md-status--scaffold"></span>
+    <span class="md-status md-status--implemented"></span>
   
 
   
@@ -1199,9 +1199,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specification" class="md-nav__link">
+  <a href="#the-five-scenarios" class="md-nav__link">
     <span class="md-ellipsis">
-      Specification
+      The Five Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
     </span>
   </a>
   
@@ -1456,9 +1474,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specification" class="md-nav__link">
+  <a href="#the-five-scenarios" class="md-nav__link">
     <span class="md-ellipsis">
-      Specification
+      The Five Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
     </span>
   </a>
   
@@ -1497,171 +1533,58 @@
 
 
 <h1 id="visual-spatial-challenges-interactive-demonstration">Visual-Spatial Challenges Interactive Demonstration<a class="headerlink" href="#visual-spatial-challenges-interactive-demonstration" title="Permanent link">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Scaffold</p>
-<p>This MicroSim has been scaffolded from its specification. The interactive
-implementation has not been built yet.</p>
-</div>
+<p>This MicroSim lets you experience five common visual-spatial deficits that
+affect people living with dementia. Each scenario is an abstract, interactive
+simulation of how a specific visual-spatial problem changes daily life. Switch
+between "Normal" and "Impaired" vision to feel the difference, read the
+explanation of what each deficit means, and then test your understanding with a
+short quiz.</p>
 <h2 id="learning-objective">Learning Objective<a class="headerlink" href="#learning-objective" title="Permanent link">¶</a></h2>
-<p>Understand how visual-spatial problems affect daily activities by experiencing simulated visual-spatial challenges (Bloom Level 2 - Understand)</p>
+<p>Understand how visual-spatial problems affect daily activities by experiencing
+simulated visual-spatial challenges (Bloom Level 2 - Understand).</p>
 <ul>
 <li><strong>Bloom Level:</strong> Understand (L2)</li>
 <li><strong>Bloom Verb:</strong> Understand, explain, demonstrate</li>
-<li><strong>Library:</strong> HTML/CSS/JavaScript with Canvas API for visual distortions</li>
+<li><strong>Library:</strong> Custom HTML/CSS/JavaScript with SVG/Canvas</li>
 </ul>
 <h2 id="preview">Preview<a class="headerlink" href="#preview" title="Permanent link">¶</a></h2>
-<iframe src="main.html" width="100%" height="600"></iframe>
+<iframe src="main.html" width="100%" height="800" style="border:1px solid #dbe4f0; border-radius: 8px;"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run MicroSim in Fullscreen</a></p>
-<h2 id="specification">Specification<a class="headerlink" href="#specification" title="Permanent link">¶</a></h2>
-<p>The full specification below is extracted from
-<a href="../../chapters/05-signs-symptoms-recognition/">Chapter 5: Signs, Symptoms, and Early Recognition</a>.</p>
-<div class="language-text highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span>
-<span class="normal"><a href="#__codelineno-0-44">44</a></span>
-<span class="normal"><a href="#__codelineno-0-45">45</a></span>
-<span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span>
-<span class="normal"><a href="#__codelineno-0-48">48</a></span>
-<span class="normal"><a href="#__codelineno-0-49">49</a></span>
-<span class="normal"><a href="#__codelineno-0-50">50</a></span>
-<span class="normal"><a href="#__codelineno-0-51">51</a></span>
-<span class="normal"><a href="#__codelineno-0-52">52</a></span>
-<span class="normal"><a href="#__codelineno-0-53">53</a></span>
-<span class="normal"><a href="#__codelineno-0-54">54</a></span>
-<span class="normal"><a href="#__codelineno-0-55">55</a></span>
-<span class="normal"><a href="#__codelineno-0-56">56</a></span>
-<span class="normal"><a href="#__codelineno-0-57">57</a></span>
-<span class="normal"><a href="#__codelineno-0-58">58</a></span>
-<span class="normal"><a href="#__codelineno-0-59">59</a></span>
-<span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span>
-<span class="normal"><a href="#__codelineno-0-63">63</a></span>
-<span class="normal"><a href="#__codelineno-0-64">64</a></span>
-<span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span>
-<span class="normal"><a href="#__codelineno-0-67">67</a></span>
-<span class="normal"><a href="#__codelineno-0-68">68</a></span>
-<span class="normal"><a href="#__codelineno-0-69">69</a></span>
-<span class="normal"><a href="#__codelineno-0-70">70</a></span>
-<span class="normal"><a href="#__codelineno-0-71">71</a></span>
-<span class="normal"><a href="#__codelineno-0-72">72</a></span>
-<span class="normal"><a href="#__codelineno-0-73">73</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>Type: microsim
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>Learning Objective: Understand how visual-spatial problems affect daily activities by experiencing simulated visual-spatial challenges (Bloom Level 2 - Understand)
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>Bloom Taxonomy Level: Understand (L2)
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>Bloom Verb: Understand, explain, demonstrate
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>Instructional Rationale: Interactive simulation is appropriate for Understanding-level objectives because allowing users to experience visual-spatial challenges firsthand builds empathy and deeper comprehension of how these deficits affect daily life. Direct experience is more impactful than reading descriptions.
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>Purpose: Demonstrate through interactive simulations what common visual-spatial problems feel like and how they affect everyday tasks
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>Canvas Layout:
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>- Simulation display area (600px): Shows interactive scenarios
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>- Task description panel (100px): Explains current challenge
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>- Control panel (100px): Scenario selection and navigation
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>Visual Elements and Interactive Scenarios:
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a>Scenario 1: Depth Perception Challenge
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>- Task: "Pour water from pitcher into glass"
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>- Visualization: Pitcher and glass shown at table level
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>- User uses slider to control pouring angle
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a>- Simulation removes depth cues (shadows, shading, perspective)
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a>- Result: Without depth perception, very difficult to judge when pitcher aligns with glass
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a>- Feedback: Shows what happens with normal depth perception vs. impaired
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a>Scenario 2: Figure-Ground Discrimination
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a>- Task: "Find the white pills on this table"
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>- Visualization: White pills on busy white patterned tablecloth
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>- User clicks on pills to identify them
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a>- Shows how impaired figure-ground discrimination makes objects "invisible" against similar backgrounds
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a>- Comparison view: Shows same scene with improved contrast
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a>Scenario 3: Navigation in Familiar Space
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a>- Task: "Navigate from bedroom to kitchen in this familiar home"
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a>- Visualization: Simple floor plan with multiple rooms
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a>- User selects path through rooms
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a>- Simulation shows how spatial disorientation makes familiar layouts confusing
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39"></a>- Visual distortions make rooms appear different each time
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40"></a>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41"></a>Scenario 4: Spatial Relationships
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42"></a>- Task: "Set the table with plate, fork, knife, and glass"
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43"></a>- Visualization: Table with four items to place
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44"></a>- User drags items to positions
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45"></a>- Shows difficulty understanding spatial relationships (where items go relative to each other)
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46"></a>- Provides feedback on correct vs. impaired placement
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47"></a>
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48"></a>Scenario 5: Left-Side Neglect
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49"></a>- Task: "Identify all the objects on this table"
-</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50"></a>- Visualization: Table with objects on both left and right sides
-</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51"></a>- Simulation shows left-side neglect by graying out left half
-</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52"></a>- User clicks objects they "see"
-</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53"></a>- Demonstrates how left-side neglect causes complete unawareness of one side
-</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54"></a>
-</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55"></a>Interactive Controls:
-</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56"></a>- Scenario selector dropdown (5 scenarios)
-</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57"></a>- "Try Task" button to attempt each challenge
-</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58"></a>- "Show Normal Vision" toggle to compare normal vs. impaired
-</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59"></a>- "Next Scenario" button
-</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60"></a>- "Learn More" button that explains the deficit
-</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61"></a>
-</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62"></a>Educational Content After Each Scenario:
-</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63"></a>- Brief explanation of the visual-spatial deficit demonstrated
-</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64"></a>- How it affects daily living
-</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65"></a>- Why it creates safety concerns
-</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66"></a>- How caregivers can help compensate
-</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67"></a>
-</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68"></a>Visual Style: Realistic but simplified visuals
-</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69"></a>Color coding: Blue for correct, orange for impaired vision simulation
-</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70"></a>Responsive design adapts to window size
-</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71"></a>
-</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72"></a>Implementation: HTML/CSS/JavaScript with Canvas API for visual distortions
-</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73"></a>Canvas size: 800x650px, fully responsive
-</span></code></pre></div></td></tr></tbody></table></div>
+<h2 id="the-five-scenarios">The Five Scenarios<a class="headerlink" href="#the-five-scenarios" title="Permanent link">¶</a></h2>
+<ol>
+<li><strong>Depth Perception</strong> — Tilt a pitcher with a slider and try to pour water
+   into a glass. In impaired mode shadows and perspective cues are removed,
+   making alignment very hard.</li>
+<li><strong>Figure-Ground Discrimination</strong> — Find white pills on a tablecloth. In
+   impaired mode the busy white pattern makes the pills blend into the
+   background.</li>
+<li><strong>Navigation in Familiar Space</strong> — Click rooms in a floor plan to walk from
+   the bedroom to the kitchen. In impaired mode the layout subtly rearranges
+   with every step.</li>
+<li><strong>Spatial Relationships</strong> — Drag a plate, fork, knife, and glass into the
+   correct positions for a table setting. In impaired mode dragging is jittery
+   and precise placement becomes unreliable.</li>
+<li><strong>Left-Side Neglect</strong> — Click all the objects you "see" on the table. In
+   impaired mode the left half of the table is ignored by the brain, leaving
+   half of the objects completely unnoticed.</li>
+</ol>
+<h2 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">¶</a></h2>
+<ol>
+<li>Choose a scenario from the button row at the top.</li>
+<li>Read the task description and follow the on-screen instructions.</li>
+<li>Use the <strong>Vision: Impaired / Normal</strong> toggle to compare how each deficit
+   changes the experience.</li>
+<li>Expand the <strong>Learn more</strong> panel to read about daily-living impact, safety
+   concerns, and caregiver tips.</li>
+<li>After exploring all five scenarios, answer the four multiple-choice quiz
+   questions at the bottom.</li>
+</ol>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">¶</a></h2>
+<p>Visual-spatial problems are more than "bad eyesight" — the eyes usually work
+fine. The problem is how the brain interprets visual information. These
+deficits create real safety risks and daily-living challenges, but
+understanding them helps caregivers design safer, more supportive environments.</p>
 <h2 id="related-resources">Related Resources<a class="headerlink" href="#related-resources" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../chapters/05-signs-symptoms-recognition/">Chapter 5: Signs, Symptoms, and Early Recognition</a></li>
