@@ -8,6 +8,17 @@ version: 0.03
 
 # Brain Anatomy and Function
 
+!!! mascot-welcome "Tokie Welcomes You!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Tokie welcomes you">
+    Hi again — Tokie here! In this chapter we're going to get up close
+    with the brain itself. We'll meet neurons and the tiny gaps where
+    they talk to each other, tour the four lobes of the cerebral cortex,
+    visit the hippocampus (the brain's "save button" for memory), and
+    see how the brain rewires itself through neuroplasticity. By the end
+    you'll understand why dementia damages thinking in the patterns it
+    does. Take it slow — there are some new words ahead, but I'll
+    translate every one as we go.
+
 ## Summary
 
 This chapter provides a comprehensive exploration of brain structure and function essential for understanding how dementia affects the brain. You will learn about neurons, neurotransmitters, and how brain cells communicate through synapses and neural networks. The chapter covers the major brain regions including the cerebral cortex and its four lobes (frontal, temporal, parietal, and occipital), as well as specialized structures like the hippocampus. Understanding neuroplasticity and the distinction between gray and white matter will help you grasp how dementia causes neurodegeneration and impacts cognitive abilities.
@@ -218,6 +229,16 @@ Think of neural networks like pathways in a forest:
 
 In a healthy brain, there are approximately 100 trillion synaptic connections forming countless neural networks. This massive interconnectivity is what gives the brain its remarkable computing power.
 
+!!! mascot-thinking "Pause and Picture It"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Tokie is thinking">
+    Sit with this number for a second: one hundred *trillion* connections.
+    Every memory you have, every face you recognize, every word you reach
+    for — all of it lives in the *pattern* of those connections, not in
+    any single neuron. That's a really important idea for understanding
+    dementia, because dementia doesn't just kill cells. It pulls
+    connections apart. Hold on to that picture; we'll come back to it
+    again and again.
+
 ## The Cerebral Cortex: Your Brain's Command Center
 
 The **cerebral cortex** is the outer layer of your brain—the wrinkled, grayish surface you see in pictures. This thin layer, only about 2-4 millimeters thick (roughly the thickness of two pennies stacked), contains the majority of your neurons and is responsible for the higher-level cognitive functions that make us human.
@@ -376,6 +397,16 @@ The occipital lobe's main functions include:
 
 While the occipital lobe itself is less commonly affected in typical Alzheimer's disease, it plays an important role in other types of dementia. In Lewy body dementia, for example, problems in visual processing can contribute to visual hallucinations—seeing things that aren't there.
 
+!!! mascot-encourage "That's a Lot of Geography"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Tokie encourages you">
+    Four lobes, four sets of jobs — that's a lot of brain real estate to
+    take in at once! You absolutely don't need to memorize every function
+    on the list. What I want you to walk away with is the big picture:
+    different parts of the brain do different things, so when dementia
+    damages a particular region, it produces a particular pattern of
+    symptoms. That's a big reason why two people with dementia can look
+    so different from each other. You're doing great — let's keep going.
+
 ## Gray Matter and White Matter: The Brain's Two Tissues
 
 When you look at a cross-section of the brain, you'll notice it has two distinct types of tissue: **gray matter** and **white matter**. These aren't just different colors—they represent fundamentally different structures with different functions.
@@ -435,6 +466,17 @@ Factors that promote neuroplasticity include:
 - Novelty and challenge
 
 This is excellent news for brain health. Engaging in activities that promote neuroplasticity can help build cognitive reserve (remember from Chapter 1) and may help delay the onset of dementia symptoms. While neuroplasticity decreases somewhat with age, it never stops entirely—meaning it's never too late to benefit from brain-healthy activities.
+
+!!! mascot-tip "Tokie's Tip"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Tokie shares a tip">
+    Here's the most hopeful thing I can tell you in this whole chapter:
+    your brain keeps rewiring itself for as long as you live. A daily
+    walk, learning a new song, calling a friend, getting good sleep —
+    none of these are just nice-to-haves. They're the everyday inputs
+    that grow and protect those neural pathways. It's never too late to
+    start, and small habits add up over the years. If you take one
+    action from this chapter, let it be a fresh commitment to one
+    brain-healthy habit you can stick with.
 
 #### Diagram: Neuroplasticity in Action
 
@@ -642,3 +684,14 @@ Before moving to the next chapter, reflect on these questions:
 5. How does understanding normal brain structure help you understand what goes wrong in dementia?
 
 If you can answer these questions, you've mastered the essential neuroanatomy and are ready to learn about different types of dementia in Chapter 3.
+
+!!! mascot-celebration "Beautifully Done!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Tokie celebrates">
+    Look at you — you just finished a tour of the human brain! You now
+    know how neurons talk across synapses, what each of the four lobes
+    does, why the hippocampus is so precious for memory, and how
+    neuroplasticity gives the brain its lifelong adaptability. That's
+    real neuroscience, and it's the foundation we need for everything
+    that comes next. Take a breath, stretch a bit, and when you're
+    ready I'll meet you in Chapter 3 — that's where we start meeting
+    the different types of dementia by name.

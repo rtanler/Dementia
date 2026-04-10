@@ -75,7 +75,7 @@ Interactive Micro Simulations to help students learn Theory of Knowledge fundame
 
 -   **[graph-viewer](./graph-viewer/index.md)**
 
-    ![graph-viewer](./graph-viewer/learning-graph.png)
+    ![graph-viewer](./graph-viewer/graph-viewer.png)
 
     Interactive MicroSim for graph-viewer.
 
@@ -129,7 +129,7 @@ Interactive Micro Simulations to help students learn Theory of Knowledge fundame
 
 -   **[The Four Lobes of the Brain](./the-four-lobes-of-the-brain/index.md)**
 
-    ![The Four Lobes of the Brain](./the-four-lobes-of-the-brain/the-four-loges-of-the-brain.png)
+    ![The Four Lobes of the Brain](./the-four-lobes-of-the-brain/the-four-lobes-of-the-brain.png)
 
     Interactive diagram to identify the four lobes of the cerebral cortex and their primary functions, with dementia impact notes for each lobe.
 
