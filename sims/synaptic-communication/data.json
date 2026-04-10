@@ -12,7 +12,7 @@
       "color": "#6FA8DC",
       "hint": "The pale blue 'sender' neuron in the upper-left of the image.",
       "description": "The presynaptic neuron is the neuron that sends the signal. It generates an electrical impulse in its cell body and passes it down a long fiber called the axon toward the next neuron in the chain.",
-      "ap_tip": "Dementia impact: In Alzheimer's disease, these sending neurons are among the first to be damaged, which reduces the total number of signals that can be sent between brain regions."
+      "ap_tip": "<strong>Dementia Impact:</strong> In Alzheimer's disease, these sending neurons are among the first to be damaged, which reduces the total number of signals that can be sent between brain regions."
     },
     {
       "id": 2,
@@ -23,7 +23,7 @@
       "color": "#F7DC4E",
       "hint": "The soft yellow glowing wave traveling along the axon.",
       "description": "An action potential is a short electrical signal that travels rapidly down the axon of the sending neuron. It changes the voltage inside the axon from about -70 millivolts (resting) to +40 millivolts and then back again, all in about 1 millisecond.",
-      "ap_tip": "Dementia impact: Damaged myelin (the insulation around axons) slows down action potentials, which can make thinking feel slower or more effortful."
+      "ap_tip": "<strong>Dementia Impact:</strong> Damaged myelin (the insulation around axons) slows down action potentials, which can make thinking feel slower or more effortful."
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "color": "#3A7BC8",
       "hint": "The bulbous blue club at the end of the axon, just above the gap.",
       "description": "The axon terminal (also called the synaptic bouton) is the bulb-shaped end of the sending neuron's axon. It holds the chemical messengers that the neuron will release to communicate with the next neuron.",
-      "ap_tip": "Dementia impact: Loss of axon terminals is one of the earliest measurable changes in Alzheimer's disease and correlates strongly with memory loss."
+      "ap_tip": "<strong>Dementia Impact:</strong> Loss of axon terminals is one of the earliest measurable changes in Alzheimer's disease and correlates strongly with memory loss."
     },
     {
       "id": 4,
@@ -45,7 +45,7 @@
       "color": "#3A7BC8",
       "hint": "The cluster of small bright blue circles floating inside the axon terminal.",
       "description": "Synaptic vesicles are tiny membrane-wrapped bubbles inside the axon terminal. Each vesicle is filled with thousands of neurotransmitter molecules, ready to be released when an electrical signal arrives.",
-      "ap_tip": "Dementia impact: Diseased neurons make fewer vesicles and refill them more slowly, weakening the chemical signal they can send."
+      "ap_tip": "<strong>Dementia Impact:</strong> Diseased neurons make fewer vesicles and refill them more slowly, weakening the chemical signal they can send."
     },
     {
       "id": 5,
@@ -56,7 +56,7 @@
       "color": "#3A7BC8",
       "hint": "Vesicles at the bottom of the terminal merging with the membrane and opening into the gap.",
       "description": "When the action potential reaches the axon terminal, vesicles move to the presynaptic membrane and fuse with it. As they fuse, they open up and pour their neurotransmitter molecules into the synaptic gap. This is how an electrical signal is converted into a chemical signal.",
-      "ap_tip": "Dementia impact: Brain diseases can disrupt the proteins that help vesicles fuse, reducing how much neurotransmitter gets released per signal."
+      "ap_tip": "<strong>Dementia Impact:</strong> Brain diseases can disrupt the proteins that help vesicles fuse, reducing how much neurotransmitter gets released per signal."
     },
     {
       "id": 6,
@@ -67,7 +67,7 @@
       "color": "#B0B0B0",
       "hint": "The narrow empty gap running diagonally across the middle of the image.",
       "description": "The synaptic cleft is the tiny gap between the sending and receiving neurons. It is only about 20-40 nanometers wide, about a thousand times thinner than a human hair. Neurotransmitter molecules cross this gap in less than a millisecond.",
-      "ap_tip": "Dementia impact: Toxic protein fragments like beta-amyloid can build up in the synaptic cleft and interfere with normal chemical signaling."
+      "ap_tip": "<strong>Dementia Impact:</strong> Toxic protein fragments like beta-amyloid can build up in the synaptic cleft and interfere with normal chemical signaling."
     },
     {
       "id": 7,
@@ -78,7 +78,7 @@
       "color": "#F39C2E",
       "hint": "The small orange dots scattered across the gap.",
       "description": "Neurotransmitters are the chemical messengers that carry the signal across the synaptic cleft. Common ones include acetylcholine (important for memory), dopamine, serotonin, and glutamate. They diffuse across the gap and bind to receptors on the receiving neuron.",
-      "ap_tip": "Dementia impact: In Alzheimer's disease, levels of acetylcholine drop sharply. Most common dementia medications work by boosting the amount of acetylcholine available in the synapse."
+      "ap_tip": "<strong>Dementia Impact:</strong> In Alzheimer's disease, levels of acetylcholine drop sharply. Most common dementia medications work by boosting the amount of acetylcholine available in the synapse."
     },
     {
       "id": 8,
@@ -89,7 +89,7 @@
       "color": "#6B4F9B",
       "hint": "The purple lock-shaped structures on the top surface of the dendrite.",
       "description": "Receptor sites are special proteins embedded in the receiving neuron's membrane. Each receptor is shaped like a lock that fits only one kind of neurotransmitter 'key.' When a neurotransmitter binds, the receptor opens a channel or triggers a chemical cascade inside the receiving neuron.",
-      "ap_tip": "Dementia impact: Damaged or lost receptors mean fewer chemical messages get through, even if the sending neuron is still releasing neurotransmitters normally."
+      "ap_tip": "<strong>Dementia Impact:</strong> Damaged or lost receptors mean fewer chemical messages get through, even if the sending neuron is still releasing neurotransmitters normally."
     },
     {
       "id": 9,
@@ -100,7 +100,7 @@
       "color": "#7FBF7F",
       "hint": "The pale green 'receiving' neuron in the lower-right of the image.",
       "description": "The postsynaptic neuron is the receiving neuron. When enough neurotransmitters bind to its receptors, it generates a new action potential in its own cell body. This passes the signal along to the next neuron in the network, allowing information to travel across the brain.",
-      "ap_tip": "Dementia impact: When sending neurons die, receiving neurons can also weaken and shrink from lack of stimulation — a process called transneuronal degeneration that spreads damage across brain networks."
+      "ap_tip": "<strong>Dementia Impact:</strong> When sending neurons die, receiving neurons can also weaken and shrink from lack of stimulation — a process called transneuronal degeneration that spreads damage across brain networks."
     }
   ],
   "layout": "side-panel"

@@ -12,7 +12,7 @@
       "color": "#3C8D40",
       "hint": "The green region on the upper-middle top of the brain, behind the frontal lobe.",
       "description": "The parietal lobe sits on top of the brain, behind the frontal lobe. It processes touch and temperature, integrates information from different senses, handles spatial awareness and navigation, and helps with understanding numbers.",
-      "ap_tip": "Dementia impact: Damage causes difficulty with spatial tasks like dressing or finding the way home."
+      "ap_tip": "<strong>Dementia Impact:</strong> Damage causes difficulty with spatial tasks like dressing or finding the way home."
     },
     {
       "id": 2,
@@ -23,7 +23,7 @@
       "color": "#2E74B5",
       "hint": "The large blue region at the front of the brain, behind where the forehead would be.",
       "description": "The frontal lobe sits at the front of the brain and handles the brain's 'executive functions': planning, organizing, problem solving, decision making, and controlling personality and behavior. It also directs voluntary movement and contains Broca's area, which produces speech.",
-      "ap_tip": "Dementia impact: Early changes in frontotemporal dementia affect personality and judgment."
+      "ap_tip": "<strong>Dementia Impact:</strong> Early changes in frontotemporal dementia affect personality and judgment."
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "color": "#6B4F9B",
       "hint": "The purple region at the back of the brain.",
       "description": "The occipital lobe sits at the back of the brain. It is the brain's visual processing center, handling color recognition, motion detection, and distance perception. Almost everything we 'see' is interpreted here.",
-      "ap_tip": "Dementia impact: Visual processing problems in Lewy body dementia can cause hallucinations."
+      "ap_tip": "<strong>Dementia Impact:</strong> Visual processing problems in Lewy body dementia can cause hallucinations."
     },
     {
       "id": 4,
@@ -45,7 +45,7 @@
       "color": "#D4A017",
       "hint": "The yellow region on the lower side of the brain, near where the ears would be.",
       "description": "The temporal lobe sits on the side of the brain, near the ears. It processes sound and language comprehension, forms new memories (it contains the hippocampus), recognizes faces, and helps produce emotional responses.",
-      "ap_tip": "Dementia impact: Often affected early in Alzheimer's disease, causing memory and language problems."
+      "ap_tip": "<strong>Dementia Impact:</strong> Often affected early in Alzheimer's disease, causing memory and language problems."
     }
   ],
   "layout": "side-panel"
