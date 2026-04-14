@@ -115,6 +115,9 @@ nav:
     - Mascot Test: learning-graph/mascot-test.md
     - Update Letter to Rick (April 10, 2026): learning-graph/rick-update-2026-04-10-v2.md
 
+  - Stories:
+    - Story Ideas: stories/story-ideas.md
+
   - Glossary: glossary.md
   - FAQ: faq.md
   - References: references.md
