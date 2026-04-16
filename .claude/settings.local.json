@@ -5,7 +5,11 @@
       "Bash(git commit -m ':*)",
       "Bash(git push:*)",
       "Bash(mkdocs gh-deploy:*)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(rm -f /Users/dan/Documents/ws/Dementia/.git/index.lock)",
+      "Bash(git -C /Users/dan/Documents/ws/Dementia add -A)",
+      "Bash(git -C /Users/dan/Documents/ws/Dementia commit -m ':*)",
+      "Bash(git -C /Users/dan/Documents/ws/Dementia push)"
     ]
   }
 }

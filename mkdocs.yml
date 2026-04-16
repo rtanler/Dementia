@@ -116,8 +116,9 @@ nav:
     - Update Letter to Rick (April 10, 2026): learning-graph/rick-update-2026-04-10-v2.md
 
   - Stories:
-    - Story Ideas: stories/story-ideas.md
+    - List of Stories: stories/index.md
     - Four O'Clock (Sundowning): stories/four-oclock/index.md
+    - Story Ideas: stories/story-ideas.md
     - Medical Career Stories: stories/medical-career-stories.md
 
   - Glossary: glossary.md
