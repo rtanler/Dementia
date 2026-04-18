@@ -9,7 +9,8 @@
       "Bash(rm -f /Users/dan/Documents/ws/Dementia/.git/index.lock)",
       "Bash(git -C /Users/dan/Documents/ws/Dementia add -A)",
       "Bash(git -C /Users/dan/Documents/ws/Dementia commit -m ':*)",
-      "Bash(git -C /Users/dan/Documents/ws/Dementia push)"
+      "Bash(git -C /Users/dan/Documents/ws/Dementia push)",
+      "Bash([ -f \"/Users/danmccreary/Documents/ws/Dementia/docs/stories/$dir/index.md\" ])"
     ]
   }
 }
