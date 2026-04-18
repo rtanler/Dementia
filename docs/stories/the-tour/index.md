@@ -27,6 +27,7 @@ It is a Sunday night. On Denise's kitchen counter are three glossy brochures fro
 
 <!-- ![](./panel-01.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a tired kitchen scene at late evening. Denise, 58, chin-length brown hair pulled back, in a loose sweater, sits at the kitchen counter with her chin in her hand, looking at three glossy brochures fanned in front of her. A half-finished cup of tea has gone cold. A laptop open to an evaluation checklist. A baby monitor on the counter. The color palette is soft amber, muted teal, deep cream, and warm brown. The emotional tone is bone-tired resolve. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -36,6 +37,7 @@ The three brochures on the counter had photographs of smiling gray-haired women 
 
 <!-- ![](./panel-02.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting the lobby of a large, corporate assisted-living community. Shiny marble floors, a grand piano no one is playing, a chandelier, bright fluorescent accent lighting. Denise, with a clipboard, stands beside a very polished sales representative in a sharp suit, who is gesturing proudly. In the background, a few residents in a hallway look unoccupied, one in a wheelchair alone. The color palette is cold cream, polished gray-white, muted gold, and hard fluorescent white. The emotional tone is glossy unease — Denise sensing something is off beneath the shine. Speech bubble from sales rep (bright): "Our memory care wing is award-winning! Would you like to see our spa?" Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -45,6 +47,7 @@ The first tour was led by a woman named Brittany in a sharp blazer and a name ba
 
 <!-- ![](./panel-03.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Denise walking down a hallway in the memory care wing of the glossy facility. The hallway has glossy photographs on the walls but harsh fluorescent lighting. Two residents sit in wheelchairs along the wall, unoccupied, one slumped. Brittany gestures cheerfully ahead of Denise. Denise's face has tightened — she has noticed something. A faint yellow haze suggests the smell. The color palette is cold cream, clinical pale yellow, sterile white, with one splash of harsh red emergency exit light. The emotional tone is alarm masked as politeness. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -54,6 +57,7 @@ Denise smelled it the second they entered the memory care wing. Not a hospital s
 
 <!-- ![](./panel-04.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a church-adjacent care community. A stained-glass window casts colored light onto a common room. A small group of residents sits in a circle with a volunteer, singing hymns. The space feels warmer than tour one — but the resident area is crowded, with not enough staff visible. Denise walks beside a kind older nun in a cardigan and modest habit. Denise's expression is thoughtful, noting both strengths and concerns. The color palette is warm honey gold, stained-glass cobalt and ruby, soft cream, deep wood brown. The emotional tone is mixed admiration and careful evaluation. Speech bubble from nun (warm): "We call them our residents, not our patients. That means something." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -63,6 +67,7 @@ The second tour was led by Sister Margaret, a small sharp-eyed woman in a modest
 
 <!-- ![](./panel-05.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Denise sitting in her car in a parking lot, phone pressed to her ear, her face strained. Through the windshield, the cross atop the church tower is visible. A raincloud sits heavy above. The color palette is deep gray-green, muted cobalt, and warm yellow from the dashboard light. The emotional tone is hurt and resolve. Speech bubble (from phone, small): "You're giving up on Mom." Speech bubble from Denise (firm, measured): "I am not giving up on her. I am admitting I can't do what three people should be doing. Come help me tour tomorrow, or don't call me again this week." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -72,6 +77,7 @@ The call came while Denise was eating a granola bar in her car. Her brother Robe
 
 <!-- ![](./panel-06.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a small, converted house in a leafy residential neighborhood. A white painted porch with rocking chairs. A wooden sign reads "Willow House — A Small Home for Memory Care." Denise, with Robert — 55, balding, gentle eyes, a travel bag still on his shoulder — stands on the walkway looking up. A friendly middle-aged woman in a cardigan, Pat, waves from the porch. The color palette is soft cream, deep sage green, warm amber, and dusty rose. The emotional tone is cautious hope — this one feels different. Speech bubble from Pat (warm): "You must be Denise. And you brought your brother — wonderful." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -81,6 +87,7 @@ The third place was a two-story house on a shaded street, not a campus. A hand-p
 
 <!-- ![](./panel-07.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting the common room of Willow House. Residents are engaged: one folds laundry slowly and happily, two are setting the table for lunch, another is painting watercolors with help, another is petting a small calico cat in her lap. Staff move among them gently, at eye level. A sunny bay window looks out onto a secured garden with a walking path. The color palette is honey gold, sage green, creamy white, soft lavender. The emotional tone is purposeful peace. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -90,6 +97,7 @@ Inside, every resident was doing something. One was folding towels, slowly and w
 
 <!-- ![](./panel-08.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Denise and Robert seated across a small wooden kitchen table from Pat. Denise is asking questions from her clipboard. Pat is answering calmly with direct eye contact. Coffee mugs, a plate of homemade cookies, notes being taken. A window behind Pat looks into the garden. The color palette is warm honey, soft sage, creamy amber. The emotional tone is serious, open, respectful — a real conversation. Speech bubble from Denise: "What happens at 3 a.m. when she gets up confused?" Speech bubble from Pat: "Sharon or Melvin will walk with her. Usually they end up in the kitchen. Sometimes they make cocoa." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -99,6 +107,7 @@ At the small kitchen table Pat answered every question without looking at a bind
 
 <!-- ![](./panel-09.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Robert crouching down, at eye level with an elderly male resident seated in an armchair, engaging him in quiet conversation. The resident is smiling softly. Denise and Pat watch from a short distance. The color palette is warm gold, soft denim blue, deep wood brown. The emotional tone is the moment a skeptical brother understands. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -108,6 +117,7 @@ Robert, who had flown in as a skeptic, wandered off while Denise finished her qu
 
 <!-- ![](./panel-10.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Evelyn, 85, a small silver-haired woman in a floral blouse, sitting on the edge of a neatly made twin bed in her new small bedroom at Willow House. She looks disoriented and a little scared. Her own quilt is on the bed; a framed photo of her late husband is on the nightstand. Denise sits beside her, holding her hand, her own eyes wet. Afternoon light slants through a gingham curtain. The color palette is pale lavender, warm cream, muted teal, soft gold. The emotional tone is raw love and difficulty together. Speech bubble from Evelyn (small, confused): "Am I going home tonight?" Speech bubble from Denise (steady, gentle): "Not tonight, Mama. Tonight you're staying here. I'll see you tomorrow." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -117,6 +127,7 @@ The first week was hard the way Denise had been warned it would be. Her mother a
 
 <!-- ![](./panel-11.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Evelyn two weeks later, in the garden at Willow House, walking arm in arm with another resident of similar age — a woman named Lorraine — both smiling and chatting. A small calico cat trots behind them. Roses climb the fence. The color palette is bright honey gold, deep green, soft pink from climbing roses, clean white. The emotional tone is unexpected joy — a mother who has found a friend. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -126,6 +137,7 @@ Two weeks in, Evelyn had a friend. Lorraine. They met over morning coffee and, w
 
 <!-- ![](./panel-12.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Denise in her own home kitchen, months later, in the same chair where she had once sat exhausted at midnight. Now it is a Saturday morning, sunlight pours in, she has a full mug of coffee, and she is not crying. She is smiling at her phone, watching a short video. Visible on the phone: Evelyn singing in a small group at Willow House. On the counter, fresh flowers. The color palette is bright morning gold, soft cream, warm peach, and deep green. The emotional tone is quiet restoration — a daughter returning to herself. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 

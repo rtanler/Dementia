@@ -41,6 +41,7 @@ There is a brain science reason why music survives. The neural circuits that sto
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A quiet mid-afternoon in a small living room. **Ruth** (83, short cropped gray hair, warm brown skin, soft violet house cardigan, cream slacks) sits in her usual cushioned armchair by a window, her hands folded in her lap, her gaze distant — present in the room but clearly somewhere else inside herself. Her eyes are soft but blank, focused on nothing in particular. A small knit blanket over her knees. **Marcus** (46, olive-green sweater, warm brown skin, short-faded haircut, gentle beard) sits on the nearby sofa with a book open in his lap that he is clearly not reading, watching his mother with quiet sadness. A rain-streaked window behind them. A pendant lamp on. A clock on the mantel reads 3:17 PM. Color palette: cool gray afternoon tones, soft violets, the warm amber of the one lamp. Emotional tone: the long silence, love in the quiet.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same living room, a small laundry basket on the floor in front of the sofa. **Marcus** stands folding laundry with absent-minded hands — a pale blue T-shirt halfway folded in his grip. He is looking out the rain-streaked window at the gray afternoon, lost in thought. **Ruth** is in her armchair in the same position, eyes gently open but distant, hands folded. A clock on the wall reads 2:40 PM. On a small side table: an old wooden record player cabinet (mid-century modern style), its lid closed. Beside the cabinet, a wooden crate of vinyl records with handwritten labels on some sleeves. Color palette: muted blue-grays of a rainy afternoon, warm browns of the wooden furniture, the soft violet of Ruth's cardigan. Emotional tone: the ordinariness of a Tuesday in grief.
 
@@ -81,6 +83,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Close-up on **Marcus's** hands flipping through a wooden crate of vintage vinyl LPs beside the open record-player cabinet. Each record sleeve visible has handwritten dates and names in his mother's neat cursive — *"Ruth's, 1962,"* *"Ella — favorite,"* *"Gospel Sundays."* His hand has just paused on a record sleeve that shows a stylized black-and-white portrait of a woman in a cowgirl outfit with a Nashville-style typeface across the top — clearly a Patsy Cline album. Marcus is on one knee beside the cabinet. Color palette: warm browns of the wooden cabinet, the faded black-white-and-gold of the vintage record sleeve, soft afternoon light. Emotional tone: the small accidental discovery that changes a day.
 
@@ -100,6 +103,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The living room. **Marcus** stands beside the now-playing record player, his finger having just lifted the tone arm into place. The vinyl spins. Faint musical notes are visible in the air rising from the speaker cabinet. **Ruth** — still in the armchair in the MIDDLE of the frame — has lifted her head just slightly. Her eyes are open a fraction wider than they were two panels ago. Something is happening in her face that was not happening before. **Marcus** has not yet noticed this; he is turned toward the record player. A soft warmth has entered the color palette. Rain still on the window. Color palette: slightly warmed up from the previous panels, the amber of the lamp now noticeably richer. Emotional tone: the first second of a miracle beginning.
 
@@ -121,6 +125,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Wide dramatic panel. **Marcus** stands frozen in the middle of the living room, a folded shirt still half-held in his hands, his mouth slightly open, his eyes full of tears, staring at his mother. **Ruth** is in her armchair — but she is *transformed.* Her eyes are closed. Her head is tilted back slightly against the chair. Her mouth is open in clear singing — the words of the chorus shaping on her lips. Soft musical notes rise around her in the air. A single tear traces down her cheek. Her hand, for the first time in months, has raised gently to rest over her heart. The record player spins in the background. Rain outside. The lamplight catches her face warmly. Color palette: warm violet and amber, the soft gold of the music in the air, the deep warmth of love in the room. Emotional tone: a miracle, witnessed by one son.
 
@@ -142,6 +147,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The record has finished. The tone arm has clicked back to its rest position. The living room is softly silent. **Ruth** sits quietly in her armchair, her eyes closed, a small peaceful smile on her lips — she has drifted back into the quiet but the quiet is different now, warmer. **Marcus** is kneeling on the floor in front of her armchair, both of his hands holding one of her hands, his face wet, his forehead lowered against her knee. She has gently rested her free hand on top of his head — a small motherly gesture she has not made in months. Rain still on the window, but the light inside feels warmer. Color palette: deep warm ambers, violet, cream, the golden glow of the lamp. Emotional tone: after-the-miracle tenderness, a mother and son found inside a song.
 
@@ -163,6 +169,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A kitchen table that evening. **Marcus** sits with a laptop open in front of him, a yellow legal pad beside it, a glass of water, a small bowl of popcorn untouched. On his laptop screen, in stylized visibility: a research-article-style page with the title "Musical Memory in Dementia" and subtitles like *"procedural memory,"* *"limbic system,"* *"late-stage communication."* Marcus has been writing on the yellow legal pad in careful handwriting: *"Songs Mama loved"* as a heading, and underneath: *"Patsy Cline," "Ella Fitzgerald," "Sam Cooke," "gospel — church choir Easter '68," "Stevie Wonder Talking Book," "Marvin Gaye What's Going On."* Color palette: warm kitchen ambers, the cool blue of the laptop, the yellow of the legal pad. Emotional tone: love organizing itself into a project.
 
@@ -182,6 +189,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Living-room floor, the next day. **Marcus** sits cross-legged on the rug surrounded by stacks of his mother's old vinyl records, photo albums, and boxes. He is holding up a record sleeve and inspecting the handwritten label his mother wrote decades ago. On the floor around him in neat piles: one pile labeled with a sticky note "CHURCH," one "PARTY," one "SAD SONGS," one "DAD & MOM — slow dance." His phone is propped against a coffee-table leg, a note-taking app open. On the wall behind him, a framed black-and-white photo of his parents at their wedding — a handsome young Black couple in 1965 wedding attire. Color palette: warm browns of the vinyl, the cream of the sticky notes, amber afternoon light. Emotional tone: a son becoming an archivist of his mother's joy.
 
@@ -201,6 +209,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Marcus** standing at a small charging dock on a dresser, connecting a small modern bluetooth speaker to his phone. On his phone screen, visible: a simple music app with a playlist titled **"MAMA'S SONGS"** and seventy-three track titles listed beneath. A small red heart icon by his fingertip. The dresser also has a framed photo of Ruth in her 1960s Sunday dress, standing on church steps, smiling. A small soft pink afghan folded on the dresser. Morning light through the window. Color palette: warm creams, the soft red of the heart on the phone, the muted pinks and blues of the afghan. Emotional tone: a small modern tool loaded with a lifetime.
 
@@ -220,6 +229,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Several weeks later. The living room, a sunny afternoon now. **Ruth** sits in her armchair with a soft knit blanket over her lap. She is not singing — she is gently humming, her eyes half-closed, a small peaceful smile. **Marcus** is seated on the rug at her feet, leaning against the side of her chair, one of her hands resting on his shoulder. The small bluetooth speaker is on the side table, a visible blue LED lit. A soft afternoon sunbeam comes through the window onto them both. On the wall, a new addition since earlier panels: a cork board pinned with song titles handwritten on index cards, dates beside some of them — *"'Crazy' — Mom sang it 10/22,"* *"'You Send Me' — Mom smiled 10/29,"* *"'How Great Thou Art' — Mom cried 11/05."* Color palette: warm golden sunlight, sage greens, soft peach. Emotional tone: love has built a new language.
 
@@ -241,6 +251,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A mid-morning scene. A kind young home-health aide — **Keisha** (late 20s, warm brown skin, natural hair in a soft afro, navy scrubs, a warm open face) — sits in a kitchen chair beside Ruth's armchair. She is holding a laminated card labeled *"MAMA'S SONGS — WHEN TO PLAY WHAT"* that Marcus has prepared for her, reading it carefully. A small bluetooth speaker is on the table, playing. **Ruth** is peacefully bobbing her head slightly to the music, eyes half-closed. **Marcus** is visible in the background in the kitchen doorway, with his coat on and a work bag slung over his shoulder, pausing before he leaves — warm grateful expression. Color palette: warm creams, the navy of Keisha's scrubs, the soft sage of Ruth's cardigan. Emotional tone: handing off a small treasure into good hands.
 
@@ -262,6 +273,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. An evening scene many months later. The small living room, lamps low and warm. **Ruth** lies peacefully on a soft hospital-style bed that has been set up in the living room (a subtle detail suggesting late-stage care at home). A warm quilt over her. Her eyes closed, face serene. Quiet. The small bluetooth speaker plays softly on a nearby table. **Marcus** sits in a chair beside the bed, his hand wrapped around his mother's hand on the quilt. His face is quiet, full of love, tears on his cheeks but not despair. In his free hand: an old photograph of Ruth as a young woman singing in a choir. On a corkboard on the wall, the song-log now filled with dozens of index cards — a whole archive. A soft soft musical note rising faintly from the speaker. Color palette: deep warm ambers, cream and peach, the soft indigo of the evening outside the window. Emotional tone: a loving vigil, a song as company at the close.
 

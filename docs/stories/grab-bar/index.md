@@ -41,6 +41,7 @@ One in three adults over the age of 65 falls every year. A single fall is not al
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A sunny Sunday afternoon in **Georgia's** small, tidy kitchen. **Georgia** (79, slim older white woman with soft gray hair neatly styled, pink house cardigan, soft brown slacks, no walker yet) stands at the stove cheerfully stirring a pot of soup. **Sandra** (50, white woman, ash-blonde bob, tortoise-shell glasses, denim button-down, khaki pants) sits at a small kitchen table eating a piece of cornbread, happy and relaxed. Through the window behind them: a neatly-kept backyard with a small garden of late-summer tomatoes. The kitchen has subtle but noticeable hazards that the camera hints at without hitting too hard: a small throw rug bunched slightly at the edge of the sink (foreground detail), a coffee mug positioned near the stove, a loose electrical cord running from a lamp. Color palette: buttery yellows, soft pinks, sage green of the cardigan. Emotional tone: warm false-security, love in a room that is not yet safe.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Sandra** sits at her own kitchen counter at home that evening, her laptop open, a half-eaten bowl of soup, and a sticky note on the laptop screen with handwritten items: *"Mom's grab bar — Home Depot,"* *"night-lights,"* *"rip up the hall rug,"* *"stove timer."* The sticky note is crowded with more sticky notes from other tasks — work meetings, a work project, a dentist appointment, a dog-walker reminder, her daughter's soccer practice schedule, a home-equity refinance reminder. The note about Mom is slowly slipping off the edge. She is scrolling through work email, not looking at the sticky note. A mug of coffee. Color palette: warm kitchen lighting, the yellow pop of the sticky note, the cool blue of the laptop screen. Emotional tone: the ordinary way important things get quietly deferred.
 
@@ -81,6 +83,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Sandra's office at work, Tuesday morning 10:47 AM. **Sandra** is at her desk in a small pleasant office, headset on her ear during a video call — she is mid-sentence, professional expression. Her personal cell phone on the desk has just lit up with an incoming call labeled "MOM — CELL" in large letters. Her eyes have just flicked to the phone screen; the blood has started to drain from her face. Behind her on the wall: a framed photo of Georgia and Sandra at a recent birthday. Color palette: cool office blues, the bright warning red of the phone call indicator, her warm skin going pale. Emotional tone: the before-and-after second of every caregiver's life.
 
@@ -102,6 +105,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A hospital room. **Georgia** lies in a hospital bed, a white blanket pulled up to her chest, an IV line in her arm, a soft blue hospital gown. Her left hip has a small obvious dressing under the blanket; her leg is slightly elevated. She looks pale, tired, a little disoriented. A wheeled bedside tray with a plastic cup of water and a small box of tissues. **Sandra** sits in a bedside chair, leaning forward, both hands holding one of her mother's hands, her face ragged with regret. She has not brushed her hair since the call. Monitors beep softly. A window shows the overcast afternoon. A nurse walks past the doorway in the background. Color palette: clinical pale blues and whites, the muted pink of Georgia's cardigan on the chair nearby, a single warm amber lamp. Emotional tone: the "I should have" weight of a preventable injury.
 
@@ -123,6 +127,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A rehabilitation-facility room, two weeks after panel 4. **Georgia** sits in a wheelchair by a window, a floral blanket over her legs, a small knit cap on her head. Her expression is different from any previous panel — softer, more distant, with a slight puzzled quality. She is looking out the window without really seeing it. **Sandra** sits in a chair beside her, her mother's hand in hers, her face sad and watchful. A small name tag above Georgia's bed reads "ROOM 214 — GEORGIA MILLER — SOFT DIET — FALL RISK." A physical therapist's printed schedule hangs on the wall. A get-well card from grandchildren. Color palette: institutional pale blues, soft grays, a single warm quilt. Emotional tone: the real, quiet danger of post-fall decline.
 
@@ -144,6 +149,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Georgia's hospital-discharge room. **Sandra** sits in a chair reading a printed booklet labeled *"HOME SAFETY FOR OLDER ADULTS WITH MEMORY LOSS"* — pages visible with checklists, photos of grab bars, labeled drawers, simple home-safety icons. Her shoulders are hunched forward in concentration. Next to her, a kind **discharge nurse** (Black woman in her 40s, teal scrubs, a compassionate face) stands gently pointing at an item on the booklet. A rolling medical cart nearby, a small bag of Georgia's personal effects. Georgia is out of frame. Color palette: warm creams, teal scrubs, the bright yellow of the highlighted items in the booklet. Emotional tone: a daughter becoming her mother's safety engineer.
 
@@ -165,6 +171,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Georgia's small bathroom. **Sandra** is on her knees beside the bathtub, drill in hand, installing a **stainless-steel grab bar** into the tile wall above the tub's outer edge. A second, completed grab bar is already mounted on the far wall of the tub. She is concentrating hard, protective goggles pushed up on her head. Spread across the bathroom floor: a new raised toilet seat still in its box, a non-slip bath mat in clear plastic, a nightlight for the bathroom, a small shower-bench stool, and the **HOME SAFETY CHECKLIST** clipboard with the top three items checked off. Her teenage son **Tyler** (16, sandy hair, gray T-shirt, focused expression) is kneeling beside her holding the drill's level. Color palette: clean whites, stainless silver, a pop of the bright red checklist and yellow measuring tape. Emotional tone: love turned practical, work that matters.
 
@@ -186,6 +193,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Georgia's front hallway and entryway. **Sandra** and **Tyler** are rolling up an old braided throw rug — the exact kind of loose rug that causes falls. A small pile of rolled-up rugs sits by the front door, destined for the trash or the basement. On the hallway carpet now laid bare, small round bright-reflective safety dots have been added at the top and bottom of the stairs. A new motion-activated night-light glows softly at the foot of the stairs. The stair handrails are being reinforced — Tyler is at the top of the stairs tightening the handrail brackets with a screwdriver. Color palette: warm wooden browns, cream walls, the soft orange glow of the new night-light. Emotional tone: steady focused progress.
 
@@ -207,6 +215,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Georgia's kitchen. **Sandra** has installed a small **auto-shutoff device** under the stove hood (a visible gadget with a small green LED). She is labeling kitchen drawers with large printed sticky labels: *"SILVERWARE,"* *"DISH TOWELS,"* *"CAN OPENER / SCISSORS,"* *"PLATES."* The sharp knives have been moved to a locked knife block. The stove has new bright-red knob covers. On the counter: a simplified two-burner electric kettle (replacing a more complicated coffee maker Georgia used to use). Near the door to the kitchen: a large printed "PHONE NUMBERS" sheet taped to the wall — *"SANDRA: 555-0199 / 911 FOR EMERGENCY / POISON: 1-800-222-1222."* Tyler is writing labels on another drawer. Color palette: buttery kitchen yellows, cream cabinets, bright red and lime green accents from the safety devices. Emotional tone: a kitchen re-engineered with love.
 
@@ -226,6 +235,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Georgia's bedroom. A soft floral comforter on the bed. **Sandra** is on her knees next to the bed plugging a small motion-activated **under-bed night-light** into a wall outlet; a warm amber strip of light glows under the bed the moment she plugs it in. The bedroom has additional upgrades: a grab bar beside the bed to help with standing, a bedside landline phone with extra-large buttons, a simple battery-operated wall clock with huge black numbers on a white face, a small bell on a ribbon tied to Georgia's closet door. **Tyler** is at the window fastening a small window-crank guard. A soft brown cat is curled on the pillow, unworried. Color palette: soft pinks and rose-golds, warm wood, the amber glow of the under-bed light. Emotional tone: tenderness turned into small reliable equipment.
 
@@ -247,6 +257,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Monday afternoon, Georgia's front porch. **Sandra** is helping her mother out of the passenger side of a car, holding Georgia's elbow gently as she stands. Georgia is now using a three-wheel walker, her left leg still slightly stiff; she is in her pink cardigan and brown slacks, a small smile of relief on her face at being home. **Tyler** holds the front door open, smiling warmly. Behind the open front door we can see into the hallway — the rugs gone, the new night-light glowing softly at the baseboard, a small framed sign that Sandra made with bold printing: *"WELCOME HOME, MOM."* The autumn yard is full of gold. Color palette: warm golds, the soft pink of Georgia's cardigan, the cream siding of the house. Emotional tone: homecoming to a house made safer with love.
 
@@ -268,6 +279,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A warm summer afternoon in Georgia's small backyard, two years after panel 1. **Georgia** sits on a cushioned chair in the shade of a small garden umbrella with a glass of iced tea in one hand, resting peacefully, her walker beside her. **Sandra** is kneeling in a small raised garden bed beside her, picking ripe tomatoes into a shallow basket. **Tyler** (now older, 18, visibly a young man) is sitting on the porch step with a younger niece on his lap, both of them reading a book together. Georgia's back door (visible in the background) has a large single-lever handle that replaced the old doorknob. A wheelchair-ramp board neatly installed over the back step. A sign on the porch reads *"GRANDMA'S GARDEN — est. 1982."* Color palette: bright summer greens, tomato reds, the soft pink of Georgia's sun hat. Emotional tone: the reward of the hard work, years given back.
 

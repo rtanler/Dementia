@@ -27,6 +27,7 @@ It is a Sunday in July. Pearl, 82, sits in her armchair and does not say much an
 
 <!-- ![](./panel-01.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Pearl, 82, seated quietly in a wingback armchair in a warm lived-in living room filled with family photographs on the walls. She looks out the window absently. Her three adult grandchildren — Kayla, DeShawn, Maya — sit near her on a couch and the rug, watching her. The color palette is deep amber, soft rose, warm cream, honey brown. The emotional tone is quiet loss and gentle determination. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -36,6 +37,7 @@ Grandma Pearl had stopped telling stories sometime in the last six months. She s
 
 <!-- ![](./panel-02.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Kayla, 28, at a kitchen counter with a laptop, DeShawn, 31, beside her with his phone, and Maya, 26, pulling a shoebox of old family photos out of a closet. Pearl is visible in the background in her armchair, dozing. The color palette is warm amber, muted teal, honey, cream. The emotional tone is bright determined planning. Speech bubble from DeShawn: "Aunt Doreen said Grandma played Sam Cooke until the record wore out." Speech bubble from Kayla: "Add it. And we need Mahalia. And we need that Aretha song from the reunion tape." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -45,6 +47,7 @@ The idea came from an article DeShawn had read: music from a person's young adul
 
 <!-- ![](./panel-03.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Pearl in her armchair as a Sam Cooke song begins to play from a small speaker on the side table. Her face is just beginning to change — her eyes soften, her head tilts slightly to the side, a faint smile forming. The grandchildren watch, breath held. Warm golden afternoon light. The color palette is deep amber, warm gold, rose, cream. The emotional tone is the held breath before a door opens. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -54,6 +57,7 @@ They played *You Send Me* first because Aunt Doreen had said, *baby, if you want
 
 <!-- ![](./panel-04.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Pearl in the armchair, eyes closed, mouth open, singing along softly to a song. One hand taps rhythmically on the armrest. Her grandchildren have frozen in delighted shock. Kayla is crying. DeShawn is grinning. Maya has her hands pressed together in front of her face. The color palette is deep amber, warm gold, rose, cream. The emotional tone is joyful reappearance. Speech bubble from Pearl (singing, clear): "...darling, you...send...me..." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -63,6 +67,7 @@ By the third song, Pearl was singing. Full voice, on key, every word. She did no
 
 <!-- ![](./panel-05.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Pearl smiling, her eyes distant but vivid, telling a story. She holds an old black-and-white photograph of herself at nineteen in a red dress. The grandchildren are on the rug, listening raptly, leaning in. The color palette is deep amber, honey, rose, sepia. The emotional tone is a story returning. Speech bubble from Pearl (warm, remembering): "...and Walter said, 'Pearl, you are going to dance with me tonight whether you like it or not.'" Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -72,6 +77,7 @@ When the fifth song ended, Pearl picked up the photograph of herself at nineteen
 
 <!-- ![](./panel-06.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Pearl sitting at a sunny adult day center, wearing soft purple headphones, eyes closed, smiling faintly. A young care aide kneels beside her, smiling too, pointing at the phone Pearl is loosely holding. Other adults are visible in the background at tables. The color palette is warm gold, soft teal, rose, cream. The emotional tone is music as portable home. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -81,6 +87,7 @@ The grandchildren put the playlist on Pearl's phone. They bought her soft over-e
 
 <!-- ![](./panel-07.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Pearl sitting in a rocking chair in a small new bedroom at a memory care home. The grandchildren are setting up her room — hanging photos, placing the small speaker on the bedside table, putting a folded quilt on the bed. Pearl is wearing headphones, eyes closed, a tiny smile on her face as she hums. Afternoon sunlight streams through a gingham curtain. The color palette is soft lavender, warm cream, deep green, honey. The emotional tone is a hard day made possible by music. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -90,6 +97,7 @@ The day Pearl moved into memory care was the hardest day the grandchildren had e
 
 <!-- ![](./panel-08.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a young memory-care aide — a woman in her twenties in scrubs — sitting beside Pearl in the day room, both wearing split headphones, sharing earbuds, humming together. Other residents are visible in the background. The color palette is warm cream, soft pink, honey, deep teal. The emotional tone is a small beautiful friendship forming. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -99,6 +107,7 @@ The aide assigned to Pearl's wing was a young woman named Tasha. Tasha asked, on
 
 <!-- ![](./panel-09.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Pearl, very frail now, in a hospital bed at the memory care home, in her last days of hospice. Her eyes are closed. Her three grandchildren are gathered around, holding her hands, softly singing along to a gospel song playing from the small speaker. A hospice nurse watches from a respectful distance. The color palette is deep amber, warm gold, rose, soft cream. The emotional tone is reverent farewell. Speech bubble (sung softly, all three): "Precious Lord, take my hand..." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -108,6 +117,7 @@ Two years and four months after that first Sunday, Pearl entered hospice. Her ey
 
 <!-- ![](./panel-10.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting the interior of a warm Black Baptist church during a funeral reception. The mood is celebratory, not sorrowful. A speaker plays the playlist at a gentle volume. Kayla, DeShawn, and Maya stand among aunts, uncles, cousins. Three small great-grandchildren are dancing in the aisle near the flowers, laughing. Light pours through stained glass. The color palette is warm gold, deep burgundy, rich purple, cream. The emotional tone is joyful inheritance. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -117,6 +127,7 @@ At Pearl's funeral the same playlist played through the church speakers during t
 
 <!-- ![](./panel-11.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Maya, now holding a new baby, sitting on her grandmother's old armchair at home. A small speaker plays soft Sam Cooke. The baby is soothed, eyes heavy. Maya's face is tender and full of memory. The armchair still has a crocheted throw over the back. The color palette is warm amber, rose, cream, soft gold. The emotional tone is continuation. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -126,6 +137,7 @@ Two years after Pearl's funeral, Maya had a baby. The baby would not sleep. In d
 
 <!-- ![](./panel-12.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a community event at a senior center — Kayla, DeShawn, and Maya are leading a small group of adult caregivers through building playlists for their own loved ones. A banner reads "Songs to Remember — Family Playlists for Dementia." Caregivers are smiling, listening, taking notes. The color palette is warm teal, honey gold, cream, deep amber. The emotional tone is a gift multiplied outward. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 

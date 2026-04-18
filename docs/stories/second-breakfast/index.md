@@ -27,6 +27,7 @@ It is a Tuesday morning. The rice cooker hums on the counter. Hana's mother has 
 
 <!-- ![](./panel-01.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a small bright kitchen. Hana, 41, stands at the counter mid-stride, a coffee mug in her hand, caught between the rice cooker and the dishwasher. She looks toward the table, where her mother Yoko, 76, small, in a pale pink housecoat, sits with her hands folded politely, looking expectantly at an empty placemat. On the counter behind Hana, a used breakfast bowl is rinsed in the sink. Soft morning light comes through a window with a bamboo shade. The color palette is pale peach, warm cream, soft green, and honey. The emotional tone is the pause before a small, important decision. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -36,6 +37,7 @@ Hana stood at the counter with a half-empty coffee mug and watched her mother wa
 
 <!-- ![](./panel-02.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Hana leaning over the kitchen table, one hand on her hip, the other gesturing toward the sink. Her face is explaining, a little tense. Yoko sits with her hands folded, looking up with confused, slightly embarrassed eyes. The color palette is pale peach, soft gray-green, and honey wood tones. The emotional tone is well-meaning but wrong — a daughter correcting a mother, not yet understanding the cost. Speech bubble from Hana: "Mom, you already ate. Your bowl is in the sink." Speech bubble from Yoko: "I did? ...Are you sure?" Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -45,6 +47,7 @@ Please generate a 16:9 image in warm contemporary realism showing Hana leaning o
 
 <!-- ![](./panel-03.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a close-up of Yoko at the kitchen table, alone in the frame. Her hands are still folded, but her eyes are looking down at the placemat, her mouth tight. She is making a small, polite, mortified smile. A small tear glints in the corner of one eye. The color palette is soft pale pink, dusty rose, and gentle cream. The emotional tone is quiet shame and loss — the look of someone who has just been reminded she is failing. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -54,6 +57,7 @@ Hana watched her mother's face change. It was not anger. It was not defiance. It
 
 <!-- ![](./panel-04.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Hana sitting across from her mother at the table, leaning forward with both hands around her coffee mug. Yoko has turned slightly away, looking out the window. Hana's expression is softer now, apologetic. The color palette is warm peach, sage green, and pale gold. The emotional tone is regret and the beginning of a change. Speech bubble from Hana: "Mom — I'm sorry. It's okay. Do you want tea?" Speech bubble from Yoko (small, quiet): "No. Thank you." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -63,6 +67,7 @@ Please generate a 16:9 image in warm contemporary realism showing Hana sitting a
 
 <!-- ![](./panel-05.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a community center meeting room on a Wednesday evening. A circle of eight adults of various ages and ethnicities sits in folding chairs, coffee cups in hand. Hana sits in the circle, leaning forward. An older woman with a kind face, possibly a facilitator, is mid-sentence, gesturing gently. On a whiteboard behind them, handwritten in marker: "Don't argue with the memory. Meet the feeling." The color palette is warm beige, soft teal, and muted burgundy. The emotional tone is reflective and communal. Speech bubble from facilitator: "She isn't asking for rice. She's asking to feel like it's morning." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -72,6 +77,7 @@ On Wednesday, Hana drove to a caregiver support group in the basement of a churc
 
 <!-- ![](./panel-06.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Hana seated at her kitchen table late at night under a single pendant light. She is writing in a spiral notebook. An empty rice cooker sits in the background. A cup of tea steams beside her. The page of the notebook is visible, with three short handwritten lines: "Don't correct. Offer. Keep portions small." The color palette is warm amber, deep brown, and ivory. The emotional tone is quiet, thoughtful, almost reverent — a caregiver rewriting her own rulebook. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -81,6 +87,7 @@ That night Hana sat at the kitchen table with a notebook and wrote three lines. 
 
 <!-- ![](./panel-07.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Hana at the kitchen counter the next morning, carefully ladling a very small portion of rice — perhaps one-third of a normal serving — into a small ceramic bowl. Beside her on the counter, a small piece of salmon on a plate, a tiny bowl of miso soup. Everything is deliberately small. The color palette is warm cream, soft salmon pink, pale green, and honey. The emotional tone is careful love. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -90,6 +97,7 @@ Thursday morning, Hana made breakfast smaller. A third of a cup of rice. Two sma
 
 <!-- ![](./panel-08.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Yoko at the table, hands folded, looking expectantly at her daughter. The table is clean. An hour has passed since the first breakfast. Morning light is a little higher now. The color palette is honey, cream, and soft bamboo green. The emotional tone is gentle expectation. Speech bubble from Yoko (bright, unembarrassed): "Hana-chan, what's for breakfast?" Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -99,6 +107,7 @@ An hour later her mother said, brightly, "Hana-chan, what's for breakfast?" Hana
 
 <!-- ![](./panel-09.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Hana setting a small bowl of rice down in front of her mother with both hands. Yoko is smiling, bright and alive, holding her chopsticks ready. The morning window behind her glows. The color palette is warm cream, honey, gentle green, and butter yellow. The emotional tone is deeply peaceful — the ordinary grace of being fed by someone who loves you. Speech bubble from Hana (warm, steady): "Here you go, Mom. Careful, it's hot." Speech bubble from Yoko: "Thank you, sweetheart." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -108,6 +117,7 @@ Hana set a small bowl of rice in front of her mother. A small piece of salmon. A
 
 <!-- ![](./panel-10.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Hana standing at the sink, washing the two breakfast bowls side by side. A morning cardinal sits on the bird feeder outside the window. Hana's face is calm, thoughtful, slightly smiling. The color palette is soft teal, warm cream, and a bright flash of cardinal red. The emotional tone is resolved and gentle. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -117,6 +127,7 @@ Hana washed two small bowls side by side at the sink. She watched the cardinal a
 
 <!-- ![](./panel-11.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Hana and her mother sitting together on a small back porch in the afternoon. A pot of tea is between them. Hana is listening, her mother is talking animatedly with both hands about something from her childhood in Hawaii. The color palette is late afternoon gold, deep green of garden plants, and soft terra-cotta from the porch tile. The emotional tone is connection — the truth that still works. Speech bubble from Yoko: "And then my brother ran right into the ocean with his good shoes on!" Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -126,6 +137,7 @@ On Thursday afternoon, over tea on the porch, her mother told a story about her 
 
 <!-- ![](./panel-12.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a close-up of a phone screen in Hana's hand, a text conversation visible. Above the phone, blurred in soft focus, is Yoko sleeping peacefully in a chair. The color palette is warm indigo evening, cream, and a soft glow from the phone screen. The emotional tone is resolved, quiet, and wise. Visible text on phone: "I stopped correcting her. I give her a second breakfast. She is happier. So am I." Generate the image immediately without asking clarifying questions.
 </details>
 

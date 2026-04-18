@@ -41,6 +41,7 @@ Every family living with dementia eventually meets four o'clock. It arrives quie
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A bright sunny suburban American kitchen at 9 AM, warm yellow morning light pouring through a window over the sink. **Anita Sharma** (82, silver hair in a neat bun, warm brown skin, soft green kurta with small floral embroidery, slim silver bangles on her wrists) stands beside the kitchen table on the LEFT side of the frame, gently spooning cereal into a blue bowl held up by a small boy (age 6, brown skin, tousled black hair, blue pajamas) who is beaming up at her. Next to the boy sits a girl (age 9, brown skin, two braids, yellow hoodie, scribbling in a school notebook). On the RIGHT side of the frame, **Priya Sharma** (39, long dark hair in a low ponytail, tortoise-shell glasses, navy cardigan, mug of coffee in her hand) leans against the kitchen counter watching her mother-in-law with a soft, grateful smile. Background details: a wall calendar on June, a magnetic alphabet on the fridge, a wooden spice rack, a plant on the windowsill, morning sunlight creating rectangles on the floor. Color palette: buttery yellows, soft greens, warm wood tones, cream walls. Emotional tone: ordinary happiness, family warmth, a good morning.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The same family living room, but now in dim late-afternoon light at 4:00 PM. Heavy gray-blue light filters through half-closed blinds — the sun has dropped behind the neighbor's roof. A round wall clock above the TV on the LEFT shows exactly 4:00. On the RIGHT side of the frame, **Priya** sits at a small desk in the corner of the living room, laptop open, glasses on, in a dark sweater — she is turning her head sharply to look at her mother-in-law, an expression of concern forming. In the CENTER of the frame stands **Anita** (82), but she looks different from Panel 1: shoulders tense, a small handbag clutched tightly to her chest with both hands, her gaze unfocused and anxious. She is staring at the front door on the left edge of the frame. She is wearing the same lavender kurta but has now added a wool shawl as if ready to leave. The TV in the background plays muted evening news (red ticker visible). A cup of unfinished tea sits forgotten on the coffee table. Color palette: cool gray-blues, muted purples, dim amber from a single lamp, low contrast. Emotional tone: the first unease, something has changed in the room.
 
@@ -83,6 +85,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same living room, same dim 4 PM light, now maybe ten minutes later. **Priya** (on the LEFT, standing, one hand gently on Anita's arm, the other gesturing toward the wall of family photos) is speaking earnestly, her brow furrowed, trying to explain. She has removed her glasses and holds them in her gesturing hand. **Anita** (on the RIGHT of Priya, still clutching her handbag, coat on) is pulling slightly away from Priya, her face clouded with confusion and rising frustration — she does NOT recognize the photos Priya is pointing to. On the wall between them, three family photos: a wedding photo of Priya and her husband, a photo of Anita holding a baby (Priya's son), and an older photo of Anita with her late husband. Above the photos, the round clock now reads 4:12. The lighting is still cool and low. Color palette: muted grays, dusty blues, the photos in their frames providing the only warm tones. Emotional tone: earnest misguided effort on Priya's side, confusion and mistrust on Anita's side.
 
@@ -104,6 +107,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The same living room, now 4:47 PM (clock visible in upper left). **Anita** (on the LEFT side of frame, near the front door) is at the door, both hands on the doorknob, trying to turn it; she is visibly upset, mouth open mid-word, a strand of silver hair fallen loose from her bun. Her handbag is on the floor beside her. **Priya** (on the RIGHT, a few feet behind Anita, palms up in a pleading gesture) looks exhausted and near tears, her cardigan falling off one shoulder, her hair now disheveled. On the floor by the sofa, the two grandchildren (the 6-year-old boy and 9-year-old girl from Panel 1) peek around the corner from a hallway, watching with wide frightened eyes — the little boy is clutching a stuffed elephant, the girl has one hand on his shoulder. The lighting is dim and cold — outside through the window sidelights you can see dusk has begun. Color palette: cold steely blues, muted purples, one warm orange glow from a single lamp that feels lonely. Emotional tone: the storm has fully arrived, everyone is afraid.
 
@@ -127,6 +131,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior of a small suburban bathroom, very intimate framing. **Priya** sits on the cold tile floor in the CENTER of the frame, her back against a white-and-teal tiled wall, knees drawn up, a phone pressed to her right ear. Her glasses are pushed up onto her head, her eyes are red and wet, a few tears tracking down her cheek. She is holding the phone loosely, as if she is finally allowing herself to crack. A bath towel hangs off the edge of the tub beside her. A small pink nightlight is plugged in low on the wall — a gentle detail. Under the bathroom door at the bottom of the frame, soft light from the hallway and the shadow of two small feet (one of the children listening on the other side). A crumpled tissue in Priya's left hand. Color palette: cool teal tiles, soft whites, pale pink nightlight glow, warm amber from under the door. Emotional tone: this is the breaking point, and it is quiet, and it is where the help begins.
 
@@ -148,6 +153,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format, stylized educational diagram framing with a warm domestic background. The RIGHT half of the frame shows **Priya** later that night, sitting at her kitchen table under a pool of warm lamplight, laptop open, a notebook in front of her, a pen in hand, glasses back on. She is writing calmly, her face tired but focused — no longer in panic, now in student mode. On the LEFT half of the frame, a soft semi-transparent "thought overlay" or textbook-like inset panel: a simple illustration of a setting sun behind a silhouetted human head; around the head, small icons — a clock showing 4 PM, a lamp, a TV with static, a bed with a rumpled blanket, a dinner plate — connected by soft lines to the word **SUNDOWNING** in large gentle hand-lettered type. A smaller caption underneath in smaller text: *"late-day agitation common in dementia — often triggered by fatigue, low light, and disrupted routine."* Color palette: warm kitchen ambers on the right, soft lavender and dusk-orange in the diagram, educational and calming. Emotional tone: the relief of having a name for something.
 
@@ -169,6 +175,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format, looking over **Priya's** shoulder as she writes in a notebook at her kitchen table. The notebook fills the LEFT half of the frame in clear detail: a handwritten chart with days of the week in one column and observations in neat cursive — *"Mon 4:05 — tired from 2hr nap. Tue 3:55 — TV news on, room dim, anxious about dinner. Wed 4:10 — missed afternoon snack, hungry? Thu 3:50 — bright day, opened curtains, less agitated!"* Small hand-drawn stars next to the Thursday entry. Priya's hand with the pen in it is visible at the bottom of the notebook. On the RIGHT half of the frame, through the kitchen into the living room, **Anita** is visible in soft focus in a sunny morning chair with a book in her lap, peaceful — a reminder of the person Priya is learning to protect. A mug of coffee beside the notebook, a small green plant, morning light. Color palette: warm natural daylight, soft browns of the notebook paper, a splash of yellow from a highlighter on the table. Emotional tone: detective work done with love, the beginning of competence.
 
@@ -188,6 +195,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The same living room, bright and bustling, at exactly 3:30 PM (clock visible on wall). **Priya** (in jeans and a mustard-yellow sweater, hair in a ponytail) is in action mode in the CENTER-LEFT of the frame, reaching up to PULL OPEN a tall set of curtains — afternoon sunlight is pouring in past her hand, making a bright diagonal shaft across the room. Her laptop is closed on the coffee table (she has stopped work for this). On the RIGHT, a warm floor lamp is newly switched on. On the FAR LEFT, the TV is off (screen black). A new detail: a small cushion with a soft lavender fabric on Anita's usual armchair. On the coffee table, a thermos of tea and two small ceramic cups set out. The grandchildren are quietly coloring at a low table by the window, in the warm light. **Anita** is visible on the right side of the frame in her armchair, reading glasses on, thumbing through an old photo album — calm, still in the before-the-storm hours. Color palette: warm gold afternoon light, cream walls, mustard yellow, soft lavender accents. Emotional tone: the preparation, the ritual of protection, a home being re-engineered with love.
 
@@ -209,6 +217,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Warm bright kitchen scene, 3:45 PM. **Priya** (LEFT of frame) and **Anita** (CENTER of frame) are standing together at the stove making chai from scratch. A small saucepan on a low flame has milk simmering with black tea leaves floating on top. On a wooden cutting board beside the stove: small green cardamom pods, a knob of fresh ginger being grated, a cinnamon stick, black peppercorns — all the familiar ingredients of Indian masala chai. Anita is holding a small wooden spoon, stirring the pot slowly with the confident motion of someone who has made this a thousand times — her shoulders are relaxed, her face serene, her eyes soft. Priya watches her mother-in-law with a small grateful smile, one hand resting lightly on Anita's back. The steam from the chai rises in soft curls toward the window, where warm afternoon sunlight pours in. On the windowsill: a small brass elephant figurine, a potted tulsi plant, a framed photo of Anita's late husband as a young man. Color palette: warm ambers, the orange glow of the stove flame, spice-colored browns and greens. Emotional tone: muscle memory, dignity, the hands remembering what the mind forgets.
 
@@ -230,6 +239,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The living room at 4:10 PM (clock visible above the TV, which is off). **Priya** and **Anita** sit together on the cream-colored sofa, angled toward each other. The curtains are wide open; golden late-afternoon sunlight pours across the room in long warm beams, catching dust motes and the curl of steam from the small teapot on the coffee table. Each woman holds a small ceramic teacup in her hands. **Anita** (on the RIGHT) is wearing the lavender kurta and maroon shawl — no coat, no handbag, no tension in her shoulders — her face calm, a small soft smile as she watches the steam rise from her cup. **Priya** (on the LEFT) has her legs tucked under her, glasses pushed up on her head, shoulders finally dropped from their usual caregiver hunch, looking at her mother-in-law with visible love. Between them on the coffee table: the teapot, a small dish of almonds and dates, an open photo album showing old pictures from India. The two grandchildren are curled up on the rug at the women's feet, quietly drawing, half-dozing in the warm light. Color palette: rich ambers, warm lavenders, cream, the gold of afternoon light. Emotional tone: the storm did not come, and we built this together.
 
@@ -251,6 +261,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior of a suburban cousin's living room in another town — clearly an unfamiliar space, a family gathering in the background. It is 4:20 PM and **Anita** (in the CENTER-LEFT of the frame) is in an armchair by a picture window but showing the early signs of sundowning: her hand gripping the armrest, her eyes anxious, looking around the unfamiliar room as extended family chat in the background. On the RIGHT side of the frame, **Priya** is crouched beside Anita's chair, in calm capable mode — she has already: opened the curtains wide (bright light is now streaming in, a soft orange), propped her phone nearby playing an old Hindi film song (musical notes suggested as small curly icons coming from the phone speaker), pulled a small travel thermos from her tote bag, and is in the middle of pouring chai into a paper cup. Her face is steady, her posture protective — this is a woman who knows her tools now. In the background, blurred and soft-focused, three relatives stand chatting with teacups. A small embroidered travel pouch with **Anita's** name sewn on it is visible on the armrest — clearly Priya's now-practiced "four o'clock kit." Color palette: slightly cooler light than the home scenes, but the warm amber of the phone screen, the chai steam, and the curtain-sun pushing back against it. Emotional tone: harder day, real life, but handled — skill, not luck.
 
@@ -274,6 +285,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The family living room at 4:00 PM, six months after panel 2 — the exact same room, same clock, same sofa, same door. But the entire emotional temperature has changed. The curtains are thrown wide; golden autumn afternoon light fills the whole room. **Anita** (on the LEFT) sits at the dining table near the window, gently arranging a small vase of marigolds in warm oranges and yellows — calm, humming, content. **Priya** (CENTER-RIGHT) is at her desk in the corner, laptop open, but turned slightly in her chair so she can see her mother-in-law, a soft smile on her face; she is not tensed, not listening for trouble. The **little girl** is on the floor reading a book aloud to the **little boy**, who is building something out of magnetic tiles. A warm teapot and four small cups on the coffee table. On the wall, a new addition since panel 2: a simple framed piece of calligraphy in warm brown ink on cream paper that reads **"4:00 — tea, light, together"** — clearly a piece the family made. The clock reads 4:00. The front door is closed and untouched. Color palette: autumn ambers, marigold oranges, cream, warm wood — the palette of peace earned, not inherited. Emotional tone: this is the reward for the work, and it is not dramatic, it is daily.
 

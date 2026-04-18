@@ -27,6 +27,7 @@ It is 2:07 a.m. on a Tuesday. The smoke alarm has not gone off yet, but it will,
 
 <!-- ![](./panel-01.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a darkened kitchen lit only by the blue-orange flame of a single gas burner and the glow of a hallway nightlight. Rosa, 81, silver braid, floral nightgown, stands in front of the stove with a confused but calm expression, one hand resting on the counter, looking at an empty cast-iron pan above the flame. A wisp of smoke rises. The color palette is deep indigo, amber, and a sharp blue-orange from the flame. The emotional tone is quiet danger — the peace of someone who does not know she is in danger. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -36,6 +37,7 @@ Rosa had come downstairs for a glass of water. On the way, she had passed the ki
 
 <!-- ![](./panel-02.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Carlos, 53, bursting through the kitchen doorway in a t-shirt and plaid pajama pants, his face alert and alarmed. Smoke curls from the empty cast-iron pan. Rosa turns slowly to look at him, calm and a little surprised, as if caught doing something ordinary. The color palette is amber, smoke-gray, deep indigo night, and flame orange. The emotional tone is shock and tenderness colliding. Speech bubble from Carlos (urgent, soft): "Mamá! ¿Qué estás haciendo?" Speech bubble from Rosa (mild, puzzled): "Mijo... I'm making breakfast for your father." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -45,6 +47,7 @@ Carlos came down the stairs two at a time and rounded the corner into the kitche
 
 <!-- ![](./panel-03.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Carlos sitting at the kitchen table at 2:30 a.m., both hands wrapped around a cup of coffee, his head bowed. His hands are visibly shaky. The kitchen light is on now, the stove cold, the pan in the sink. A window above the sink shows deep blue night. The color palette is warm amber, ivory, deep indigo, and brown. The emotional tone is the aftermath of fear, the moment when what-if lands. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -54,6 +57,7 @@ At 2:30 Carlos sat at the kitchen table with his hands wrapped around a cup of c
 
 <!-- ![](./panel-04.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Carlos on his back porch at dawn, phone in hand, talking to his sister. The sky is deep rose and pale blue. Steam rises from the coffee. A bilingual dementia caregiving book lies open on a nearby chair. The color palette is rose gold, soft periwinkle, cream, and deep green. The emotional tone is a difficult conversation that will need to be had many times. Speech bubble from Carlos (to phone, quietly): "Elena — I can't take the kitchen from her. That kitchen is who she is." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -63,6 +67,7 @@ He called his sister Elena at five thirty. She answered on the first ring becaus
 
 <!-- ![](./panel-05.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Carlos at his home office desk, laptop open, surrounded by browser tabs and printouts. On one screen, a photo of a small stove-safety monitor. On another, a list with items like "knob covers," "induction single burner," "auto-shutoff." A cup of coffee and a yellow legal pad with handwritten notes sit beside the laptop. The color palette is warm desk lamp gold, ivory, navy blue. The emotional tone is determined problem-solving. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -72,6 +77,7 @@ By nine he had a yellow legal pad covered in notes. Stove monitors that shut off
 
 <!-- ![](./panel-06.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a Saturday morning in the kitchen. Carlos is on a step ladder, installing a small white electronic device above the stove. His nephew, early 20s, kneels on the floor installing clear plastic knob covers on the oven dials. An older handyman, 60s, is replacing the smoke alarm with a newer model. Rosa sits at the kitchen table with a cup of coffee, smiling a little, watching the activity. Sunlight streams through the kitchen window. The color palette is honey gold, soft blue-gray, terracotta, and cream. The emotional tone is collaborative love — a family securing a kitchen. Speech bubble from Rosa (warm): "¿Y todo este alboroto es para qué?" Speech bubble from Carlos (gentle): "Para que tú sigas cocinando, Mamá. Para mantener la cocina segura." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -81,6 +87,7 @@ Saturday morning Carlos, his nephew, and a handyman from down the block spent fo
 
 <!-- ![](./panel-07.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rosa and Carlos working together at the kitchen counter. Rosa is rolling masa for tortillas between her palms, her hands sure and practiced. Carlos stands beside her at the stove, watching a pan of beans. A clean kitchen towel over his shoulder. Evening light, warm and amber. The color palette is deep amber, masa-yellow, terracotta, ivory. The emotional tone is quietly joyful partnership. Speech bubble from Rosa (teaching): "Más delgadas, mijo. Look — like this." Speech bubble from Carlos (warm): "Sí, Mamá. Teach me again." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -90,6 +97,7 @@ The next change was bigger than the gadgets. Carlos stopped leaving his mother a
 
 <!-- ![](./panel-08.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing the stove with a faint LED glow from the small safety monitor mounted above it. A burner that had been on is now off. Rosa stands at the counter, chopping onions, unaware that the stove has shut itself off. The color palette is honey gold and deep amber, with a small blue LED on the monitor. The emotional tone is quiet reassurance — technology as a quiet guardian. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -99,6 +107,7 @@ Two weeks in, Rosa started chopping onions and wandered to the doorway to tell C
 
 <!-- ![](./panel-09.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Carlos on the back porch at dusk, sitting on the steps, a beer bottle in his hand, staring at the backyard. His expression is thoughtful and sad. The color palette is deep purple-blue twilight, warm porch light gold, deep green grass. The emotional tone is the quiet grief of a son who is slowly becoming his mother's safety net. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -108,6 +117,7 @@ Carlos sat on the back porch that Friday evening and let himself feel it. The we
 
 <!-- ![](./panel-10.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a large family Sunday dinner. Rosa sits at the head of the table, beaming, surrounded by eleven people across three generations, including Carlos, Elena, grandchildren, great-grandchildren. The table is laden with tortillas, a pot of beans, carne guisada, salsa. Candles flicker. The color palette is warm amber, deep red, golden corn yellow, and terracotta. The emotional tone is joyful abundance — a family still gathered because the kitchen still works. Speech bubble from Rosa (proud, to the youngest grandchild): "Mija, your abuelita made those tortillas. Carlos helped." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -117,6 +127,7 @@ On Sunday the whole family came for dinner. Rosa sat at the head of the table an
 
 <!-- ![](./panel-11.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Carlos and Elena, the sister, seated on the back porch in the late evening, both holding coffee cups. Their faces are serious but loving. The color palette is deep indigo night, warm yellow porch light, and soft cream. The emotional tone is honest family planning, no denial. Speech bubble from Carlos (calm, honest): "This buys us time, Elena. Not forever. But maybe another year where she's still herself." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -126,6 +137,7 @@ Later that night he and Elena sat on the porch and talked about what they both k
 
 <!-- ![](./panel-12.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rosa and Carlos at the stove on a sunny morning. Rosa stands at the counter flipping tortillas on the comal with her fingers, practiced and content. Carlos is beside her, cracking eggs into a bowl. Morning sunlight streams through the window. Above the stove, barely visible, the small safety monitor with its green LED. The color palette is bright morning gold, soft cream, terracotta, warm green. The emotional tone is peaceful partnership. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 

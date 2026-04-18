@@ -41,6 +41,7 @@ Most of us know somebody who "isn't what she used to be." An aunt who tells the 
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A warm, busy suburban American dining room at 6 PM on a Sunday. A wooden dining table is set for four, covered with a glossy roast chicken on a white platter, mashed potatoes in a yellow ceramic bowl, green beans, a basket of rolls, and a pitcher of iced tea beading with condensation. At the head of the table, **Gloria** (71, silver-gray short soft hair, olive skin, rose-colored cardigan, small pearl earrings) is laughing with her head thrown slightly back, one hand on her chest — mid-laugh. Across from her on the right, **Maya** (42, curly dark hair shoulder-length, medium-brown skin, reading glasses on top of her head, simple olive-green sweater) is grinning at her mother. Beside Maya sits her husband **Derek** (44, close-cropped dark hair, warm brown skin, plaid button-down) and a teenage son (15, braces, T-shirt, rolling his eyes affectionately). Candlelight flickers on the table. A tall cabinet of china behind Gloria holds family photos. Color palette: warm ambers, roast golden-browns, cream walls, soft rose. Emotional tone: ordinary family warmth, a happy Sunday.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Early morning kitchen scene, cool bluish morning light. **Maya** is standing at Gloria's open refrigerator in the CENTER of the frame, still in a cozy gray sweatshirt with a coffee mug in one hand — she has stopped mid-motion, staring down at something. Her free hand is reaching toward the middle shelf where, among a carton of orange juice and a Tupperware of leftovers, sits a set of **house keys on a bright red keychain**. Her expression is a mix of amusement and confusion. The fridge interior light makes a soft glow on her face. In the background, **Gloria** (in a pink housecoat and slippers) is visible entering the kitchen from the hallway, hair slightly mussed from sleep, a faint smile but also a slight shift of confusion in her eyes — as if she cannot quite remember coming down yet. Color palette: cool morning blues, warm yellow fridge light, a bright red accent on the keychain. Emotional tone: the first strange thing, laughed at, but noticed.
 
@@ -83,6 +85,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. An outdoor shot from a small front porch of a 1970s brick suburban house. It is a crisp autumn afternoon, leaves scattering in warm tones across the small lawn. **Maya** is standing at an open **mailbox** attached to the house beside the front door, her hand inside the mailbox. She has just pulled out a small stack of envelopes, but on top of them, tangled with a rubber band and a coupon flyer, sits **a pair of tortoise-shell reading glasses**. Her face is no longer laughing — she is frowning slightly, suddenly quiet. Through the front door behind her, open a few inches, we can see the hallway of the house and a sliver of Gloria in the living room watering a plant, unaware. A small orange pumpkin sits on the porch steps. The mailbox has a gentle dent on its flag. Color palette: autumn rust, soft browns, muted yellow leaves, the gray-blue of the cold afternoon sky. Emotional tone: the second strange thing — no longer funny.
 
@@ -102,6 +105,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior kitchen, evening. **Maya** is in the CENTER of the frame, the **freezer door** of a side-by-side refrigerator open beside her, her hand pulling out a **black plastic TV remote control** that has been resting against a frozen bag of peas and an ice-cream carton. Her expression has shifted — the amusement of the earlier panels is gone; now there is a pale shocked stillness. She is not laughing. She is looking down at the remote in her palm as if it is a small wound. On the RIGHT side of the frame, half-turned away and facing the living room, **Gloria** stands at the kitchen island with her back partly to Maya. Her shoulders are drawn up tight. One hand is on the counter, steadying herself. We cannot see her face fully, but the tension in her neck and the quiet way she is standing tells us she has seen what Maya is holding, and she is ashamed. An unopened package of frozen chicken on the counter. Color palette: cold whites from the freezer, the warm amber glow of the kitchen lamp on Gloria's side, soft beige walls. Emotional tone: the moment something invisible in the room becomes visible. Shame, love, fear.
 
@@ -123,6 +127,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Quiet domestic scene, evening. Mother and daughter sit across from each other at a small kitchen table with a soft floral tablecloth. A single pendant lamp hangs overhead, casting a warm pool of light on them and leaving the edges of the room in soft shadow. **Gloria** (on the LEFT) has her hands wrapped around a mug of tea, shoulders still small, eyes fixed on the table. **Maya** (on the RIGHT) has reached across and placed one hand gently on top of her mother's hand — not gripping, just resting. Maya's other hand holds her own mug. On the table between them: a plate of cookies, a small stack of napkins, a folded newspaper. A framed photo on the wall behind them of Gloria and her late husband. Color palette: warm ambers, soft pinks, the gentle blue of evening outside the window. Emotional tone: the hard, necessary conversation — love doing the talking.
 
@@ -144,6 +149,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format, quiet flashback-style panel. Soft sepia-tinged tone suggesting a memory/recollection. A montage-style arrangement: in the CENTER, a desaturated vignette of Gloria standing in the grocery store aisle holding a shopping list, staring at it with confusion. In the UPPER LEFT, a smaller inset of Gloria in her car at a four-way stop, hesitating, cars behind her. In the UPPER RIGHT, an inset of Gloria on the phone, a notepad in front of her, trying to take down a phone number but writing the same digit three times. In the LOWER LEFT, a small inset of Gloria opening a kitchen drawer and standing still, as if she has forgotten what she came for. In the LOWER RIGHT, an inset of Gloria's handwritten notebook, open, with appointments crossed out and rewritten, corrections in different pen colors. Around the edges of the montage, small handwritten script in a gentle font: *"I just had to work harder to keep up."* Color palette: muted sepia, warm browns, soft ivory, a single thread of soft rose. Emotional tone: private struggle, dignity, the work of hiding.
 
@@ -165,6 +171,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Maya** sits in bed late at night, propped against pillows, laptop on her knees, the cool blue glow of the screen lighting her face. She is in a T-shirt, hair pulled back, glasses on her nose — focused, worried, but composed. Her husband **Derek** is asleep beside her, face turned away, breathing peacefully. On the nightstand: a mug of herbal tea, a yellow legal pad with notes, a pen, a phone. The lamp on her side is on low. On the laptop screen we can see partial browser tabs with words like *"normal aging vs. dementia,"* *"mild cognitive impairment,"* *"Alzheimer's Association,"* *"when to see a neurologist."* Maya is writing on the legal pad. A small framed photo on the nightstand of young Gloria holding baby Maya. Color palette: deep indigo bedroom shadows, the warm pool of the lamp, the cool blue of the laptop. Emotional tone: a daughter doing her homework at midnight, because love gets specific.
 
@@ -184,6 +191,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format, stylized educational design. The LEFT two-thirds of the frame is a warmly-lit yellow legal pad lying on a kitchen table, filled in Maya's clear handwriting with two columns: **NORMAL AGING** on the left, **WORRY ABOUT** on the right. Under NORMAL AGING: *"forgetting a name, remembering it later"*; *"misplacing glasses and finding them"*; *"asking what day it is"*; *"slower at new things."* Under WORRY ABOUT: *"keys in fridge, remote in freezer"*; *"getting lost on familiar routes"*; *"trouble with recipes she's made for 40 years"*; *"pulling back from things she used to love."* Stars and arrows connect items. The pen lies across the page. On the RIGHT side of the frame, out of focus: a coffee mug, a small vase of daisies, morning light through a window. Color palette: warm yellows, soft cream, the bright blue of Maya's pen ink. Emotional tone: clarity, organization, love taking a shape.
 
@@ -203,6 +211,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Maya** sits at her own kitchen island on a stool in the morning, laptop open in front of her, phone pressed to her ear. She is wearing a simple button-down and jeans, hair pulled back, a steaming coffee beside her. Her expression is focused and calm. On the island are her legal-pad notes and a small printed form titled "Medication List – Gloria." Through the window behind her, a suburban backyard with a wooden fence and a bird feeder in soft morning sun. Color palette: warm cream, pale blues, the golden slant of morning light. Emotional tone: competence, a daughter taking charge, a good first phone call.
 
@@ -224,6 +233,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior of Gloria's small living room, mid-afternoon. **Maya** and **Gloria** sit side-by-side on a soft floral couch, angled toward each other, knees nearly touching. Maya has one hand on her mother's knee. Gloria is holding a small white teacup in both hands, steam rising. On the coffee table: a plate of shortbread cookies, an open photo album, a box of tissues. A cat is curled up in an armchair in the background. On the wall above the couch, framed photos of grandchildren, Maya's wedding, a black-and-white photo of Gloria and her late husband as newlyweds. Warm lamp glow. Color palette: soft rose, sage green couch, creamy walls, warm amber lamplight. Emotional tone: a loving invitation, not a confrontation.
 
@@ -245,6 +255,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A modern but warm medical-office waiting room. **Gloria** and **Maya** sit side by side in upholstered chairs against a light-gray wall. Gloria is dressed nicely — a teal blouse, a small gold cross necklace, her handbag on her lap. Maya is in a casual blazer, holding a manila folder labeled "MOM – medications & notes." Their hands are clasped between them, fingers laced. On a low table in front of them: a few magazines, a box of tissues, a small vase with silk flowers. Behind the reception desk in the background, a sign reads "INTERNAL MEDICINE – PATEL, MD." Other patients wait in soft focus. A clock on the wall reads 10:15 AM. Morning light filters through tall windows. Color palette: soft grays, warm teals, cream upholstery, the warm yellow of the light. Emotional tone: nervous, but holding each other.
 
@@ -266,6 +277,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Exterior shot of the medical building's front entrance, late morning. **Gloria** and **Maya** walk out through the sliding glass doors together, arm-in-arm, each carrying a small folder of paperwork and printed information sheets. The sun is out; the sky is a clear soft blue. Gloria's expression is tired but not broken — serious, aware, and strangely lighter, as if a weight she had been carrying alone is now one they are both carrying. Maya's face is attentive, steady, a little watery-eyed. In the small parking lot, trees with fresh green leaves. An older couple passes them, nodding politely. A reassuring green "WE CAN HELP" banner is visible on a small bulletin board near the entrance. Color palette: fresh greens, gentle blue sky, warm creams, the soft yellow of a real spring morning. Emotional tone: this is not the end of the story — it is the start of a different one, and they are in it together.
 

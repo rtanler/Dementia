@@ -41,6 +41,7 @@ Six in ten people with dementia will wander at some point. They are not running 
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A warm bedroom at 10 PM. **Tom** (58, Black, close-cropped salt-and-pepper hair, gentle strong features, navy pajamas) and **Robert** (74, tall, silver hair thin and wispy, silver mustache, white complexion, pale blue pajamas) lie side by side in a queen bed with a cream comforter pulled to their chests. Tom is reading a hardcover book by the warm yellow light of a bedside lamp. Robert is already drifting to sleep, his hand loosely holding Tom's hand on top of the comforter. A framed photo on the dresser shows the two of them at their wedding twenty-nine years ago, a rainbow backdrop in the soft background. A small wooden nightstand with reading glasses. Bedroom walls are soft sage green. Color palette: warm lamp-light ambers, sage green, soft cream bedding. Emotional tone: the quiet love of a long marriage.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Dark bedroom, the digital clock on the nightstand glowing "2:04 AM" in red numerals. **Tom** is sitting bolt upright in bed, one hand on his husband's empty side of the bed — the covers are thrown back, **Robert is gone.** Tom's face is frozen in the first second of panic, eyes wide, mouth open. A cold draft is visibly moving the curtains on a window on the far wall. The bedroom door stands ajar, a pale rectangle of hallway light. Robert's slippers are gone from the floor next to the bed. His pale blue robe is gone from the hook on the door. Color palette: deep midnight blues, the red digital numerals like a small wound, a single strip of warm hall light. Emotional tone: the exact moment a whole life tilts.
 
@@ -81,6 +83,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A quiet front foyer in the middle of the night. The **front door stands open about two feet**, cold night air pushing inward. Leaves have blown across the threshold. Outside, the porch lamp is on, but the world beyond the door is dark — we can see only the edge of the porch and a sliver of moonlit driveway. **Tom** is running down the staircase on the LEFT side of the frame, half-dressed — green hoodie pulled over his pajama shirt, bare feet, phone in hand. His face is ashen. A small table near the door has a bowl with car keys and mail; Robert's leather wallet is still in the bowl (he did not take it). Color palette: deep navies and charcoals of night, a pool of warm amber from a small hall lamp, the silver of moonlight beyond the door. Emotional tone: the precise moment before one of the longest twenty minutes of a life.
 
@@ -100,6 +103,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Exterior front porch of the house. **Tom** stands at the top of the porch steps in his hoodie and pajama pants, now in slippers he grabbed on the way down, phone pressed to his ear. His posture is rigid; his face lit only by the porch lamp and the glowing phone screen. His free hand is gripping the porch rail so hard his knuckles show. A gentle breeze moves the small American flag on the porch. In the distance at the end of the street, the first blue-and-red strobe lights of a slowly approaching patrol car just visible. A neighbor's porch light two doors down flickers on. Color palette: the deep blue-black of night, the warm amber of the single porch lamp, the approaching blue-red flash far down the street. Emotional tone: fear that has found a target, and help that has begun moving toward him.
 
@@ -121,6 +125,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The driveway, maybe 2:30 AM. A patrol car has pulled up with headlights on but light-bar off (the officer has deliberately lowered the alarm level). **Robert** is in the passenger seat of the patrol car, a wool blanket draped over his shoulders, his pale blue robe and tan slippers visible. He looks confused but calm, a kind hand resting on his knee. **Officer Reyes** (40s, Latina, warm round face, neat ponytail beneath cap, professional but gentle) has stepped out of the driver's side and is waving **Tom** forward from the porch. **Tom** is already running toward the car, both arms outstretched, tears pouring down his face. Color palette: the warm amber of headlights on the driveway, the deep blue of night behind them, a single red porch light reflection. Emotional tone: a reunion — pure relief — love winning the hand.
 
@@ -142,6 +147,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A small kitchen, soft warm lamp light, the window showing the dark yard. **Tom** and **Robert** sit at a wooden kitchen table. Robert is wrapped in a flannel blanket, holding a mug of hot chocolate with both hands, back to himself — calm, a little tired, his hair standing up softly. **Tom** sits across from him, his own mug untouched, staring at his husband with a mixture of love and terror he has not yet come down from. On the table between them: the pale blue robe neatly folded, a pair of tan slippers beside it, and an open notebook where Tom has just written *"NEVER AGAIN."* A digital clock on the microwave reads 3:07 AM. Color palette: the deep amber of a single low lamp, sage green walls, the warm brown of the wooden table. Emotional tone: the quiet after the alarm, the moment the planning begins.
 
@@ -163,6 +169,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A bright Saturday mid-morning in the living room. **Tom** sits on a sofa on the LEFT, a yellow legal pad in his lap. Beside him sits Tom's sister **Michelle** (55, warm brown skin, natural hair in a silver-streaked twist-out, cozy sweater, notepad of her own), who has flown in for the weekend. On the loveseat opposite them sits Robert's adult daughter from his first marriage, **Sarah** (45, warm tan skin, short curly hair, kind face, laptop open). **Robert** is happily NOT in this meeting — a soft focus in the background shows him in the sunroom tending a small tomato plant, humming, content. On the coffee table: printed pages titled *"WANDERING SAFETY PLAN,"* a brochure from MedicAlert, a glossy flyer for GPS watches, a door-chime display box. Color palette: clear morning light, warm browns, a soft bright yellow of the legal pad. Emotional tone: a family becoming a team.
 
@@ -184,6 +191,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. The front door of the house, daytime. **Tom** is standing on a step stool beside the front door in a T-shirt, screwing a small white door chime sensor onto the door frame. The matching magnetic piece is attached to the door itself. A small box on the floor shows three more sensors (for the back door, the garage door, and a patio slider). A soft green and orange indicator LED glows on the base unit plugged into a wall outlet. On a nearby console table: a small instruction booklet open to *"Installation Complete."* A mug of coffee on the console. Color palette: warm cream walls, the crisp white of the new door chime, the bright blue morning light through the sidelight windows. Emotional tone: practical hope, a first piece installed.
 
@@ -205,6 +213,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Kitchen table, afternoon. **Tom** is gently helping **Robert** put on a handsome-looking **GPS smartwatch** (the watch has a soft navy silicone band and a simple round silver face — no visible brand markings). Robert sits at the table, smiling slightly, looking pleased, his sleeve pushed up. **Tom** is on one knee beside him, fastening the strap with two hands, smiling warmly. On the table: a small charging dock for the watch, a printed instruction card, and Tom's phone open to a generic unbranded map app showing a small blue dot at their home address labeled "R." A warm afternoon light through the window. Color palette: warm ambers of late afternoon, soft navy of the watchband, creamy whites. Emotional tone: partnership, not surveillance; a gift rather than a tether.
 
@@ -226,6 +235,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Front porch of a neighbor's house, sunny afternoon. **Tom** is standing on the neighbor's front walk handing a small printed card to a friendly white woman in her early 60s, her middle-school-aged grandson standing beside her on the porch. The card he is handing over is clearly a laminated "If you see Robert, please call" card with Robert's photo and Tom's phone number. A small silver pendant on a chain is visible on the corner of the card — a MedicAlert-style ID (generic, no brand markings, just a small red medical cross on a silver disc). In the background, the neighborhood — maple trees turning gold, mailboxes, a couple walking a dog. Color palette: bright autumn gold, warm reds, soft sky blue. Emotional tone: community being built, safety as a neighborhood practice.
 
@@ -247,6 +257,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Nighttime bedroom, a soft lamp on. **Tom** is in the foreground, seated on the edge of the bed, tying a small brass **bell on a ribbon** to the inside doorknob of the bedroom door. The bell is about the size of a large marble, a warm brass color, hanging from a soft red ribbon — a beautiful small object, not a security device. **Robert** is already tucked under the covers behind him, reading a book, wearing his reading glasses, humming gently. A mug of chamomile tea on the nightstand. The bedside clock reads 10:12 PM. Beside the mug: the base unit for the door chime, a soft green indicator glowing. Color palette: warm amber lamplight, the glint of the brass bell, the deep sage of the bedroom walls. Emotional tone: small beautiful tools of love.
 
@@ -268,6 +279,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A quiet kitchen at 4:02 AM (digital clock on microwave visible). **Robert** is at the kitchen table in his pale blue robe and tan slippers, making a peaceful small project of spreading peanut butter on a piece of toast. **Tom** is standing in the kitchen doorway in his green hoodie and pajama pants, leaning against the frame with his arms crossed, a soft tired smile on his face. He is not panicked. He is not angry. He is just *present* — alerted, arrived, keeping his husband company. The kitchen is lit by a single soft under-cabinet light. Outside the kitchen window: dark night. Color palette: warm ambers of the under-cabinet light, deep midnight blue beyond the window, soft pale blue of Robert's robe. Emotional tone: what the plan bought them — a 4 AM that is gentle, not terrifying.
 

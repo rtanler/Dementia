@@ -41,6 +41,7 @@ Everyone who loves a person with dementia eventually learns the rhythm of the re
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **David** (55, warm brown skin, short salt-and-pepper hair and beard, charcoal cardigan, reading glasses) walks through the front doorway of his father's small suburban ranch home carrying a brown paper grocery bag. Morning light spills in behind him from the front yard. He has a warm, attentive expression. In the CENTER of the frame, **Walter** (78, medium-brown skin, close-cut silver hair, brown flannel shirt, navy slacks) is coming down the hallway to greet him with a broad open smile and outstretched arms. The small foyer has framed family photos on the walls: a wedding, grandchildren, a young Walter in Army uniform. A console table holds keys, mail, and a small brass bowl. Color palette: warm golden morning light, cream walls, soft browns, the bright pop of the brown paper bag. Emotional tone: love, the small ritual of visiting a parent.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same kitchen interior. **David** (on the RIGHT) is at the counter unpacking groceries from the brown paper bag — a loaf of bread, a gallon of milk, a bag of pears visible. **Walter** (on the LEFT) sits at the kitchen table in his flannel shirt, holding a coffee mug in both hands, looking up at his son with mild curiosity. A kitchen clock on the wall reads 10:15 AM. A small family photo on the counter of Walter with his late wife. Color palette: buttery morning yellows, warm browns, cream walls. Emotional tone: ordinary, calm, the good opening of a normal Wednesday.
 
@@ -83,6 +85,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same kitchen, a few minutes later, 10:22 AM (clock visible). **David** is now at the sink, washing the pears under running water, his back mostly to us but his face visible in profile. His expression is still calm, though a faint tightness has appeared in his jaw. **Walter** is in the same chair at the table, but now he is folding and unfolding a paper napkin in his hands — an anxious small movement. His face is pleasantly curious, unaware that the question he is about to ask has been asked seven minutes ago. Color palette: same buttery yellows, slightly cooler undertones. Emotional tone: something has just shifted, but only a little.
 
@@ -104,6 +107,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same kitchen. David has moved to the kitchen table and is now sitting across from Walter, his own cup of coffee in front of him. The clock reads 10:34. **David's** expression is beginning to change — a small line has appeared between his eyebrows, a micro-tension in his shoulders — but his face is still composed. He is forcing a patient smile that doesn't quite reach his eyes. **Walter** is unchanged, still pleasant, still turning a sugar packet between his fingers. The coffee mugs between them steam gently. Color palette: warm browns, but with just a whisper of cool light creeping in, a subtle mood shift. Emotional tone: the first small hairline crack.
 
@@ -125,6 +129,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same kitchen, 10:49 AM. **David** has stood up and is now at the sink, his back to Walter, scrubbing a plate with unnecessary vigor — his knuckles have gone white around the sponge. The tension in his shoulders is now visible. His reading glasses have slipped down his nose. He is not looking at his father. **Walter** is at the table, entirely unaware, gently turning his coffee mug in its saucer, his expression open and friendly. A single bird is visible through the kitchen window behind David. The light is brighter now as the morning has advanced. Color palette: same yellows, but a slight drain of warmth — the bright overhead light feels a little harsher. Emotional tone: the strain is visible now, though Walter cannot see it.
 
@@ -146,6 +151,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same kitchen, 11:06 AM. **David** has turned away from the sink and is facing **Walter** directly across the kitchen. His face is taut; his eyes have a bright, angry shine; his jaw is visibly clenched. His hand is raised slightly in an involuntary gesture — not threatening, but exasperated, palm up. His voice has risen. **Walter** is frozen at the table, his friendly expression crumpling — his mouth open slightly, his brow wrinkling, a hand half-raised to his chest. He looks like a child who has been scolded without understanding why. His coffee mug is halfway to his lips; a drop has spilled. The kitchen light feels sharper. A silence hangs. Color palette: yellows with a cold edge now, the tension draining warmth from the scene. Emotional tone: the moment the caregiver breaks — and the moment the parent sees it.
 
@@ -167,6 +173,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior shot of the narrow hallway that runs from the kitchen toward the bedrooms. **David** stands alone in the middle of the hallway, his back against the wall, his head tilted upward toward the ceiling, eyes closed, one hand covering his face. A single tear traces down his cheek. He is wearing the cardigan, but his shoulders are slumped. Behind him on the wall, a black-and-white photograph of a much-younger Walter holding a small boy on his shoulders — clearly David as a child. The hallway lamp is warm and dim. Carpet is a soft beige. A closed bedroom door at the end. Color palette: soft warm browns, a gentle amber light, the muted blues and grays of the old photograph. Emotional tone: a son crushed by his own impatience, and by the love standing behind him on the wall.
 
@@ -186,6 +193,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **David** sits in his parked car in Walter's driveway, driver's door closed, phone pressed to his ear. The car interior is dim; the windshield shows a cloudy afternoon. David's expression is raw — eyes red-rimmed, but his posture is erect, listening carefully. A yellow legal pad on the passenger seat has the word "PATIENCE" written on it in quick handwriting. In the distance through the windshield, Walter's small ranch house is visible. A squirrel scampers across the lawn. Color palette: cool gray-blues of the car interior, the warm yellow of the legal pad, soft shadows. Emotional tone: a man reaching for help, and receiving it.
 
@@ -207,6 +215,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Kitchen scene, warm morning light, a few days later. **David** is hanging a large **dry-erase whiteboard** (about 24" x 36", simple pine frame) on the wall opposite the kitchen table — clearly a prominent, high-visibility spot where someone sitting at the table would easily see it. He is on a small step stool, level in hand, smiling softly. **Walter** sits at the table watching with mild curiosity, a coffee mug beside him. On the counter, a package of colored dry-erase markers (red, blue, black, green) still in the plastic. Color palette: warm morning yellows, cream walls, the fresh bright white of the blank board. Emotional tone: small practical hope, a tool arriving.
 
@@ -228,6 +237,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Warm kitchen, a different day, another morning. The **whiteboard** now fills a prominent portion of the LEFT side of the frame and has clear content on it in bold, neat handwriting:
 
@@ -258,6 +268,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same kitchen. **Walter** at the table, coffee mug in hand, asking something. **David** is crossing the kitchen with a dish towel over his shoulder, turning toward his father with a calm steady smile — not strained, genuine. Behind them on the wall, the whiteboard is still visible with its neat columns. The kitchen clock now reads 11:47 AM. On the counter: a small bowl of pear slices Walter has been nibbling. Color palette: warm amber light, cream walls, the soft red of the magnetic clip on the board. Emotional tone: the repeated question is still happening — but now the caregiver has what he needs to answer it well.
 
@@ -279,6 +290,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Evening shot from inside **David's** car as he drives home down a tree-lined suburban street. Through the windshield, a fall sunset in soft oranges and violets, leaves swirling on the road ahead. David is behind the wheel, one hand on the steering wheel, one hand resting on his knee. His face is tired but serene — a man who has spent a long day with love and handled it well. The radio is playing softly (a low-volume glow of the dashboard). On the passenger seat: the now-dog-eared yellow legal pad with "PATIENCE" written on it, plus a small notebook titled "DAD'S ROUTINES." Through the side window, the blur of houses with warm lit windows. Color palette: rich sunset oranges, violet shadow, the amber glow of dashboard lights. Emotional tone: the quiet pride of a good day.
 

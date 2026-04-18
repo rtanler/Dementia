@@ -41,6 +41,7 @@ For many families, the driving conversation is the hardest conversation. Driving
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Ray** (76, medium tan skin weathered from years outdoors, short gray-white hair, a trimmed silver beard, wearing a dark green flannel shirt and a brown corduroy cap) sits at the wheel of a well-maintained 15-year-old blue sedan. He drives along a familiar suburban street with maple trees on both sides in early fall. His expression is calm, content, one hand on the wheel, the other tapping the beat of an oldies song on the steering wheel. Through the windshield we can see the grocery store where he is headed in the distance. On the dashboard: a folded shopping list, a small American flag pin on the sun visor. Color palette: warm autumn golds, rust-colored leaves, sky blue through the windshield, the muted blue of the car's interior. Emotional tone: an ordinary routine of a lifetime.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A wide highway shoulder on a rural stretch of road, overcast gray afternoon, three counties from town. **Ray's** blue sedan is pulled over haphazardly onto the gravel shoulder, hazard lights blinking (small orange glow from the back). **Ray** is outside the car, standing beside the open driver's door, one hand on top of the car door, the other hand to his forehead. He looks small, bewildered, disoriented — not frightened yet, more lost. His brown corduroy cap is slightly askew. His reflection in the side mirror shows an anxious face. Behind the car, a stretch of cornfield in autumn stubble. A large green highway sign in the distance reads "HWY 47 — EAST." A crow on a fencepost. Color palette: muted grays, dusty browns, a faded blue car, the single blinking orange of the hazard lights. Emotional tone: geography has failed him; the world has become unfamiliar.
 
@@ -81,6 +83,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior of a tidy office cubicle, late afternoon. **Linda** (48, medium-olive skin, dark hair in a shoulder-length bob, tortoise glasses, pale blue button-down, small silver earrings) stands at her desk, phone pressed hard to her ear, the other hand gripping the back of her office chair. Her expression has gone pale; her eyes are wide with fear. A half-eaten sandwich is on her desk. On the corkboard behind her: a family photo of her and Ray at a backyard barbecue. Office fluorescent light is flat and cool. Other cubicles are blurred around her, colleagues carrying on unaware. Color palette: cool office blues and grays, her warm skin tones, the soft brown of the framed photo behind her. Emotional tone: the moment the floor drops out beneath a working day.
 
@@ -102,6 +105,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A highway rest stop at dusk. **Ray** sits on a wooden picnic bench under a small pavilion, his hands clasped in his lap, his green flannel shoulders slumped, his brown corduroy cap on the bench beside him. He looks tired and relieved, but also something else — there is a new shadow behind his eyes, the shadow of knowing that something is wrong. A polite, compassionate **state trooper** (40s, neat uniform, kind face) stands a few feet away, giving him space while still watching over him. **Linda** is running into the frame from the LEFT, arms wide, a pure-love expression on her face — she has spotted her father. Her jacket is half-unzipped, her purse bouncing. In the background: Ray's blue sedan parked next to the trooper's patrol car. Picnic tables, a soda machine, a concrete restroom block. Lamppost light is just coming on. Color palette: dusky purples and grays, the warm glow of a single safety light, the red and blue accents of the patrol car. Emotional tone: relief, fear, love, all pouring in at once.
 
@@ -123,6 +127,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior shot of Linda's own car (a small silver SUV, different from Ray's blue sedan) at night, driving home on a dark two-lane highway. **Linda** is behind the wheel in the CENTER-LEFT of the frame, both hands on the steering wheel, her face lit only by the amber glow of the dashboard and the occasional flash of headlights from oncoming traffic. Tears have dried on her cheeks but her eyes are red. **Ray** is in the passenger seat on the RIGHT, his green-flanneled shoulders slumped, looking out the side window at the dark countryside. Neither of them is speaking. Through the rear window, the silhouette of his blue sedan being towed on a flatbed truck far behind them. The radio is off. Color palette: deep indigo night, the warm amber of dashboard lights, the occasional wash of white from oncoming headlights. Emotional tone: the long silence between two people who both know something has just ended.
 
@@ -144,6 +149,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Morning in Ray's kitchen. **Ray** stands at the counter in his bathrobe and slippers, staring at the **set of car keys on the counter** (leather keychain, "WORLD'S BEST GRANDPA" charm visible). His posture is rigid; his face is closed. Overnight he has reconsidered. The light is cold morning gray through the window. A cooling cup of coffee beside him. On the RIGHT side of the frame, **Linda** has just come downstairs — she is in a sweater and sweatpants, her hair unbrushed, a mug of coffee in hand, and she has paused in the doorway, reading her father's body language. Her heart is sinking. Color palette: cool gray-blues of overcast morning, pale creams, a single warm point of color from the leather keychain. Emotional tone: the walk-back, when the raw grief of last night becomes the anger of today.
 
@@ -165,6 +171,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Kitchen scene mid-morning. **Linda** stands on the LEFT at the kitchen island, hands wide in a pleading gesture, her face earnest and a little desperate, a printed MapQuest-style page with a highlighted route spread on the island between them. **Ray** stands on the RIGHT, arms crossed, chin tilted up, face set. He is not yelling — he is closed. He is a man who has been told how to behave and has decided he will not be. On the counter behind him, the car keys are still visible. Color palette: warm cream walls, the harder cool light of morning, blue undertones on Ray's face, warmer tones on Linda's. Emotional tone: a daughter rehearsing a script that will not land, and a father who feels corrected by his own child.
 
@@ -186,6 +193,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Upstairs hallway of Ray's modest house. **Linda** sits on the floor with her back against a closed bathroom door, her knees up, phone to her ear, a yellow legal pad and pen on the floor beside her. Her face is tired and tear-streaked but clear-eyed — she is listening hard. Her notepad has fresh bullet points being written: *"1. Don't be the bad cop"* / *"2. Call Dr. Patel's office"* / *"3. DMV re-test request"* / *"4. Ride-share options"*. The hallway carpet is soft beige, a small framed photo of teenage Linda with her father on the wall beside her. Color palette: warm beiges, soft amber lamp glow, the cool gray of the phone screen, the yellow of the legal pad. Emotional tone: clarity arriving in the middle of exhaustion.
 
@@ -207,6 +215,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Modern clinic exam room. **Dr. Patel** (50s, warm brown skin, salt-and-pepper hair, white coat, a stethoscope, a kind face) sits on a rolling stool facing **Ray**, who is on the exam table in his green flannel shirt. Dr. Patel is leaning slightly forward, a clipboard on her knee, speaking with firm gentleness. **Linda** is in a chair in the corner on the LEFT, present but quiet, her hands folded in her lap — just the daughter, just the support. A diploma on the wall; a diagram of the brain; a small potted plant. Color palette: soft professional blues, cream walls, warm accents. Emotional tone: a hard truth delivered with love by the right messenger.
 
@@ -228,6 +237,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Close-up domestic scene at Ray's kitchen counter, early evening. **Ray** (green flannel, weary but composed) is placing his **set of car keys on a leather keychain** onto the kitchen counter in a deliberate, almost ceremonial way. One of his hands rests open on the counter after setting them down. His head is slightly bowed. Beside the keys: **Dr. Patel's letter** on medical letterhead, one corner visible. **Linda** stands on the other side of the counter, watching her father with tears in her eyes and her hand over her mouth. On the wall above them, a small framed photo of Ray in his Marine Corps uniform as a young man — the tradition of duty. Color palette: warm amber kitchen light, the deep green of Ray's flannel, the quiet glint of metal on the keys. Emotional tone: a small personal ceremony of surrender, handled with grace.
 
@@ -249,6 +259,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A warm Tuesday morning in front of Ray's house. **Ray** stands on the sidewalk in front of his small ranch home with a cloth grocery bag slung over his shoulder, wearing his green flannel and corduroy cap. His posture is good; his face is content. He is giving a small friendly wave to a modest sedan pulling up to the curb — it is a rideshare car (generic, unbranded, no logos, just a regular car with a friendly female driver waving back through the open window). **Linda** is on the porch behind him, a mug of coffee in her hand, smiling — she drove over to see him off for his first grocery trip the new way. A small laminated card is tucked into Ray's shirt pocket, visible: *"MY NAME IS RAY WHITAKER. I HAVE ALZHEIMER'S. IF I SEEM LOST, PLEASE CALL LINDA: 555-0184."* Warm morning sun, autumn leaves. Color palette: fresh golds, soft autumn reds, the bright blue sky. Emotional tone: a new chapter, slightly smaller but not broken.
 
@@ -270,6 +281,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A small neighborhood park on a clear Sunday afternoon. **Ray** and **Linda** sit together on a wooden park bench under the shade of a large oak tree, each holding a small ice cream cone. **Ray** is in his green flannel and corduroy cap, relaxed, watching children play on a distant playground. **Linda** is in a warm rust-colored sweater, her head tilted slightly toward her father, content. On the path beside them: a young couple walking a golden retriever. In the background, a suburban street, and at the curb, another generic unbranded rideshare car has just dropped off an elderly woman with a walker — a quiet hint that Ray's new life is part of a wider and dignified community of care. The autumn light is warm and gold. Color palette: warm autumn ambers, leaf greens and oranges, clear blue sky, a single soft pink of Linda's ice cream. Emotional tone: an ordinary Sunday, which is to say, everything.
 

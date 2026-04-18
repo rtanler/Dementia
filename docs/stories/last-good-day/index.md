@@ -27,6 +27,7 @@ It is a Sunday evening. Bill has been home from the hospital for three weeks, on
 
 <!-- ![](./panel-01.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Joanne, 52, brown hair tied back, in soft blue scrubs and a cardigan, walking up the front steps of a modest ranch-style house at dusk, carrying a leather medical bag. Warm yellow porch light. Front door opening, a grown daughter visible behind it. The color palette is warm amber, deep navy dusk, cream, and golden porch glow. The emotional tone is arrival of steady help. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -36,6 +37,7 @@ Joanne had been a hospice nurse for twenty-two years and she still felt somethin
 
 <!-- ![](./panel-02.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Joanne kneeling beside a hospital bed set up in a living room. Bill, 88, frail, eyes closed, white hair, lies peacefully under a quilt. Marie, 85, sits in a nearby chair holding his hand. Joanne is gently taking Bill's pulse, her face tender and respectful. Warm lamplight. The color palette is soft honey gold, deep cream, gentle lavender. The emotional tone is first meeting between nurse and patient — reverent professionalism. Speech bubble from Joanne (softly, to Bill): "Hello, Mr. Larson. I'm Joanne. I'm going to help take care of you." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -45,6 +47,7 @@ Joanne knelt beside the bed. "Hello, Mr. Larson. I'm Joanne. I'm going to help t
 
 <!-- ![](./panel-03.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Joanne sitting at the dining room table with Marie, Lisa, and Lisa's brother Dan. Joanne has a simple one-page printed handout. She is pointing gently to a bullet list. Coffee cups on the table. The color palette is warm honey wood, soft amber, cream. The emotional tone is careful teaching. Speech bubble from Joanne: "His breathing will change. His skin might get mottled. He might seem restless. None of those things mean he's suffering." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -54,6 +57,7 @@ At the dining room table, Joanne walked the family through what was coming. The 
 
 <!-- ![](./panel-04.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Marie holding a spoon of broth hopefully toward Bill's slightly parted lips, her hand shaking slightly. Joanne is beside her, gently laying a hand on Marie's wrist. The color palette is warm amber, deep cream, soft brown. The emotional tone is the kindness of releasing a caregiver from an impossible task. Speech bubble from Marie (desperate): "He has to eat. He'll starve." Speech bubble from Joanne (warm, certain): "He's not hungry, Marie. His body is finished with food. Making him eat now would be harder on him, not kinder." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -63,6 +67,7 @@ Please generate a 16:9 image in warm contemporary realism showing Marie holding 
 
 <!-- ![](./panel-05.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Joanne sitting beside Marie on a loveseat, their hands clasped. Marie is weeping softly. Joanne's face is calm and certain. The color palette is warm amber, soft lavender, cream. The emotional tone is the giving of a permission that only a nurse can give. Speech bubble from Joanne: "Marie — it is okay to tell him it's okay to go. People wait for permission. You are allowed to give it." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -72,6 +77,7 @@ Tuesday afternoon Joanne sat Marie down on the loveseat. "Marie," she said. "It 
 
 <!-- ![](./panel-06.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting three grandchildren, ages 9, 14, and 17, sitting on the carpet near Bill's bed. The youngest is carefully showing Bill a drawing. The middle one holds his grandfather's hand. The oldest reads aloud from a worn novel. The color palette is warm gold, soft teal, cream, honey. The emotional tone is tender multigenerational presence. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -81,6 +87,7 @@ Joanne made sure the grandchildren knew they could visit. The youngest, Sam, age
 
 <!-- ![](./panel-07.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting the living room with big-band music playing from a small portable speaker beside Bill's bed. Marie holds Bill's hand; her eyes are closed, remembering. Lisa and Dan sway gently, arm in arm, near the bed. The color palette is deep amber, warm rose, gold, honey. The emotional tone is memory summoned by music. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -90,6 +97,7 @@ On Wednesday afternoon, Joanne asked what music Bill had loved. Marie said, "Big
 
 <!-- ![](./panel-08.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a close-up of Marie's hand holding Bill's, both hands thin and spotted with age. Bill's fingers are curled gently around hers. A faint squeeze is visible. A small speaker plays softly behind. The color palette is warm honey, deep amber, soft cream. The emotional tone is a tiny, enormous moment. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -99,6 +107,7 @@ During "In the Mood," Bill squeezed Marie's hand once. Weakly. Clearly. Marie in
 
 <!-- ![](./panel-09.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Bill's bed in the middle of the living room late at night. Marie, Lisa, Dan, and one grandchild are asleep or resting in chairs around the bed, quilts and blankets tucked around them. A small lamp glows. Joanne, still awake, sits in a corner chair with her clipboard and a small cup of coffee, quietly watching, a sentinel. The color palette is deep midnight blue, warm amber lamp, soft cream. The emotional tone is the long sacred watch. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -108,6 +117,7 @@ Saturday night the family would not leave the house. Joanne, who had been going 
 
 <!-- ![](./panel-10.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting the moment of Bill's death. Joanne is kneeling on one side of the bed, one hand on Bill's arm, one hand on Marie's shoulder. Marie has startled awake; her face shows a slow, quiet understanding. The family is stirring. The lamp still glows. The color palette is deep cobalt night, warm amber, soft cream, rose. The emotional tone is reverent stillness — the moment a breath does not come again. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -117,6 +127,7 @@ At 3:07 a.m. Joanne touched Marie's shoulder gently. "Marie," she said. Marie sa
 
 <!-- ![](./panel-11.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting early morning light beginning to come through the living room windows. Marie is combing Bill's thin white hair gently with a small comb. Lisa is placing a favorite tie across his chest. Dan has brought a framed photo. Joanne stands at a respectful distance, not intruding. The color palette is pale rose dawn, soft cream, warm amber lamp, gentle gold. The emotional tone is the intimate ceremony a family makes when given time. No speech bubbles. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -126,6 +137,7 @@ Joanne did not call the funeral home right away. She told the family there was n
 
 <!-- ![](./panel-12.png) -->
 <details><summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Joanne in the kitchen the next morning, handing Marie a small folder and a single sheet of bereavement resources. Marie, tired but calm, holds Joanne's hand. Morning sunlight streams in. The color palette is bright gold, warm cream, soft green. The emotional tone is gratitude and the beginning of grief. Speech bubble from Joanne: "Marie — you did everything right. Call anytime. Even a month from now. Even a year." Generate the image immediately without asking clarifying questions.
 </details>
 

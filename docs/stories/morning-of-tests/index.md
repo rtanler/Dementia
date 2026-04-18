@@ -41,6 +41,7 @@ Dementia is not one disease. It is a family of conditions — Alzheimer's is the
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Warm sepia-tinged flashback-style panel showing a small row-house kitchen in the late 1990s. A younger **Delphine** (then in her late 50s, hair still partly black, a floral apron over a yellow cotton dress) stands at a stove stirring a large pot of greens. A small pigtailed **Jasmine** (age 7, wearing a purple school uniform jumper, one shoelace untied, a gap-toothed smile) is on a step stool beside her, carefully crumbling cornbread into a bowl with great seriousness. Gospel music on a small radio on the counter (musical notes in the air). A framed photo of a middle-aged man in a Navy uniform hangs on the wall — Delphine's late husband. A wooden cuckoo clock. Color palette: warm honey browns, mustard yellows, soft avocado green. Emotional tone: love, the beginning of a bond.
 
@@ -62,6 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior of **Jasmine's** small silver hatchback, morning light streaming through the windshield. **Jasmine** is at the wheel in the LEFT of the frame, in her caramel corduroy blazer. Her face is focused but gentle — she is glancing sideways at her grandmother with a worried-affectionate smile. **Delphine** (in the passenger seat on the RIGHT) is in her dark green dress with the gold cross necklace, a small patent-leather handbag in her lap. She is mid-joke, eyes crinkled with laughter, one hand playfully slapping her knee. She is nervous underneath it but she is not showing it. Through the windshield: a clear blue-sky morning, downtown buildings in the distance, a sign for the medical campus. On the dashboard: a folder labeled "GRANDMA — MEDICATIONS, HISTORY, QUESTIONS." Color palette: warm morning golds, clean blues, soft creams. Emotional tone: love moving toward a hard appointment, armored in humor.
 
@@ -83,6 +85,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A neurology clinic waiting room, modern and warm. Soft gray upholstered chairs against a cream wall. **Jasmine** and **Delphine** sit side by side, hands clasped between them on the chair arm. Delphine is holding a small printed questionnaire clipboard in her free hand and filling it out with a pen — her handwriting small and careful. Jasmine watches her grandmother's hand on the pen with an attentive, protective face. In the background: a reception desk, a soft-focused sign reading "NEUROLOGY," another patient reading a magazine, soft morning light through tall windows, a muted wall TV showing a weather map. Color palette: warm grays, sage green, creamy whites, soft terracotta accents. Emotional tone: nervous patience, grandmother still bright, granddaughter quietly anchoring.
 
@@ -104,6 +107,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A small bright consultation room. **Delphine** sits at a small round table across from a neuropsychology technician — **Dr. Kim** (30s, Asian-American woman, kind face, soft blue cardigan over a white blouse, a clipboard in hand, a small stopwatch visible). On the table between them: a printed sheet showing a simple clock-drawing task — Delphine has just drawn a circle with numbers on it but the clock hands show an incorrect time. A page with a list of words: *APPLE, PENNY, TABLE.* **Delphine** is concentrating hard, brow furrowed, a pen in her hand. **Jasmine** is NOT in the room — the door visible in the background indicates she has been asked to wait outside. Color palette: clean whites, warm blue accents, soft morning light, the gentle yellow of the cognitive-test papers. Emotional tone: focused work, a grandmother doing her best, a kind evaluator.
 
@@ -125,6 +129,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. An MRI suite. **Delphine** lies on the flat bed of a large circular MRI scanner in a hospital gown printed with tiny blue flowers, a thin white blanket over her legs. She wears foam earplugs and a small plastic button (the MRI call button) gripped in her right hand. Her face is calm but eyes closed tight. She looks very small and very brave. A technician in scrubs is visible through a wide window in the control room behind, making gentle hand signals. The MRI's circular opening is partially behind her head. Soft clinical lights. A small framed inspirational quote on a wall visible through the window. Color palette: cool clinical blues and whites, the soft warm yellow of the reading room window, the pale blue of Delphine's gown. Emotional tone: courage inside a big machine.
 
@@ -146,6 +151,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A small hospital cafeteria, table by a window. **Jasmine** and **Delphine** sit across from each other sharing a small lunch: a turkey sandwich cut in half, a bowl of tomato soup, two cups of tea. Delphine (back in her green dress, cross necklace back on) is eating slowly but clearly enjoying the sandwich. Jasmine has barely touched her soup; she is leaning on one hand, her other hand covering her grandmother's hand on the table. Through the window behind them: a small hospital courtyard with a fountain and a few benches. An older couple sits on one of the benches. Warm midday light. Color palette: warm browns, cream, the bright orange-red of the tomato soup, the soft green of Delphine's dress. Emotional tone: the exhale after a hard morning, the quiet before results.
 
@@ -167,6 +173,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A neurologist's consultation room. **Dr. Patel** (50s, a warm-skinned Indian-American man with silver-threaded black hair, navy blazer over a soft blue shirt, no tie, kind professorial face) sits on a rolling stool. Across from him on two padded chairs sit **Delphine** (green dress, cross necklace, hands folded in her lap) and **Jasmine** (caramel blazer, notebook open on her knee, pen in hand). Between them on a low table: a tablet screen showing two MRI brain images side-by-side — one labeled "NORMAL" and one labeled "D. MICHAELS" (Delphine) — with subtle hippocampal atrophy visible in the patient's scan. A diagram of the brain on the wall. A small tissue box on the table. Color palette: warm creams, soft navy, the cool blue of the MRI images on the screen. Emotional tone: serious, dignified, careful — the delivery of a diagnosis with love.
 
@@ -188,6 +195,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Same consultation room, a few minutes later. **Delphine** has quietly reached out and taken **Jasmine's** hand; their joined hands rest on the arm of Delphine's chair. Delphine's face is composed but wet — a single tear has tracked down her cheek, catching the light. Her chin is up. She is listening. **Jasmine** is leaning slightly forward, her notebook on her knee with neat bullet points: *"Alzheimer's – early stage"* / *"donepezil – start 5mg"* / *"MRI confirms"* / *"follow up 3 months."* Dr. Patel is in soft focus on the right, gesturing gently, his voice warm. On the wall, framed anatomical drawings of the brain. A small potted fiddle-leaf fig in a corner. Color palette: warm browns and creams, soft navy blues, the warm amber of the afternoon light. Emotional tone: dignity, grief, the beginning of a plan.
 
@@ -209,6 +217,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Interior of a hospital elevator. The two of them are alone. **Jasmine** is holding her grandmother in a long, full-body hug; Delphine's head rests on Jasmine's shoulder. Delphine's small handbag dangles from her fingers. Jasmine's folder (still labeled "GRANDMA") is tucked under one arm. Neither is speaking. Both have wet eyes. The elevator display above the door shows "3 – 2 – 1 – LOBBY." A soft fluorescent light from the elevator ceiling. Color palette: the soft hospital-neutral gray of the elevator, the warm browns of their skin, the deep green of Delphine's dress, the warm caramel of Jasmine's blazer. Emotional tone: the held breath, the long exhale, love leaning into love.
 
@@ -230,6 +239,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Jasmine's** silver hatchback, in a concrete parking garage, interior shot. **Delphine** has settled into the passenger seat, her seatbelt on, her handbag in her lap, her eyes closed in a small resting smile. **Jasmine** is in the driver's seat, turned toward her phone connected to the car stereo, and we can see the phone screen showing a playlist titled "GRANDMA'S CHURCH" with song titles like "Amazing Grace," "How Great Thou Art," "Precious Lord, Take My Hand." The first song has just started — musical notes in the air. The car is still parked. Color palette: dim concrete grays outside, the warm amber of the car's interior lights, the bright green of Delphine's dress. Emotional tone: the very first minute of a new chapter — met with a song.
 
@@ -251,6 +261,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Delphine's small warm row-house kitchen, evening. **Delphine** sits at her kitchen table in a soft house dress and slippers, a mug of tea in front of her, the folder of paperwork from Dr. Patel open neatly beside her. **Jasmine** stands at the stove, back partly turned, stirring a pot of greens, her blazer off, sleeves rolled up — she has stayed the night. A pot of cornbread is just coming out of the oven (visible through the open oven door with a golden top). On a small corkboard on the wall: a newly-pinned appointment card for *"3-month neurology follow-up"* and a printed sheet titled *"ALZHEIMER'S ASSOCIATION LOCAL SUPPORT GROUP."* Color palette: honey yellows, warm browns, sage green of Delphine's house dress, the deep green of the greens. Emotional tone: home, food, the ordinary that continues.
 
@@ -272,6 +283,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A community-center multipurpose room. About twelve folding chairs in a loose circle. **Delphine** sits in a chair on the LEFT side of the circle in her soft green cardigan, an "HELLO MY NAME IS" sticker on her chest that reads "DELPHINE." **Jasmine** sits next to her (a matching sticker on her chest, "JASMINE"), holding her grandmother's hand. Around the circle: a diverse group — an older white couple holding hands, a middle-aged Latino man, a woman in her 70s with a walker, a middle-aged Asian woman, a young caregiver in scrubs. On a whiteboard at the front: "ALZHEIMER'S & FAMILIES SUPPORT GROUP — ALL ARE WELCOME." A coffee urn and a plate of cookies on a side table. Warm fluorescent light. Color palette: warm cream walls, the colors of everyone's soft sweaters, the gentle pop of the name stickers. Emotional tone: arrival, community, not being alone.
 

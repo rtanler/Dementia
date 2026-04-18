@@ -1,3 +1,7 @@
+---
+hide:
+    toc
+---
 # List of Graphic Novel Stories
 
 These short graphic-novel-style stories bring the textbook's concepts to life through composite caregiver characters. Each story pairs a vivid human moment with the practical lesson a family needs to carry home from it.

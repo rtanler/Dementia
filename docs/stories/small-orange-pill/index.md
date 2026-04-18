@@ -41,6 +41,7 @@ The first dementia medication almost always comes as a small pill in a small bot
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 1. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A small kitchen countertop scene. **Elena** (52, warm tan skin, shoulder-length dark hair pulled loosely back, glasses pushed up on her head, navy cardigan) stands at her kitchen island holding a small white **prescription bottle** up to the window light, squinting at the label. The label reads, in clear text: *"DONEPEZIL 5 MG / Take one tablet by mouth nightly / MATEO GARCIA / Dr. Ramirez."* Beside her on the counter: a glass of water, a seven-day pill organizer, a doctor's information pamphlet titled *"Starting Donepezil."* On the fridge behind her, a magnet-held photo of Elena and Mateo on their 30th anniversary. Morning light pours through the window. Color palette: warm buttery yellows, cream walls, the soft white of the pill bottle, the bright blue of the glass of water. Emotional tone: a small object, a big moment.
 
@@ -60,6 +61,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 2. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A bedroom at 2:47 AM (clock on the nightstand visible). **Elena** sits propped up in bed against pillows in a soft gray T-shirt, laptop on her lap, the cool blue-white screen lighting her face from below. Dark circles under her eyes. On her laptop screen: multiple browser tabs visible along the top with labels like *"donepezil reviews,"* *"does donepezil really work,"* *"miracle cure Alzheimer's,"* *"side effects donepezil nightmares,"* *"Alzheimer's Association."* One hand is on the mouse pad; the other holds a mug of tea that has gone cold. **Mateo** sleeps beside her, turned away, a peaceful silhouette under the covers. On her nightstand: a glass of water, a notebook, the small orange pill bottle. Color palette: the deep indigo of the bedroom, the cold blue glow of the screen, the warm amber of a small lamp. Emotional tone: the dangerous rabbit hole of love and 3 AM.
 
@@ -79,6 +81,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 3. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Kitchen scene, evening, around 8:30 PM. **Mateo** (69, warm tan skin, kind eyes, salt-and-pepper hair, olive long-sleeve shirt, a gentle smile) stands at the kitchen sink with a small paper cup in one hand (containing a single pale orange pill) and a glass of water in the other. **Elena** stands beside him, one hand lightly on his back, looking at him with a mix of love and watchful attention — studying his face as if for a sign. **Mateo** meets her eyes with a wry, warm, slightly amused expression. On the counter: the pill bottle, a small notepad labeled "NOTES ON MATEO." A pendant light overhead casts a soft pool of warmth. Color palette: warm ambers of kitchen light, the cream of the cabinets, soft navy of Elena's cardigan. Emotional tone: a small ceremony, love under the lamp.
 
@@ -100,6 +103,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 4. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Mateo** is lying on the living-room sofa with a soft gray throw blanket over his legs, a slight green-gray tint to his complexion, one hand pressed gently to his stomach. A small yellow bucket with a plastic bag lining it sits on the floor beside him (an unsentimental real-life detail of nausea). On the coffee table: a mug of chamomile tea, a package of saltine crackers, a half-eaten piece of dry toast, a bottle of ginger-ale-style soda. **Elena** sits on the edge of the sofa beside his feet, her hand gently resting on his shin through the blanket. Her face is concerned, a little frightened. The TV in the background is off. Color palette: muted blue-grays of afternoon, warm beige of the sofa, a slightly green undertone on Mateo's skin to suggest nausea. Emotional tone: the hard reality of side effects.
 
@@ -121,6 +125,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 5. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Kitchen scene, Sunday morning, one week after panel 3. **Elena** sits at the kitchen table with a small notebook open in front of her, a coffee mug at her elbow, a pen in hand. On the notebook page she has written entries — Day 1 through Day 7 — with short observations: *"Day 2 – nauseous. Day 3 – worse. Day 4 – switched to evening dose. Day 5 – better. Day 6 – ok. Day 7 – normal."* At the bottom of the page: *"Memory: no change I can see."* **Mateo** is visible in the background at the sliding-glass door watering a small potted herb on the patio, back in good color. Color palette: warm morning golds, soft creams, the subtle green of the patio plants. Emotional tone: the quiet discipline of watching and recording.
 
@@ -140,6 +145,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 6. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A warm family dinner scene. A dining room table set nicely — a platter of carne asada, a bowl of rice and beans, a small stack of warm tortillas, a pitcher of agua fresca, a simple cake with candles waiting to be lit. Around the table: Elena, Mateo, Elena's sister **Sofia** (50s, similar features, bright pink blouse), Sofia's husband, and a teenage nephew. Everyone is mid-conversation. **Mateo** is smiling kindly across the table at Sofia, but a small hesitation is visible in his expression — his mouth slightly open as if reaching for a word. **Elena** (next to Mateo) watches him with a careful, helpful attention. The candles on the cake are unlit yet. A strand of Papel picado hangs across the top of the frame. Color palette: warm ambers, festive reds and blues of the picado, the bright greens and oranges of the food. Emotional tone: joy with a small shadow.
 
@@ -163,6 +169,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 7. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. A neurologist's small bright office. **Dr. Ramirez** (50s, warm brown-skinned Latina, short silver-streaked hair, a white coat over a burgundy blouse, warm kind face) sits on a rolling stool facing the couple. **Mateo** and **Elena** sit side by side on two comfortable chairs. On Dr. Ramirez's tablet screen, turned so they can see it: a simple line graph showing two lines — one steeper line labeled *"without medication,"* one gentler line labeled *"with medication,"* both trending downward over time but the second clearly gentler. The graph is stylized and easy to read. On the wall: a diagram of neurotransmitters. A potted plant. Color palette: soft blues and warm creams, the clean white of the tablet, the gentle red of the graph line. Emotional tone: a kind doctor reframing hope.
 
@@ -184,6 +191,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 8. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. **Elena** and **Mateo** walk together in a small neighborhood park on a Sunday afternoon. They are holding hands. Mateo is in a soft tan sweater; Elena is in a warm coral scarf. Autumn leaves drift around them. A small dog on a leash trots happily ahead on a walk with an unseen owner. In the distance, a young father pushes a child on a swing. **Elena's** expression is different than in earlier panels — less pinched, more present. Her eyes are on her husband's face, not on the future. **Mateo** is relaxed, pointing out something in a tree — a red cardinal. Color palette: warm autumn golds and reds, soft blue sky, a single pop of scarlet from the cardinal and Elena's scarf. Emotional tone: the afternoon of a person who has decided to live in the afternoon.
 
@@ -205,6 +213,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 9. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Kitchen scene, six weeks later. **Elena** is filling the pill organizer on the counter. The small pills are now a slightly larger, deeper orange color. She has the new bottle labeled "DONEPEZIL 10 MG" in one hand, the old bottle labeled "DONEPEZIL 5 MG" set aside. On her notebook beside her: a page dated today with the entry *"Moved up to 10mg. Tolerating 5 well. Dr. R says standard step-up."* **Mateo** is at the kitchen table in the background with a crossword puzzle, pencil in hand, concentrating peacefully. Morning light through the window. Color palette: clear warm yellows, cream, a deeper orange pop from the new pill bottle. Emotional tone: calm routine, hope at a steady temperature.
 
@@ -224,6 +233,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 10. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Bright breakfast scene. **Mateo** at the kitchen table in a soft blue sweater, glasses on, pencil in hand, concentrating on a newspaper crossword with a smile of focused pleasure. **Elena** leans over his shoulder from behind, one hand resting on his shoulder, looking at the puzzle with him. A small bowl of cut fruit, two mugs of coffee. On the kitchen windowsill: a potted basil plant, a small framed photo of their adult children. Color palette: warm morning golds, sage green, buttery cream. Emotional tone: an ordinary small moment, quietly precious.
 
@@ -247,6 +257,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 11. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Evening scene, three months later. **Mateo** sits at the kitchen table holding a bank statement, his brow deeply furrowed, confused, the statement trembling slightly in his hand. He is trying to understand what he is reading. **Elena** is seated beside him, her chair pulled close, one hand gently over his free hand, the other pointing at a line on the statement. Her face is calm, patient, steady — a different face than she wore in panel 2 at 3 AM. A cup of tea in front of each of them. The kitchen light is warm but the mood is quieter. Color palette: warm ambers dimming into evening tones, softer and more muted. Emotional tone: the disease is still progressing, and the love is still moving with it.
 
@@ -268,6 +279,7 @@ Generate the image immediately without asking clarifying questions.
 
 <details>
 <summary>Image Prompt</summary>
+(This is panel 12. Do not put the panel number in the image.)
 
 Contemporary photorealistic illustration, 16:9 wide-landscape format. Evening porch scene. **Elena** and **Mateo** sit side-by-side on a small wooden porch swing, a soft blue blanket over both their laps. Mateo's head is gently resting on Elena's shoulder; he looks peaceful, a soft smile, eyes almost closed. Elena's free hand holds a small notebook open in her lap — the "Notes on Mateo" notebook — and she is writing one short line: *"Month 4: still here, still him, still us."* A glass of red wine on a small table beside them. A string of warm white bistro lights over the porch. The suburban yard beyond is darkening into twilight. Color palette: deep indigo sky softening to pink at the horizon, warm amber of the string lights, the soft navy of the blanket. Emotional tone: peace, love, the right size of hope.
 
