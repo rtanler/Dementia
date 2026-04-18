@@ -10,7 +10,11 @@
       "Bash(git -C /Users/dan/Documents/ws/Dementia add -A)",
       "Bash(git -C /Users/dan/Documents/ws/Dementia commit -m ':*)",
       "Bash(git -C /Users/dan/Documents/ws/Dementia push)",
-      "Bash([ -f \"/Users/danmccreary/Documents/ws/Dementia/docs/stories/$dir/index.md\" ])"
+      "Bash([ -f \"/Users/danmccreary/Documents/ws/Dementia/docs/stories/$dir/index.md\" ])",
+      "Bash(GEMINI_API_KEY=AIzaSyAoOvqD5uFGQMr2xHY6EHMEILJfRAoJqV8 python /Users/dan/Documents/ws/claude-skills/skills/story-generator/scripts/generate-images.py docs/stories/caregiver-in-mirror --first-only)",
+      "Bash(GEMINI_API_KEY=AIzaSyBfObEx61N2KPy-DpOt-jGRlH5OI6TGJx0 python /Users/dan/Documents/ws/claude-skills/skills/story-generator/scripts/generate-images.py docs/stories/caregiver-in-mirror --first-only)",
+      "Bash(python -c \"from PIL import Image, ImageDraw, ImageFont; print\\('PIL OK'\\)\")",
+      "Bash(python /tmp/update_cover_prompts.py)"
     ]
   }
 }

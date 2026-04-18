@@ -13,7 +13,15 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting a bright, homey memory-care common room. Large windows with climbing wisteria, a fireplace with a soft fire, residents and staff in warm conversation at small tables, a piano with sheet music. In the foreground, Denise, 58, with chin-length brown hair and reading glasses, holds a clipboard and notebook, walking slowly beside Pat, a friendly middle-aged memory-care director in a cardigan and name tag. Denise is looking around thoughtfully. The color palette is warm amber, deep sage green, honey wood, soft teal, and cream. The emotional tone is tender, hopeful evaluation — a daughter seeing a place where her mother could actually live. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE TOUR" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "Choosing a Memory-Care Home Without Guilt". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** A bright, homey memory-care common room. Large windows frame climbing wisteria; a fireplace holds a soft fire; residents and staff chat warmly at small tables; a piano sits with sheet music on its stand. In the foreground, Denise, 58, with chin-length brown hair and reading glasses, holds a clipboard and notebook, walking slowly beside Pat, a friendly middle-aged memory-care director in a cardigan and name tag. Denise is looking around thoughtfully.
+
+**Emotional tone:** tender, hopeful evaluation — a daughter seeing a place where her mother could actually live.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>

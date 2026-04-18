@@ -13,7 +13,15 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting a warm, lived-in kitchen at night. Rosa, 81, a Mexican-American grandmother with silver hair in a loose braid, wears a floral apron over a nightgown. She is standing in front of the stove, a burner faintly glowing blue-orange, with a slightly confused expression. Her son Carlos, 53, in a t-shirt and sweatpants, stands in the doorway barefoot, his face a mix of fear and tenderness — he is not angry, he is afraid. On the counter, a tortilla press, a cast-iron skillet, and a jar of pinto beans. A single pendant light casts warm amber over the kitchen. The color palette is terracotta, deep amber, soft cream, faded green tile, and a small sharp blue flame. The emotional tone is tender alarm — a son realizing his mother's kitchen has become a place that needs protecting. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE KITCHEN LOCK" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "When the Stove Becomes a Stranger". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** A warm, lived-in kitchen at night. Rosa, 81, a Mexican-American grandmother with silver hair in a loose braid, wears a floral apron over a nightgown. She stands at the stove; a burner faintly glows blue-orange; her expression is slightly confused. Her son Carlos, 53, in a T-shirt and sweatpants, stands in the doorway barefoot — his face a mix of fear and tenderness, not anger. On the counter: a tortilla press, a cast-iron skillet, a jar of pinto beans. A single pendant light casts warm amber over the kitchen.
+
+**Emotional tone:** tender alarm — a son realizing his mother's kitchen has become a place that needs protecting.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>

@@ -1,19 +1,27 @@
 ---
 title: Aunt Rose Is Coming - Stepping Into Her World
 description: Barbara keeps waiting for her sister Rose, who died thirty years ago. Michelle learns it is kinder to join the waiting than to deliver the news of loss again and again.
-image: /stories/aunt-rose-coming/cover.png
-og:image: /stories/aunt-rose-coming/cover.png
-twitter:image: /stories/aunt-rose-coming/cover.png
+image: /stories/aunt-rose-coming/cover.jpeg
+og:image: /stories/aunt-rose-coming/cover.jpeg
+twitter:image: /stories/aunt-rose-coming/cover.jpeg
 social:
    cards: false
 ---
 
 # Aunt Rose Is Coming: Stepping Into Her World
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.jpeg)
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting an older woman, Barbara, 80, with soft white hair and kind blue eyes, sitting by a large bay window in a cozy living room. She is dressed carefully in a lavender cardigan and a string of pearls. She holds a single cut rose in a small glass vase on the coffee table beside her, watching the front walkway expectantly. Beside her sits her daughter Michelle, 47, in a soft green sweater, with one hand gently resting on her mother's hand. Michelle is looking at her mother, not out the window. Afternoon light filters through lace curtains. The color palette is soft lavender, warm cream, faded rose, and golden afternoon light. The emotional tone is tender and bittersweet — a daughter choosing presence over correction. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "AUNT ROSE IS COMING" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "Stepping Into Her World". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** Barbara, 80, with soft white hair and kind blue eyes, sits by a large bay window in a cozy living room. She wears a lavender cardigan and a string of pearls. A single cut rose stands in a small glass vase on the coffee table beside her as she watches the front walkway expectantly. Beside her sits her daughter Michelle, 47, in a soft green sweater, one hand resting gently on her mother's hand. Michelle is looking at her mother, not out the window. Afternoon light filters through lace curtains.
+
+**Emotional tone:** tender and bittersweet — a daughter choosing presence over correction.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>
@@ -25,7 +33,7 @@ This is a graphic novel for family caregivers of people living with dementia. Mi
 
 It is three o'clock on a Wednesday. Barbara is sitting by the front window in her lavender cardigan. She has put on her pearls. On the coffee table, in a small cut-glass vase, there is a single pink rose from the garden. Barbara is waiting for her sister. Her sister has been dead for thirty years. Michelle does not yet know that what she is about to learn this afternoon will change the next two years of her mother's life — and hers.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a cozy living room at three in the afternoon. Barbara, 80, sits upright in a wingback chair by the bay window, wearing a lavender cardigan and pearls, hands folded neatly on her lap, watching the front walkway expectantly. A single pink rose in a small cut-glass vase sits on the coffee table. The color palette is soft lavender, warm cream, pale rose pink, and afternoon gold. The emotional tone is tender anticipation. Speech bubble from Barbara (soft, hopeful): "Michelle, honey, when is Rose coming?" Generate the image immediately without asking clarifying questions.
@@ -35,7 +43,7 @@ Please generate a 16:9 image in warm contemporary realism depicting a cozy livin
 
 ## Panel 2 – The Truth, Delivered
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Michelle kneeling beside her mother's chair, holding her mother's hands gently. Michelle's expression is careful, pained. Barbara's face has collapsed into fresh grief — eyes wide, mouth slightly open, a tear on her cheek. The color palette is muted rose, pale cream, and soft gray. The emotional tone is devastating — a loving daughter, a mother grieving her sister for what feels like the first time. Speech bubble from Michelle (gentle): "Mom — Aunt Rose passed away, remember? A long time ago." Speech bubble from Barbara (shattered): "What? No... no one told me." Generate the image immediately without asking clarifying questions.
@@ -45,7 +53,7 @@ Please generate a 16:9 image in warm contemporary realism showing Michelle kneel
 
 ## Panel 3 – Grief, on Repeat
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 (This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Barbara sitting on a couch, a tissue pressed to her eyes, shoulders shaking quietly with grief. Michelle sits beside her with one arm around her, looking out the window with a haunted expression. An old family photo album lies open on the coffee table, showing a black-and-white photo of two young women laughing. The color palette is soft gray-blue, pale lavender, sepia. The emotional tone is heavy sorrow — a grief that should have ended thirty years ago, landing fresh today. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -55,7 +63,7 @@ For an hour her mother cried. For an hour Michelle held her. Michelle looked at 
 
 ## Panel 4 – The Nurse at the Assisted-Living Open House
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 (This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a bright, airy lobby of an assisted-living community. Michelle stands with a clipboard of questions, talking to a woman in her sixties, the director of memory care, who wears a warm cardigan and a name tag. They are seated at a small bistro table. Plants and soft light surround them. The color palette is pale sage, warm cream, and honey wood. The emotional tone is attentive learning. Speech bubble from director: "When she asks about someone who has died — step into that world with her. Don't pull her out." Generate the image immediately without asking clarifying questions.
@@ -65,7 +73,7 @@ On Saturday Michelle toured an assisted-living community she did not intend to u
 
 ## Panel 5 – Who Was Rose?
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.jpeg)
 <details><summary>Image Prompt</summary>
 (This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a flashback or mental image — two young women, perhaps 18 and 22, in a 1962 setting, laughing together on a porch. One is Barbara as a young woman, one is Rose. They are both holding iced teas. A screen door and climbing roses frame the scene. The image has a softened, remembered quality. The color palette is nostalgic green, cream, pink, and warm gold. The emotional tone is loving memory. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -75,7 +83,7 @@ Rose was four years younger than Barbara. Rose had been the funny one. Rose had 
 
 ## Panel 6 – A New Answer
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.jpeg)
 <details><summary>Image Prompt</summary>
 (This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Michelle sitting down next to her mother by the window, instead of standing. Michelle has a cup of tea for herself and one for her mother on a tray. Her face is relaxed, curious, open. Barbara is leaning forward with a half-smile, ready to talk. The color palette is warm amber, soft rose, pale green, and gold. The emotional tone is the arrival of a different kind of afternoon. Speech bubble from Michelle: "Mom — tell me about Rose while we wait." Speech bubble from Barbara (brightening): "Oh! Well, she was a pistol..." Generate the image immediately without asking clarifying questions.
@@ -85,7 +93,7 @@ Monday afternoon, at three o'clock, her mother said, "When is Rose coming?" Mich
 
 ## Panel 7 – The Cornfield Story
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.jpeg)
 <details><summary>Image Prompt</summary>
 (This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Barbara animatedly telling a story, both hands gesturing, one raised as if gripping an imaginary steering wheel, her face full of delight. Michelle leans forward, laughing. The living room glows in afternoon sun. The color palette is honey gold, warm peach, soft green, cream. The emotional tone is joyful connection — a daughter hearing a story she'd never been told. Speech bubble from Barbara: "I was seventeen — Rose made me drive backwards through the corn so Mother wouldn't hear!" Generate the image immediately without asking clarifying questions.
@@ -95,9 +103,54 @@ Barbara told the cornfield story. Michelle had heard the outline once, maybe twi
 
 ## Panel 8 – The Hard Day
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.jpeg)
 <details><summary>Image Prompt</summary>
+
 (This is panel 8. Do not put the panel number in the image.)
+
+**Style:** Warm painterly American contemporary realism, in the tradition of
+illustrated Sunday-magazine oil paintings. Visible but refined brushwork;
+soft edges; richly rendered fabric and wood textures; glowing interior
+lighting. Evokes the domestic warmth of Norman Rockwell and the luminous
+interiors of Thomas Kinkade, restrained and tasteful — never cartoonish,
+never photographic. Gentle, tender, nostalgic emotional tone.
+
+**Palette:** Warm muted earth tones — sage green, soft lavender and mauve,
+cream, ivory, honey gold, warm walnut brown, rose pink, dusty burgundy,
+pale butter yellow. No saturated primaries. No cool blues. Every color
+reads as if it has been aged by afternoon sunlight.
+
+**Lighting:** Warm golden afternoon sunlight streaming through a
+lace-curtained window as the primary key, with a secondary interior lamp
+adding a pool of honey-gold glow. Soft, diffuse shadows; no harsh contrast;
+gentle rim light on faces and shoulders. Overall luminance feels like 3-4 PM
+on a clear autumn day.
+
+**Composition:** 16:9 landscape. Characters in the foreground, center or
+slightly left. Rich storytelling background — framed family photographs,
+bookshelves, potted plants, patterned upholstery, an oriental rug, a window
+onto a sunlit garden. Background details rendered with slightly softer
+focus than the foreground, pulling the eye to the human subjects.
+
+**Characters:** Realistic proportions and facial features, American
+mid-century-to-present-day domestic setting. Expressive warm skin tones.
+Visible fabric texture (knit sweaters, cardigans, lace, linen). Natural,
+unforced poses — people mid-gesture, mid-conversation, looking at each
+other. Eyes alive, faces kind.
+
+**Detail gradient:** High detail in foreground (faces, hands, tea set,
+jewelry, garment fibers). Medium detail in mid-ground furniture. Softer,
+slightly impressionistic detail in deep background (outside garden, distant
+shelves).
+
+**Mood words:** tender, nostalgic, domestic, serene, luminous, honest,
+intergenerational, safe, dignified.
+
+**Forbidden:** neon colors, hard digital vector lines, anime proportions,
+photorealism, cold fluorescent light, blue-hour exteriors, grainy
+documentary photography, cluttered graphic-novel halftones, exaggerated
+perspective, chromatic aberration, film-grain overlays.
+
 Please generate a 16:9 image in warm contemporary realism showing Barbara standing at the window, upset, one hand pressed to the glass. Rain streaks the window outside. Michelle stands a few feet behind her, watching with concern. The color palette is cool blue-gray, pale lavender, and muted amber from a single lamp. The emotional tone is quiet worry — validation does not erase all hard afternoons. Speech bubble from Barbara (distressed): "She's late. She's never late. Something's wrong." Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -105,7 +158,7 @@ Not every afternoon was easy. On the rainy Thursday her mother said, "She's late
 
 ## Panel 9 – Was That a Lie?
 
-<!-- ![](./panel-09.png) -->
+![](./panel-09.jpeg)
 <details><summary>Image Prompt</summary>
 (This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Michelle later that evening in her own bedroom, sitting on the edge of her bed, staring at her phone. Soft yellow lamplight, a half-packed nursing tote on the floor. Her brow is furrowed. The color palette is warm amber, muted navy, and cream. The emotional tone is thoughtful, a little conflicted. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -115,7 +168,7 @@ That night Michelle sat on the edge of her bed and worried. Was that a lie? Caro
 
 ## Panel 10 – A Photograph on the Mantel
 
-<!-- ![](./panel-10.png) -->
+![](./panel-10.jpeg)
 <details><summary>Image Prompt</summary>
 (This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a close-up of a fireplace mantel. A silver frame holds a black-and-white photograph of two young women, Barbara and Rose, sitting on a porch swing, laughing. Next to the frame, Barbara's hand, age-spotted, is setting down a small cut pink rose in a bud vase. Soft firelight glows from below. The color palette is sepia, warm gold, rose pink, and deep amber. The emotional tone is reverent, loving. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -125,7 +178,7 @@ Michelle moved the old photograph of Barbara and Rose from the hallway to the ma
 
 ## Panel 11 – The Harder Conversation
 
-<!-- ![](./panel-11.png) -->
+![](./panel-11.jpeg)
 <details><summary>Image Prompt</summary>
 (This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Michelle and her adult brother, Greg, mid-40s with salt-and-pepper hair, standing in the kitchen in the evening. Greg looks skeptical, arms folded, leaning against the counter. Michelle is patient, explaining. A half-full coffee pot sits between them. The color palette is warm beige, soft terra-cotta, and pale blue evening sky out the window. The emotional tone is family disagreement resolving into understanding. Speech bubble from Greg: "You're just going to let her keep waiting for someone who isn't coming?" Speech bubble from Michelle: "I'm going to let her keep her sister, Greg. That's what I'm doing." Generate the image immediately without asking clarifying questions.
@@ -135,7 +188,7 @@ Her brother Greg flew in from Denver that weekend. He was kind and he was worrie
 
 ## Panel 12 – A Peaceful Afternoon
 
-<!-- ![](./panel-12.png) -->
+![](./panel-12.jpeg)
 <details><summary>Image Prompt</summary>
 (This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Barbara, peacefully asleep in the wingback chair by the window, a knitted throw tucked around her shoulders. The single pink rose still sits in its vase on the coffee table. Michelle is visible in the background, putting a cup of tea quietly on the counter, smiling a little. Late-afternoon golden light fills the room. The color palette is warm gold, soft lavender, deep cream, and rose pink. The emotional tone is quiet peace, the settled peace that validation can bring. No speech bubbles. Generate the image immediately without asking clarifying questions.

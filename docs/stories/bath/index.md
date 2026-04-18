@@ -10,10 +10,18 @@ social:
 
 # The Bath: Why Fear, Not Stubbornness, Drives Refusal
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting a small bathroom scene from the doorway. A man in his forties with short dark hair and tired eyes stands just outside the bathroom, holding a soft folded towel and a small portable speaker. Inside the bathroom, an older man in his late seventies with thinning gray hair sits on the edge of a closed toilet in a flannel robe, shoulders hunched, looking down at bright white tile. Steam rises gently from a filling tub. Warm yellow lamplight spills from the hallway; cool fluorescent light fills the bathroom. The color palette is soft cream, warm amber, pale gray-blue, and muted sage. The emotional tone is quiet, tender, and honest — showing both the fear of the older man and the patience the younger man is learning. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE BATH" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "Why Fear, Not Stubbornness, Drives Refusal". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** A small bathroom seen from the doorway. A man in his forties with short dark hair and tired eyes stands just outside the bathroom, holding a soft folded towel and a small portable speaker. Inside, an older man in his late seventies with thinning gray hair sits on the edge of a closed toilet in a flannel robe, shoulders hunched. Steam rises gently from a filling tub. Warm yellow lamplight spills from the hallway into the cooler bathroom.
+
+**Emotional tone:** quiet, tender, and honest — showing both the older man's fear and the patience the younger man is learning.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>
@@ -25,7 +33,7 @@ This is a graphic novel for caregivers and family members of people living with 
 
 It is Thursday evening. James has been living with his father for six months. Arthur has not had a full bath or shower in eleven days. The house is starting to smell faintly like the back of a closet, and James is starting to smell like his own failure. Tonight he will try again. Tonight he will lose again. He does not yet know that losing is the first lesson.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting the prologue scene. The scene shows a modest suburban kitchen at dusk. James, 44, dark hair, rumpled button-down shirt, stands at the kitchen counter looking at a calendar on the fridge where several days are circled in red marker. His shoulders are tense. In the background through a doorway, Arthur, 77, thinning gray hair, flannel shirt and slippers, sits in a worn armchair watching a muted television. The color palette is dusty rose, warm brown, pale cream, and soft amber from a pendant light. The emotional tone is weary and tender. Speech bubble from James (thinking): "Eleven days. I have to try again tonight." Generate the image immediately without asking clarifying questions.
@@ -35,7 +43,7 @@ James looked at the calendar and counted the red circles. Eleven days since the 
 
 ## Panel 2 – The Firm Approach
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a confrontation in a small bathroom doorway. James, 44, stands with arms folded, jaw tight, pointing toward the tub. Arthur, 77, in a faded blue flannel robe, stands half-turned away with his hand gripping the doorframe, eyes wide and fearful. Bright cool fluorescent light floods the bathroom; warm lamplight spills from the hallway behind Arthur. White tile walls reflect harshly. The color palette is stark white, cold blue-gray, and a single warm amber pool from the hallway. The emotional tone is tense and painful — a well-meaning son losing patience with his frightened father. Speech bubble from James: "Dad. It's time. Just get in." Speech bubble from Arthur: "I don't — I don't want to." Generate the image immediately without asking clarifying questions.

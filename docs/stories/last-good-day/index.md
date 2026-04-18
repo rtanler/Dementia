@@ -13,7 +13,15 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting a softly lit bedroom at dusk. Bill, 88, a frail older man with thin white hair, lies peacefully in a hospital bed set up in the living room, a quilt tucked to his chest. His wife Marie, 85, holds his hand from a chair beside him. Their daughter and son-in-law sit on a loveseat nearby. Joanne, 52, a hospice nurse in soft blue scrubs and a cardigan, kneels beside the bed adjusting a morphine syringe pump with calm hands. Warm lamplight glows, a small speaker plays softly, a window shows the last lavender light of day. The color palette is warm amber, deep lavender, soft cream, and honey wood. The emotional tone is reverent peace — a family being guided through the last hours by a skilled compassionate nurse. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE LAST GOOD DAY" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "Hospice, Music, and the Family at the Bedside". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** A softly lit bedroom at dusk. Bill, 88, a frail older man with thin white hair, lies peacefully in a hospital bed set up in the living room, a quilt tucked to his chest. His wife Marie, 85, holds his hand from a chair beside him. Their daughter and son-in-law sit on a loveseat nearby. Joanne, 52, a hospice nurse in soft blue scrubs and a cardigan, kneels beside the bed adjusting a morphine syringe pump with calm hands. Warm lamplight glows; a small speaker plays softly; a window shows the last lavender light of day.
+
+**Emotional tone:** reverent peace — a family being guided through the last hours by a skilled, compassionate nurse.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>

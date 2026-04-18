@@ -13,7 +13,15 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting a bright kitchen in morning light. Yoko, 76, a small Japanese-American woman with short silver hair and gentle wrinkles, sits at a round wooden table in a floral housecoat, looking expectantly at an empty bowl in front of her. Her daughter Hana, 41, with a dark bob and reading glasses pushed up on her head, stands at the counter ladling steaming rice from a rice cooker into a second bowl. On the table, an already-used bowl sits to one side with a few grains of rice and a pair of chopsticks resting across it. Soft yellow sunlight streams through a window with a hanging plant. The color palette is warm buttercream, honey gold, soft green, and pale bamboo. The emotional tone is tender and peaceful — a daughter learning to choose love over correction. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE SECOND BREAKFAST" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "Correcting vs. Caring". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** A bright kitchen in morning light. Yoko, 76, a small Japanese-American woman with short silver hair and gentle wrinkles, sits at a round wooden table in a floral housecoat, looking expectantly at an empty bowl in front of her. Her daughter Hana, 41, with a dark bob and reading glasses pushed up on her head, stands at the counter ladling steaming rice from a rice cooker into a second bowl. On the table, an already-used bowl sits to one side with a few grains of rice and a pair of chopsticks resting across it. Soft yellow sunlight streams through a window with a hanging plant.
+
+**Emotional tone:** tender and peaceful — a daughter learning to choose love over correction.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>

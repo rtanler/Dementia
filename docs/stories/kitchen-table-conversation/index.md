@@ -13,7 +13,15 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting a large round oak kitchen table in a homey kitchen. Seated around the table are Eleanor, 73, a sharp-eyed Black woman with short natural silver hair, reading glasses, and a soft teal blouse, holding a thick folder; her four adult children — two daughters in their forties and fifties, two sons in their late thirties and early fifties — listening intently. A pot of coffee sits in the center, mugs in hand, legal pads and a laptop on the table. Warm autumn afternoon light streams through a window with potted herbs. The color palette is warm amber, deep teal, cream, deep burgundy, and honey wood. The emotional tone is grounded, respectful, family coming together to plan early. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE KITCHEN TABLE CONVERSATION" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "Planning Before It's Too Late". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** A large round oak kitchen table in a homey kitchen. Seated around it: Eleanor, 73, a sharp-eyed Black woman with short natural silver hair, reading glasses, and a soft teal blouse, holding a thick folder; her four adult children — two daughters in their forties and fifties, two sons in their late thirties and early fifties — listening intently. A pot of coffee sits in the center; mugs are in hand; legal pads and a laptop rest on the table. Warm autumn afternoon light streams through a window with potted herbs.
+
+**Emotional tone:** grounded and respectful — a family coming together to plan early.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>

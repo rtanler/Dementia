@@ -13,7 +13,15 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting three adult grandchildren of varied ethnicities seated on a living room rug around their grandmother, Pearl, 82, a warm brown-skinned Black woman with white cornrows and a soft cardigan. Pearl sits in an armchair, eyes gently closed, head tilted slightly, a faint smile on her lips. A small portable speaker on a side table plays music; a grandchild holds a phone with a playlist visible. Family photos from the 1950s and 1960s are spread on the floor around them. Warm late-afternoon sunlight. The color palette is deep amber, warm terracotta, soft gold, cream, honey brown. The emotional tone is joy through music — generations meeting each other through a song. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE PLAYLIST" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "A Grandmother's Songs Outlive the Diagnosis". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** Three adult grandchildren of varied ethnicities sit on a living room rug around their grandmother, Pearl, 82, a warm brown-skinned Black woman with white cornrows and a soft cardigan. Pearl sits in an armchair, eyes gently closed, head tilted slightly, a faint smile on her lips. A small portable speaker on a side table plays music; a grandchild holds a phone with a playlist visible. Family photos from the 1950s and 1960s are spread on the floor around them. Warm late-afternoon sunlight.
+
+**Emotional tone:** joy through music — generations meeting each other through a song.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>

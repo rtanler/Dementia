@@ -13,7 +13,15 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 image in warm, painterly contemporary realism depicting a woman, Rebecca, 49, with shoulder-length dark blonde hair showing silver at the temples, standing in a simple bathroom looking into the mirror. She wears a worn flannel shirt. Her eyes are tired; there are faint shadows beneath them. In her reflection, she meets her own gaze as if seeing herself clearly for the first time in a long time. Morning light comes through a small window. The color palette is muted sage, cream, warm peach, and soft gray. The emotional tone is a quiet, honest reckoning — the first moment of choosing yourself back. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
+
+**Title treatment (top ~15% of frame):** Across the top of the image, centered horizontally, render the main title "THE CAREGIVER IN THE MIRROR" in a warm ivory/cream humanist serif — the kind of hand-set lettering you would see on a classic illustrated-novel cover — with a soft painterly drop-shadow so the text integrates into the scene below, never a hard graphic bar. Directly beneath the title, in a smaller italic of the same serif, render the subtitle "Burnout and the Courage to Ask for Help". The lettering should feel as if the painter lettered it themselves, in the same brush vocabulary as the painting.
+
+**Scene:** Rebecca, 49, with shoulder-length dark blonde hair showing silver at the temples, stands in a simple bathroom looking into the mirror. She wears a worn flannel shirt. Her eyes are tired; faint shadows sit beneath them. In her reflection she meets her own gaze as if seeing herself clearly for the first time in a long time. Morning light comes through a small window.
+
+**Emotional tone:** a quiet, honest reckoning — the first moment of choosing yourself back.
+
+Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>
