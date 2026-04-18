@@ -89,7 +89,7 @@ These are pages and files that support the entire textbook rather than individua
 
 | Feature | Status | Effort | Notes |
 |---------|--------|--------|-------|
-| Glossary | :construction: | Medium | Placeholder page exists, no terms defined yet |
+| Glossary | :white_check_mark: | Medium | 200 terms with ISO 11179 compliant definitions |
 | FAQ page | :construction: | Medium | Placeholder page exists, no questions added yet |
 | References page | :white_check_mark: | Medium | Curated bibliography with links per chapter or site-wide |
 | Custom CSS styling | :white_check_mark: | Low | `css/extra.css` with brand color overrides |
