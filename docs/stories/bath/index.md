@@ -53,7 +53,7 @@ The first approach was the one James had grown up with. Firm. Clear. No nonsense
 
 ## Panel 3 – The Pleading
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 (This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing James kneeling in front of his father, who is sitting on the closed toilet lid in a small bathroom. James has both hands gently on his father's knees, his face pleading, close to tears. Arthur stares past him at the white tile wall, vacant and distant. A towel is draped over the tub. The color palette is muted sage, pale peach, and soft gray. The emotional tone is raw and vulnerable. Speech bubble from James: "Please, Dad. Just for me. Please." Speech bubble from Arthur: "Who... who are you?" Generate the image immediately without asking clarifying questions.
@@ -63,7 +63,7 @@ The second approach was pleading. James knelt on the bath mat with his palms on 
 
 ## Panel 4 – The Bribery
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 (This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a kitchen scene. James holds out a pint of vanilla ice cream hopefully, with two spoons in his hand. Arthur, in pajama pants and a t-shirt, sits at the kitchen table with his arms crossed, scowling like a child. A small portable radio plays on the counter. The color palette is buttercream, honey, and pale olive green. The emotional tone is almost comic but undercut by sadness. Speech bubble from James: "Bath first, then ice cream. Deal?" Speech bubble from Arthur: "No deal. I already had one." Generate the image immediately without asking clarifying questions.

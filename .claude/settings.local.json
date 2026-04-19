@@ -14,7 +14,10 @@
       "Bash(GEMINI_API_KEY=AIzaSyAoOvqD5uFGQMr2xHY6EHMEILJfRAoJqV8 python /Users/dan/Documents/ws/claude-skills/skills/story-generator/scripts/generate-images.py docs/stories/caregiver-in-mirror --first-only)",
       "Bash(GEMINI_API_KEY=AIzaSyBfObEx61N2KPy-DpOt-jGRlH5OI6TGJx0 python /Users/dan/Documents/ws/claude-skills/skills/story-generator/scripts/generate-images.py docs/stories/caregiver-in-mirror --first-only)",
       "Bash(python -c \"from PIL import Image, ImageDraw, ImageFont; print\\('PIL OK'\\)\")",
-      "Bash(python /tmp/update_cover_prompts.py)"
+      "Bash(python /tmp/update_cover_prompts.py)",
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Bash(xargs -n1 basename done)"
     ]
   }
 }

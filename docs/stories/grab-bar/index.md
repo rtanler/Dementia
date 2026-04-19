@@ -12,7 +12,7 @@ social:
 
 *Prevention is paperwork you are grateful for later*
 
-<!-- ![The Grab Bar cover](./cover.png) -->
+![The Grab Bar cover](./cover.png)
 
 <details>
 <summary>Cover Image Prompt</summary>

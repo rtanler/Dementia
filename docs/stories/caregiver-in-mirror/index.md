@@ -10,7 +10,7 @@ social:
 
 # The Caregiver in the Mirror: Burnout and the Courage to Ask for Help
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
@@ -33,7 +33,7 @@ This is a graphic novel for family caregivers of people living with dementia. Th
 
 It is 5:47 p.m. on a Wednesday. Rebecca is driving home from the pharmacy. At a red light at Hillside and Main, she closes her eyes. Just for a second. When she wakes, the car behind her is honking. The light is green. She has been asleep at the wheel. She pulls into a parking lot and sits with her hands on the wheel for a long time. Tonight, she thinks, is the night she either asks for help or becomes another headline.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca, 49, in a beige compact sedan at a suburban intersection at dusk. Her head has dropped slightly forward. Her eyes are closed. The red light above glows steady. A second car behind her has its headlights on. The color palette is deep indigo dusk, amber streetlight, red traffic light. The emotional tone is exhausted danger. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -43,7 +43,7 @@ She had not meant to fall asleep. She had only closed her eyes for one second at
 
 ## Panel 2 – The Mirror
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca standing in a simple bathroom the next morning, facing the mirror. Her hair is unbrushed. She is looking at herself without flinching for the first time in a long time. Her face is tired but clear-eyed. The color palette is soft sage, warm cream, gentle peach. The emotional tone is the beginning of a decision. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -53,7 +53,7 @@ In the bathroom mirror the next morning, Rebecca looked at herself. She saw the 
 
 ## Panel 3 – The Phone Call
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 (This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca sitting at her kitchen table with a cup of coffee, phone pressed to her ear, a pen in her other hand, a notepad in front of her. Morning sunlight streams in. Her husband Jeff, 56, is visible in the background sitting in an armchair watching television, peaceful. The color palette is warm honey gold, cream, soft green. The emotional tone is the first courageous act. Speech bubble (from phone, small): "Alzheimer's Association 24/7 Helpline. My name is Carol. How can I help you today?" Speech bubble from Rebecca (shaky, honest): "I think I'm drowning." Generate the image immediately without asking clarifying questions.
@@ -63,7 +63,7 @@ She called the Alzheimer's Association helpline at 8:15 that morning. A woman na
 
 ## Panel 4 – The Word "Burnout"
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 (This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a close-up of a notepad with handwriting: "Caregiver burnout — it's medical, not personal." A hand holds a pen. A coffee mug steams beside. Soft morning light. The color palette is warm cream, amber, deep brown, gentle gold. The emotional tone is the naming of something that had not been named. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -73,7 +73,7 @@ Carol used a word Rebecca had heard but had never applied to herself: *burnout*.
 
 ## Panel 5 – Calling Her Sister
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 (This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca on her back porch, wrapped in a flannel shirt, phone to her ear. Her face has softened, wet with tears but relieved. The color palette is warm gold, soft green, cream. The emotional tone is the permission to be helped. Speech bubble from Rebecca (small, truthful): "Ellie — I need you to come. For a week. I can't do this alone anymore." Generate the image immediately without asking clarifying questions.
@@ -83,7 +83,7 @@ She called her sister Ellie in Portland. Ellie said "yes" before Rebecca finishe
 
 ## Panel 6 – Adult Day Care
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 (This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca and Jeff walking into a bright cheerful adult day center. Staff greet Jeff warmly by name. A small group of adults with early-stage cognitive impairment is visible in the background, doing a gardening activity at a raised bed. The color palette is warm terracotta, sage green, cream, honey. The emotional tone is tentative hopeful trust. Speech bubble from staff member (warm): "Jeff! We're glad you're here. We're starting tomato seedlings this morning." Generate the image immediately without asking clarifying questions.
@@ -93,7 +93,7 @@ The adult day center took Jeff three days a week, from eight to four. The first 
 
 ## Panel 7 – The Doctor's Appointment
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 (This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca seated on an exam table in a warm-lit clinical office, her primary care doctor, a kind woman in her fifties, seated across from her with a gentle concerned expression, holding a clipboard. The color palette is clean pale blue, warm cream, soft gold. The emotional tone is a patient being finally seen. Speech bubble from doctor: "Rebecca — your blood pressure, your weight, your bloodwork — this is your body telling me what you haven't said yet." Generate the image immediately without asking clarifying questions.
@@ -103,7 +103,7 @@ She went to her own doctor for the first time in eighteen months. Her blood pres
 
 ## Panel 8 – The Support Group
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 (This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a circle of eight people in a community-room meeting, various ages and ethnicities, each holding a paper cup of coffee. Rebecca sits among them, tentative. A facilitator with kind eyes leads the group. Someone across the circle is speaking. A whiteboard behind has the words "You are not alone." The color palette is warm cream, muted teal, deep burgundy. The emotional tone is relief of being understood. Speech bubble from another caregiver: "I thought I was the only one who had snapped at my own mother." Speech bubble from Rebecca (quiet): "...I did that last Tuesday." Generate the image immediately without asking clarifying questions.
@@ -113,7 +113,7 @@ Tuesday evening she went to a caregiver support group in the basement of a libra
 
 ## Panel 9 – Ambiguous Grief
 
-<!-- ![](./panel-09.png) -->
+![](./panel-09.png)
 <details><summary>Image Prompt</summary>
 (This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca in a therapist's office, seated on a soft couch across from a therapist in a cardigan. A box of tissues between them. The therapist is speaking gently. The color palette is warm cream, deep teal, soft brown. The emotional tone is naming a grief that had no name before. Speech bubble from therapist: "What you're feeling is called ambiguous grief. You are grieving someone who is still alive. It is real grief, and you need to grieve it." Generate the image immediately without asking clarifying questions.
@@ -123,7 +123,7 @@ Her therapist, Dr. Patel, taught her the phrase *ambiguous grief*. Rebecca had n
 
 ## Panel 10 – Her Sister at the Diner
 
-<!-- ![](./panel-10.png) -->
+![](./panel-10.png)
 <details><summary>Image Prompt</summary>
 (This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca and her sister Ellie in a classic diner booth, sharing a plate of pancakes. Both are laughing, mid-laugh. Late-morning sunlight streams through the window. The color palette is warm honey, deep burgundy vinyl, cream. The emotional tone is joyful restoration. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -133,7 +133,7 @@ That Saturday her sister landed and took her to a diner for pancakes. Halfway th
 
 ## Panel 11 – A Different Week
 
-<!-- ![](./panel-11.png) -->
+![](./panel-11.png)
 <details><summary>Image Prompt</summary>
 (This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca walking briskly on a quiet suburban trail in the early morning, wearing workout clothes and headphones. The sky is rose-pink dawn. Her face is calm and present. The color palette is soft pink dawn, warm gold, deep green, cream. The emotional tone is the rebuilding of a body. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -143,7 +143,7 @@ Rebecca built a new week. Mondays, Wednesdays, and Fridays: adult day care for J
 
 ## Panel 12 – Still in Love
 
-<!-- ![](./panel-12.png) -->
+![](./panel-12.png)
 <details><summary>Image Prompt</summary>
 (This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Rebecca and Jeff at their kitchen table in the evening, holding hands. Jeff's eyes are softer, a little distant, but present enough to meet hers. A warm lamp glows. A small record player spins an old album. The color palette is deep amber, warm gold, soft rose. The emotional tone is love continuing in a new form. No speech bubbles. Generate the image immediately without asking clarifying questions.

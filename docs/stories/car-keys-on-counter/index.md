@@ -12,7 +12,7 @@ social:
 
 *Taking the keys without taking dignity*
 
-<!-- ![The Car Keys on the Counter cover](./cover.png) -->
+![The Car Keys on the Counter cover](./cover.png)
 
 <details>
 <summary>Cover Image Prompt</summary>
@@ -41,7 +41,7 @@ For many families, the driving conversation is the hardest conversation. Driving
 
 ## Panel 1: Thirty Years of the Same Route
 
-<!-- ![Panel 1](./panel-01.png) -->
+![Panel 1](./panel-01.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -63,7 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 2: The Day the Route Broke
 
-<!-- ![Panel 2](./panel-02.png) -->
+![Panel 2](./panel-02.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -83,7 +83,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 3: Linda Gets the Call
 
-<!-- ![Panel 3](./panel-03.png) -->
+![Panel 3](./panel-03.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -105,7 +105,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 4: The Rest Stop
 
-<!-- ![Panel 4](./panel-04.png) -->
+![Panel 4](./panel-04.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -127,7 +127,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 5: The Silent Drive Home
 
-<!-- ![Panel 5](./panel-05.png) -->
+![Panel 5](./panel-05.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -149,7 +149,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 6: Morning-After Regret
 
-<!-- ![Panel 6](./panel-06.png) -->
+![Panel 6](./panel-06.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -171,7 +171,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 7: The Failed Daughter-Speech
 
-<!-- ![Panel 7](./panel-07.png) -->
+![Panel 7](./panel-07.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -193,7 +193,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 8: The Bathroom Phone Call
 
-<!-- ![Panel 8](./panel-08.png) -->
+![Panel 8](./panel-08.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -215,7 +215,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 9: The Doctor's Office
 
-<!-- ![Panel 9](./panel-09.png) -->
+![Panel 9](./panel-09.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -237,7 +237,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 10: The Keys on the Counter
 
-<!-- ![Panel 10](./panel-10.png) -->
+![Panel 10](./panel-10.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -259,7 +259,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 11: The New Routine
 
-<!-- ![Panel 11](./panel-11.png) -->
+![Panel 11](./panel-11.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -281,7 +281,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 12: A Sunday at the Park
 
-<!-- ![Panel 12](./panel-12.png) -->
+![Panel 12](./panel-12.png)
 
 <details>
 <summary>Image Prompt</summary>
