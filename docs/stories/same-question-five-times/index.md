@@ -12,7 +12,7 @@ social:
 
 *Patience is a skill, not a personality trait*
 
-<!-- ![The Same Question cover](./cover.png) -->
+![The Same Question cover](./cover.png)
 
 <details>
 <summary>Cover Image Prompt</summary>
@@ -41,7 +41,7 @@ Everyone who loves a person with dementia eventually learns the rhythm of the re
 
 ## Panel 1: A Good Son
 
-<!-- ![Panel 1](./panel-01.png) -->
+![Panel 1](./panel-01.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -63,7 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 2: The First Time
 
-<!-- ![Panel 2](./panel-02.png) -->
+![Panel 2](./panel-02.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -85,7 +85,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 3: The Second Time
 
-<!-- ![Panel 3](./panel-03.png) -->
+![Panel 3](./panel-03.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -107,7 +107,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 4: The Third Time
 
-<!-- ![Panel 4](./panel-04.png) -->
+![Panel 4](./panel-04.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -129,7 +129,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 5: The Fourth Time
 
-<!-- ![Panel 5](./panel-05.png) -->
+![Panel 5](./panel-05.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -151,7 +151,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 6: The Fifth Time — and the Snap
 
-<!-- ![Panel 6](./panel-06.png) -->
+![Panel 6](./panel-06.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -173,7 +173,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 7: The Quiet Hallway
 
-<!-- ![Panel 7](./panel-07.png) -->
+![Panel 7](./panel-07.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -193,7 +193,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 8: Calling the Helpline
 
-<!-- ![Panel 8](./panel-08.png) -->
+![Panel 8](./panel-08.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -215,7 +215,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 9: The Whiteboard Arrives
 
-<!-- ![Panel 9](./panel-09.png) -->
+![Panel 9](./panel-09.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -237,7 +237,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 10: The Board in Action
 
-<!-- ![Panel 10](./panel-10.png) -->
+![Panel 10](./panel-10.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -268,7 +268,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 11: The Same Question, Answered Gently
 
-<!-- ![Panel 11](./panel-11.png) -->
+![Panel 11](./panel-11.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -290,7 +290,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 12: The Drive Home
 
-<!-- ![Panel 12](./panel-12.png) -->
+![Panel 12](./panel-12.png)
 
 <details>
 <summary>Image Prompt</summary>
