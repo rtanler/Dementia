@@ -203,11 +203,11 @@ theme:
 
 # Plugins
 plugins:
-  - search:
-      lang: en
-      separator: '[\s\-\.]+'
+  - search
   - social                       # Social media card generation
-  - social_override              # Custom social media images per page
+
+
+
   - glightbox:                   # Image zoom on click
       touchNavigation: true
       loop: false
@@ -222,6 +222,10 @@ plugins:
   # - tags                       # Tag support (optional)
   # - blog                       # Blog support (optional)
 
+# social override plugin
+hooks:
+  - plugins/social_override.py
+  
 # Markdown Extensions
 markdown_extensions:
   # Basic extensions
