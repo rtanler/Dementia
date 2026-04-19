@@ -34,13 +34,13 @@ These short graphic-novel-style stories bring the textbook's concepts to life th
 
 -   **[The Night He Walked: Wandering and the Layers of Safety](./night-he-walked/index.md)**
 
-<!--    ![The Night He Walked](./night-he-walked/cover.png)-->
+    ![The Night He Walked](./night-he-walked/cover.png)
 
     Tom wakes at 2 a.m. to find his father Robert missing from the house. A story about wandering, door alarms, medical ID bracelets, and the layered safety net that lets a family sleep again.
 
 -   **[The Morning of Tests: Inside a Dementia Workup](./morning-of-tests/index.md)**
 
-<!--    ![The Morning of Tests](./morning-of-tests/cover.png)-->
+   ![The Morning of Tests](./morning-of-tests/cover.png)
 
     Jasmine takes her grandmother Delphine to a memory-care clinic for a full diagnostic evaluation. A story about what cognitive testing is really like, what the MoCA and MRI actually tell a family, and why a name for the thing can be a relief, not a sentence.
 
@@ -82,7 +82,7 @@ These short graphic-novel-style stories bring the textbook's concepts to life th
 
 -   **[The Kitchen Lock: When the Stove Becomes a Stranger](./kitchen-lock/index.md)**
 
-<!--    ![The Kitchen Lock](./kitchen-lock/cover.png)-->
+    ![The Kitchen Lock](./kitchen-lock/cover.png)
 
     Carlos finds the stove on at 2 a.m. and faces a choice: take the kitchen from his mother Rosa or make it safe. A story about stove-guards, knob covers, and cooking *with* her instead of *instead of* her.
 
@@ -100,7 +100,7 @@ These short graphic-novel-style stories bring the textbook's concepts to life th
 
 -   **[The Last Good Day: Hospice, Music, and Letting Go](./last-good-day/index.md)**
 
-<!--    ![The Last Good Day](./last-good-day/cover.png)-->
+    ![The Last Good Day](./last-good-day/cover.png)
 
     Hospice nurse Joanne guides Bill's family through his final week with music, morphine, permission, and presence. A story of a good ending when there cannot be a cure.
 

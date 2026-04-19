@@ -10,7 +10,7 @@ social:
 
 # The Last Good Day: Hospice, Music, and Letting Go
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
@@ -33,7 +33,7 @@ This is a graphic novel for family caregivers of people living with dementia. Th
 
 It is a Sunday evening. Bill has been home from the hospital for three weeks, on hospice. His family is gathered. A nurse named Joanne has just arrived with her leather bag and her kind steady hands. This is the beginning of Bill's last week on earth. Joanne is here to make sure it is a good one.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Joanne, 52, brown hair tied back, in soft blue scrubs and a cardigan, walking up the front steps of a modest ranch-style house at dusk, carrying a leather medical bag. Warm yellow porch light. Front door opening, a grown daughter visible behind it. The color palette is warm amber, deep navy dusk, cream, and golden porch glow. The emotional tone is arrival of steady help. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -43,7 +43,7 @@ Joanne had been a hospice nurse for twenty-two years and she still felt somethin
 
 ## Panel 2 – Meeting Bill
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Joanne kneeling beside a hospital bed set up in a living room. Bill, 88, frail, eyes closed, white hair, lies peacefully under a quilt. Marie, 85, sits in a nearby chair holding his hand. Joanne is gently taking Bill's pulse, her face tender and respectful. Warm lamplight. The color palette is soft honey gold, deep cream, gentle lavender. The emotional tone is first meeting between nurse and patient — reverent professionalism. Speech bubble from Joanne (softly, to Bill): "Hello, Mr. Larson. I'm Joanne. I'm going to help take care of you." Generate the image immediately without asking clarifying questions.
