@@ -12,7 +12,7 @@ social:
 
 *A hand on the slope, not a cure*
 
-<!-- ![The Small Orange Pill cover](./cover.png) -->
+![The Small Orange Pill cover](./cover.png)
 
 <details>
 <summary>Cover Image Prompt</summary>
@@ -41,7 +41,7 @@ The first dementia medication almost always comes as a small pill in a small bot
 
 ## Panel 1: The Prescription Bottle
 
-<!-- ![Panel 1](./panel-01.png) -->
+![Panel 1](./panel-01.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -61,7 +61,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 2: The Google Spiral
 
-<!-- ![Panel 2](./panel-02.png) -->
+![Panel 2](./panel-02.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -81,7 +81,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 3: The First Dose
 
-<!-- ![Panel 3](./panel-03.png) -->
+![Panel 3](./panel-03.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -103,7 +103,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 4: The Queasy Week
 
-<!-- ![Panel 4](./panel-04.png) -->
+![Panel 4](./panel-04.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -125,7 +125,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 5: The First Week Complete
 
-<!-- ![Panel 5](./panel-05.png) -->
+![Panel 5](./panel-05.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -145,7 +145,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 6: The Birthday Dinner
 
-<!-- ![Panel 6](./panel-06.png) -->
+![Panel 6](./panel-06.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -169,7 +169,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 7: The Doctor's Office — Setting Expectations
 
-<!-- ![Panel 7](./panel-07.png) -->
+![Panel 7](./panel-07.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -191,7 +191,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 8: The Reframe
 
-<!-- ![Panel 8](./panel-08.png) -->
+![Panel 8](./panel-08.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -213,7 +213,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 9: The Dose Increase
 
-<!-- ![Panel 9](./panel-09.png) -->
+![Panel 9](./panel-09.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -233,7 +233,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 10: The Crossword at Breakfast
 
-<!-- ![Panel 10](./panel-10.png) -->
+![Panel 10](./panel-10.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -257,7 +257,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 11: The Hard Day
 
-<!-- ![Panel 11](./panel-11.png) -->
+![Panel 11](./panel-11.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -279,7 +279,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 12: Hope You Can Live With
 
-<!-- ![Panel 12](./panel-12.png) -->
+![Panel 12](./panel-12.png)
 
 <details>
 <summary>Image Prompt</summary>

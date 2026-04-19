@@ -10,7 +10,7 @@ social:
 
 # The Kitchen Table Conversation: Planning Before It's Too Late
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a 16:9 cover image in warm painterly American contemporary realism — soft oil-painting brushwork with visible but refined strokes; muted warm palette of sage green, dusty lavender, cream, honey gold, rose pink, and walnut brown; warm golden afternoon window light as the key and honey-gold interior lamp glow as fill; soft low-contrast shadows; fabric textures (knit, flannel, cotton, lace) clearly visible; in the Rockwell-and-Kinkade tradition of tender domestic illustration. No saturated primaries, no neon, no photorealism, no vector flatness, no film grain, no chromatic aberration. Night scenes keep the same warm vocabulary — indigo and deep walnut in place of saturated cool blue, with honey-gold porch or lamp light as warm accent.
@@ -33,7 +33,7 @@ This is a graphic novel for family caregivers of people living with dementia. Th
 
 It is the Saturday after Thanksgiving. Four airline tickets have been paid for. A folder, three inches thick, sits on the kitchen table next to a fresh pot of coffee. Eleanor stands at the window and watches the first of her children turn into the driveway. She has been a principal for thirty-one years. She has run harder meetings than this. But none, she thinks, has mattered more.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is panel 1. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting the exterior of a tidy brick Memphis house on a cool November afternoon. A silver SUV is pulling into the driveway. Eleanor, 73, sharp-eyed, short silver natural hair, teal cardigan, stands on the front porch with her arms folded against the chill, a small, resolved smile on her face. Bare dogwood branches frame the porch. The color palette is warm brick, soft sage, faded amber, cool sky-blue. The emotional tone is resolute welcoming — a woman who has called her children home on purpose. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -43,7 +43,7 @@ Eleanor watched her oldest daughter pull into the drive and thought, *good, on t
 
 ## Panel 2 – The Folder on the Table
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is panel 2. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting a close-up of a large round oak kitchen table. In the center sits a thick three-ring binder with tabs, labeled "Eleanor R. Jackson – Family Planning Binder." Next to it, a ceramic pot of coffee, four mugs, a notepad, a pen, and a plate of lemon cookies. Warm afternoon light rakes across the table. The color palette is honey oak, cream, warm brown, pale yellow. The emotional tone is preparation — the quiet authority of a plan laid out. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -53,7 +53,7 @@ In the center of the table sat the binder. Eleanor had labeled it herself: *Elea
 
 ## Panel 3 – Everyone Around the Table
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 (This is panel 3. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting Eleanor at the head of the round kitchen table, her four adult children seated around her — Angela (54, sharp, in a navy blazer), Derek (51, calm, in a fleece), Tisha (46, soft-faced in a cardigan), and Marcus (38, wiry, in a flannel). All have coffee and notepads. Eleanor holds up the binder. Warm afternoon light. The color palette is honey oak, warm teal, cream, burgundy, denim. The emotional tone is attentive respect — a family listening to a mother. Speech bubble from Eleanor (calm, clear): "Before we start, I want you to know I am fine. I am clear-headed today. That is exactly why we are doing this today." Generate the image immediately without asking clarifying questions.
@@ -63,7 +63,7 @@ They were all there by two in the afternoon. Angela from Atlanta. Derek from Chi
 
 ## Panel 4 – The Diagnosis
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 (This is panel 4. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Eleanor at the table, holding a small neurologist's report, reading glasses low on her nose. Her children lean forward, faces various: Angela controlled, Derek analytical, Tisha fighting tears, Marcus stunned. The color palette is honey wood, soft teal, muted gold, and a pale clinical white on the paper. The emotional tone is the landing of a long-feared piece of news. Speech bubble from Eleanor (steady): "In October, Dr. Williams told me I have mild cognitive impairment, likely early Alzheimer's. I have been thinking about what to do ever since." Generate the image immediately without asking clarifying questions.
@@ -73,7 +73,7 @@ Please generate a 16:9 image in warm contemporary realism showing Eleanor at the
 
 ## Panel 5 – Power of Attorney
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 (This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Eleanor and Angela seated across the table, Angela signing a legal document. Derek is reading a second copy. Tisha is pouring coffee. Marcus is looking at a third copy with a thoughtful expression. A laptop open to a state bar-association website sits off to one side. The color palette is warm wood, pale legal paper cream, burgundy, and amber. The emotional tone is formal and loving together. Speech bubble from Eleanor (to Angela): "You'll be the durable POA, because you are the one who pays bills for a living. No offense, Derek." Speech bubble from Derek (warm smile): "None taken, Mama." Generate the image immediately without asking clarifying questions.
@@ -83,7 +83,7 @@ The first tab was *Legal*. Eleanor had already met with an elder-law attorney. T
 
 ## Panel 6 – The Hard Money Conversation
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 (This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing the family around the table, now with a laptop displaying a spreadsheet. Angela is pointing at a row. Marcus has his arms folded, visibly tense. Derek is making a note. The mood is the moment when money enters a family conversation and the room tightens. The color palette is honey wood, warm teal, and pale laptop-glow blue. The emotional tone is tense but not broken. Speech bubble from Angela: "The long-term care insurance covers three years at home care. After that — the house." Speech bubble from Marcus (carefully): "The house Mama raised us in?" Generate the image immediately without asking clarifying questions.
@@ -93,7 +93,7 @@ The second tab was *Financial*. Angela walked them through the accounts, the lon
 
 ## Panel 7 – A Son's Tears
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 (This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Marcus, the youngest son, on the back porch of the house, alone. He is sitting on the steps, elbows on knees, hands clasped, tears in his eyes. Late afternoon light slants across the yard. Through the screen door behind him, the kitchen is warmly lit and full of his family. The color palette is deep amber, soft green, warm gold, and a hint of rose from the setting sun. The emotional tone is private grief and respect. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -103,7 +103,7 @@ Marcus went out to the back porch for a while. He sat on the top step and did no
 
 ## Panel 8 – End-of-Life Wishes
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 (This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Eleanor reading from a typed document titled "My Wishes." Her children listen intensely. Derek is making notes. Tisha has a tissue in her hand but is composed. The coffee in the pot has gone down. The light has turned golden. The color palette is honey gold, amber, soft burgundy, cream. The emotional tone is gravity mixed with love. Speech bubble from Eleanor (reading): "If I can no longer recognize my children, I do not want CPR. I do not want a feeding tube. I want hospice. I want music. I want my own bed if possible." Generate the image immediately without asking clarifying questions.
@@ -113,7 +113,7 @@ The hardest tab was *Wishes*. Eleanor had typed it out herself. She read it alou
 
 ## Panel 9 – Signing, Notarizing
 
-<!-- ![](./panel-09.png) -->
+![](./panel-09.png)
 <details><summary>Image Prompt</summary>
 (This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a traveling notary — a middle-aged woman with glasses and a smart blazer — at the kitchen table, her seal and stamp ready. Eleanor is signing a document. Her four children watch as witnesses. The table now has stacks of signed documents. Evening has arrived; a single pendant light warms the scene. The color palette is deep amber, honey wood, warm cream, and rich burgundy. The emotional tone is ceremonial, momentous, and tender. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -123,7 +123,7 @@ A traveling notary, a woman from her church whom Eleanor had scheduled two weeks
 
 ## Panel 10 – The Letters
 
-<!-- ![](./panel-10.png) -->
+![](./panel-10.png)
 <details><summary>Image Prompt</summary>
 (This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing four sealed envelopes on the kitchen table, each hand-addressed with a different name in elegant cursive: "Angela." "Derek." "Tisha." "Marcus." A single lamp glows above them. The binder sits closed to one side. The color palette is soft cream envelope, deep amber lamplight, honey wood. The emotional tone is reverence — a mother's last preserved voice. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -133,7 +133,7 @@ Before her children left, Eleanor gave each of them an envelope. "Don't open the
 
 ## Panel 11 – Two Years Later
 
-<!-- ![](./panel-11.png) -->
+![](./panel-11.png)
 <details><summary>Image Prompt</summary>
 (This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing a bright hospital conference room two years later. Angela, Derek, Tisha, and Marcus are around a table with a hospital case manager. The binder — a little thicker now, with added tabs — sits open between them. Through a window, Eleanor is visible in a chair in a quiet hospital room, eyes half-closed, held by Tisha's gentle hand over hers. The color palette is hospital pale blue, soft warm wood, cream, and muted teal. The emotional tone is quietly competent grief — a plan holding up under pressure. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -143,7 +143,7 @@ Two years later Eleanor had a stroke. She did not recover the words she had lost
 
 ## Panel 12 – Reading the Letters
 
-<!-- ![](./panel-12.png) -->
+![](./panel-12.png)
 <details><summary>Image Prompt</summary>
 (This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing the four siblings seated in their mother's living room, one evening, each holding an open letter. Tisha is reading aloud, Marcus has tears on his cheeks, Angela has a small hand over her mouth, Derek is smiling through wet eyes. The binder sits on the coffee table, closed now. A framed portrait of Eleanor as a young woman rests on the mantel. The color palette is honey gold, warm cream, deep burgundy, and soft amber lamplight. The emotional tone is love arriving on time. Speech bubble from Tisha (reading softly): "...and I knew, even then, that you were going to be the one who held us together." Generate the image immediately without asking clarifying questions.

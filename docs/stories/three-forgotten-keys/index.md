@@ -12,7 +12,7 @@ social:
 
 *When "everybody forgets things" becomes something more*
 
-<!-- ![Three Forgotten Keys cover](./cover.png) -->
+![Three Forgotten Keys cover](./cover.png)
 
 <details>
 <summary>Cover Image Prompt</summary>
@@ -41,7 +41,7 @@ Most of us know somebody who "isn't what she used to be." An aunt who tells the 
 
 ## Panel 1: Sunday Dinner
 
-<!-- ![Panel 1](./panel-01.png) -->
+![Panel 1](./panel-01.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -63,7 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 2: Keys in the Fridge
 
-<!-- ![Panel 2](./panel-02.png) -->
+![Panel 2](./panel-02.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -85,7 +85,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 3: The Reading Glasses
 
-<!-- ![Panel 3](./panel-03.png) -->
+![Panel 3](./panel-03.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -105,7 +105,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 4: The Remote in the Freezer
 
-<!-- ![Panel 4](./panel-04.png) -->
+![Panel 4](./panel-04.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -127,7 +127,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 5: The Kitchen Table, Later
 
-<!-- ![Panel 5](./panel-05.png) -->
+![Panel 5](./panel-05.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -149,7 +149,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 6: What Gloria Had Been Hiding
 
-<!-- ![Panel 6](./panel-06.png) -->
+![Panel 6](./panel-06.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -171,7 +171,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 7: The Research, Late at Night
 
-<!-- ![Panel 7](./panel-07.png) -->
+![Panel 7](./panel-07.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -191,7 +191,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 8: The Checklist
 
-<!-- ![Panel 8](./panel-08.png) -->
+![Panel 8](./panel-08.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -211,7 +211,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 9: The Phone Call to the Doctor
 
-<!-- ![Panel 9](./panel-09.png) -->
+![Panel 9](./panel-09.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -233,7 +233,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 10: Inviting Mom to the Appointment
 
-<!-- ![Panel 10](./panel-10.png) -->
+![Panel 10](./panel-10.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -255,7 +255,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 11: The Waiting Room
 
-<!-- ![Panel 11](./panel-11.png) -->
+![Panel 11](./panel-11.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -277,7 +277,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 12: Walking Out Together
 
-<!-- ![Panel 12](./panel-12.png) -->
+![Panel 12](./panel-12.png)
 
 <details>
 <summary>Image Prompt</summary>

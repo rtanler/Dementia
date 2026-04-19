@@ -12,7 +12,7 @@ social:
 
 *The brain that forgets your name still knows the song*
 
-<!-- ![Patsy Cline on a Tuesday cover](./cover.png) -->
+![Patsy Cline on a Tuesday cover](./cover.png)
 
 <details>
 <summary>Cover Image Prompt</summary>
@@ -41,7 +41,7 @@ There is a brain science reason why music survives. The neural circuits that sto
 
 ## Panel 1: The Silence
 
-<!-- ![Panel 1](./panel-01.png) -->
+![Panel 1](./panel-01.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -63,7 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 2: A Rainy Tuesday
 
-<!-- ![Panel 2](./panel-02.png) -->
+![Panel 2](./panel-02.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -83,7 +83,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 3: The Record Cabinet
 
-<!-- ![Panel 3](./panel-03.png) -->
+![Panel 3](./panel-03.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -103,7 +103,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 4: The First Notes
 
-<!-- ![Panel 4](./panel-04.png) -->
+![Panel 4](./panel-04.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -125,7 +125,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 5: The Impossible Voice
 
-<!-- ![Panel 5](./panel-05.png) -->
+![Panel 5](./panel-05.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -147,7 +147,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 6: The Last Word
 
-<!-- ![Panel 6](./panel-06.png) -->
+![Panel 6](./panel-06.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -169,7 +169,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 7: Reading About Musical Memory
 
-<!-- ![Panel 7](./panel-07.png) -->
+![Panel 7](./panel-07.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -189,7 +189,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 8: The Old Albums
 
-<!-- ![Panel 8](./panel-08.png) -->
+![Panel 8](./panel-08.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -209,7 +209,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 9: The Playlist
 
-<!-- ![Panel 9](./panel-09.png) -->
+![Panel 9](./panel-09.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -229,7 +229,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 10: Tuesday, Every Tuesday
 
-<!-- ![Panel 10](./panel-10.png) -->
+![Panel 10](./panel-10.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -251,7 +251,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 11: The Aide Learns the Playlist
 
-<!-- ![Panel 11](./panel-11.png) -->
+![Panel 11](./panel-11.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -273,7 +273,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 12: The Last Song
 
-<!-- ![Panel 12](./panel-12.png) -->
+![Panel 12](./panel-12.png)
 
 <details>
 <summary>Image Prompt</summary>
