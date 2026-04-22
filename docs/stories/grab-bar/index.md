@@ -57,7 +57,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** Sandra visited her mother on Sunday afternoons. Georgia, at seventy-nine, was still in her own house, cooking her own soup, tending her own tomatoes. Her Alzheimer's was mild — she forgot birthdays and sometimes where she had put her glasses, but the thread of her days was still her own. Sandra was proud of her mother. She was proud of herself, too, for keeping her mother at home. She had a little list in her head of small improvements she had been meaning to make around the house: a grab bar in the tub, some night-lights in the hall, a fresh coat of paint on the stair treads. She had been meaning to. It was on the list.
+Sandra visited her mother on Sunday afternoons. Georgia, at seventy-nine, was still in her own house, cooking her own soup, tending her own tomatoes. Her Alzheimer's was mild — she forgot birthdays and sometimes where she had put her glasses, but the thread of her days was still her own. Sandra was proud of her mother. She was proud of herself, too, for keeping her mother at home. She had a little list in her head of small improvements she had been meaning to make around the house: a grab bar in the tub, some night-lights in the hall, a fresh coat of paint on the stair treads. She had been meaning to. It was on the list.
 
 ---
 
@@ -77,7 +77,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** That Sunday evening at home, Sandra opened her laptop. The sticky note with the words *"Mom's grab bar — Home Depot"* was slowly being pushed off the screen by newer sticky notes — a work deadline, her daughter's cleats, a dog-grooming appointment. She looked at the sticky note and thought, *Tomorrow. Or the weekend. Definitely this weekend.* She had thought that the weekend before, too. And the weekend before that. She was a good daughter with a busy life. The list stayed on the list.
+That Sunday evening at home, Sandra opened her laptop. The sticky note with the words *"Mom's grab bar — Home Depot"* was slowly being pushed off the screen by newer sticky notes — a work deadline, her daughter's cleats, a dog-grooming appointment. She looked at the sticky note and thought, *Tomorrow. Or the weekend. Definitely this weekend.* She had thought that the weekend before, too. And the weekend before that. She was a good daughter with a busy life. The list stayed on the list.
 
 ---
 
@@ -99,7 +99,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** On Tuesday at 10:47 AM, Sandra's cell phone lit up in the middle of a work video call. *MOM — CELL.* Her mother never called during the workday. Sandra excused herself and answered in the hallway. The voice on the other end was not her mother. It was a paramedic named Javier. "Ma'am, your mother is okay — she's awake and talking. But she slipped in the tub. We're taking her to Providence Memorial."
+On Tuesday at 10:47 AM, Sandra's cell phone lit up in the middle of a work video call. *MOM — CELL.* Her mother never called during the workday. Sandra excused herself and answered in the hallway. The voice on the other end was not her mother. It was a paramedic named Javier. "Ma'am, your mother is okay — she's awake and talking. But she slipped in the tub. We're taking her to Providence Memorial."
 
 ---
 
@@ -121,7 +121,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** Her mother had slipped stepping out of the tub. She had landed hard on the bathroom floor and broken her left hip. She had crawled on her elbows to where her cell phone had fallen and called 911. It had taken her fourteen minutes. At the hospital, Georgia was pale and apologetic. "Don't cry, honey. I just slipped. I'm going to be fine." Sandra sat by the bed holding her mother's hand. The sticky note was still on her laptop at home. *Grab bar. Home Depot.* She closed her eyes and whispered, "I had it on a list. I should have just put it up."
+Her mother had slipped stepping out of the tub. She had landed hard on the bathroom floor and broken her left hip. She had crawled on her elbows to where her cell phone had fallen and called 911. It had taken her fourteen minutes. At the hospital, Georgia was pale and apologetic. "Don't cry, honey. I just slipped. I'm going to be fine." Sandra sat by the bed holding her mother's hand. The sticky note was still on her laptop at home. *Grab bar. Home Depot.* She closed her eyes and whispered, "I had it on a list. I should have just put it up."
 
 ---
 
@@ -143,7 +143,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** Two weeks in rehab changed more than Georgia's hip. It changed her mind. The foreign room, the different beds, the medications for pain and sleep, the loss of her daily routine — all of it pressed down on a brain that had been managing fine on familiar tracks. Georgia began to ask questions she had not asked before. "Whose house is this?" "Where is my cat?" "When is my husband coming?" (Her husband had died in 2017.) The neurologist called it *hospital-associated decline.* Sandra called it what it was: her mother's Alzheimer's, worse. The fall had not broken only a bone.
+Two weeks in rehab changed more than Georgia's hip. It changed her mind. The foreign room, the different beds, the medications for pain and sleep, the loss of her daily routine — all of it pressed down on a brain that had been managing fine on familiar tracks. Georgia began to ask questions she had not asked before. "Whose house is this?" "Where is my cat?" "When is my husband coming?" (Her husband had died in 2017.) The neurologist called it *hospital-associated decline.* Sandra called it what it was: her mother's Alzheimer's, worse. The fall had not broken only a bone.
 
 ---
 
@@ -165,7 +165,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** At the rehab discharge meeting, a kind nurse named Yvonne pressed a small stapled booklet into Sandra's hands: *Home Safety for Older Adults with Memory Loss.* "Honey," Yvonne said, "when your mother goes home on Monday, the house needs to be a different house than it was two weeks ago. I'll walk you through it." Sandra nodded hard. "Tell me everything." Yvonne gave her a ballpoint pen. They went through the booklet room by room. Sandra made notes in the margins. By the end, a two-page checklist had become the longest Saturday of her life — and the best Saturday of her year.
+At the rehab discharge meeting, a kind nurse named Yvonne pressed a small stapled booklet into Sandra's hands: *Home Safety for Older Adults with Memory Loss.* "Honey," Yvonne said, "when your mother goes home on Monday, the house needs to be a different house than it was two weeks ago. I'll walk you through it." Sandra nodded hard. "Tell me everything." Yvonne gave her a ballpoint pen. They went through the booklet room by room. Sandra made notes in the margins. By the end, a two-page checklist had become the longest Saturday of her life — and the best Saturday of her year.
 
 ---
 
@@ -187,7 +187,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** Saturday began at 7 AM. Sandra's teenage son Tyler came to help. They started in the bathroom — the room where it had all gone wrong. Two stainless-steel grab bars. A non-slip bath mat. A raised toilet seat. A simple motion-activated night-light in the outlet. A shower bench so Georgia could sit while she bathed. Sandra checked each item off the clipboard Yvonne had given her. "Six items. One room." Tyler held the level. Sandra drilled the holes. The grab bars went into the wall the way they should have gone in six months ago.
+Saturday began at 7 AM. Sandra's teenage son Tyler came to help. They started in the bathroom — the room where it had all gone wrong. Two stainless-steel grab bars. A non-slip bath mat. A raised toilet seat. A simple motion-activated night-light in the outlet. A shower bench so Georgia could sit while she bathed. Sandra checked each item off the clipboard Yvonne had given her. "Six items. One room." Tyler held the level. Sandra drilled the holes. The grab bars went into the wall the way they should have gone in six months ago.
 
 ---
 
@@ -209,7 +209,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** Next, the floors. Sandra had read that throw rugs were one of the top causes of falls at home. Georgia had four of them. They rolled up every single one, even the pretty one from her grandmother. They replaced them with nothing — bare floor was safer. They tightened every handrail on the staircase. They added reflective bright tape to the top and bottom step and a motion-activated night-light at the foot of the stairs. A pair of rubber-soled house slippers replaced the soft mule-style slippers Georgia had always worn. Two rooms. Twenty items.
+Next, the floors. Sandra had read that throw rugs were one of the top causes of falls at home. Georgia had four of them. They rolled up every single one, even the pretty one from her grandmother. They replaced them with nothing — bare floor was safer. They tightened every handrail on the staircase. They added reflective bright tape to the top and bottom step and a motion-activated night-light at the foot of the stairs. A pair of rubber-soled house slippers replaced the soft mule-style slippers Georgia had always worn. Two rooms. Twenty items.
 
 ---
 
@@ -229,7 +229,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** The kitchen was harder. Georgia had always cooked. Her kitchen was her kingdom. Sandra did not want to strip the kitchen of that — she just wanted to make it safer. She installed an automatic stove shut-off (a small device that cut power to the burners after a set time if nobody was stirring). She replaced the complicated coffee maker with a simple one-button electric kettle. She put the sharp knives in a single locked drawer. She labeled every other drawer with large printed labels — *silverware, towels, plates* — so Georgia could still find her way. She taped a big-print emergency phone list to the wall.
+The kitchen was harder. Georgia had always cooked. Her kitchen was her kingdom. Sandra did not want to strip the kitchen of that — she just wanted to make it safer. She installed an automatic stove shut-off (a small device that cut power to the burners after a set time if nobody was stirring). She replaced the complicated coffee maker with a simple one-button electric kettle. She put the sharp knives in a single locked drawer. She labeled every other drawer with large printed labels — *silverware, towels, plates* — so Georgia could still find her way. She taped a big-print emergency phone list to the wall.
 
 ---
 
@@ -251,7 +251,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** The bedroom was last. Sandra added a motion-activated under-bed night-light — so the moment Georgia's feet swung out of bed in the dark, a soft warm glow lit the floor. She added a grab bar beside the bed so Georgia could pull herself up to standing without lurching. She replaced the small clock-radio with a simple wall clock with enormous numbers. She put a landline phone with giant buttons on the nightstand. She tied a small bell to the closet door so if Georgia got up disoriented at night, it would chime. Three rooms. Forty-one items. One long, good Saturday.
+The bedroom was last. Sandra added a motion-activated under-bed night-light — so the moment Georgia's feet swung out of bed in the dark, a soft warm glow lit the floor. She added a grab bar beside the bed so Georgia could pull herself up to standing without lurching. She replaced the small clock-radio with a simple wall clock with enormous numbers. She put a landline phone with giant buttons on the nightstand. She tied a small bell to the closet door so if Georgia got up disoriented at night, it would chime. Three rooms. Forty-one items. One long, good Saturday.
 
 ---
 
@@ -273,7 +273,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** On Monday, Sandra and Tyler brought Georgia home. They had washed the windows. They had put fresh flowers on the kitchen table. They had made her bed with her favorite floral sheets. Most of the changes were invisible — a small device under the stove hood, a bar beside the bed, a dot at the top of the stairs. Georgia stood on the porch of her own house leaning on her new walker and looked up at her own front door for the first time in three weeks. "My own porch," she said softly. "Thank you, honey. Thank you."
+On Monday, Sandra and Tyler brought Georgia home. They had washed the windows. They had put fresh flowers on the kitchen table. They had made her bed with her favorite floral sheets. Most of the changes were invisible — a small device under the stove hood, a bar beside the bed, a dot at the top of the stairs. Georgia stood on the porch of her own house leaning on her new walker and looked up at her own front door for the first time in three weeks. "My own porch," she said softly. "Thank you, honey. Thank you."
 
 ---
 
@@ -295,7 +295,7 @@ Generate the image immediately without asking clarifying questions.
 
 </details>
 
-**Narrative:** Two years later, Georgia was still in her own house. Her Alzheimer's continued its slow progression, but the spike of sudden decline that the fall had caused never quite returned to the same level. There were no more falls. The grab bars held. The night-lights kept her steady in the dark. She moved a little slower, with a walker now; she used the shower bench; she took her coffee from the simple kettle. Sandra sat in the garden beside her and picked ripe tomatoes into a basket. "Two more seasons of tomatoes, honey," her mother said. "Never thought I'd see 'em." Sandra smiled. "Three more, if the grab bars hold up, Mom."
+Two years later, Georgia was still in her own house. Her Alzheimer's continued its slow progression, but the spike of sudden decline that the fall had caused never quite returned to the same level. There were no more falls. The grab bars held. The night-lights kept her steady in the dark. She moved a little slower, with a walker now; she used the shower bench; she took her coffee from the simple kettle. Sandra sat in the garden beside her and picked ripe tomatoes into a basket. "Two more seasons of tomatoes, honey," her mother said. "Never thought I'd see 'em." Sandra smiled. "Three more, if the grab bars hold up, Mom."
 
 ---
 
