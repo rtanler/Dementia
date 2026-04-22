@@ -12,7 +12,7 @@ social:
 
 *Safety and dignity are not opposites*
 
-<!-- ![The Night He Walked cover](./cover.png) -->
+![The Night He Walked cover](./cover.png)
 
 <details>
 <summary>Cover Image Prompt</summary>
@@ -41,7 +41,7 @@ Six in ten people with dementia will wander at some point. They are not running 
 
 ## Panel 1: Twenty-Nine Years of Good Nights
 
-<!-- ![Panel 1](./panel-01.png) -->
+![Panel 1](./panel-01.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -63,7 +63,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 2: A Cold Draft
 
-<!-- ![Panel 2](./panel-02.png) -->
+![Panel 2](./panel-02.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -83,7 +83,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 3: The Open Door
 
-<!-- ![Panel 3](./panel-03.png) -->
+![Panel 3](./panel-03.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -103,7 +103,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 4: The Longest Twenty Minutes
 
-<!-- ![Panel 4](./panel-04.png) -->
+![Panel 4](./panel-04.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -125,7 +125,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 5: The Patrol Car in the Driveway
 
-<!-- ![Panel 5](./panel-05.png) -->
+![Panel 5](./panel-05.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -147,7 +147,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 6: The Kitchen Table, 3 AM
 
-<!-- ![Panel 6](./panel-06.png) -->
+![Panel 6](./panel-06.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -169,7 +169,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 7: The Family Meeting
 
-<!-- ![Panel 7](./panel-07.png) -->
+![Panel 7](./panel-07.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -191,7 +191,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 8: Layer One — Door Chimes and Awareness
 
-<!-- ![Panel 8](./panel-08.png) -->
+![Panel 8](./panel-08.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -213,7 +213,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 9: Layer Two — The GPS Watch
 
-<!-- ![Panel 9](./panel-09.png) -->
+![Panel 9](./panel-09.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -235,7 +235,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 10: Layer Three — The Neighborhood and MedicAlert
 
-<!-- ![Panel 10](./panel-10.png) -->
+![Panel 10](./panel-10.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -257,7 +257,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 11: Layer Four — The Nighttime Bell
 
-<!-- ![Panel 11](./panel-11.png) -->
+![Panel 11](./panel-11.png)
 
 <details>
 <summary>Image Prompt</summary>
@@ -279,7 +279,7 @@ Generate the image immediately without asking clarifying questions.
 
 ## Panel 12: A Gentle Four AM
 
-<!-- ![Panel 12](./panel-12.png) -->
+![Panel 12](./panel-12.png)
 
 <details>
 <summary>Image Prompt</summary>

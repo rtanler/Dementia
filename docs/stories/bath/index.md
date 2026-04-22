@@ -73,7 +73,7 @@ The third approach was bribery. James produced the vanilla ice cream like a magi
 
 ## Panel 5 – The Nurse's Question
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 (This is panel 5. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing James sitting on a green vinyl chair in a medical clinic waiting area, phone pressed to his ear. He leans forward, elbow on knee, listening intently. Soft afternoon light comes through vertical blinds. The color palette is pale seafoam, warm wood, and soft cream. The emotional tone is tentative hope, the first crack of light. Speech bubble (from phone, small): "James — before we talk strategies, tell me: what does the bathroom look like to him?" Generate the image immediately without asking clarifying questions.
@@ -83,7 +83,7 @@ On Thursday James called the Alzheimer's Association helpline. The nurse on the 
 
 ## Panel 6 – Seeing the Bathroom
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 (This is panel 6. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism from a low angle inside a small bathroom, as if viewed by someone confused and afraid. White tile walls loom, a chrome showerhead gleams too brightly, a tiled floor appears to tilt, the mirror reflects a stranger's face. Cool fluorescent light flattens every shadow. A pile of folded towels on a shelf looks almost threatening in its strangeness. The color palette is bleached white, cold steel, and harsh cyan. The emotional tone is disorienting and frightening — the bathroom as seen by someone with dementia. No speech bubbles. Generate the image immediately without asking clarifying questions.
@@ -93,7 +93,7 @@ James walked into the bathroom that night and tried to see it the way his father
 
 ## Panel 7 – Warming the Room
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 (This is panel 7. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing James preparing the bathroom. He has turned off the overhead fluorescent light and plugged in a small warm-toned table lamp on the counter. A space heater glows softly in the corner. He has draped large warm towels over the edge of the tub. The mirror is covered with a cloth. The color palette shifts to warm amber, soft gold, and cream — the same bathroom, transformed. The emotional tone is gentle and careful. James is concentrating, like someone laying out a safe place. Speech bubble from James (small, to himself): "Warm. Soft. Quiet. Start there." Generate the image immediately without asking clarifying questions.
@@ -103,7 +103,7 @@ On Friday evening, James prepared the room before he said a word to his father. 
 
 ## Panel 8 – Familiar Music
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 (This is panel 8. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Arthur sitting in his armchair in the living room, head tilted slightly, listening. James kneels beside him holding a small portable speaker playing a country-western song from the 1960s. Arthur's eyes are soft, unfocused but peaceful — recognizing something old. The color palette is warm honey, deep brown, and soft amber from floor lamps. The emotional tone is quietly moving, a door opening. Speech bubble from Arthur: "I know this one..." Speech bubble from James (gentle): "You used to sing it in the truck." Generate the image immediately without asking clarifying questions.
@@ -113,7 +113,7 @@ James brought the portable speaker to his father's armchair and played the song 
 
 ## Panel 9 – Two Washcloths
 
-<!-- ![](./panel-09.png) -->
+![](./panel-09.png)
 <details><summary>Image Prompt</summary>
 (This is panel 9. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing James holding out two folded washcloths toward his father — one pale blue, one soft yellow. Arthur sits on the closed toilet lid in his robe, studying the washcloths with concentration, as if the choice matters. The warm lamp in the corner casts a honey glow. The space heater hums quietly. The color palette is cream, pale blue, buttercup yellow, and soft wood tone. The emotional tone is intimate and respectful — a father being offered a choice. Speech bubble from James (warm, calm): "Blue one or yellow one, Dad?" Speech bubble from Arthur (thoughtful): "...Yellow." Generate the image immediately without asking clarifying questions.
@@ -123,7 +123,7 @@ In the warm bathroom James did not say "time for your bath." He said, "Blue one 
 
 ## Panel 10 – One Step at a Time
 
-<!-- ![](./panel-10.png) -->
+![](./panel-10.png)
 <details><summary>Image Prompt</summary>
 (This is panel 10. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing James carefully guiding his father's hand toward the warm washcloth, which is held under a gentle stream of warm water. Arthur is partially undressed — shirt off, pajama pants still on — sitting on a plastic shower chair in the tub. The lighting is soft amber, steam rises gently. James narrates each step before doing it. The color palette is warm peach, soft gold, and creamy white. The emotional tone is patient, methodical, reverent. Speech bubble from James (soft, one step ahead): "Now I'm going to put the warm cloth on your arm, Dad. Here it comes." Generate the image immediately without asking clarifying questions.
@@ -133,7 +133,7 @@ James had read that you should say each step one second before you did it. So he
 
 ## Panel 11 – Not a Full Shower
 
-<!-- ![](./panel-11.png) -->
+![](./panel-11.png)
 <details><summary>Image Prompt</summary>
 (This is panel 11. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism showing Arthur wrapped in a large warm towel, seated on the shower chair, while James gently dries his father's shoulders with a second towel. A basin of soapy water sits on the floor. The mirror is still covered. The music still plays softly. Arthur's face is calm, almost sleepy. The color palette is soft cream, warm taupe, and honey. The emotional tone is tender triumph — not a full shower, but clean enough, and peaceful. Speech bubble from James (gentle): "All done for tonight, Dad. You did great." Speech bubble from Arthur (quiet, warm): "That was nice." Generate the image immediately without asking clarifying questions.
@@ -143,7 +143,7 @@ It was not a full shower. It was a warm washcloth and a basin of soapy water and
 
 ## Panel 12 – The Phone Call to His Sister
 
-<!-- ![](./panel-12.png) -->
+![](./panel-12.png)
 <details><summary>Image Prompt</summary>
 (This is panel 12. Do not put the panel number in the image.)
 Please generate a 16:9 image in warm contemporary realism depicting James sitting on the back porch steps of a small house, phone pressed to his ear, mug of tea beside him, night sky with a few stars above. His shoulders have dropped; there is a small, exhausted smile on his face. The color palette is deep blue-indigo, warm yellow porch-light glow, and soft silver from the moon. The emotional tone is hopeful relief — he has learned something he will not forget. Speech bubble from James (quiet, to phone): "It wasn't stubbornness, Mae. It was fear. I just didn't know." Generate the image immediately without asking clarifying questions.
